@@ -1,0 +1,50 @@
+# URL, відкриті в Chrome (MCP chrome_get_web_content) 05.11.2026 для документа 02.
+# Формат: результат | URL | примітка
+OK  | https://interfax.com.ua/news/general/1206097.html | заява команди Федорова, 17.09.2026
+OK  | https://nakypilo.ua/rozbory/chy-diisno-fedorov-vytratyv-hroshi-na-zarplaty-viiskovym/ | фактчек; дата на сторінці не вказана
+OK  | https://news.liga.net/en/politics/news/quota-hole-in-the-budgetquot-fedorov-was-asked-whether-the-purchase-of-drones-affected-the-salaries-of-military-personnel | 17.09.2026, машинний переклад
+OK  | https://ua.news/en/ukraine/radnika-fedorova-pereviriaiut-u-spravi-pro-zakupivliu-droniv-za-zavishchenimi-tsinami | 11.08.2026
+OK  | https://espreso.tv/ekonomika-tse-ne-e-taemnitseyu-tsimbalyuk-rozkriv-yak-rishennya-fedorova-sprichinilo-diru-v-byudzheti-minoboroni | 16.09.2026
+OK  | https://minfin.com.ua/ua/2026/06/17/176007178/ | РП, I квартал
+OK  | https://nv.ua/ukr/ukraine/politics/minoboroni-byudzhetna-dira-zrosla-pid-kerivnictvom-fedorova-50635615.html | Рахманін, 26.08
+OK  | https://www.obozrevatel.com/ukr/politics-news/bula-velika-chest-sluzhiti-narodu-ukraini-fedorov-pidtverdiv-scho-jde-z-posadi-ministra-oboroni-ta-pidbiv-pidsumki-roboti.htm | підсумки Федорова, 15.07
+OK  | https://holosua.com/pro-defitsyt-hroshei-u-minoborony-fedorov-roznis-pretenzii-zelenskoho/ (стара адреса перенаправляє) | переказ Reuters
+PART| https://nv.ua/ukr/ukraine/politics/fedorova-zvinuvachuyut-u-deficiti-oboronnogo-byudzhetu-y-provali-iz-reaktivnimi-dronami-nikolayenko-50645034.html | пейвол, доступний лише початок
+OK  | https://mind.ua/news/20307808-sirskij-zayaviv-pro-problemi-iz-zarplatami-vijskovih-i-rozkritikuvav-zaprovadzheni-fedorovim-novi-ko | колонка Сирського, 20.07
+OK  | https://www.pbs.org/newshour/world/zelenskyy-details-rift-with-ukraines-dismissed-defense-minister-fedorov | AP, 23.08
+OK  | https://english.nv.ua/business/ukraine-s-27-billion-defense-budget-gap-stems-largely-from-underfunding-lawmaker-says-50645889.html | Рахманін, 30.09
+OK  | https://gvwire.com/2026/09/09/ukraine-says-it-needs-27-billion-more-europe-wants-to-know-why/ | передрук NYT
+OK  | https://tsn.ua/politika/duze-bahato-pytan-fedorov-otrymav-vyklyk-do-tsk-shchodo-operatsiyi-midas-3155432.html | ТСК, 25.08
+OK  | https://uk.wikipedia.org/wiki/Федоров_Михайло_Альбертович | третинне, лише для орієнтації (дата 16.07, РНБО)
+OK  | https://mod.gov.ua/news/uriad-rozpodilyv-33-6-mlrd-hrn-na-sotsialni-vyplaty-viiskovosluzhbovtsiam-ta-chlenam-yikhnikh-simei | 04.09
+OK  | https://euromaidanpress.com/2026/08/04/ukraine-weapons-reform-fedorov/ | 04.08
+OK  | https://kurs.com.ua/novost/1476362-v-bjudzhet-ukraini-za-polgoda-postupilo-tolko-25-trln-grn-rahunkova-palata-nazvala-glavnie-riski-i-predlozhila-izmenenija | РП, I півріччя
+OK  | https://www.pravda.com.ua/news/2026/07/29/8046468/ | Федоров, УП
+OK  | https://militarnyi.com/uk/news/syrskyj-zalyshyv-posadu-golovnokomanduvacha-zsu/ | 22.07
+OK  | https://nv.ua/ukr/ukraine/politics/rada-naznachila-evgeniya-hmaru-na-dolzhnost-ministra-oborony-ukrainy-50634018.html | 19.08
+OK  | https://forbes.ua/news/verkhovna-rada-ukhvalila-zmini-do-derzhbyudzhetu-oboroni-vidatki-zrostut-na-156-trln-grn-10062026-39499 | 10.06
+OK  | https://lb.ua/society/2026/07/07/750222_dbr_pidtverdilo_obshuki.html | ДБР, 07.07
+# Не відкривалися (лише пошукова видача): рішення РП №18-3 (rp.gov.ua), укази №627/2026, №630/2026, оригінал Reuters, Telegram Федорова, колонка в «Мілітарному», допис Мірошниченка.
+# Додано Editor після звіту Verifier (Chrome, 05.11.2026):
+OK  | https://epravda.com.ua/oborona/skilki-koshtiv-potribno-na-novi-viplati-viyskovim-ta-de-jih-vzyati-822624/ | ЕП, 107,7 млрд
+OK  | https://forbes.ua/news/uriad-napravit-ponad-50-mlrd-grn-na-viplati-viiskovim-ta-yix-rodinam-u-zovtni-02102026-42611 | 50,1 млрд, склад $27 млрд
+OK  | https://lb.ua/news/2026/06/10/744414_parlament_uhvaliv_zmini.html | +174,3 млрд, правка Костенка
+OK  | https://news.liga.net/en/politics/news/fedorov-will-not-attend-goncharenkos-tsk-hearing-former-ministers-office-explains-the-reasons | ТСК 14.09
+OK  | https://lb.ua/news/2026/05/28/741448_40_milyardiv_z_minoboroni.html | перше читання 28.05
+# Дата «Накипіло» уточнена Verifier: 29.09.2026, оновлено 06.10.2026.
+# Оновлення документа 01 (Chrome, 05.11.2026):
+OK  | https://militarnyi.com/uk/news/pavlo-yelizarov-podav-raport-pro-vidstavku-z-posady-zastupnyka-komanduvacha-ps-zsu/ | Єлізаров, 16.07
+OK  | https://focus.ua/uk/voennye-novosti/772770-reformi-v-armiji-pidpisali-8-tisyach-kontraktiv-hmara-gotuye-novi-zmini | 8,6 тис. контрактів, 28.10
+OK  | https://militarnyi.com/uk/news/u-serpni-do-vijska-povernulosya-bilshe-vijskovyh-iz-szch-nizh-pishlo/ | СЗЧ серпень; ~2000 контрактів
+OK  | https://armyinform.com.ua/2026/09/21/sproshhena-programa-povernennya-pislya-szch-zavershylasya-20-veresnya-yak-teper-povernutysya-na-sluzhbu/ | кінець спрощеного повернення
+OK  | https://zaxid.net/minoboroni_rozpovilo_kogo_pershim_zvilnyatimut_zi_sluzhbi_vkintsi_2026_roku_n1639274 | анонс демобілізації, 14.06
+OK  | https://kurs.com.ua/novost/1479229-fedorova-pracevlashtuvali-bez-konkursu-i-odrazu-podali-na-bronjuvannja-golova-fondu-shidna-evropa | фонд «Східна Європа», ТСК 14.09
+# Відкинуто: «розпорядження №999-р від 30.09.2026» (womanel.com) — насправді розпорядження 2024 року; не використано.
+# Виправлення 01 за звітом verification_01_onovlennia (Chrome, 05.11.2026):
+OK  | https://dou.ua/lenta/news/fedorov-about-plans/ | тези інтерв'ю УП 29.07
+OK  | https://ukranews.com/ua/news/1165842-osobystogo-konfliktu-z-syrskym-ne-bulo-buv-svitoglyadnyj-fedorov | «світоглядний» конфлікт
+OK  | https://ukranews.com/ua/news/1173558-kerivnytstvo-fondu-shidna-yevropa-v-yakomu-eksministr-oborony-fedorov-zabronyuvavsya-za-odyn-den | бронь 18.07; закиди щодо конфлікту інтересів
+OK  | https://www.ukrinform.ua/rubric-polytics/4158700-fedorov-stav-radnikom-ministra-oboroni-italii.html | радник Крозетто, 28.08
+OK  | https://forbes.ua/news/eks-ministr-fedorov-zapuskae-novu-oboronnu-kompaniyu-golovniy-investor-ceo-palantir-aleks-karp-01092026-41644 | Palantir, 01.09
+OK  | https://forbes.ua/news/general-mayor-skibyuk-ocholit-genshtab-zsu-zelenskiy-22072026-40630 | Скибюк, Хмара в. о., 22.07
+OK  | https://mignews.com.ua/politika/de-zaraz-myhajlo-fedorov-i-kudy-vin-znyk.html | «Труха» про 04.11 — НЕПІДТВЕРДЖЕНЕ, не використано
