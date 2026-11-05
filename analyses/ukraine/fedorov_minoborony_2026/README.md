@@ -25,7 +25,7 @@
 | [`01_analiz_pravlinnia.md`](01_analiz_pravlinnia.md) | Контекст призначення, плюси, мінуси, оцінки сторін, причини звільнення; оновлено станом на 05.11.2026 (статус пунктів, розділ «Після відставки») | до регламенту; оновлення ГОТОВО |
 | [`scope_contract.md`](scope_contract.md) | Scope contract для документа 02 | — |
 | [`02_perenesennia_koshtiv_na_drony.md`](02_perenesennia_koshtiv_na_drony.md) | Перенесення коштів на дрони, дефіцит бюджету, події після відставки | ГОТОВО |
-| [`sources/`](sources/) | Source cards, перелік URL, звіт перевірки | — |
+| [`sources/`](sources/README.md) | Source cards, перелік URL, звіт перевірки | — |
 
 ## Актуальність даних (vintage)
 
@@ -41,6 +41,6 @@
 
 ## Пов'язані аналізи
 
-- [`../svyrydenko_2026/`](../svyrydenko_2026/) — відставка Свириденко (липень 2026)
-- [`../shmyhal_2026/`](../shmyhal_2026/) — кадрові ротації Шмигаля
-- [`../tck_viiskovi_vykradennia/`](../tck_viiskovi_vykradennia/) — ТЦК і «бусифікація» (зокрема полк «Скеля»)
+- [`../svyrydenko_2026/`](../svyrydenko_2026/README.md) — відставка Свириденко (липень 2026)
+- [`../shmyhal_2026/`](../shmyhal_2026/README.md) — кадрові ротації Шмигаля
+- [`../tck_viiskovi_vykradennia/`](../tck_viiskovi_vykradennia/README.md) — ТЦК і «бусифікація» (зокрема полк «Скеля»)

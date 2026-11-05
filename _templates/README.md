@@ -5,7 +5,7 @@
 **Станом на:** <дд.мм.рррр>
 **Статус:** <ЧЕРНЕТКА | НА ПЕРЕВІРЦІ | ГОТОВО>
 
-> Як почати: скопіювати [`_templates/`](../../../_templates/) в `analyses/<країна>/<тема>/`, заповнити [`scope_contract.md`](scope_contract.md), додати рядок у [`README.md`](../README.md) країни. Регламент — кореневий [`AGENTS.md`](../../../AGENTS.md) (шлях — уже після копіювання).
+> Як почати: скопіювати [`_templates/`](../../../_templates/README.md) в `analyses/<країна>/<тема>/`, заповнити [`scope_contract.md`](scope_contract.md), додати рядок у [`README.md`](../README.md) країни. Регламент — кореневий [`AGENTS.md`](../../../AGENTS.md) (шлях — уже після копіювання).
 
 ---
 

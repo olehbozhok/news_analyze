@@ -15,5 +15,5 @@
 
 ## Пов'язані аналізи
 
-- [`../svyrydenko_2026/`](../svyrydenko_2026/) — нагороджена тим самим указом того ж дня
-- [`../fedorov_minoborony_2026/`](../fedorov_minoborony_2026/) — наступник на посаді міністра оборони
+- [`../svyrydenko_2026/`](../svyrydenko_2026/README.md) — нагороджена тим самим указом того ж дня
+- [`../fedorov_minoborony_2026/`](../fedorov_minoborony_2026/README.md) — наступник на посаді міністра оборони

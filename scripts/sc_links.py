@@ -12,6 +12,9 @@
   --fix    обгорнути голі SC-NN / NN/SC-NN у [..], нормалізувати заголовки
            карток до "## SC-NN" (назва переходить у рядок нижче),
            перегенерувати блок посилань. Ідемпотентний.
+  Також: посилання на папку (`](dir/)`) замінюються на `](dir/README.md)`
+  (AGENTS.md, розділ 10).
+
   --check  нічого не змінює; помилка (код 1), якщо є голі посилання,
            посилання на неіснуючі картки, биті відносні посилання або
            застарілий блок посилань; попередження — картки без посилань.
@@ -239,6 +242,47 @@ def topics_from_args(args: list[str]) -> list[Topic]:
     return topics
 
 
+DIR_LINK_RE = re.compile(r"\]\(((?![a-z]+:)[^)#\s]*/)(#[^)]*)?\)")
+RAW_RE = re.compile(r"agent_.*_raw\.md$")
+
+
+def dir_link_files(paths: list[str]) -> list[Path]:
+    """Markdown-файли для перевірки посилань на папки (без сирих логів)."""
+    if not paths:
+        files = [f for f in ROOT.rglob("*.md") if ".claude" not in f.parts and ".git" not in f.parts]
+    else:
+        files = []
+        for t in topics_from_args(paths):
+            files += list(t.path.rglob("*.md"))
+    return sorted(f for f in files if not RAW_RE.search(f.name))
+
+
+def dir_links(files: list[Path], fix: bool) -> tuple[list[str], list[Path]]:
+    """Посилання на папку мають вести на її README.md (AGENTS.md, розділ 10)."""
+    errors, changed = [], []
+    for f in files:
+        text = f.read_text(encoding="utf-8")
+        in_templates = (ROOT / "_templates") in f.parents
+        # шаблони розраховані на копію в analyses/<країна>/<тема>/
+        base = ROOT / "analyses" / "x" / "y" if in_templates else f.parent
+
+        def repl(m):
+            target = (base / m.group(1)).resolve()
+            if (target / "README.md").is_file():
+                if fix:
+                    return f"]({m.group(1)}README.md{m.group(2) or ''})"
+                errors.append(f"{f}: посилання на папку {m.group(1)} — вести на {m.group(1)}README.md")
+            else:
+                errors.append(f"{f}: посилання на папку без README.md ({m.group(1)})")
+            return m.group(0)
+
+        new = DIR_LINK_RE.sub(repl, text)
+        if fix and new != text:
+            f.write_text(new, encoding="utf-8")
+            changed.append(f)
+    return errors, changed
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     mode = ap.add_mutually_exclusive_group(required=True)
@@ -253,6 +297,10 @@ def main() -> int:
         all_warn += warnings
         for f in changed:
             print(f"оновлено: {f.relative_to(ROOT)}")
+    errors, changed = dir_links(dir_link_files(ns.paths), fix=ns.fix)
+    all_err += errors
+    for f in changed:
+        print(f"оновлено (посилання на README): {f.relative_to(ROOT)}")
     for w in all_warn:
         print(f"попередження: {w}")
     for e in all_err:

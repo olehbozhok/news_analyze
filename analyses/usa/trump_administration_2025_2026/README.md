@@ -33,7 +33,7 @@
 | [`09_verifikatsiia_dzherel.md`](09_verifikatsiia_dzherel.md) | Реєстр джерел, статуси перевірки, що не вдалося підтвердити |
 | [`10_dovhostrokovi_naslidky.md`](10_dovhostrokovi_naslidky.md) | Довгострокові наслідки 2027–2040: сценарії, індикатори, що закріплено vs оборотне. Перевірка: PASS після виправлень ([звіт](sources/verification_longterm.md)) |
 | [`11_zhyttia_bilshosti.md`](11_zhyttia_bilshosti.md) | Чи стало життя більшості кращим: доходи, ціни, житло, борг, S&P/AI, Іран, НАТО. Перевірка: PASS після виправлень ([звіт](sources/verification_zhyttia_bilshosti.md)) |
-| [`sources/`](sources/) | Сирі матеріали дослідницьких агентів, логи перевірки URL і звіти фактчекерів |
+| [`sources/`](sources/README.md) | Сирі матеріали дослідницьких агентів, логи перевірки URL і звіти фактчекерів |
 
 ---
 
