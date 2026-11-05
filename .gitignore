@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+*.swp
+*~
+.idea/
+
+# Local agent settings
+.claude/settings.local.json
+
+# Scratch
+tmp/
+*.tmp

@@ -4,15 +4,15 @@
 
 | Файл | Що це |
 |---|---|
-| `agent_immigration_raw.md` | Повний вивід дослідницького агента з імміграції та громадянських прав |
-| `agent_health_raw.md` | Повний вивід агента з охорони здоров'я, соцзахисту, науки й освіти |
-| `agent_rule_of_law_raw.md` | Повний вивід агента з верховенства права та інститутів |
-| `urls_raw.txt` | 97 унікальних URL, витягнутих із трьох сирих файлів |
-| `url_check_raw.txt` | Результати HTTP-перевірки цих 97 URL (5 листопада 2026) |
-| `research_brief_living_standards.md` | Бриф для звіту `11_zhyttia_bilshosti.md`: доходи, ціни, житло, борг, S&P/AI, Іран, НАТО |
-| `verification_notes.md` | Лог виправлень після аудитів |
-| `verification_longterm.md` | Аудит `10_dovhostrokovi_naslidky.md` |
-| `verification_zhyttia_bilshosti.md` | Аудит `11_zhyttia_bilshosti.md` |
+| [`agent_immigration_raw.md`](agent_immigration_raw.md) | Повний вивід дослідницького агента з імміграції та громадянських прав |
+| [`agent_health_raw.md`](agent_health_raw.md) | Повний вивід агента з охорони здоров'я, соцзахисту, науки й освіти |
+| [`agent_rule_of_law_raw.md`](agent_rule_of_law_raw.md) | Повний вивід агента з верховенства права та інститутів |
+| [`urls_raw.txt`](urls_raw.txt) | 97 унікальних URL, витягнутих із трьох сирих файлів |
+| [`url_check_raw.txt`](url_check_raw.txt) | Результати HTTP-перевірки цих 97 URL (5 листопада 2026) |
+| [`research_brief_living_standards.md`](research_brief_living_standards.md) | Бриф для звіту [`11_zhyttia_bilshosti.md`](../11_zhyttia_bilshosti.md): доходи, ціни, житло, борг, S&P/AI, Іран, НАТО |
+| [`verification_notes.md`](verification_notes.md) | Лог виправлень після аудитів |
+| [`verification_longterm.md`](verification_longterm.md) | Аудит [`10_dovhostrokovi_naslidky.md`](../10_dovhostrokovi_naslidky.md) |
+| [`verification_zhyttia_bilshosti.md`](verification_zhyttia_bilshosti.md) | Аудит [`11_zhyttia_bilshosti.md`](../11_zhyttia_bilshosti.md) |
 
 ## Результати перевірки URL
 
@@ -21,7 +21,7 @@
 - **5** — 406/402 (блокування за типом клієнта).
 - **0** — 404 Not Found серед перевірених.
 
-Повний лог: `url_check_raw.txt`.
+Повний лог: [`url_check_raw.txt`](url_check_raw.txt).
 
 ## Важливі застереження
 
