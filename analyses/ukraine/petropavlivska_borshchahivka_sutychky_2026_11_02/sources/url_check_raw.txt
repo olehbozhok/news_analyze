@@ -1,0 +1,61 @@
+# URL, відкриті Researcher 06.11.2026 для документа 01 (Петропавлівська Борщагівка).
+# Інструмент: Chrome (MCP chrome_get_web_content або chrome_navigate + chrome_javascript, фонові вкладки), якщо не зазначено інше.
+# WebFetch/WebSearch не використовувалися. Посилання Google News розкодовано JS-запитами у вкладці news.google.com.
+# Примітка: у браузері працює розширення Tab Wrangler, яке автоматично закривало неактивні вкладки (зокрема вкладки news.google.com); на результати перевірки не вплинуло.
+# Формат: результат | URL | дата публікації, примітка | картка
+OK   | https://news.google.com/search?q=Петропавлівська%20Борщагівка&hl=uk&gl=UA&ceid=UA:uk | пошук, 102 результати | —
+OK   | https://www.radiosvoboda.org/a/novi-fakty-i-khronolohiya-perebihu-podiy-u-petropavlivskiy-borshchahivtsi/33889434.html | 03.11.2026 13:17 | SC-03, SC-10
+OK   | https://www.radiosvoboda.org/a/sutychky-petropavlivska-borshchahivka/33890877.html | ~05.11.2026 («15 годин тому» на 06.11; доповнено 05.11) | SC-23, SC-30, SC-31
+OK   | https://suspilne.media/kyiv/1445771-suticki-u-petropavlivskij-borsagivci-sud-obiratime-zapobiznij-cetvertij-pidozruvanij/ | 05.11.2026 (GN: 15:16) | SC-27
+OK   | https://suspilne.media/kyiv/1445409-sprava-pro-suticki-u-petropavlivskij-borsagivci-obiraut-zapobiznij-zahid-viktoru-eni/ | 05.11.2026 (GN: 13:37) | SC-26
+OK   | https://suspilne.media/kyiv/1444905-suticki-u-petropavlivskij-borsagivci-obiraut-zapobiznij-zahid-tetani-kireevij/ | 04.11.2026 | SC-24, SC-25
+OK   | https://suspilne.media/1443877-svidka-bez-kliniki-buti-medikina-szcsnik-iz-tiktok-hto-rozdmuhav-istoriu-pro-kativnu-pid-kievom/ | 03.11.2026 15:14 (time datetime) | SC-01, SC-09, SC-15, SC-28
+OK   | https://suspilne.media/kyiv/1443951-gotuut-pidozri-pro-so-govorili-na-brifingu-sodo-suticok-u-petropavlivskij-borsagivci/ | 03.11.2026 | SC-05, SC-13, SC-18
+OK   | https://ssu.gov.ua/novyny | стрічка; знайдено 2 релізи | —
+OK   | https://ssu.gov.ua/novyny/sbu-identyfikuvala-ponad-100-osib-yaki-braly-uchast-u-sutychkakh-v-petropavlivskii-borshchahivtsi | 03.11.2026 19:20 | SC-20
+OK   | https://ssu.gov.ua/novyny/sbu-zatrymala-i-povidomyla-pro-pidozru-orhanizatoram-zavorushen-u-petropavlivskii-borshchahivtsi | 04.11.2026 17:50 | SC-21
+OK   | https://kv.npu.gov.ua/news (→ /timeline?&type=posts) | стрічка 03–05.11: матеріалу про подію немає | —
+OK   | https://npu.gov.ua/news (→ /timeline?&type=posts) | стрічка 05.11: матеріалу про подію немає | —
+FAIL | https://t.me/s/UA_National_Police?q=Борщагів | пошук у веб-превʼю: «No posts found» (пошук t.me/s ненадійний) | —
+OK   | https://t.me/UA_National_Police/81351 | 05.11.2026 (дата за УП/Цензор; час у вбудованому вікні не показано) | SC-14
+OK   | https://www.pravda.com.ua/news/2026/11/05/8061391/ | 05.11.2026 13:49 | (R10; підтверджує SC-14)
+OK   | https://censor.net/ua/news/4032182/na-kyyivschyni-vstanovyly-130-mojlyvyh-uchasnykiv-zavorushen | 05.11.2026 12:37 | (R12)
+OK   | https://nv.ua/ukr/ukraine/events/sutichki-v-petropavlivskiy-borshchagivci-shcho-vidomo-pro-andriya-kuleshova-ta-gospitalizaciyu-50656323.html | 04.11.2026 17:28 | (R13, переказ hromadske)
+OK   | https://hromadske.ua/suspilstvo/273784-robota-u-rosiyi-ta-szch-hromadske-diznalosia-pro-odnoho-z-mobilizovanykh-iakykh-vyzvolialy-na-protestakh-u-petropavlivskiy-borshchahivtsi | 04.11.2026 15:26 | SC-06, SC-29
+OK   | https://dbr.gov.ua/news/dbr-rozpochalo-kriminalne-provadzhennya-za-faktom-podij-u-petropavlivskij-borshhagivci-na-kiivshhini | 03.11.2026 | SC-11
+OK   | https://www.facenews.ua/news/2026/544580/ | 03.11.2026 21:11 | SC-22
+OK   | https://fakty.com.ua/ua/ukraine/20261103-zatrymaly-zhinku-yaka-pryyihala-na-shvydkij-do-budynku-v-petropavlivskij-borshhagivtsi-budanov/ | 03.11.2026 14:54 | SC-19
+OK   | https://nv.ua/ukr/ukraine/events/petropavlivska-borshchagivka-litvin-prokomentuvav-poshirennya-feykiv-u-anonimnih-telegram-kanalah-50656244.html | 04.11.2026 14:30 | SC-34
+OK   | https://www.radiosvoboda.org/a/news-lubinets-podiji-petropavlivska-borshchahivka/33889578.html | 03.11.2026 12:37 | SC-33
+OK   | https://www.unian.ua/incidents/petropavlivska-borshchagivka-u-ngu-zrobili-zayavu-pro-chotiroh-travmovanih-viyskovih-13548711.html | 03.11.2026 17:55 | SC-16
+OK   | https://www.pravda.com.ua/news/2026/11/02/8060945/ | 02.11.2026 22:15 | SC-04 (і caveat SC-11)
+OK   | https://nv.ua/ukr/ukraine/events/sutichki-v-petropavlivskiy-borshchagivci-batkam-pidlitka-zagrozhuye-vidpovidalnist-50656026.html | 03.11.2026 21:13 | SC-12
+OK   | https://kyivschina24.com/news/14-richnogo-uchasnyka-pogromiv-u-borshhagivczi-ta-jogo-batkiv-vnesly-do-bazy-%C2%ABmyrotvorecz%C2%BB/ | 05.11.2026 11:33; низька надійність, без картки | (R22)
+OK   | https://cpd.gov.ua/?s=Борщагів | пошук на сайті ЦПД | —
+OK   | https://cpd.gov.ua/international-direction/ssha/yak-informaczijno-rozkruchuvaly-inczydent-u-petropavlivskij-borshhagivczi/ | 03.11.2026 | SC-07
+OK   | https://www.radiosvoboda.org/a/news-isw-petropavlivska-borshchahivka/33890522.html | 04.11.2026 16:49 | (R24)
+OK   | https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-3-2026/ | 03.11.2026 | SC-32
+OK   | https://www.bbc.com/ukrainian/articles/cvp8gx4n92k8o | 03.11.2026 (Святослав Хоменко) | (R25, без картки)
+FAIL | https://ngu.gov.ua/novyny/ | 404 | —
+OK   | https://ngu.gov.ua/?s=Борщагів | пошук на сайті НГУ: 2 матеріали | —
+OK   | https://ngu.gov.ua/shturm-kativni-pid-vybuhy-shahediv-yak-fejk-pro-40-zaruchnykiv-pereris-u-zavorushennya-v-petropavlivskij-borshhagivczi/ | 03.11.2026 (передрук АрміяInform) | SC-08
+OK   | https://hromadske.ua/suspilstvo/273672-vyvodte-siudy-liudey-shcho-vidbuvayetsia-u-petropavlivskiy-borshchahivtsi | 02.11.2026 22:28 | SC-02, SC-17
+OK   | https://armyinform.com.ua/2026/11/04/bez-prava-na-zastavu-dvoh-pidozryuvanyh-u-zavorushennyah-u-petropavlivskij-borshhagivczi-vzyaly-pid-vartu-prokuratura-rozkryla-novi-detali/ | 04.11.2026 19:49 | (R28, без картки)
+FAIL | https://kyivobl.gp.gov.ua/ua/news.html | DNS_PROBE_FINISHED_NXDOMAIN (хибний домен) | —
+FAIL | https://koi.gp.gov.ua/ua/news.html | DNS_PROBE_FINISHED_NXDOMAIN (хибний домен) | —
+OK   | https://kobl.gp.gov.ua/ (→ /ua/index.html) | Київська обласна прокуратура: новини на головній лише до 03.11.2026, матеріалів про справу немає | —
+PART | https://kobl.gp.gov.ua/ua/news.html | сторінка відкрилася без списку новин | —
+OK   | https://reyestr.court.gov.ua/ | пошук «Петропавлівська Борщагівка 114-1» (02–06.11.2026) — 0; «Петропавлівська Борщагівка» (03–06.11.2026) — 1 нерелевантне рішення (910/11128/23) | —
+OK   | https://espreso.tv/suspilstvo-u-zelenskogo-prokomentuvali-zayavi-pro-te-shcho-feyki-pro-podii-u-petropavlivskiy-borshchagivtsi-poshiryuvali-kanali-povyazani-z-gur-i-sbu | 04.11.2026 15:00; дубль SC-34 | (R30)
+OK   | https://www.slidstvo.info/news/kilkist-napadiv-na-pratsivnykiv-ttsk-ta-sp-zrosla-mayzhe-vtrychi-u-2025-rotsi-naybilshe-na-kharkivshchyni/ | 03.04.2026 17:21 | SC-35
+OK   | https://zn.ua/ukr/war/spravi-pro-napadi-na-ttsk-rozhljadajutsja-shvidshe-nizh-ti-de-voni-vistupajut-ahresorom-zmi.html | 10.09.2026 | (R32, без картки)
+OK   | https://www.unian.ua/society/petropavlivska-borshchagivka-genshtab-vidreaguvav-na-skandalniy-incident-pid-kiyevom-13548438.html | 03.11.2026 | (R34, без картки)
+OK   | https://www.unian.ua/world/petropavlivska-borshchagivka-u-kremli-zaklikali-biyciv-zsu-zdavatisya-cherez-skandal-na-kijivshchini-13548684.html | 03.11.2026 17:32 | (R35, без картки)
+OK   | https://nv.ua/ukr/ukraine/events/sutichka-u-petropavlivskiy-borshchagivci-zmi-ozvuchili-novi-detali-pro-uchasnikiv-podiy-50655948.html | 03.11.2026 17:19 | (R36, без картки)
+# Не відкривалися (лише заголовки в Google News): BBC про Молоду; Слідство.Інфо (оригінал розслідування про Молоду й «Мед-престиж»); hromadske про 130 осіб; kyiv.news (130 осіб; ~100 осіб); Interfax-Україна; LIGA.net (Веніславський про мовчання Зеленського); Цензор/NV (Вайдель, AfD); Texty.org.ua (дані НПУ про напади на ТЦК, 07.04.2026); Суспільне Львів (Сихів, 08.07.2026); sud.ua (05.11.2026); Telegram Генштабу; допис поліції Київщини 02.11; соцмережі «Азову», Лубінця, Решетилової; аналіз Железняка; сюжет ТСН з Будановим; сайт «Миротворця».
+# Результат засідання щодо Валерії Ладики (06.11.2026) станом на час останнього пошуку в Google News (06.11) не знайдено.
+# Red team (06.11.2026): додаткові URL, відкриті під час adversarial check.
+# Інструмент: Chrome (MCP chrome_navigate + chrome_get_web_content). WebFetch/WebSearch не використовувалися.
+OK   | https://www.pravda.com.ua/news/2026/11/04/8061257/ | 04.11.2026; позиція командира в/ч 3121 про $7000, Кулешова і матір на окупованій території | (red team; новий)
+EMPTY| https://www.reuters.com/world/ukraine-probes-clashes-military-recruitment-dorm-2026-11-03/ | 03.11.2026 (за посиланням ISW); текст порожній, ймовірно антибот; не використано | (red team; новий)
+# Повторно відкрито Red team без змін у попередніх рядках: SC-07, SC-23/SC-30/SC-31, SC-32, SC-36/SC-37/SC-38/SC-41, R13, R25.
