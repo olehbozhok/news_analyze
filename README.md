@@ -19,6 +19,7 @@
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | Спільний регламент |
 | [`CLAUDE.md`](CLAUDE.md) | Імпортує `AGENTS.md` для Claude Code |
+| [`agents/`](agents/) | Канонічні файли ролей агентів (researcher, writer, verifier, editor, red_team) |
 | [`_templates/`](_templates/) | Заготовки для нового аналізу |
 
 ---
