@@ -1,0 +1,266 @@
+#!/usr/bin/env python3
+"""Клікабельні посилання на source cards (SC-NN) у документах аналізів.
+
+Конвенція (AGENTS.md, 6.2):
+  - у документі NN_*.md посилання на власні картки — [SC-07],
+    на картки іншого документа теми — [01/SC-07];
+  - картки лежать у sources/source_cards_NN.md із заголовками "## SC-07";
+  - в кінці файлу після маркера скрипт генерує визначення reference-посилань,
+    тож [SC-07] рендериться як посилання на sources/source_cards_NN.md#sc-07.
+
+Режими:
+  --fix    обгорнути голі SC-NN / NN/SC-NN у [..], нормалізувати заголовки
+           карток до "## SC-NN" (назва переходить у рядок нижче),
+           перегенерувати блок посилань. Ідемпотентний.
+  --check  нічого не змінює; помилка (код 1), якщо є голі посилання,
+           посилання на неіснуючі картки, биті відносні посилання або
+           застарілий блок посилань; попередження — картки без посилань.
+
+Аргументи: шляхи до тек тем (analyses/<країна>/<тема>) або до файлів;
+без аргументів — усі теми в analyses/.
+"""
+from __future__ import annotations
+
+import argparse
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+MARKER = "<!-- sc-links: згенеровано scripts/sc_links.py, не редагувати -->"
+
+DOC_RE = re.compile(r"^(\d{2})_.+\.md$")
+CARDS_RE = re.compile(r"^source_cards_(\d{2})\.md$")
+CARD_HEAD_RE = re.compile(r"^## SC-(\d{2,})(?:\.\s*(.*\S))?\s*$")
+# голе посилання: не всередині [..], не частина слова чи шляху
+BARE_RE = re.compile(r"(?<![\[\w/-])(?:(\d{2})/)?SC-(\d{2,})(?![\w\]-])")
+LABEL_RE = re.compile(r"(?<!\])\[(?:(\d{2})/)?SC-(\d{2,})\](?![\[(:])")
+LINK_RE = re.compile(r"\]\(([^)\s]+)\)")
+CODE_SPAN_RE = re.compile(r"`[^`]*`")
+
+
+def card_ids(cards_file: Path) -> set[str]:
+    if not cards_file.exists():
+        return set()
+    ids = set()
+    for line in cards_file.read_text(encoding="utf-8").splitlines():
+        m = CARD_HEAD_RE.match(line)
+        if m:
+            ids.add(m.group(1))
+    return ids
+
+
+def split_footer(text: str) -> tuple[str, str]:
+    idx = text.find(MARKER)
+    if idx == -1:
+        return text.rstrip("\n"), ""
+    return text[:idx].rstrip("\n"), text[idx:]
+
+
+def iter_body_segments(body: str):
+    """Yield (is_code, chunk) by lines; fenced blocks and inline code are code."""
+    in_fence = False
+    for line in body.split("\n"):
+        if line.lstrip().startswith("```"):
+            in_fence = not in_fence
+            yield True, line
+            continue
+        yield in_fence, line
+
+
+def transform_line(line: str, fn) -> str:
+    """Apply fn to non-code parts of a line (skips inline code spans)."""
+    out, pos = [], 0
+    for m in CODE_SPAN_RE.finditer(line):
+        out.append(fn(line[pos:m.start()]))
+        out.append(m.group(0))
+        pos = m.end()
+    out.append(fn(line[pos:]))
+    return "".join(out)
+
+
+def non_code_text(body: str) -> str:
+    parts = []
+    for is_code, line in iter_body_segments(body):
+        if not is_code:
+            parts.append(CODE_SPAN_RE.sub("", line))
+    return "\n".join(parts)
+
+
+class Topic:
+    def __init__(self, path: Path):
+        self.path = path
+        self.sources = path / "sources"
+        self.cards = {}
+        if self.sources.is_dir():
+            for f in self.sources.iterdir():
+                m = CARDS_RE.match(f.name)
+                if m:
+                    self.cards[m.group(1)] = f
+
+    def files(self):
+        for f in sorted(self.path.iterdir()):
+            if DOC_RE.match(f.name):
+                yield f, DOC_RE.match(f.name).group(1)
+        for num, f in sorted(self.cards.items()):
+            yield f, num
+
+    def target(self, file: Path, own: str, prefix: str | None) -> tuple[Path | None, str]:
+        num = prefix or own
+        cards = self.cards.get(num)
+        if cards is None:
+            return None, num
+        if file.resolve() == cards.resolve():
+            return None, num  # те саме: якір у межах файлу
+        return cards, num
+
+
+def normalize_card_headings(text: str) -> str:
+    out = []
+    for line in text.split("\n"):
+        m = CARD_HEAD_RE.match(line)
+        if m and m.group(2):
+            out.append(f"## SC-{m.group(1)}")
+            out.append("")
+            out.append(f"**{m.group(2)}**")
+        else:
+            out.append(line)
+    return "\n".join(out)
+
+
+def wrap_bare(body: str) -> str:
+    def fn(chunk: str) -> str:
+        return BARE_RE.sub(lambda m: "[" + m.group(0) + "]", chunk)
+
+    lines = []
+    for is_code, line in iter_body_segments(body):
+        if is_code or line.startswith("#"):
+            lines.append(line)
+        else:
+            lines.append(transform_line(line, fn))
+    return "\n".join(lines)
+
+
+def build_footer(topic: Topic, file: Path, own: str, body: str) -> tuple[str, list[str]]:
+    errors, defs = [], {}
+    text = non_code_text(body)
+    for m in LABEL_RE.finditer(text):
+        prefix, nn = m.group(1), m.group(2)
+        label = f"{prefix}/SC-{nn}" if prefix else f"SC-{nn}"
+        target, num = topic.target(file, own, prefix)
+        cards_file = topic.cards.get(num)
+        if cards_file is None or nn not in card_ids(cards_file):
+            errors.append(f"{file}: [{label}] — картки SC-{nn} у source_cards_{num}.md немає")
+            continue
+        if target is None:
+            href = f"#sc-{nn}"
+        else:
+            href = Path(_relpath(target, file.parent)).as_posix() + f"#sc-{nn}"
+        defs[label] = href
+
+    def key(lbl: str):
+        pre, _, nn = lbl.rpartition("SC-")
+        return (pre, int(nn))
+
+    if not defs:
+        return "", errors
+    lines = [MARKER, ""] + [f"[{lbl}]: {defs[lbl]}" for lbl in sorted(defs, key=key)]
+    return "\n".join(lines) + "\n", errors
+
+
+def _relpath(target: Path, start: Path) -> str:
+    import os
+    return os.path.relpath(target, start)
+
+
+def check_links(file: Path, body: str) -> list[str]:
+    errors = []
+    for m in LINK_RE.finditer(non_code_text(body)):
+        href = m.group(1)
+        if re.match(r"^[a-z]+:", href) or href.startswith("#"):
+            continue
+        path = href.split("#", 1)[0]
+        if path and not (file.parent / path).exists():
+            errors.append(f"{file}: бите відносне посилання ({href})")
+    return errors
+
+
+def process(topic: Topic, fix: bool) -> tuple[list[str], list[str], list[Path]]:
+    errors, warnings, changed = [], [], []
+    used: dict[str, set[str]] = {n: set() for n in topic.cards}
+    for file, own in topic.files():
+        original = file.read_text(encoding="utf-8")
+        body, old_footer = split_footer(original)
+        if file in topic.cards.values() and fix:
+            body = normalize_card_headings(body)
+        if fix:
+            body = wrap_bare(body)
+        else:
+            text = non_code_text("\n".join(l for l in body.split("\n") if not l.startswith("#")))
+            for m in BARE_RE.finditer(text):
+                errors.append(f"{file}: голе посилання {m.group(0)} (запустіть --fix)")
+            if file in topic.cards.values():
+                for line in body.split("\n"):
+                    m = CARD_HEAD_RE.match(line)
+                    if m and m.group(2):
+                        errors.append(f"{file}: заголовок картки не нормалізовано: {line[:40]}")
+        footer, errs = build_footer(topic, file, own, body)
+        errors += errs
+        errors += check_links(file, body)
+        for m in LABEL_RE.finditer(non_code_text(body)):
+            num = m.group(1) or own
+            if num in used:
+                used[num].add(m.group(2))
+        if not footer and not old_footer and body == original.rstrip("\n"):
+            new = original  # нічого змінювати: не чіпати пробіли в кінці файлу
+        else:
+            new = body + "\n" + (("\n" + footer) if footer else "")
+        if new != original:
+            if fix:
+                file.write_text(new, encoding="utf-8")
+                changed.append(file)
+            elif footer.strip() != old_footer.strip():
+                errors.append(f"{file}: блок посилань застарів (запустіть --fix)")
+    for num, cards_file in topic.cards.items():
+        for nn in sorted(card_ids(cards_file) - used[num], key=int):
+            warnings.append(f"{cards_file}: картка SC-{nn} не має посилань")
+    return errors, warnings, changed
+
+
+def topics_from_args(args: list[str]) -> list[Topic]:
+    if not args:
+        return [Topic(p) for p in sorted((ROOT / "analyses").glob("*/*")) if p.is_dir()]
+    topics = []
+    for a in args:
+        p = Path(a).resolve()
+        if p.is_file():
+            p = p.parent.parent if p.parent.name == "sources" else p.parent
+        topics.append(Topic(p))
+    return topics
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    mode = ap.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--fix", action="store_true")
+    mode.add_argument("--check", action="store_true")
+    ap.add_argument("paths", nargs="*")
+    ns = ap.parse_args()
+    all_err, all_warn = [], []
+    for topic in topics_from_args(ns.paths):
+        errors, warnings, changed = process(topic, fix=ns.fix)
+        all_err += errors
+        all_warn += warnings
+        for f in changed:
+            print(f"оновлено: {f.relative_to(ROOT)}")
+    for w in all_warn:
+        print(f"попередження: {w}")
+    for e in all_err:
+        print(f"помилка: {e}", file=sys.stderr)
+    if ns.check:
+        print(f"перевірка: {len(all_err)} помилок, {len(all_warn)} попереджень")
+    return 1 if all_err else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
