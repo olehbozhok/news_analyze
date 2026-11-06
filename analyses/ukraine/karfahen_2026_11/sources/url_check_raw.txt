@@ -1,0 +1,56 @@
+# Журнал перевірки URL — «Карфаген»
+
+**Дата перевірки:** 06.11.2026
+**Інструмент:** Google Chrome (`chrome_navigate` + `chrome_get_web_content`), окремі переходи — WebSearch для пошуку URL. Усі ключові URL відкрито в Chrome, якщо не зазначено інше.
+
+| URL | Інструмент | Результат | Статус |
+|---|---|---|---|
+| https://nabu.gov.ua/news/operatciia-karfagen-vykryto-novu-zlochynnu-organizatciiu/ | Chrome | Відкрито, текст збігається | ПЕРВИННЕ |
+| https://nabu.gov.ua/news/operatciia-karfagen-5-pidozriuvanykh/ | Chrome | Відкрито, текст збігається | ПЕРВИННЕ |
+| https://gp.gov.ua/ua/posts/narkotorgivlia-call-centri-ta-nasilnicki-zlocini-vikrito-diyalnist-zlocinnogo-ugrupovannya-ximprom | Chrome | Відкрито, текст збігається | ПЕРВИННЕ |
+| https://npu.gov.ua/news/narkotorhivlia-nasylnytski-zlochyny-ta-shakhraiski-call-tsentry-natspolitsiia-vykryla-uchasnykiv-zlochynnoi-spilnoty-khimprom | Chrome | Відкрито, текст збігається | ПЕРВИННЕ |
+| https://ssu.gov.ua/en/novyny/sbu-za-spryiannia-natspolitsii-ta-pravookhoronnykh-orhaniv-bolharii-zatrymala-mizhnarodnoho-narkobarona-yakyi-zbuvav-psykhotropy-v-ukrainu-ta-yes-video | Chrome | Відкрито, текст збігається | ПЕРВИННЕ |
+| https://bihus.info/merezha-magazyniv-yaku-masovo-reklamuvaly-blogery-prodaye-narkotyky-bihus-info/ | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://hromadske.ua/en/kryminal/273781-ukraines-anti-corruption-investigators-uncover-alleged-criminal-network-involving-senior-law-enforcement-officials | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://www.ukrinform.ua/rubric-society/4181492-poklad-zvilniv-dvoh-spivrobitnikiv-sbu-aki-stali-figurantami-spravi-kafagen.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://interfax.com.ua/news/general/1231297.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://interfax.com.ua/news/general/1231959-amp.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| http://portal.lviv.ua/news/2026/11/05/sprava-karfahen-sud-obrav-zapobizhni-zakhody-tsenovu-ta-rybaltsi | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://www.radiosvoboda.org/a/news-plivky-nabu-napad-na-zhurnalista-rozsliduvannia-u420/33890592.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://detector.media/infospace/article/253763/2026-11-04-ochilnyk-sbu-zvilnyv-dvokh-vysokoposadovtsiv-yaki-figuruyut-u-rozsliduvanni-nabu/ | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://texty.org.ua/fragments/118641/yak-ximprom-kupuvav-prykryttya-v-ukrayinskyx-pravooxoronciv-i-planuvav-rozpravy-detali-spravy-nabu-karfahen/ | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://www.bbc.com/ukrainian/articles/cgjqgzg667do | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://zn.ua/ukr/POLITICS/vr-vidpravila-kravchenka-u-vidstavku.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| http://www.ukrinform.ua/rubric-polytics/4180581-v-ukraini-ne-otrimuvali-zaavu-kravcenka-pro-zagrozu-jogo-zittu-v-avstrii-ofis-genprokurora.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://www.radiosvoboda.org/a/news-operatsia-karfahen-pidozra-eksholova-departament-ohp/33881681.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://www.aol.com/articles/ukraines-anti-graft-police-target-104228000.html | Chrome | Відкрито, текст Reuters | ДОСТУПНЕ |
+| https://24tv.ua/ru/prichasten-izvestnyj-rossijskij-narkobaron-v-policii-rasskazali-podrobnosti-o-seti-magazinov-u420_n3053676 | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://www.occrp.org/ru/novosti/slidstvoinfo-ukraina-vvela-sankcii-protiv-predpolagaemyx-ucastnikov-narkokartelia-ximprom | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| http://interfax.com.ua/news/general/1231767.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://chas.news/news/obshuki-u-verhivtsi-sbu-ta-pogrozi-zbroeyu-scho-vidomo-pro-operatsiyu-nabu | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| http://www.ukrinform.ua/rubric-society/4181337-u-nacpolicii-vidstoronili-vid-sluzbi-figurantiv-slidcih-dij-nabu.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://www.ukrinform.ua/rubric-society/4181178-nabu-zaavlae-so-visokoposadovec-sbu-pogrozue-zbroeu-ta-pereskodzae-provedennu-obsuku.html | Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://rozsliduvach.info/news/forces | Chrome | DDoS-Guard, зміст не відкрито | ЗАБЛОКОВАНЕ |
+| https://www.pravda.com.ua/news/2026/11/4/8037000/ | Chrome | Відкрито іншу статтю (невірний URL) | НЕ ВИКОРИСТАНО |
+
+## Примітки
+
+- `pravda.com.ua` з прямим URL не вдалося зіставити з потрібною статтею; факти з «Української правди» використано лише через переказ у hromadske, Reuters і Chas.News.
+- `rozsliduvach.info` заблокований DDoS-Guard; твердження з нього не використовувалися як єдине джерело.
+- Усі цитати в картках звірено з текстом, отриманим через Chrome.
+
+## Повторна перевірка після виправлень (06.11.2026)
+
+| URL | Інструмент | Результат | Статус |
+|---|---|---|---|
+| https://npu.gov.ua/news/narkotorhivlia-nasylnytski-zlochyny-ta-shakhraiski-call-tsentry-natspolitsiia-vykryla-uchasnykiv-zlochynnoi-spilnoty-khimprom | Chrome | Відкривається; 105 магазинів, 281 обшук, ADB-4en-PINACA | ПЕРВИННЕ (SC-04) |
+| https://gp.gov.ua/ua/posts/narkotorgivlia-call-centri-ta-nasilnicki-zlocini-vikrito-diyalnist-zlocinnogo-ugrupovannya-ximprom | Chrome | 404 під час повторної перевірки; раніше відкривався | 404 (картка SC-03) |
+| https://ukranews.com/en/news/1147555-national-police-exposes-khimprom-leader-nicknamed-mexican-for-drug-trafficking-violence-and-fraud | Chrome | Відкрито, 105 магазинів, 280 обшуків 14.04, 75 млн грн, $100 тис./день | ВТОРИННЕ (SC-45) |
+| https://fakty.com.ua/ua/ukraine/20261030-sprava-karfagen-vaks-znyzyv-zastavy-kropyvi-muzi-ta-dovirenij-osobi/ | Chrome | Відкрито, 120→93, 20→15, 15→11,6 млн | ВТОРИННЕ (SC-30) |
+| https://h.ua/2026/09/07/vaks-vzyav-pid-vartu-vodiya-kropivi-sprava-karfagen | Chrome | Відкрито, Куций — 3 млн, Кропива — 120 млн | ВТОРИННЕ (SC-28) |
+| https://parlament.ua/news/operacziya-karfagen-yelyzavetu-ivahnenko-vidpravyly-pid-vartu-iz-zastavoyu-20-mln-grn | Chrome | Відкрито, Івахненко — 20 млн | ВТОРИННЕ (SC-29) |
+| https://nv.ua/ukr/ukraine/politics/sprava-karfagen-hto-taki-muza-i-kancler-v-operaciji-nabu-ta-sap-pro-krishuvannya-kol-centriv-50639525.html | Chrome | Відкрито, посада Кропиви | ВТОРИННЕ (SC-27) |
+| https://suspilne.media/1444877-operacia-karfagen-slidci-zaavili-pro-vikritta-pricetnih-do-funkcionuvanna-kolcentriv/ | Chrome | Відкрито, центральний облік, $7 тис., січень–липень | ВТОРИННЕ (SC-31–SC-34) |
+| https://hacc-decided.ti-ukraine.org/uk/cases/52026000000000295 | Chrome | Відкрито, Дидич, «показові» обшуки, ст. 368 | ВТОРИННЕ (SC-40) |
+
+**Примітка.** Сторінка ОГП (SC-03) віддає 404 під час повторної перевірки 06.11.2026, хоча відкривалася під час research. Сторінка НПУ (SC-04) відкривається — попередній запис про 404 був спричинений одруківкою в URL (zlochnoi замість zlochynnoi). Ключові цифри ОГП продубльовано незалежним джерелом (SC-45); статус SC-03 збережено як ПЕРВИННЕ із застереженням про тимчасову недоступність.
