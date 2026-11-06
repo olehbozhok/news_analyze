@@ -1,0 +1,22 @@
+URL check log — Writer, «Хімпром» і U420 (01_khimprom.md)
+Дата: 06.11.2026
+Агент: Writer. Журнали Researcher (url_check_raw.txt) і Red team (url_check_red_team_raw.txt) не редагувалися.
+Інструменти:
+  Chrome = mcp__streamable-mcp-server__chrome_navigate / chrome_get_web_content / chrome_read_page / chrome_click_element, власне вікно (windowId 1291087027, tabId 1291087028)
+  curl   = curl -sL --compressed (UA Chrome/130), текст розібрано локальним скриптом (python3 -I)
+  WebSearch = лише для пошуку адрес, не як підтвердження змісту
+
+Формат: URL | інструмент | результат | картка
+
+https://npu.gov.ua/news/narkotorhivlia-nasylnytski-zlochyny-ta-shakhraiski-call-tsentry-natspolitsiia-vykryla-uchasnykiv-zlochynnoi-spilnoty-khimprom | Chrome | OK, повний текст; абзаци про E3 (грудень 2025) і «відсутність заборони» звірено | SC-38, SC-39
+https://www.slidstvo.info/news/advokatka-u420-kazhe-shcho-zaborona-syntetychnoho-kanabinoidu-shkodyt-investytsiiam-cholovika-iakyy-buv-zasudzhenyy-za-te-shcho-vkrav-choven-i-izdyv-na-mopedi-pid-diieiu-narkotykiv/ | Chrome | OK, текст статті (поле url у відповіді інструмента відставало на один крок, зміст — «Слідство.Інфо») | SC-41, SC-42
+https://zakon.rada.gov.ua/laws/show/770-2000-п/print | curl (200) | чинна редакція: ADB-PINACA, MDMB-4en-PINACA, ADB-4en-PINACA є | — (контроль)
+https://zakon.rada.gov.ua/laws/show/770-2000-п/ed20260101/print | curl (200) | редакція від 13.09.2025 (підстава 692-2025-п): ADB-PINACA і MDMB-4en-PINACA у списку № 2 таблиці I; ADB-4en-PINACA — 0 входжень | SC-40
+https://zakon.rada.gov.ua/laws/show/770-2000-п/ed20251231/print | curl (200) | та сама редакція від 13.09.2025 | SC-40 (контроль)
+https://www.google.com/search?q=Хімпром+U420&tbm=nws&tbs=qdr:m | Chrome | пошук новин за місяць: LIGA.net 05.11, RegioNews 05.11, «Фокус» 06.11, «Інше ТВ» 06.11, NEWS.PN, «Твоє місто», StopCor | —
+https://focus.ua/uk/opinions/773807-sprava-narkokartelyu-himprom-ta-merezhi-u420-hronologiya-podiy | Chrome (перехід із Google News) | OK, 06.11.2026 09:48, колонка А. Нєбитова | SC-43, SC-44, SC-45, SC-46, SC-48
+https://biz.liga.net/ua/pharma/article/novyy-karfahen-podrobytsi-pro-bahatomiliardnyy-narkobiznes-khimprom | Chrome | OK, 05.11.2026 14:00; відкрита лише перша частина (пейвол) | SC-47
+https://t.me/s/pgo_gov_ua?q=Хімпром ; ?q=U420 | curl (200) | нових постів ОГП після 31.08.2026 не знайдено (36463, 36726, 39975) | —
+https://t.me/s/UA_National_Police?q=Хімпром ; ?q=U420 | curl (200) | нові пости 81361 і 81376 (05.11.2026) | —
+https://t.me/UA_National_Police/81361?embed=1 | curl (200) | OK, 05.11.2026: т.в.о. Голови НПУ М. Цуцкірідзе — «від квітня жоден її магазин не відновив роботу»; повторює SC-25, окремої картки не створено | —
+https://www.pravda.com.ua/news/2026/11/06/8061509/ | WebSearch (лише заголовок) | «Хімпром» планував підкупити міністра Клименка через оточення — предмет «Карфагена», не відкривалося, не використано | —

@@ -1,0 +1,30 @@
+# Журнал перевірки URL — Red team, «Хімпром» і U420
+
+Дата перевірки: 06.11.2026
+Агент: Red team. Researcher веде окремий журнал url_check_raw.txt.
+Інструменти: на початку проходу Chrome MCP не був підключений (ToolSearch не знайшов chrome_*, сервер повернув 500). Тоді використовувалися WebSearch, WebFetch і curl. Після перепідключення ключові URL повторно відкрито в Chrome (chrome_get_web_content) в окремому вікні.
+
+| URL | Інструмент | Результат | Статус |
+|---|---|---|---|
+| https://npu.gov.ua/news/narkotorhivlia-nasylnytski-zlochyny-ta-shakhraiski-call-tsentry-natspolitsiia-vykryla-uchasnykiv-zlochynnoi-spilnoty-khimprom | Chrome | Відкрито, повний текст | ПЕРВИННЕ |
+| https://gp.gov.ua/ua/posts/narkotorgivlia-call-centri-ta-nasilnicki-zlocini-vikrito-diyalnist-zlocinnogo-ugrupovannya-ximprom | Chrome | «404 Not Found», двічі. У журналі «Карфагена» того ж дня — відкрито; можливий тимчасовий збій або переміщення | недоступне (404) |
+| https://zakon.rada.gov.ua/laws/show/60/95-%D0%B2%D1%80/print | WebFetch → 403; curl → 200 | ст. 1 і ст. 13 звірено | ПЕРВИННЕ |
+| https://zakon.rada.gov.ua/laws/show/2341-14/print | curl | 200, ст. 307 звірено | ПЕРВИННЕ |
+| https://zakon.rada.gov.ua/laws/show/146-2026-%D0%BF | Chrome (текст); curl (/print, дата публікації) | Відкрито, текст збігається; опубл. «Урядовий кур'єр» 07.02.2026 № 32 | ПЕРВИННЕ |
+| https://zakon.rada.gov.ua/laws/show/770-2000-%D0%BF/print | curl | 200; ADB-4en-PINACA, ADB-PINACA, MDMB-4en-PINACA є в Переліку | ПЕРВИННЕ (дата внесення позицій не звірена) |
+| https://zakon.rada.gov.ua/laws/show/1213-2026-%D0%BF/print | curl | 200, генеричний контроль груп | ПЕРВИННЕ |
+| https://zakon.rada.gov.ua/laws/show/1422-2025-%D0%BF/print | curl | 200; стосується налбуфіну, не канабіноїдів (нерелевантне) | ПЕРВИННЕ |
+| https://bihus.info/merezha-magazyniv-yaku-masovo-reklamuvaly-blogery-prodaye-narkotyky-bihus-info/ | WebFetch, потім Chrome | Відкрито, текст збігається | ДОСТУПНЕ |
+| https://news.telegraf.com.ua/ukr/ukraina/5936052-mozhet-kupit-dazhe-podrostok-kto-vladelets-seti-u-420-kotoraya-prodaet-zapreshchennye-veshchestva | WebFetch, потім Chrome | Відкрито | ДОСТУПНЕ |
+| https://theukrainians.org/news/cbd-tovary-suveniry-chy-narkotyky-shcho-vidbuvaietsia-dovkola-merezhi-u420/ | Chrome | Відкрито | ДОСТУПНЕ |
+| https://www.slidstvo.info/news/advokatka-u420-kazhe-shcho-zaborona-syntetychnoho-kanabinoidu-shkodyt-investytsiiam-cholovika-iakyy-buv-zasudzhenyy-za-te-shcho-vkrav-choven-i-izdyv-na-mopedi-pid-diieiu-narkotykiv/ | Chrome | Відкрито | ДОСТУПНЕ |
+| https://www.slidstvo.info/news/pomichnyk-suddi-rezhyser-i-advokatka-zhurnalisty-vstanovyly-khto-dopomahav-rozbudovuvaty-u420/ | Chrome | Відкрито | ДОСТУПНЕ |
+| https://www.obozrevatel.com/ukr/section-ekonomika-glavnaya/economy/news-ne-vidkryvsya-zhoden-mahazyn-stala-vidoma-dolya-skandalnoyi-merezhi-lehalnykh-psykhotropiv-u420-05-11-2026.html | Chrome | Відкрито | ВТОРИННЕ |
+| https://www.stopcor.org/ukr/section-uanews/news-popri-sprobi-pidkupu-ta-pogrozi-natspolitsiya-likviduvala-merezhu-u420-i-prodovzhue-sistemnu-protidiyu-himpromu-05-11-2026.html | Chrome | Відкрито | ВТОРИННЕ |
+| https://texty.org.ua/fragments/118641/yak-ximprom-kupuvav-prykryttya-v-ukrayinskyx-pravooxoronciv-i-planuvav-rozpravy-detali-spravy-nabu-karfahen/ | Chrome | Відкрито | ДОСТУПНЕ |
+| https://nabu.gov.ua/news/operatciia-karfagen-vykryto-novu-zlochynnu-organizatciiu/ | Chrome | Відкрито; U420, Буркін, Осіпов не згадуються | ПЕРВИННЕ |
+| https://www.occrp.org/ru/novosti/slidstvoinfo-ukraina-vvela-sankcii-protiv-predpolagaemyx-ucastnikov-narkokartelia-ximprom | Chrome | Відкрито | ДОСТУПНЕ |
+| https://zaxid.net/rozreklamovaniy_magazin_prodavav_nebezpechniy_narkotik_pid_viglyadom_suveniriv_n1633264 | Chrome | Відкрито | ДОСТУПНЕ |
+| https://uk.wikipedia.org/wiki/U420 | Chrome | Відкрито; лише як підказка | — |
+| https://npu.gov.ua/news | Chrome | Стрічка підвантажується динамічно; повідомлення НПУ від 05.11.2026 не знайдено | — |
+| u420.vercel.app, antikor-news.com | не відкривалися | Трапилися в результатах пошуку; непрозора редакційна позиція | НЕПІДТВЕРДЖЕНЕ |
