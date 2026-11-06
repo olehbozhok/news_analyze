@@ -28,6 +28,18 @@ Writer і Verifier — різні агенти ([`AGENTS.md`, розділ 2](..
 запасний варіант. Для кожного URL фіксуй інструмент; якщо Chrome недоступний — зазнач це.
 ```
 
+## Особливості сайтів
+
+Прийоми для сайтів, на яких агенти застрягали. Інструмент у журналі URL фіксувати так, як вказано в дужках.
+
+| Сайт | Проблема | Як читати |
+|---|---|---|
+| `reyestr.court.gov.ua/Review/<id>` (ЄДРСР) | текст рішення — у вкладеному `iframe#divframe` з власним скролом; скрол сторінки нічого не дає | повний текст уже в DOM: `document.getElementById('txtdepository').value` (HTML, прибрати теги) або `document.getElementById('divframe').contentDocument.body.innerText` через `chrome_javascript` («Chrome (JS, txtdepository)»); запасний варіант — `curl` сторінки й вміст `#txtdepository` («curl») |
+| `t.me/<канал>/<id>` (Telegram-канали відомств) | навігація Chrome на пост може не відкривати текст | `t.me/<канал>/<id>?embed=1` через `curl` або Chrome («curl, embed») |
+| `zakon.rada.gov.ua` | WebFetch повертає 403 | Chrome або `curl` з браузерним User-Agent |
+
+Як шукати судові рішення — [`AGENTS.md`, розділ 5, п. 23](../AGENTS.md).
+
 ## Що головний агент додає автоматично
 
 Без нагадування користувача, у кожен промпт:
