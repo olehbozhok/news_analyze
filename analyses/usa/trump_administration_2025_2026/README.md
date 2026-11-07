@@ -22,17 +22,18 @@
 |---|---|
 | [`README.md`](README.md) | Огляд, головні висновки, як читати |
 | [`00_metodolohiia.md`](00_metodolohiia.md) | Методологія, визначення «шкоди», шкала достовірності |
-| [`01_ekonomika_ta_taryfy.md`](01_ekonomika_ta_taryfy.md) | Тарифи, Верховний суд, OBBBA, шатдаун, макроефекти |
+| [`01_ekonomika_ta_taryfy.md`](01_ekonomika_ta_taryfy.md) | Тарифи, Верховний суд, OBBBA, шатдаун, макроефекти. 07.11.2026 точкові правки за звітом по документу 12 — `НА ПЕРЕВІРЦІ` (targeted addendum) |
 | [`02_immihratsiia_ta_prava.md`](02_immihratsiia_ta_prava.md) | Депортації, затримання, належна процедура, Нацгвардія |
 | [`03_verkhovenstvo_prava.md`](03_verkhovenstvo_prava.md) | Мін'юст, ФБР, USAID, держслужба, помста, суди |
 | [`04_zovnishnia_polityka.md`](04_zovnishnia_polityka.md) | Україна, НАТО, Гренландія, Близький Схід, виходи з організацій |
 | [`05_okhorona_zdorovia_ta_sotsialka.md`](05_okhorona_zdorovia_ta_sotsialka.md) | Medicaid, SNAP, ACA, RFK Jr., наука, освіта |
 | [`06_ekolohiia_ta_enerhetyka.md`](06_ekolohiia_ta_enerhetyka.md) | Париж, EPA, чисті кредити, видобуток |
 | [`07_shcho_vidkhylyv_kongres.md`](07_shcho_vidkhylyv_kongres.md) | Що саме відхилив/заблокував Конгрес — голосування й дати |
-| [`08_balans_i_kontrarguventy.md`](08_balans_i_kontrarguventy.md) | Сильні контраргументи, де теза про «шкоду» перебільшена |
+| [`08_balans_i_kontrarguventy.md`](08_balans_i_kontrarguventy.md) | Сильні контраргументи, де теза про «шкоду» перебільшена. 07.11.2026 точкова правка за звітом по документу 12 — `НА ПЕРЕВІРЦІ` (targeted addendum) |
 | [`09_verifikatsiia_dzherel.md`](09_verifikatsiia_dzherel.md) | Реєстр джерел, статуси перевірки, що не вдалося підтвердити |
 | [`10_dovhostrokovi_naslidky.md`](10_dovhostrokovi_naslidky.md) | Довгострокові наслідки 2027–2040: сценарії, індикатори, що закріплено vs оборотне. Перевірка: PASS після виправлень ([звіт](sources/verification_longterm.md)) |
-| [`11_zhyttia_bilshosti.md`](11_zhyttia_bilshosti.md) | Чи стало життя більшості кращим: доходи, ціни, житло, борг, S&P/AI, Іран, НАТО. Перевірка: PASS після виправлень ([звіт](sources/verification_zhyttia_bilshosti.md)) |
+| [`11_zhyttia_bilshosti.md`](11_zhyttia_bilshosti.md) | Чи стало життя більшості кращим: доходи, ціни, житло, борг, S&P/AI, Іран, НАТО. Перевірка: PASS після виправлень ([звіт](sources/verification_zhyttia_bilshosti.md)); 07.11.2026 внесено точкові правки за звітом по документу 12 — статус `НА ПЕРЕВІРЦІ` (targeted addendum) |
+| [`12_vymiriuvannia_inflatsii.md`](12_vymiriuvannia_inflatsii.md) | Вимірювання інфляції: зміни методології CPI/PCE, шатдаун-артефакти, якість даних, ревізія BEA 30.09.2026, вибір виміру. Статус: `НА ПЕРЕВІРЦІ` (звіт Verifier [PASS WITH CORRECTIONS](sources/verification_12_vymiriuvannia_inflatsii.md), виправлення внесено 07.11.2026; потрібен targeted addendum) |
 | [`sources/`](sources/README.md) | Сирі матеріали дослідницьких агентів, логи перевірки URL і звіти фактчекерів |
 
 ---
