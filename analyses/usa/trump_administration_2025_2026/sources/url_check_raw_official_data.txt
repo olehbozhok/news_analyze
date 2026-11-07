@@ -1,0 +1,33 @@
+# Журнал URL: підтема B (офіційні дані), 2026-11-07
+# формат: URL | інструмент | результат
+https://www.bls.gov/cpi/ | WebFetch | OK (CPI вер. 2026: 3,7% / ядро 2,6%; наступний реліз 10.11.2026)
+https://www.bls.gov/schedule/news_release/cpi.htm | WebFetch | OK, лише майбутні дати (жов.2026 -> 10.11.2026)
+https://api.bls.gov/publicAPI/v2/timeseries/data/ (POST; CUUR0000SA0, CUSR0000SA0, CUUR0000SA0L1E, CUSR0000SA0L1E, CWUR0000SA0, CUSR0000SEHA/SEHC, CUUR0000SEHA/SEHC, WPSFD4, WPUFD4) | curl | OK REQUEST_SUCCEEDED, 2024-2026
+https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCEPI,PCEPILFE | curl | OK (до 2026-09)
+https://www.bea.gov/data/personal-consumption-expenditures-price-index | WebFetch | OK (вер. 2026, реліз 29.10.2026, наст. 25.11.2026)
+https://www.bea.gov/news/schedule | curl | 200 (наст. реліз PCE 25.11.2026)
+https://www.bea.gov/data/income-saving/personal-income | curl | 200
+https://www.bea.gov/news/2025/personal-income-and-outlays-{january..december}-2025 (12 URL) | curl | 200 для січ.-вер.; жов.-груд. 2025 - сторінки під іншими slug (ДОСТУПНЕ, дати з автоматичного витягу)
+https://www.bea.gov/news/2026/personal-income-and-outlays-{january..september}-2026 | curl | 200
+https://www.bea.gov/news/2026/personal-income-and-outlays-october-and-november-2025 | curl | 200, ПЕРВИННЕ (22.01.2026; цитата про заміну релізів 26.11 і 19.12)
+https://www.bea.gov/news/2026/personal-income-and-outlays-december-2025 | curl | 200 (20.02.2026)
+https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026 | curl | 200, ПЕРВИННЕ (29.10.2026)
+https://www.bls.gov/bls/news-release/cpi.htm | curl | 403; Chrome | OK (архів CPI, дати з href)
+https://www.bls.gov/bls/news-release/ppi.htm | curl | 403; Chrome | OK (архів PPI; жовтень 2025 not published)
+https://www.bls.gov/schedule/news_release/ppi.htm | curl | 403 (не відкрито)
+https://www.bls.gov/news.release/archives/cpi_12182025.htm | Chrome | OK, ПЕРВИННЕ
+https://www.bls.gov/news.release/archives/cpi_10142026.htm | Chrome | OK, ПЕРВИННЕ
+https://www.bls.gov/news.release/archives/ppi_01142026.htm | Chrome | OK, ПЕРВИННЕ
+https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi.htm | Chrome | OK, ПЕРВИННЕ (змін. 15.09.2026)
+https://www.bls.gov/opub/mlr/2026/article/counterfactual-imputation-approaches-for-the-housing-component-of-the-october-2025-cpi.htm | Chrome | OK, ПЕРВИННЕ; пошук 'all items/CPI-U/core' - 0 збігів
+https://www.bls.gov/cpi/tables/relative-importance/2025.htm | Chrome | OK, ПЕРВИННЕ
+https://www.ssa.gov/oact/cola/colaseries.html | WebFetch | 403
+https://www.ssa.gov/news/en/press/releases/ | WebFetch | 403
+https://www.ssa.gov/oact/cola/latestCOLA.html | Chrome | OK, ПЕРВИННЕ (COLA 3,6%)
+https://www.everycrsreport.com/files/2026-05-27_IF12675_bbc09e49ba9513d3ecb34c6c7e516257dd38fe32.html | WebFetch | OK, ВТОРИННЕ (CRS)
+https://www.cbsnews.com/news/2027-tax-brackets-irs-inflation-adjustments/ | WebFetch | OK, ВТОРИННЕ (проєкція від 11.09.2026)
+https://www.irs.gov/newsroom/news-releases | Chrome | 404
+https://www.irs.gov/newsroom | Chrome | OK
+https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2027-taxpayers-continue-to-benefit-from-the-working-families-tax-cuts | Chrome | OK, ПЕРВИННЕ (IR-2026-133, 05.11.2026)
+https://minneapolisfed.org/article/2026/initially-delayed-the-pass-through-of-tariffs-to-consumer-prices-has-arrived | Chrome (get_web_content) | НЕ відкрито (повернув попередню вкладку); лише видача WebSearch - ДОСТУПНЕ
+WebSearch: COLA 2027; IRS 2027; CPI-E; core PCE vs core CPI gap; shelter weights CPI vs PCE; tariff pass-through | WebSearch | видача лише для пошуку, сторінки не відкривались (SF Fed 2013, FEDS Note 2026-04-08, Yale Budget Lab, Admiral Markets, PIMCO/pulse.bot)

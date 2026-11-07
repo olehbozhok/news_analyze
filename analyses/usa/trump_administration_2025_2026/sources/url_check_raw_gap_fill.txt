@@ -1,0 +1,30 @@
+# url_check_raw_gap_fill.txt — підтема F, 2026-11-07
+# Формат: URL | інструмент | результат
+https://bea.gov/news/blog/2026-08-17/annual-update-gdp-industry-and-state-stats-publicly-available-starting-sept-30 | WebFetch | 200, відкрито (BEA Wire, 17.08.2026)
+https://apps.bea.gov/scb/issues/2026/09-september/0926-nea-annual-update.htm | WebFetch | 200, прочитано перші 100 000 з 128 964 символів; графіки 8-10 (зображення) не читалися
+https://apps.bea.gov/scb/issues/2026/06-june/0626-nea-preview.htm | WebFetch | 200, відкрито
+https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026 | WebFetch | 200, відкрито (30.09.2026)
+https://www.bea.gov/sites/default/files/2026-09/pi0826.pdf | WebFetch (binary) + pdftotext локально | 200, відкрито; ревізованих 12-міс. значень за липень у тексті немає
+https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026 | WebFetch | 200, відкрито (первісні: PCE 3,7%, core 3,3% YoY за липень)
+https://www.techtimes.com/articles/328346/20260930/august-pce-inflation-cooled-34-bea-rewrote-how-it-measures-prices.htm | WebFetch | 200 (вторинне)
+https://www.goodman-macro.com/en/articles/20261003-pce-method-fed-reform/ | WebFetch | 200 (вторинне, аналітична компанія)
+https://www.banking.senate.gov/imo/media/doc/20260806lettertocommercebeaonmethodology.pdf | Chrome (chrome_navigate + chrome_get_web_content) | 403 Access Denied (Akamai); WebFetch у M-12 теж 403. ЗАБЛОКОВАНЕ
+https://www.banking.senate.gov/newsroom/minority/warren-presses-commerce-bureau-of-economic-analysis-on-changes-to-key-economic-data-metrics-potentially-affecting-inflation-readings | Chrome | "Senate.gov - Unauthorized" (блок). ЗАБЛОКОВАНЕ
+https://www.roic.ai/news/warren-presses-fed-on-pce-methodology-shift-set-to-cool-inflation-gauges-08-06-2026 | WebFetch | 403
+https://www.bls.gov/cpi/tables/imputation-source-201901-present.xlsx | WebFetch (binary збережено) + локальний розбір zip/xml | відкрито; Chrome не знадобився
+https://www.bls.gov/cpi/tables/response-rates/monthly-response-rates-201901-present.xlsx | curl 403; WebFetch (binary) + локальний розбір | відкрито
+https://www.bls.gov/cpi/tables/response-rates/home.htm | WebFetch | 200
+https://www.bls.gov/cpi/tables/response-rates/response-rates-cs-quote-data.htm | WebFetch | 200 (last modified 19.10.2026)
+https://www.bls.gov/cpi/notices/2026/data-collection-update.htm | WebFetch | 200 (last modified 22.10.2026)
+https://www.bls.gov/cpi/tables/relative-importance/2025.htm | WebFetch | 200 (Dec 2025; ваги 2024)
+https://www.bls.gov/cpi/tables/relative-importance/2024.htm | WebFetch | 200 (Dec 2024; ваги 2023)
+https://www.bls.gov/opub/mlr/2026/article/counterfactual-imputation-approaches-for-the-housing-component-of-the-october-2025-cpi.htm | WebFetch | 200 (Bowman & Brown, MLR, 12.05.2026)
+https://www.bls.gov/opub/mlr/2026/article/addressing-missing-consumer-expenditure-data-due-to-the-2025-lapse-in-appropriations.htm | WebFetch | 200 (Stockburger & Perrins, MLR, 26.06.2026)
+https://www.bls.gov/ppi/notices/2025/bls-to-discontinue-selected-ppis.htm | WebFetch | 200
+https://www.everycrsreport.com/reports/IN12596.html | WebFetch | 200 (CRS IN12596, 18.08.2025)
+https://www.oig.dol.gov/public/oaprojects/BLS%20Engagement_Letter.pdf | WebFetch | PDF зашифрований (AESV3), нечитний; дані про лист лише зі сніпета WebSearch
+oig.dol.gov FY26 Audit Workplan / auditprojects.htm | WebSearch (сніпет) | не відкривалися; статус "In Progress" зі сніпета
+https://www.amstat.org/docs/default-source/amstat-documents/the-nations-data-at-risk-2025/bureau-of-labor-statistics.pdf | WebFetch (binary) + pdftotext | відкрито (метадані: листопад 2025)
+https://cossa.org/wp-content/uploads/2026/03/FriendsofBLSFY27RecommendationLetter.pdf | WebFetch (binary) + pdftotext | відкрито (лист 10.03.2026)
+https://live.dailysignal.com/?p=120580 | WebFetch | 403; зміст лише зі сніпета
+Chrome: відкрито 2 нові вкладки (закрито), чужих вкладок не чіпано.

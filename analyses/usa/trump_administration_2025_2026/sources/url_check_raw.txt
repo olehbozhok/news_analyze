@@ -95,3 +95,9 @@
 402 https://www.usatoday.com/story/news/nation/2026/09/06/us-citizen-deported-to-mexico-allowed-home-after-nearly-5-months/91569893007/
 200 https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-launches-trumprx-gov-to-bring-lower-drug-prices-to-american-patients/
 200 https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/
+
+# Editor 2026-11-07 (Chrome MCP, chrome_navigate + chrome_get_web_content, нова вкладка)
+https://www.bls.gov/bls/history/commissioners/ 200 відкрито, SC-93
+https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi-faq.htm 200 відкрито, п. 16, SC-35
+https://www.bls.gov/news.release/archives/empsit_08012025.htm 200 відкрито, ревізія -258 тис., SC-01
+https://www.bls.gov/bls/history/commissioners.htm 404 (застарілий шлях)

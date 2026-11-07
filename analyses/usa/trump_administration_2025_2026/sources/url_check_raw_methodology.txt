@@ -1,0 +1,28 @@
+# url_check_raw_methodology.txt  (2026-11-07)  Формат: URL | інструмент | результат
+# Chrome (chrome_*) і browser-use не використовувались; WebFetch/WebSearch (запасний варіант).
+https://www.bls.gov/CPI/tables/imputation.htm | WebFetch | OK (пояснення; без таблиці)
+https://www.bls.gov/cpi/tables/imputation-cs-data.htm | WebFetch | OK (IX.2025–IX.2026)
+https://www.bls.gov/cpi/notices/2025/methodology-changes-2025.htm | WebFetch | OK
+https://www.bls.gov/cpi/notices/2026/data-collection-update.htm | WebFetch | OK (modified 22.10.2026)
+https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi-faq.htm | WebFetch | OK (modified 16.09.2026)
+https://www.bls.gov/cpi/tables/relative-importance/weight-update-information-2027.htm | WebFetch | OK (modified 30.07.2026)
+https://www.everycrsreport.com/reports/IN12596.html | WebFetch | OK
+https://news.bloomberglaw.com/payroll/trumps-bls-pick-brett-matsumoto-confirmed-in-senate-vote | WebFetch | OK
+https://www.mortgagenewsdaily.com/news/05152026-cpi-shelter-shutdown | WebFetch | OK
+https://www.rbc.com/en/economics/us-analysis/us-featured-analysis/pce-deflator-update-a-retroactive-revision-not-a-disinflationary-signal/ | WebFetch | OK
+https://www.fxstreet.com/news/united-states-pce-methodology-tweaks-seen-as-marginal-td-securities-202607231453 | WebFetch | OK
+https://www-ak-ms.foxbusiness.com/economy/labor-department-inspector-general-announces-audit-bls-data-collection-challenges | WebFetch | OK
+https://www.banking.senate.gov/newsroom/minority/warren-presses-commerce-bureau-of-economic-analysis-on-changes-to-key-economic-data-metrics-potentially-affecting-inflation-readings | WebFetch | 403 Forbidden (ЗАБЛОКОВАНЕ)
+https://www.banking.senate.gov/imo/media/doc/20260806lettertocommercebeaonmethodology.pdf | WebFetch | 403 Forbidden (ЗАБЛОКОВАНЕ)
+https://www.axios.com/2025/06/12/trump-inflation-gdp-jobs-report | WebFetch | 403 Forbidden; лише сніпет WebSearch
+https://san.com/cc/trump-fires-labor-dept-official-after-weak-jobs-report-downward-revisions/ | WebSearch | сніпет, не відкривався
+https://katv.com/news/nation-world/economists-push-back-on-trumps-claims-that-unfavorable-jobs-data-was-rigged-jobs-report-bls-commissioner-fired-economy-tariffs-businesses-inflation-hiring | WebSearch | сніпет, не відкривався
+https://www.inquirer.com/politics/nation/trump-pulls-bureau-labor-statistics-nomination-ej-antoni-20250930.html | WebSearch | сніпет, не відкривався
+https://www.apr.org/business-education/2025-10-01/trumps-controversial-nominee-drops-bid-to-head-vital-data-gathering-agency | WebSearch | сніпет, не відкривався
+https://truflation.com/blog/truflation-2026-cpi-weights-report | WebSearch | сніпет, не відкривався
+https://www.advisorperspectives.com/commentaries/2026/08/05/pce-makeover | WebSearch | сніпет, не відкривався
+https://www.amstat.org/docs/default-source/amstat-documents/the-nations-data-at-risk-2025/bureau-of-labor-statistics.pdf | WebSearch | сніпет, не відкривався
+https://www.c2er.org/2025/06/proposed-federal-budget-signals-cuts-to-core-economic-data-capacity/ | WebSearch | сніпет, не відкривався
+https://cossa.org/wp-content/uploads/2026/03/FriendsofBLSFY27RecommendationLetter.pdf | WebSearch | сніпет, не відкривався
+https://www.roic.ai/news/us-september-pce-and-personal-income-report-rescheduled-for-december-release-11-24-2025 | WebSearch | сніпет, не відкривався
+https://www.roic.ai/news/bls-reschedules-january-employment-report-for-february-11-amid-government-shutdown-02-04-2026 | WebSearch | сніпет, не відкривався

@@ -1,0 +1,18 @@
+# Журнал URL, підтема E (цілісність даних). Дата: 2026-11-07
+# Інструмент: WebFetch/WebSearch (Chrome chrome_* не завантажувався і не використовувався).
+# Формат: URL | інструмент | результат
+https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi.htm | WebFetch | ВІДКРИТО (Last Modified 15.09.2026)
+https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi-faq.htm | WebFetch | ВІДКРИТО (Last modified 16.09.2026)
+https://www.bls.gov/opub/mlr/2026/article/counterfactual-imputation-approaches-for-the-housing-component-of-the-october-2025-cpi.htm | WebFetch | ВІДКРИТО (MLR, травень 2026)
+https://www.bls.gov/cpi/notices/2025/collection-reduction.htm | WebFetch | ВІДКРИТО (Last Modified 16.06.2025); "15 percent" і "<0.01 pp" на сторінці ВІДСУТНІ
+https://www.bls.gov/news.release/archives/prebmk_08282026.htm | WebFetch | ВІДКРИТО
+https://www.aljazeera.com/economy/2025/8/1/trump-fires-official-overseeing-jobs-data-after-dismal-employment-numbers | WebFetch | ВІДКРИТО
+https://www.nbcmiami.com/news/national-international/fact-check-no-evidence-for-trumps-claims-of-rigged-or-phony-job-numbers/3672794/ | WebFetch | ВІДКРИТО (FactCheck.org, 04.08.2025)
+https://news.bloomberglaw.com/payroll/trumps-bls-pick-brett-matsumoto-confirmed-in-senate-vote | WebFetch | ВІДКРИТО частково (текст обрізано)
+https://www.govexec.com/management/2025/08/neutrality-agency-has-been-eliminated-stats-based-feds-decry-bls-chiefs-firing/407272 | WebFetch | ВІДКРИТО (06.08.2025)
+https://www.mnimarkets.com/articles/bls-confirms-to-mni-that-housing-indices-unchanged-in-october-1766173201066 | WebFetch | ВІДКРИТО (19.12.2025)
+https://www.mortgagenewsdaily.com/news/05152026-cpi-shelter-shutdown | WebFetch | ВІДКРИТО (15.05.2026)
+https://edition.cnn.com/2025/06/05/economy/cpi-data-bls-reductions | WebFetch | НЕДОСТУПНО (HTTP 451); зміст лише з пошукових анотацій
+https://www.epi.org/blog/todays-bls-preliminary-benchmark-revisions-are-necessary-for-timely-and-accurate-data-not-fodder-for-trumps-attacks/ | WebFetch | ЗАБЛОКОВАНЕ (403)
+https://www.amstat.org/docs/default-source/amstat-documents/the-nations-data-at-risk-2025/Statements-Supporting-Official-Statistics-Aug-Nov-2025.pdf | WebFetch | ВІДКРИТО, текст НЕ прочитано (стиснутий PDF)
+# Лише у видачі WebSearch (НЕ відкривались): san.com/cc/white-house-withdraws-nomination-of-e-j-antoni-to-lead-bureau-of-labor-statistics/ ; keyt.com/politics/cnn-us-politics/2025/09/30/white-house-withdraws-antonis-nomination-to-lead-bls/ ; fedscoop.com/statistics-public-data-leaders-condemn-trump-order-fire-bls-commissioner ; americanactionforum.org/daily-dish/revisions-published-with-thankfully-little-fanfare/ ; econoday.com/?p=16941 ; wolfstreet.com/2025/12/18/todays-doctored-cpi-inflation-release-is-like-a-bad-joke-but-very-serious-though-it-suits-the-administrations-narrative/ ; fortune.com/2025/06/13/bls-data-federal-reserve-cpi-employment/ ; aarp.org/social-security/will-shutdown-affect-cola-announcement/ ; roic.ai (Wiatrowski 24.02.2026)

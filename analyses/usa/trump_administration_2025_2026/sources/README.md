@@ -13,6 +13,10 @@
 | [`verification_notes.md`](verification_notes.md) | Лог виправлень після аудитів |
 | [`verification_longterm.md`](verification_longterm.md) | Аудит [`10_dovhostrokovi_naslidky.md`](../10_dovhostrokovi_naslidky.md) |
 | [`verification_zhyttia_bilshosti.md`](verification_zhyttia_bilshosti.md) | Аудит [`11_zhyttia_bilshosti.md`](../11_zhyttia_bilshosti.md) |
+| [`source_cards_12.md`](source_cards_12.md) | Source cards (93) для [`12_vymiriuvannia_inflatsii.md`](../12_vymiriuvannia_inflatsii.md) |
+| [`verification_12_vymiriuvannia_inflatsii.md`](verification_12_vymiriuvannia_inflatsii.md) | Звіт Verifier по [`12_vymiriuvannia_inflatsii.md`](../12_vymiriuvannia_inflatsii.md) і таблиця «Статус виправлень» |
+| [`agent_red_team_inflation_raw.md`](agent_red_team_inflation_raw.md) | Сирі нотатки Red team по документу 12 |
+| `agent_methodology_raw.md`, `agent_official_data_raw.md`, `agent_alternative_measures_raw.md`, `agent_macro_indicators_raw.md`, `agent_data_integrity_raw.md`, `agent_gap_fill_raw.md` | Сирі нотатки дослідників документа 12 (у тексті не цитуються); логи `url_check_raw_*.txt` |
 
 ## Результати перевірки URL
 

@@ -1,0 +1,48 @@
+# URL check log, підтема D (macro indicators), дата 2026-11-07. Формат: URL | інструмент | результат
+# CH = Chrome MCP chrome_get_web_content (новий таб/вікно); WF = WebFetch; WS = WebSearch (сніпет, URL не відкрито)
+
+https://bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-2nd | CH | OK, повний текст (M-01)
+https://bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026 | CH | OK (M-03)
+https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026 | WF | 404 (www + інший slug); канонічний URL без www відкрито через CH
+https://bea.gov/index.php/news/blog/2026-08-17/annual-update-gdp-industry-and-state-stats-publicly-available-starting-sept-30 | CH | OK
+https://apps.bea.gov/scb/issues/2026/06-june/0626-nea-preview.htm | CH | OK
+https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026 | CH | OK (M-05)
+https://bea.gov/news/2026/personal-income-and-outlays-august-2026 | CH | OK (M-14)
+https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026 | CH | OK (M-14)
+https://www.bea.gov/sites/default/files/2026-10/pi0926.pdf | CH | порожній текст (PDF); замінено HTML-релізом
+https://www.bls.gov/news.release/cpi.nr0.htm | CH | OK (M-02)
+https://www.bls.gov/news.release/realer.nr0.htm | CH | OK (M-06)
+https://www.bls.gov/news.release/empsit.nr0.htm | CH | OK (M-07); також WF OK
+https://www.bls.gov/news.release/empsit.t15.htm | CH | OK (M-08)
+https://www.bls.gov/news.release/empsit.t01.htm | CH | OK (Table A-1; M-11 спостереження)
+https://www.bls.gov/cps/methods/population-controls/experimental-series-accounting-for-January-2026-population-control-effects.htm | CH | OK (M-09)
+https://www.bls.gov/bls/congressional-reports/report-to-the-appropriations-committees-on-modernizing-the-current-population-survey-april-2026.htm | CH | OK (M-12)
+https://www.bls.gov/news.release/archives/presae_08282026.htm | CH | OK (state prelim benchmark; національне -79 тис. там немає)
+https://www.bls.gov/web/empsit/cesprelbmk.htm | CH | відкрилась, але порожня (лише шапка сайту); національна цифра НЕ перевірена за первинним
+https://www.bls.gov/opub/btn/volume-12/measuring-shrinkflation-and-its-impact-on-inflation.htm | CH | OK (M-21)
+https://www.bls.gov/opub/hom/cpi/calculation.htm | CH | OK (78 тис. симв., збережено у tool-results; ключові слова прочитано, не весь текст) (M-23)
+https://www.bls.gov/cpi/factsheets/owners-equivalent-rent-and-rent.htm | CH | OK (M-19)
+https://www.econoday.com/?p=16941 | CH | OK (M-10, вторинне)
+https://www.epi.org/blog/todays-bls-preliminary-benchmark-revisions-are-necessary-for-timely-and-accurate-data-not-fodder-for-trumps-attacks/ | WF 403; CH OK (дата 09.09.2025; позиція EPI)
+https://www.ftportfolios.com/Commentary/EconomicResearch/2026/9/10/bls-payroll-revisions-fall-back-in-line-down-just-79,000 | CH порожньо; WF повернув бінарний PDF (не прочитано) — НЕ використано
+https://federalreserve.gov/econres/notes/feds-notes/labor-force-growth-breakeven-employment-and-potential-gdp-growth-20260402.html | CH | OK (M-11)
+https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm | CH | OK (M-17)
+https://www.atlantafed.org/research-and-data/publications/policy-hub-macroblog/2026/04/09/more-than-missing-data-survey-response-rates-following-2025-government-shutdown | CH | OK (M-13)
+https://www.newyorkfed.org/newsevents/news/research/2026/20260811 | CH | OK (M-15)
+https://www.newyorkfed.org/microeconomics/hhdc.html | CH | OK; на 07.11.2026 останній звіт Q2 2026
+https://libertystreeteconomics.newyorkfed.org/2026/08/how-distressed-are-consumers-reconciling-diverging-credit-card-delinquency-measures/ | CH | OK (M-16)
+https://fred.stlouisfed.org/data/PCEPI | CH | OK (весь ряд; Last Updated 2026-10-29) (M-04)
+https://fred.stlouisfed.org/data/CPIAUCSL | WF | OK, але переказ малої моделі; потребує повторної перевірки CH (M-04)
+https://fred.stlouisfed.org/data/MORTGAGE30US | WF | OK, переказ; потребує перевірки CH (M-18)
+https://www.zillow.com/research/cpi-forecast-2026-june/ | CH | OK (M-20)
+https://www.apartmentlist.com/research/national-rent-data | CH | відмова/форма «US resident?»; не використано
+https://www.roic.ai/news/hassett-inflation-looks-like-its-back-needs-work-10-19-2026 | CH | OK (M-25, вторинне)
+https://www.ibtimes.co.uk/trump-inflation-remarks-rising-prices-1817296 | CH | OK (M-26, вторинне)
+https://www.scrippsnews.com/business/white-house-wages-are-up-contrary-to-bls-statistics | CH | OK; дата 06.09.2018 (історичний прецедент) (M-24)
+https://www.banking.senate.gov/newsroom/minority/senator-warren-statement-on-september-2026-cpi-and-updated-trumpflation-tracker-data | CH | "Unauthorized" (senate.gov блокує) — ЗАБЛОКОВАНЕ, не використано
+https://www.pnc.com/content/dam/pnc-com/pdf/aboutpnc/EconomicReports/EconomicUpdates/2026/PNC_Economics_Research_CPI_14_July_2026.pdf | CH порожньо; WF бінарний PDF — НЕ прочитано
+https://econofact.org/wp-content/uploads/2026/07/EF-Chats-Transcript-Zandi-The-Economy-and-the-Tenuously-Resilient-Consumer.pdf | CH порожньо; WF бінарний PDF; pypdf відсутній — НЕ прочитано (M-22 лише сніпет)
+
+# Лише WS-сніпети (URL не відкривались, не цитувати як джерело):
+https://tradingeconomics.com/... (різні) ; https://www.axis-intelligence.com (saving rate revision 2,7->4,4) ; UMich 1y 4,7% (жовтень, calendar-сніпет) ; SSA COLA 2027 3,6% (keepingupwithinflation.com, не SSA) ; Fox/Washington Examiner/Daily Beast (заяви White House 2025–26)
+# SSA COLA 2027 = 3,6% (CPI-W Q3 328,746 vs 317,265) — НЕПІДТВЕРДЖЕНЕ (лише сніпет); потрібен ssa.gov/oact/cola

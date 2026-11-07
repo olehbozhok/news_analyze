@@ -1,0 +1,45 @@
+Журнал перевірки URL, підтема C (альтернативні виміри). Дата: 2026-11-07. Формат: URL | інструмент | результат
+Chrome MCP (chrome_get_web_content) використано лише для двох URL; 403/429 не траплялося. Решта URL у розділі "WebSearch лише сніпет" НЕ відкривались.
+
+ВІДКРИТО (WebFetch):
+https://www.clevelandfed.org/indicators-and-data/median-cpi | WebFetch | 200, дані вересня 2026 (оновл. 14.10.2026)
+https://fred.stlouisfed.org/data/MEDCPIM158SFRBCLE | WebFetch | 200, серія до 2026-09
+https://www.dallasfed.org/research/pce | WebFetch | 200, дані вересня 2026 (оновл. 29.10)
+https://bea.gov/news/blog/2026-08-17/annual-update-gdp-industry-and-state-stats-publicly-available-starting-sept-30 | WebFetch | 200
+https://bea.gov/news/2026/personal-income-and-outlays-august-2026 | WebFetch | 200
+https://bea.gov/news/2026/personal-income-and-outlays-september-2026 | WebFetch | 200
+https://www.bls.gov/news.release/cpi.nr0.htm | WebFetch | 200, реліз вересня 2026 (текст стислий, без згадки carry-forward)
+https://www.bls.gov/opub/mlr/2026/article/counterfactual-imputation-approaches-for-the-housing-component-of-the-october-2025-cpi.htm | WebFetch | 200
+https://www.mortgagenewsdaily.com/news/05152026-cpi-shelter-shutdown | WebFetch | 200
+https://www.newyorkfed.org/microeconomics/sce | WebFetch | 200 (дата релізу не явна)
+https://www.sca.isr.umich.edu/ | WebFetch | 200, попередній листопад 2026
+https://fred.stlouisfed.org/series/T10YIE | WebFetch | 200, 2,23% на 2026-11-06
+https://fred.stlouisfed.org/series/T5YIFR | WebFetch | 200, 2,17% на 2026-11-06
+https://econbrowser.com/archives/2026/02/truflation-chief-economist-less-than-1-percent-inflation-yes | WebFetch | 200
+https://cryptobriefing.com/truflation-us-cpi-2-percent-bls-divergence/ | WebFetch | 200
+https://cryptobriefing.com/bea-pce-inflation-revision-fed-impact/ | WebFetch | 200
+https://predict.truflation.com/blog/truflation-us-monthly-inflation-report-january-2026 | WebFetch | 200, без явної дати
+https://www.cbsnews.com/news/americans-finances-getting-worse-gallup-poll-2026/ | WebFetch | 200
+https://en.wikipedia.org/wiki/Shadowstats.com | WebFetch | 200
+https://www.actionforex.com/?p=545993 | WebFetch | 200, але матеріал від 1.04.2024 (не 2026)
+
+ВІДКРИТО (Chrome):
+https://www.atlantafed.org/research-and-data/data/sticky-price-cpi | chrome_get_web_content (WebFetch дав обрізаний текст) | 200, оновл. 14.10.2026
+https://business.adobe.com/resources/digital-price-index.html | chrome_get_web_content | 200, але показує дані за липень 2025 (застаріло)
+
+WebSearch ЛИШЕ СНІПЕТ (НЕ відкривались, статус НЕПІДТВЕРДЖЕНЕ/ДОСТУПНЕ):
+https://www.statestreet.com/ie/en/insights/us-inflation-pricestats-march (та -january/-february/-may)
+https://www.roic.ai/news/dallas-fed-trimmed-mean-inflation-jumps-to-28-in-september-challenging-feds-patience-10-29-2026
+https://www.animasgr.it/en/research/pages/news/never-mind-the-gap.aspx
+https://www.kucoin.com/news/flash/bea-to-revise-pce-inflation-methodology-core-reading-may-drop-to-3-2-3-3
+https://www.bit.com/tr/knowledge-hub/cpi-vs-pce
+https://cryptobriefing.com/truflation-cpi-index-vs-bls-inflation-gap/
+https://forexfundamentals.com/economic-calendar/us-cpi/2026-10-14
+https://news.gallup.com/file/poll/715526/2026_10_13_Party-DSA-MAGA%20Topline%20and%20Tabs.pdf
+https://www.everycrsreport.com/files/2026-05-27_IF12675_bbc09e49ba9513d3ecb34c6c7e516257dd38fe32.html
+https://www.cbo.gov/publication/44090
+https://cosm.aei.org/the-cost-of-thriving-has-fallen-correcting-and-rejecting-the-american-compass-cost-of-thriving-index/
+https://www.hks.harvard.edu/centers/mrcbg/programs/growthpolicy/tracking-tariffs-are-retailers-passing-costs-consumers
+https://ideas.repec.org/p/nbr/nberwo/34496.html
+https://fortune.com/2026/05/11/trumptariff-cost-full-pass-through-on-consumers/
+https://www.webull.com/news/15220006205023232 (прогноз Truflation червня 2026)
