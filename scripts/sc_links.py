@@ -19,6 +19,11 @@
            посилання на неіснуючі картки, биті відносні посилання або
            застарілий блок посилань; попередження — картки без посилань.
 
+  --persons  маркери [P:slug] у документах аналізів (не в sources/) стають
+             посиланнями на persons/<країна>/<slug>/README.md; у картках
+             персон після маркера генерується блок «Згадки в аналізах».
+             Невідомий slug — помилка.
+
 Аргументи: шляхи до тек тем (analyses/<країна>/<тема>) або до файлів;
 без аргументів — усі теми в analyses/.
 """
@@ -283,11 +288,138 @@ def dir_links(files: list[Path], fix: bool) -> tuple[list[str], list[Path]]:
     return errors, changed
 
 
+PERSONS = ROOT / "persons"
+P_MARKER = "<!-- persons-backlinks: згенеровано scripts/sc_links.py --persons, не редагувати -->"
+P_RE = re.compile(r"\[P:([a-z0-9_]+)\]")
+P_LINK_RE = re.compile(r"\]\([^)\s]*persons/([a-z]+)/([a-z0-9_]+)/README\.md(?:#[^)]*)?\)")
+
+
+def person_index() -> tuple[dict[str, tuple[str, str]], list[str]]:
+    """slug -> (країна, заголовок картки); помилки для дублів slug."""
+    idx, dupes = {}, []
+    if not PERSONS.is_dir():
+        return idx, dupes
+    for country in sorted(p for p in PERSONS.iterdir() if p.is_dir()):
+        for pdir in sorted(p for p in country.iterdir() if p.is_dir()):
+            readme = pdir / "README.md"
+            if not readme.is_file():
+                continue
+            first = readme.read_text(encoding="utf-8").splitlines()[0]
+            title = first.lstrip("#").strip() or pdir.name
+            if pdir.name in idx:
+                dupes.append(f"persons: slug «{pdir.name}» існує в двох країнах")
+                continue
+            idx[pdir.name] = (country.name, title)
+    return idx, dupes
+
+
+def person_docs() -> list[Path]:
+    """Документи аналізів, у яких шукаються згадки персон (без sources/)."""
+    docs = []
+    for p in sorted((ROOT / "analyses").rglob("*.md")):
+        if "sources" in p.parts or "_templates" in p.parts:
+            continue
+        docs.append(p)
+    return docs
+
+
+def _rel(target: Path, start: Path) -> str:
+    import os
+    return os.path.relpath(target, start).replace(os.sep, "/")
+
+
+def person_link(slug: str, country: str, title: str, file: Path) -> str:
+    target = PERSONS / country / slug / "README.md"
+    return f"[{title}]({_rel(target, file.parent)})"
+
+
+def fix_person_markers(files: list[Path], idx: dict[str, tuple[str, str]]) -> tuple[list[str], list[Path]]:
+    errors, changed = [], []
+    for f in files:
+        text = f.read_text(encoding="utf-8")
+        out = []
+        for is_code, line in iter_body_segments(text):
+            if is_code:
+                out.append(line)
+                continue
+
+            def fn(chunk: str) -> str:
+                def repl(m):
+                    slug = m.group(1)
+                    if slug not in idx:
+                        errors.append(f"{f}: невідома персона у маркері [P:{slug}]")
+                        return m.group(0)
+                    country, title = idx[slug]
+                    return person_link(slug, country, title, f)
+                return P_RE.sub(repl, chunk)
+
+            out.append(transform_line(line, fn))
+        new = "\n".join(out)
+        if new != text:
+            f.write_text(new, encoding="utf-8")
+            changed.append(f)
+    return errors, changed
+
+
+def check_person_markers(files: list[Path], idx: dict[str, tuple[str, str]]) -> list[str]:
+    errors = []
+    for f in files:
+        for m in P_RE.finditer(non_code_text(f.read_text(encoding="utf-8"))):
+            if m.group(1) not in idx:
+                errors.append(f"{f}: невідома персона у маркері [P:{m.group(1)}]")
+    return errors
+
+
+def mentions(idx: dict[str, tuple[str, str]]) -> dict[str, set[Path]]:
+    found: dict[str, set[Path]] = {slug: set() for slug in idx}
+    for f in person_docs():
+        text = non_code_text(f.read_text(encoding="utf-8"))
+        for m in P_RE.finditer(text):
+            if m.group(1) in found:
+                found[m.group(1)].add(f)
+        for m in P_LINK_RE.finditer(text):
+            if m.group(2) in found:
+                found[m.group(2)].add(f)
+    return found
+
+
+def backlinks_block(slug: str, docs: set[Path], readme: Path) -> str:
+    if not docs:
+        return ""
+    lines = [P_MARKER, "", "## Згадки в аналізах", ""]
+    for d in sorted(docs):
+        lines.append(f"- [{d.relative_to(ROOT).as_posix()}]({_rel(d, readme.parent)})")
+    return "\n".join(lines) + "\n"
+
+
+def person_backlinks(fix: bool) -> tuple[list[str], list[Path]]:
+    idx, errors = person_index()
+    found = mentions(idx)
+    changed = []
+    for slug, (country, _title) in sorted(idx.items()):
+        readme = PERSONS / country / slug / "README.md"
+        text = readme.read_text(encoding="utf-8")
+        pos = text.find(P_MARKER)
+        body = text[:pos].rstrip("\n") if pos != -1 else text.rstrip("\n")
+        want = backlinks_block(slug, found[slug], readme)
+        new = body + ("\n\n" + want if want else "\n")
+        if new == text:
+            continue
+        if fix:
+            readme.write_text(new, encoding="utf-8")
+            changed.append(readme)
+        else:
+            errors.append(f"{readme}: блок «Згадки в аналізах» застарів (запустіть --persons --fix)")
+    return errors, changed
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     mode = ap.add_mutually_exclusive_group(required=True)
     mode.add_argument("--fix", action="store_true")
     mode.add_argument("--check", action="store_true")
+    ap.add_argument("--persons", action="store_true",
+                    help="маркери [P:slug] і блок «Згадки в аналізах» у картках persons/")
     ap.add_argument("paths", nargs="*")
     ns = ap.parse_args()
     all_err, all_warn = [], []
@@ -301,6 +433,21 @@ def main() -> int:
     all_err += errors
     for f in changed:
         print(f"оновлено (посилання на README): {f.relative_to(ROOT)}")
+    if ns.persons:
+        idx, perr = person_index()
+        all_err += perr
+        docs = person_docs()
+        if ns.fix:
+            perr, pchanged = fix_person_markers(docs, idx)
+            all_err += perr
+            for f in pchanged:
+                print(f"оновлено (маркери персон): {f.relative_to(ROOT)}")
+        else:
+            all_err += check_person_markers(docs, idx)
+        perr, pchanged = person_backlinks(fix=ns.fix)
+        all_err += perr
+        for f in pchanged:
+            print(f"оновлено (згадки персон): {f.relative_to(ROOT)}")
     for w in all_warn:
         print(f"попередження: {w}")
     for e in all_err:

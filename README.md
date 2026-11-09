@@ -11,7 +11,7 @@
 - [`analyses/ukraine/`](analyses/ukraine/README.md)
 - [`analyses/usa/`](analyses/usa/README.md)
 
-Перелік аналізів зі статусами — у `README.md` кожної країни.
+Перелік аналізів зі статусами — у `README.md` кожної країни. Картки персон, які фігурують в аналізах, — у [`persons/`](persons/README.md) (одна особа — одна картка незалежно від кількості тем).
 
 ## Службове
 
@@ -21,6 +21,7 @@
 | [`CLAUDE.md`](CLAUDE.md) | Імпортує `AGENTS.md` для Claude Code |
 | [`agents/`](agents/README.md) | Канонічні файли ролей агентів (researcher, writer, verifier, editor, red_team) |
 | [`_templates/`](_templates/README.md) | Заготовки для нового аналізу |
+| [`persons/`](persons/README.md) | Картки персон за країнами (6.5) |
 
 ---
 

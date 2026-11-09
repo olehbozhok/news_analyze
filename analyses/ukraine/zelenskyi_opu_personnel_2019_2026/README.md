@@ -22,8 +22,8 @@
 | [`scope_contract.md`](scope_contract.md) | Scope contract (AGENTS.md, 6.1) | — |
 | [`AGENTS.md`](AGENTS.md) | Локальна специфіка теми: правила карток персон | — |
 | [`01_liudy_opu.md`](01_liudy_opu.md) | Реєстр людей ОП за категоріями посад, з посиланнями на картки персон і картки [SC-01]–[SC-125] | ГОТОВО |
-| [`persons/ukraine/README.md`](../../../persons/ukraine/README.md) | Індекс 61 персони (спільний для аналізів України, поза темою) | ГОТОВО |
-| `persons/ukraine/<slug>/README.md` (поза темою) | Картка персони: посади, періоди, картки реєстру, питання | ГОТОВО |
+| [`persons/ukraine/README.md`](../../../persons/ukraine/README.md) | Індекс 61 персони (спільний для аналізів України, поза темою) | — |
+| `persons/ukraine/<slug>/README.md` (поза темою) | Картка персони: посади, періоди, картки реєстру, питання | — |
 | [`sources/README.md`](sources/README.md) | Source cards, research brief, сирі нотатки | — |
 
 ## Актуальність даних (vintage)
