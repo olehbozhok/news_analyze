@@ -14,3 +14,7 @@ desktop.ini
 # Scratch
 tmp/
 *.tmp
+
+# Python
+__pycache__/
+*.pyc
