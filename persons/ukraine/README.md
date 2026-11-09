@@ -25,7 +25,7 @@
 | Юлія Соколовська | [yuliia_sokolovska/](yuliia_sokolovska/README.md) | Заступниця Керівника ОП | 12.03.2020 - 05.09.2024 | реєстр |
 | Роман Машовець | [roman_mashovets/](roman_mashovets/README.md) | Заступник Керівника ОП | 22.04.2020 - 30.12.2024 | реєстр |
 | Олег Татаров | [oleh_tatarov/](oleh_tatarov/README.md) | Заступник Керівника ОП | з 05.08.2020 | картка |
-| Юлія Свириденко | [yuliia_svyrydenko/](yuliia_svyrydenko/README.md) | Заступниця Керівника ОП | 22.12.2020 - 04.11.2021 | реєстр |
+| Юлія Свириденко | [yuliia_svyrydenko/](yuliia_svyrydenko/README.md) | Заступниця Керівника ОП | 22.12.2020 - 04.11.2021 | картка |
 | Олексій Дніпров | [oleksii_dniprov/](oleksii_dniprov/README.md) | Керівник Апарату ОП, заступник Керівника ОП | 25.06.2019 - 29.03.2024 | реєстр |
 | Ігор Брусило | [ihor_brusylo/](ihor_brusylo/README.md) | Заступник Керівника ОП | 17.03.2021 - 03.03.2026 | реєстр |
 | Андрій Сибіга | [andrii_sybiha/](andrii_sybiha/README.md) | Заступник Керівника ОП | 31.05.2021 - 12.04.2024 | реєстр |

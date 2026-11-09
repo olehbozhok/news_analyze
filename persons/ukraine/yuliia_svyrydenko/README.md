@@ -1,7 +1,7 @@
 # Юлія Свириденко
 
 **Актуальна станом на:** 09.11.2026
-**Покриття:** рядок реєстру (персональний аналіз не проводився)
+**Покриття:** картка
 **Реєстр:** [01_liudy_opu.md](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md)
 
 ## Посади в ОП
@@ -9,6 +9,10 @@
 | Посада | Період | Підстава | Картки реєстру |
 |---|---|---|---|
 | Заступниця Керівника ОП | 22.12.2020 - 04.11.2021 | Призначення - Указ № 581/2020; звільнення - Указ № 562/2021 | [SC-52](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/sources/source_cards_01.md#sc-52), [SC-53](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/sources/source_cards_01.md#sc-53) |
+
+## Спорні епізоди
+
+- Названа «людиною Єрмака» (2026). Політолог Вадим Денисенко в коментарі «Еспресо» назвав Свириденко «ставленицею Андрія Єрмака»; тема [svyrydenko_2026](../../../analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md) подає це як оцінку джерела, а не як документ. Статус: позиція джерела. → [нотатка «Люди Єрмака»](../andrii_ermak/01_liudy_ermaka.md)
 
 ## Питання для подальшого аналізу
 
@@ -21,3 +25,4 @@
 ## Згадки в аналізах
 
 - [analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md)
+- [persons/ukraine/andrii_ermak/01_liudy_ermaka.md](../andrii_ermak/01_liudy_ermaka.md)

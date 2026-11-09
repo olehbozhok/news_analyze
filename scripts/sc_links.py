@@ -314,12 +314,18 @@ def person_index() -> tuple[dict[str, tuple[str, str]], list[str]]:
 
 
 def person_docs() -> list[Path]:
-    """Документи аналізів, у яких шукаються згадки персон (без sources/)."""
+    """Документи, у яких шукаються згадки персон: аналізи (без sources/) і нотатки персон."""
     docs = []
     for p in sorted((ROOT / "analyses").rglob("*.md")):
         if "sources" in p.parts or "_templates" in p.parts:
             continue
         docs.append(p)
+    persons = ROOT / "persons"
+    if persons.is_dir():
+        for p in sorted(persons.rglob("*.md")):
+            # лише документи в папці персони: persons/<країна>/<slug>/*.md
+            if len(p.relative_to(persons).parts) >= 3 and "_templates" not in p.parts:
+                docs.append(p)
     return docs
 
 
@@ -372,14 +378,27 @@ def check_person_markers(files: list[Path], idx: dict[str, tuple[str, str]]) -> 
 
 def mentions(idx: dict[str, tuple[str, str]]) -> dict[str, set[Path]]:
     found: dict[str, set[Path]] = {slug: set() for slug in idx}
+    by_path = {
+        (PERSONS / country / slug / "README.md").resolve(): slug
+        for slug, (country, _t) in idx.items()
+    }
     for f in person_docs():
         text = non_code_text(f.read_text(encoding="utf-8"))
         for m in P_RE.finditer(text):
             if m.group(1) in found:
                 found[m.group(1)].add(f)
-        for m in P_LINK_RE.finditer(text):
-            if m.group(2) in found:
-                found[m.group(2)].add(f)
+        for m in LINK_RE.finditer(text):
+            href = m.group(1)
+            if re.match(r"^[a-z]+:", href) or href.startswith("#"):
+                continue
+            target = (f.parent / href.split("#", 1)[0]).resolve()
+            slug = by_path.get(target)
+            if not slug:
+                continue
+            country = idx[slug][0]
+            if (PERSONS / country / slug) in f.parents:
+                continue  # документ у папці самої персони не є згадкою про неї
+            found[slug].add(f)
     return found
 
 
