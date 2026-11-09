@@ -23,9 +23,12 @@
 
 1. Які обов'язки і сфера відповідальності на кожній посаді в ОП (публічні заяви ОП, оприлюднені розпорядження про розподіл обов'язків)?
 2. Чи є пов'язані з перебуванням в ОП публічні розслідування, деклараційні або конфліктні питання, верифіковані в окремій темі (поза межами цього реєстру)?
+3. Чи підтверджується первинними документами (САП/НАБУ, ЄДРСР) підозра, згадана в темі [`svyrydenko_2026`](../../../analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md) («Міндічгейт», 11.05.2026)? Тема створена до регламенту й не має source cards; до появи первинного джерела епізод у картці не подається як факт.
 
 <!-- persons-backlinks: згенеровано scripts/sc_links.py --persons, не редагувати -->
 
 ## Згадки в аналізах
 
+- [analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md](../../../analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md)
 - [analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md)
+- [analyses/ukraine/zelenskyi_opu_personnel_2019_2026/README.md](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/README.md)
