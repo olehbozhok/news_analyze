@@ -1,0 +1,1 @@
+FILE rt_zhovkva.txt KEY zhovkva HITS 0

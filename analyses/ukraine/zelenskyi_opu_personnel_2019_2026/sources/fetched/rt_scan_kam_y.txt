@@ -1,0 +1,1 @@
+FILE rt_kamyshyn_y.txt KEY kamyshin HITS 0

@@ -1,0 +1,1 @@
+FILE rt_kamyshin_radnik.txt KEY kamyshin HITS 0

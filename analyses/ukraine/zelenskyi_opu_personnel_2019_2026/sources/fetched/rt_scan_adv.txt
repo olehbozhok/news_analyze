@@ -1,0 +1,1 @@
+FILE rt_adv_ho_ft.txt KEY adv_ho HITS 0

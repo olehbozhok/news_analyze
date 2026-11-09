@@ -1,0 +1,79 @@
+# Журнал перевірки URL (реєстр людей ОП) — формат: URL | інструмент | результат | дата
+# chrome_* у середовищі відсутні; інструменти: browsermcp (Chrome користувача), curl+санація (python3 -I), WebSearch, WebFetch.
+# op.gov.ua не резолвиться (DNS) у curl/WebFetch/Chrome; «Керівництво Офісу» — через president.gov.ua/administration/office-management.
+https://zakon.rada.gov.ua/laws/show/301/2019 | browsermcp (субагент) | відкрито, документ не той (Муженко) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/302/2019 | browsermcp (субагент) | відкрито, документ не той (Хомчак) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/424/2019 | browsermcp (субагент) | відкрито, документ не той (Шмитько) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/417/2019 | browsermcp (субагент) | успіх, текст указу про утворення ОП (п.1 реорганізація АП) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/417/2019 | curl+санація | 200, повний текст поточної редакції від 06.01.2026 (структура ОП) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/304/2019 | curl+санація | 200, Богдан — Глава АП, 21.05.2019 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/435/2019 | curl+санація | 200, Богдан — Керівник ОП, 25.06.2019 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/47/2020 | curl+санація | 200, звільнення Єрмака з помічників, 11.02.2020 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/48/2020 | curl+санація | 200, Єрмак — Керівник ОП, 11.02.2020; сторінка посилається на 868/2025 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/868/2025 | curl+санація | 200, звільнення Єрмака з Керівника ОП, 28.11.2025 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/5/2026 | curl+санація | 200, Буданов — Керівник ОП, 02.01.2026 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/13/2026 | curl+санація | 200, остання редакція 417/2019 від 05.01.2026 | 09.11.2026
+https://uk.wikipedia.org/wiki/Офіс_Президента_України | curl+санація | 200, roadmap; орієнтир, не джерело факту | 09.11.2026
+https://uk.wikipedia.org/wiki/Керівник_Офісу_Президента_України | curl+санація | 200, список керівників (Богдан 2019-2020, Єрмак 2020-2025, Буданов з 2026) | 09.11.2026
+https://www.president.gov.ua/ | browsermcp | 200, сайт відкрився | 09.11.2026
+https://www.president.gov.ua/administration/office-management | browsermcp | 200, «Керівництво Офісу»: Буданов, Кислиця, 7 заступників, Вітушок (апарат), Никифоров | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=заступником+Керівника+Офісу+Президента&textl=1&bool=and | browsermcp | 46 указів (назви) | 09.11.2026
+https://zakon.rada.gov.ua/laws/main/u0b326d6d-fe6c-406d-8c19-42b03a061919.txt | curl | 200, список 46 указів-заступників | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/{438,440,442,444,446,448,631,633,637,653,675,676,714,78,152,153,310,482,580,581,101,221,284,287,562,592,42,28,230,203,204,205,206,208,210,211,212,614,615,616,620,621,791,889,603}/… | curl+санація | 200, оперативні частини знято (dz_*.txt) | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=першим+заступником+Керівника+Офісу+Президента&textl=1&bool=and | browsermcp | 3 укази: 438/2019, 482/2020, 14/2026 | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=першою+заступницею+Керівника+Офісу+Президента&textl=1&bool=and | browsermcp | 0 результатів («Нічого не знайдено») | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Вітушок&bool=and | browsermcp | 288/2021 призначення Керівником Апарату ОП; решта нерелевантні (дипломатичні ранги) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/288/2021 | curl+санація | 200, Вітушок — Керівник Апарату ОП, 09.07.2021 | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=прес-секретарем+Президента&textl=1&bool=and | browsermcp | 350/2019, 282/2021, 283/2021 (за Зеленського) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/350/2019 | browsermcp | 200, Мендель — прес-секретар, 03.06.2019 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/282/2021 | browsermcp | 200, звільнення Мендель, 09.07.2021 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/283/2021 | browsermcp | 200, Никифоров — прес-секретар, 09.07.2021 | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Керівником+Апарату+Офісу+Президента&textl=1&bool=and | browsermcp | 450/2019, 286/2021, 288/2021 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/450/2019 | browsermcp | 200, Дніпров — Керівник Апарату ОП, 25.06.2019 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/286/2021 | browsermcp | 200, звільнення Дніпрова з Керівника Апарату, 09.07.2021 | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=радником+Президента+України&textl=1&bool=and | browsermcp | сторінка 1 = всі 2019–2026 (~46 указів) | 09.11.2026
+https://zakon.rada.gov.ua/laws/main/u95d9d54b-dfeb-4884-81c8-3e11f61564f3.txt | curl | 200, повний список (604 рядки, відфільтровано 2019–2026) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/{радники: 8,50,185,312,313,330,431,451,488,507,547,548,557,564,807,666,667,668,100,227,326,483,245,246,247,248,285,309,531,86,269,127,182,589,506,622,623,872,15,65,66,621,844}/… | curl+санація | 200, оперативні частини знято (ad_*.txt) | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=радником+Керівника+Офісу+Президента&textl=1&bool=and | browsermcp | 0 результатів (посада без публічних указів) | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Спеціальним+уповноваженим&textl=1&bool=and | browsermcp | 79/2024, 88/2024, 74/2025, 494/2025, 660/2025 (+ нерелевантні) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/79/2024 | browsermcp | 200, Мойсюк СУ безпекових гарантій, 13.02.2024 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/88/2024 | browsermcp | 200, питання СУ безпекових гарантій, 22.02.2024 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/74/2025 | browsermcp | 200, звільнення Мойсюка, 07.02.2025 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/494/2025 | browsermcp | 200, Стефанішина СУ зі США, 17.07.2025 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/660/2025 | browsermcp | 200, звільнення Стефанішиної, 27.08.2025 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/886/2024 | browsermcp | 200, Кобилинська Уповноважений з прав військовослужбовців, 30.12.2024 | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/791/2025 | browsermcp | 200, звільнення Кобилинської, 15.10.2025 | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=помічником+Президента+України&textl=1&bool=and | browsermcp | 311/2019, 47/2020, 305/2019, 207/2024 (за Зеленського) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/311/2019 | curl (з назви в пошуковому списку; повний текст не звірений окремо) | назва підтверджена у списку пошуку | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/305/2019 | пошуковий список zakon | назва підтверджена; точну дату звірити при верифікації | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/207/2024 | пошуковий список zakon | назва підтверджена; точну дату звірити при верифікації | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/483/2020 | curl | 200, Трофімов радник Президента (поза штатом), 04.11.2020 (тест після тротлінгу) | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/1039/2026 | browsermcp | 200, Першим заступником Секретаря РНБО Колесник, 13.10.2026 — поза ОП | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/1079/2026 | browsermcp | 404 — такого указу в базі немає (згадка з пошуку не підтверджена) | 09.11.2026
+https://ukranews.com/ua/news/1122124-na-bankovij-ne-zmogly-vidpovisty-hto-narazi-vykonuye-obov-yazky-glavy-ofisu-prezydenta | browsermcp | 200 (curl 403 — antibot), стаття відкрита, цитата знята | 09.11.2026
+https://www.president.gov.ua/documents/8682025-57241 | WebSearch (звіт) | безпосередньо не відкривався; підтверджено через zakon 868/2025 | 09.11.2026
+https://www.president.gov.ua/documents/52026-57877 | WebSearch (звіт) | безпосередньо не відкривався; підтверджено через zakon 5/2026 | 09.11.2026
+https://www.president.gov.ua/documents/2972026-59077 | WebSearch (звіт) | безпосередньо не відкривався; непряма згадка про Директорат зовнішньої політики — прогалина зафіксована | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/107/2026-рп | WebSearch (звіт) | безпосередньо не відкривався; непряма згадка — прогалина зафіксована | 09.11.2026
+# --- Red team прохід 09.11.2026 (нові рядки нижче; наявні не редагувалися) ---
+https://zakon.rada.gov.ua/laws/find/a?text=Керівника Офісу Президента&textl=1&bool=and | fetch_safe (rt_head_title.txt, стор.1; rt_head_title_p2.txt, стор.2) | 200, 54 документи, усі в реєстрі | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Радником Президента України&textl=1&bool=and | fetch_safe (rt_radnik_title.txt) | 200, 604 документи; укази Зеленського #1-#47 всі в реєстрі | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Уповноваженим Президента України з питань захисту прав військовослужбовців&textl=1&bool=and | fetch_safe (rt_commiss_title.txt, rt_commiss_p2.txt) | 200, 60 документів; знайдено укази Свириденка 318/2019, 319/2019, 241/2021, Лещенка 727/2019, 244/2021, Семенченка 744/2019, 240/2021, Пушкарьової 209/2024, Положення 879/2019 | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Стефанішина&bool=and і &textl=1 | fetch_safe (rt_stefanyshyna.txt, rt_stef_title.txt) | 200, 9 указів з прізвищем у назві; ОП-заступництво відсутнє; посол 662/2025 (27.08.2025) і 696/2026 (03.08.2026) | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Руднєва&bool=and | fetch_safe (rt_rudneva.txt) | 200, 0 документів | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Жовква&bool=and і &textl=1 | fetch_safe (rt_zhovkva.txt, rt_zhovkva_title.txt) | 200, 321 згадка; титул — лише 676/2019 | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Міністром з питань стратегічних галузей промисловості&textl=1 | fetch_safe (rt_ministry.txt) | 200, лише Уруський; указу Камишина немає | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=Камішин / Камишин&textl=1 | fetch_safe (rt_kamyshin_i.txt, rt_kamyshyn_y.txt, rt_kamyshin_radnik.txt) | 200, понад 5000 нерелевантних — неінформативно | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=радником Керівника Офісу Президента&bool=and | fetch_safe (rt_adv_ho_ft.txt) | 200, 296 згадок; указів про призначення немає | 09.11.2026
+https://zakon.rada.gov.ua/laws/find/a?text=розпорядження Керівника Офісу Президента&textl=1 | fetch_safe (rt_orders_ho.txt) | 200, 0 результатів | 09.11.2026
+https://zakon.rada.gov.ua/laws/show/968/2026/print | fetch_safe (rt_968_2026.txt) | 200, склад Координаційної ради 28.09.2026; посади збігаються з розд. 14 реєстру | 09.11.2026
+https://www.ukrinform.ua/rubric-polytics/4072229-pomicniki-i-radniki-ermaka-zvilneni-a-lesenko-podolak-ta-bevz-perevedeni-na-insi-posadi-op.html | fetch_safe (rt_ukrinform_podolyak.txt) | 200, 22.12.2025, заява ОП: радники Єрмака звільнені, Лещенко/Подоляк/Бевз переведені; Лещенко: «перепризначені на посаду радників Офісу Президента» | 09.11.2026
+https://ukranews.com/ua/news/1128050-mizh-yermakom-ta-budanovym-stalo-vidomo-hto-keruvav-ofisom-prezydenta-u-grudni | fetch_safe (rt_ukranews_vitu.txt) | 200, 13.01.2026; ОП: кадрові рішення періоду в.о. — «через накази Керівника Апарату ОП»; Вітушок за «даними офіційного порталу» (не верифіковано) | 09.11.2026
+https://tsn.ua/ukrayina/na-front-mene-povernit-palisa-vidmovyvsia-vid-posady-posla-ukrayiny-u-ssha-3201615.html | fetch_safe (rt_tsn_palisa.txt) | 200, 28.10.2026; Паліса відмовився від посла США, залишився заступником | 09.11.2026
+https://www.ukrinform.ua/rubric-polytics/3969882-igor-zovkva-zastupnik-kerivnika-ofisu-prezidenta-ukraini.html | fetch_safe (rt_ukrinform_zhovkva.txt) | 200, 12.03.2025, Жовква — «заступник керівника Офісу Президента України» | 09.11.2026
+WebSearch: «Офіс Президента кадрові зміни жовтень листопад 2026...» | WebSearch | нових кадрових указів ОП у вікні не виявлено; Качка 1034/2026, Мамутов 126/2026-рп, Мудра з Ради підприємництва 1068/2026 — поза кадровими змінами ОП | 09.11.2026
+WebSearch: «Жовква перший заступник Керівника Офісу Президента» | WebSearch | Жовква — заступник (офіційна сторінка, Вікіпедія, Укрінформ 2025); першого заступника 2020-2025 не названо | 09.11.2026
+WebSearch: «Вітушок виконувала обов'язки керівника Офісу Президента грудень 2025» | WebSearch | кандидат-джерело ukranews 1128050 (відкрито), Вікіпедія/NV/BBC/Detector — не відкривалися | 09.11.2026
+WebSearch: «Подоляк радник Керівника Офісу Президента посада» | WebSearch | кандидат-джерела Укрінформ 4072229 і NV 50570370 (Укрінформ відкрито; NV не відкривався) | 09.11.2026
+WebSearch: «Паліса відмовився посол США...» | WebSearch | кандидат-джерела TSN/Zaxid/Espreso (TSN відкрито; Zaxid/Espreso не відкривалися) | 09.11.2026
+browsermcp: tab list | browsermcp | Chrome підключений; далі не використовувався | 09.11.2026

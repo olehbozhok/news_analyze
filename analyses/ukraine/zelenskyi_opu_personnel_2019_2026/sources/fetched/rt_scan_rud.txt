@@ -1,0 +1,1 @@
+FILE rt_rudneva.txt KEY rudneva HITS 0
