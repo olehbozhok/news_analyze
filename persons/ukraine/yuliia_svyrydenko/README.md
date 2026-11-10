@@ -24,5 +24,6 @@
 
 ## Згадки в аналізах
 
+- [analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md](../../../analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md)
 - [analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md)
 - [persons/ukraine/andrii_ermak/01_liudy_ermaka.md](../andrii_ermak/01_liudy_ermaka.md)

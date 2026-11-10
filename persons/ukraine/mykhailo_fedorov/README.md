@@ -20,4 +20,5 @@
 
 ## Згадки в аналізах
 
+- [analyses/ukraine/fedorov_minoborony_2026/01_analiz_pravlinnia.md](../../../analyses/ukraine/fedorov_minoborony_2026/01_analiz_pravlinnia.md)
 - [analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md)
