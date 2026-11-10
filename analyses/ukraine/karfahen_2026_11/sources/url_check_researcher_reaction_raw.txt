@@ -1,0 +1,71 @@
+# Журнал URL: Researcher, реакція влади на збір застави Дука / Рада-декларування / новина «Зеленський-Буданов-кошти»
+# Дата: 10.11.2026 (20:45-22:00 EET). Агент: Researcher (субагент).
+# Інструменти: web_extractor (check_urls/fetch_page/find_in_page), Bash curl, WebSearch.
+# Chrome (browsermcp) НЕ використано: web_extractor відкрив усе без збоїв, лестницю браузера не запускали.
+# Формат: URL | інструмент | результат
+
+https://zaxid.net/zelenskiy_prokomentuvav_prichetnist_spivrobitnikiv_sbu_do_spravi_karfagen_n1649632 | web_extractor fetch_page (browser) | OK 200, повний текст, published 2026-11-07T16:38+02:00 (json-ld)
+
+https://t.me/V_Zelenskiy_official/21721 | Bash curl (?embed=1&mode=tme) | OK, повний текст поста, datetime 2026-11-07T14:31:45+00:00
+https://t.me/s/Builder_Budanov | web_extractor find_in_page | THIN (redirect на Contact), 0 матчів, стрічка не віддається
+https://t.me/Builder_Budanov | Bash curl + web_extractor check_urls | THIN 90 chars, 0 постів у прев'ю (прев'ю вимкнено/немає)
+
+https://www.pravda.com.ua/news/2026/11/05/8061410 | web_extractor fetch_page (browser) | BLOCKED 403 (УП)
+https://www.pravda.com.ua/news/2026/11/05/8061410 | web_extractor fetch_page (render=static) | OK 200, повний текст, 2026-11-05T15:48+02:00 (json-ld)
+
+https://www.facebook.com/story.php?story_fbid=1087387044343635&id=100092170489440&mibextid=wwXIfr&rdid=VphdOCayLfYu10F4# | web_extractor check_urls | OK 200, title "Кирило Буданов / Kyrylo Budanov", 3655 chars
+https://www.facebook.com/story.php?... | web_extractor find_in_page («Закон один для всіх») | OK, 1 exact match verbatim=true, повний текст поста
+
+https://www.president.gov.ua/documents/52026-57877 | WebSearch (лише видача; сторінку не відкривав) | знайдено указ №5/2026 від 02.01.2026
+https://www.president.gov.ua/administration/office-management/kerivnik-ofisu-prezidenta-ukrayini | WebSearch (лише видача) | сторінка посади: Буданов Кирило Олексійович, Керівник ОП
+https://www.ukrinform.ua/rubric-polytics/4076171-... | WebSearch (лише видача) | Буданов офіційно призначений; Іващенко очолив ГУР
+
+https://nv.ua/ukr/ukraine/politics/sprava-karfagen-nardep-osadchuk-rozpoviv-pro-reakciyu-verhovnoji-radi-50658006.html | web_extractor fetch_page (browser) | OK 200, published 2026-11-10T21:05+02:00, текст (обрізано на 4500/5992, курсор zw8c75 — решта не потрібна: розділ «Справа Карфаген — що відомо»)
+
+https://nv.ua/ukr/ukraine/politics/deklaruvannya-dlya-viyskovosluzhbovciv-sbu-zelenskiy-zaproponuvav-skasuvannya-vidterminuvannya-50657735.html | web_extractor fetch_page (browser) | OK 200, published 2026-11-09T22:54+02:00, текст (4500/4878, решта — продовження бекграунду)
+
+https://www.slovoidilo.ua/2026/11/10/novyna/polityka/ofis-henprokurora-pochav-sluzhbove-rozsliduvannya-novymy-faktamy-spravi-karfahen | web_extractor fetch_page (browser) | OK 200, повний текст, 3374 chars
+
+https://itd.rada.gov.ua/billinfo/Bills/Card/71558 | web_extractor fetch_page (browser) | OK 200, текстова частина - лише список комітетів (JS-картка); listing links: Проєкт Закону/Подання/ПЗ/Порівняльна таблиця/Постанова — всі (09.11.2026)
+https://itd.rada.gov.ua/billinfo/Bills/Card/71558 | Bash curl + grep | OK, «Номер, дата реєстрації: 16220 від 09.11.2026» зчитано з HTML
+
+https://www.ukrinform.ua/rubric-polytics/4158192-budanov-prokomentuvav-zgadki-pro-sebe-na-zapisah-u-spravi-mudroi.html | web_extractor fetch_page (browser) | OK 200, published 2026-08-27T12:53+03:00, повний текст
+https://www.radiosvoboda.org/a/svoboda-live-plivky-nabu-budanov-mudra-zastava/33840681.html | web_extractor fetch_page (browser) | OK 200, published 2026-08-26T17:13+00:00, повний текст
+https://www.radiosvoboda.org/a/svoboda-live-ofis-zelens%ca%b9koho-plivky-nabu-forest-hamp-budanov/33839253.html | web_extractor fetch_page (browser) | OK 200, published 2026-08-25T17:11+00:00, 5000/5525 (курсор w262mz, решта не потрібна)
+https://zn.ua/ukr/anticorruption/u-spravi-shchodo-lehalizatsiji-150-mln-jak-zastavu-dlja-halushchenka-zjavivsja-chinovnik-op-jakoho-nazivajut-kirilo-oleksijovich.html | web_extractor fetch_page (browser) | OK 200, published 2026-08-26T18:11+03:00, 4500/11285 (курсор 6qxcn3, решта не потрібна для цілей C)
+
+# Лише пошукова видача (сторінки не відкривалися, статус ДОСТУПНЕ за видачею):
+https://www.president.gov.ua/documents/52026-57877 | WebSearch
+https://news.liga.net/ua/amp/war/news/rada-rozghliane-zakonoproiekt-pro-deklaruvannia-mayna-viyskovykh-tylovykh-pidrozdiliv | WebSearch
+https://zn.ua/ukr/reforms/zelenskij-vnis-do-radi-zakonoprojekt-pro-deklaratsiji-v-sbu.html | WebSearch
+https://itd.rada.gov.ua/billinfo/Bills/pubFile/3751597 (текст №16220, PDF) | WebSearch + listing links картки Ради
+https://itd.rada.gov.ua/billinfo/Bills/pubFile/3751601 (подання) | listing links картки Ради
+https://itd.rada.gov.ua/billinfo/Bills/pubFile/3751599 (пояснювальна записка) | listing links картки Ради
+https://mind.ua/news/amp/20312048-novi-fakti-u-spravi-karfagen-ofis-genprokurora-rozpochav-sluzhbove-rozsliduvannya | WebSearch
+https://amp.dw.com/uk/karfagen-ogp-provede-sluzhbove-rozsliduvanna-sodo-prokuroriv/a-79907773 | WebSearch
+https://espreso.tv/suspilstvo-ofis-genprokurora-pochav-sluzhbove-rozsliduvannya-cherez-novi-fakti-u-spravi-karfagen | WebSearch
+https://gordonua.com/ukr/section-society/news-ofis-heneralnoho-prokurora-rozpochav-sluzhbove-rozsliduvannya-cherez-novi-fakty-u-spravi-karfahen-10-11-2026.html | WebSearch
+https://www.pravda.com.ua/news/2026/11/10/8062174 | WebSearch (44 млн — дублює [SC-67], не відкривав)
+https://suspilne.media/1449579-operacia-karfagen-za-kolisnogo-generala-sbu-duku-vnesli-44-miljoni-griven-zastavi | WebSearch (дублює [SC-67], не відкривав)
+https://hromadske.radio/news/2026/11/10/heneral-sbu-serhiy-duka-napysav-z-sizo-vidkrytoho-lysta-... | WebSearch (дублює [SC-77], не відкривав)
+https://corruption.hab.media/250211-plivki_nabu_sjagnuli_verhivki_op_budanova_pidozrjujutj_... | WebSearch (навідка C)
+https://zn.ua/ukr/POLITICS/mudra-shukala-hroshi-na-zastavu-dlja-halushchenka-znua-diznalosja-prichinu.html | WebSearch (навідка C)
+https://suspilne.media/1392606-sap-prosit-arestuvati-150-mln-grn-zastavi-za-galusenka-vin-moze-povernutisa-do-sizo | WebSearch (навідка C)
+https://www.pravda.com.ua/news/2026/06/01/8037332 | WebSearch (доручення Буданову — закінчити війну; не відкривав)
+https://nv.ua/ukr/ukraine/politics/zelenskiy-vpershe-prokomentuvav-noviy-skandal-cherez-spravu-karfagen-dlya-pracivnikiv-sbu-povernut-deklaraciji-50657206.html | listing links NV (навідка, не відкривав)
+https://nv.ua/ukr/ukraine/politics/sprava-karfagen-knyazhickiy-zayaviv-shcho-problema-ne-v-deklaruvanni-a-v-neprozorih-priznachennyah-50657525.html | listing links NV (навідка, не відкривав)
+
+# Пошукові запити (WebSearch, 10.11.2026):
+1. Буданов "Закон один для всіх" Дука Карфаген
+2. Зеленський коментував Карфаген СБУ збір застава Дука
+3. Буданов "Закон один для всіх" посади звання повноваження відповідальності 5 листопада 2026
+4. Буданов керівник Офісу президента призначення 2026
+5. Поклад СБУ заява збір коштів застава Дука перевірка
+6. Осадчук реакція Верховної Ради збір коштів застава Дука СБУ
+7. СБУ відреагувала збір грошей застава Дука внутрішня перевірка 10 листопада
+8. Офіс генерального прокурора службове розслідування Карфаген 10 листопада 2026
+9. законопроєкт 16220 декларування Верховна Рада реєстрація
+10. "СБУ" OR "Поклад" коментував збір коштів на заставу Дука "Карфаген" — ЗАГАЛЬНИЙ ТАЙМАУТ 60 с (не повторено; питання покрите запитами 5 і 7)
+11. Зеленський доручив Буданову знайти кошти застава
+12. плівки НАБУ Буданов доручення "знайти легальні кошти" застава Галущенко Мідас 200 мільйонів
+# Пошук без результату (непродуктивний): «Зеленський доручив Буданову знайти кошти» у поєднанні з Кропива/Дука/Осіпов — новини немає (запит 11 покриває; варіації з прізвищами в межах запитів 2, 5, 6)
