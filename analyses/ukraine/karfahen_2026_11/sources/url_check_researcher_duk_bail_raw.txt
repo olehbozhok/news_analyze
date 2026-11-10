@@ -1,0 +1,35 @@
+Журнал перевірки URL — Researcher, доповнення «застава Дуки», 10.11.2026.
+Інструменти: Browser = ZCode In-app Browser (скіл browser-use:control-browser; browsermcp недоступний — «No browser is connected»); curl = Bash curl; WS = WebSearch.
+
+https://zaxid.net/v_sbu_zbirayut_groshi_na_zastavu_za_generala_sergiya_duka_yakiy_maye_pidozru_u_spravi_karfagen_n1649629 | Browser | 200, відкрито, текст зчитано | 10.11.2026
+https://www.pravda.com.ua/news/2026/11/07/8061720/ | Browser | 200, відкрито, текст зчитано | 10.11.2026
+https://www.pravda.com.ua/news/2026/11/08/8061813/ | Browser | 200, відкрито, текст зчитано | 10.11.2026
+https://www.pravda.com.ua/news/2026/11/10/8062097/ | Browser | 200, відкрито, текст зчитано | 10.11.2026
+https://www.radiosvoboda.org/a/news-za-duku-vnesly-zastavu-1113-platnykiv-prokuror/33894666.html | Browser | 200, відкрито, текст зчитано | 10.11.2026
+https://zn.ua/ukr/UKRAINE/nemaje-nijakoji-komandi-advokat-henerala-duki-prokomentuvav-zbir-hroshej-na-zastavu.html | Browser | 200, відкрито, текст зчитано; datePublished 2026-11-08T23:48 | 10.11.2026
+https://glavcom.ua/amp/country/incidents/heneral-sbu-duka-napisav-vidkritoho-lista-iz-sizo-1154734.html | Browser | 200, відкрито (вміст — про заставу 1113 платників, не про лист) | 10.11.2026
+https://nv.ua/ukr/ukraine/politics/zbir-koshtiv-na-zastavu-generalu-sbu-duci-nikolov-kazhe-shcho-ce-zbir-danini-po-vertikali-50657703.html | Browser | 200, відкрито | 10.11.2026
+https://nv.ua/ukr/ukraine/politics/sprava-karfagen-po-skilki-zbirayut-zi-spivrobitnikiv-sbu-na-zastavu-generalu-sergiyu-duci-50657349.html | Browser | 200, відкрито | 10.11.2026
+https://tsn.ua/ukrayina/ia-yiyi-vse-odno-ne-splachu-heneral-sbu-duka-pro-zastavu-u-100-milyoniv-hryven-3210063.html | Browser | 200, відкрито (17:43, 06.11.26) | 10.11.2026
+https://suspilne.media/1446609-operacia-karfagen-vaks-obirae-zapobiznij-zahid-generalovi-sbu-duci/ | Browser | 200, відкрито (6 листопада, 15:19) | 10.11.2026
+https://interfax.com.ua/news/general/1232844.html | Browser | 200, відкрито (16:05, 07.11.2026) | 10.11.2026
+https://interfax.com.ua/news/general/1233874.html | Browser | 200, відкрито | 10.11.2026
+https://interfax.com.ua/news/general/1234117.html | Browser | 200, відкрито | 10.11.2026
+https://t.me/hcacofficial/7307?embed=1&mode=tme | curl | 200, повний текст посту | 10.11.2026
+https://t.me/hcacofficial/7308..7329?embed=1&mode=tme | curl | 200, пости прочитано (0731x — інші справи; апеляції Дуки немає) | 10.11.2026
+https://t.me/s/SBUkr | curl | 200, стрічка прочитана; згадок «Дука» — 0 | 10.11.2026
+https://hcac.court.gov.ua/hcac/info_sud/news | curl (cp1251) + Browser | 200, список новин до 10.11.2026; апеляції Дуки немає | 10.11.2026
+https://hcac.court.gov.ua/hcac/info_sud/news/2014811 | Browser | 200 (23.04.2026, інша справа 991/2512/26 — не Дука) | 10.11.2026
+https://hcac.court.gov.ua/hcac/info_sud/news/2129232/ | curl | 200 (06.11.2026, ОГП — не Дука) | 10.11.2026
+https://zakon.rada.gov.ua/laws/show/4651-17#Text | Browser | 200, ст.182 ч.2, ч.6 зчитано дослівно | 10.11.2026
+https://protocol.ua/ua/kriminalniy_protsesualniy_kodeks_ukraini_stattya_183/ | curl | порожня JS-обгортка (5.4 КБ), текст не отримано | 10.11.2026
+https://jurliga.ligazakon.net/news/221925 | curl | 200, фраза «набирає сили» не знайдена на сторінці; не цитується | 10.11.2026
+https://unba.org.ua/publications/11785-prezumpciya-trimannya-pid-vartoyu-abo-chomu-zastava-vtrachae-al-ternativnist.html | — | не відкривався (тільки пошукова видача) | 10.11.2026
+https://inshe.tv/suspilstvo/2026-11-10/1027396 | — | не відкривався (повний текст листа; відомий з пошукового підсумку) | 10.11.2026
+https://www.ukrinform.ua/rubric-society/4183467-sprava-karfagen-general-sbu-duka-napisav-vidkritogo-lista-iz-sizo.html | — | не відкривався | 10.11.2026
+https://www.pravda.com.ua/news/2026/11/10/8062176 | — | не відкривався (ЄП, лист Дуки) | 10.11.2026
+https://kurs.com.ua/novost/1487824-sprava-karfagen-za-generala-sbu-duku-vnesli-bilshu-chastinu-zastavi | — | не відкривався (68% застави, переказ RS) | 10.11.2026
+https://www.dw.com/uk/karfagen-sud-uzav-pid-vartu-generala-sbu-duku-z-zastavou-65-mln-grn/a-79883150 | — | не відкривався (пошукова видача) | 10.11.2026
+https://censor.net/ua/news/4032671/spivrobitnyky-sbu-spravdi-zbyrayut-groshi-na-zastavu-generalu-dutsi | — | не відкривався (пошукова видача: «Захисник Дуки підтвердив») | 10.11.2026
+
+WS-запити: «СБУ збирає заставу Дука Карфаген 65 млн»; «Дука Акім застава 65 млн грн генерал СБУ»; «"Українська правда" СБУ збір заставу Дука розсилка співробітникам»; «СБУ реакція збір коштів застава Дука заява відомство»; «адвокат Дука застава збирали не примусово СБУ»; «Ніколав Дука застава дань по вертикалі СБУ реакція НАБУ»; «Дука відкритий лист із СІЗО текст»; «СБУ заява Дука застава "не збирає"...»; «Дука апеляція ВАКС запобіжний захід АП ВАКС оскарження»; «Дука застава внесено повністю звільнений СІЗО 11 листопада»; «заставу не внесено протягом п'яти днів...»; «suspilne.media Дука застава збір СБУ Карфаген»; «Дука застава родина вносить... спростування»; «"заставу не буде внесено"... КПК ст 183».
