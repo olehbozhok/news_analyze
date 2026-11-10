@@ -34,3 +34,5 @@
 ## Згадки в аналізах
 
 - [analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md)
+  Захист енергетики: скандал довкола витрат на Київщині — обшуки, договори, конфлікт підрядників
+  - | **Любомира Кожушко** | директор/власниця «Консалтинг-Буд», екс-посадовиця Апарату ВР | OBOZ, УНІАН, ухвала від 23.10.2026 | підозрювана у справі НАБУ про дрони …

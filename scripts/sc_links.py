@@ -21,7 +21,10 @@
 
   --persons  маркери [P:slug] у документах аналізів (не в sources/) стають
              посиланнями на persons/<країна>/<slug>/README.md; у картках
-             персон після маркера генерується блок «Згадки в аналізах».
+             персон після маркера генерується блок «Згадки в аналізах»:
+             на кожен документ — посилання, під ним заголовок документа
+             і всі місця згадки у цьому файлі (кожне — рядок документа
+             навколо згадки, без markdown-розмітки, з виділеним ПІБ).
              Невідомий slug — помилка.
 
 Аргументи: шляхи до тек тем (analyses/<країна>/<тема>) або до файлів;
@@ -376,38 +379,114 @@ def check_person_markers(files: list[Path], idx: dict[str, tuple[str, str]]) -> 
     return errors
 
 
-def mentions(idx: dict[str, tuple[str, str]]) -> dict[str, set[Path]]:
-    found: dict[str, set[Path]] = {slug: set() for slug in idx}
+SNIP_BEFORE = 80
+SNIP_AFTER = 140
+HEAD_MAX = 100
+MD_LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]*\)")
+EMPH_RE = re.compile(r"[*_]+")
+
+
+def _clean_frag(s: str) -> str:
+    s = EMPH_RE.sub("", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _clean_with_map(line: str) -> tuple[str, list[int]]:
+    """Рядок без markdown-посилань ([текст](href) -> текст) + мапа raw->clean індексів."""
+    out: list[str] = []
+    imap: list[int] = []
+    pos = 0
+    for m in MD_LINK_RE.finditer(line):
+        for i in range(pos, m.start()):
+            out.append(line[i])
+            imap.append(len(out) - 1)
+        txt_start = len(out)
+        for ch in m.group(1):
+            out.append(ch)
+        for _i in range(m.start(), m.end()):
+            imap.append(txt_start)
+        pos = m.end()
+    for i in range(pos, len(line)):
+        out.append(line[i])
+        imap.append(len(out) - 1)
+    return "".join(out), imap
+
+
+def _doc_title(text: str) -> str:
+    """Заголовок першого рівня документа (для контексту згадки)."""
+    for line in text.split("\n"):
+        if line.startswith("# "):
+            t = _clean_frag(line[2:])
+            if len(t) > HEAD_MAX:
+                t = t[: HEAD_MAX - 1].rstrip() + "…"
+            return t
+    return ""
+
+
+def _around(cleaned: str, s: int, e: int) -> str:
+    """Фрагмент чистого рядка навколо згадки [s:e]: до + виділена згадка + після."""
+    before = _clean_frag(cleaned[max(0, s - SNIP_BEFORE) : s])
+    mention = _clean_frag(cleaned[s:e]) or "згадка"
+    after = _clean_frag(cleaned[e : e + SNIP_AFTER])
+    prefix = "… " if s > SNIP_BEFORE else ""
+    suffix = " …" if e + SNIP_AFTER < len(cleaned.rstrip()) else ""
+    return f"{prefix}{before} **{mention}** {after}{suffix}".strip()
+
+
+def mentions(idx: dict[str, tuple[str, str]]) -> dict[str, dict[Path, tuple[str, list[str]]]]:
+    """slug -> {файл: (заголовок документа, [фрагмент навколо кожної згадки])}."""
+    found: dict[str, dict[Path, tuple[str, list[str]]]] = {slug: {} for slug in idx}
     by_path = {
         (PERSONS / country / slug / "README.md").resolve(): slug
         for slug, (country, _t) in idx.items()
     }
     for f in person_docs():
-        text = non_code_text(f.read_text(encoding="utf-8"))
-        for m in P_RE.finditer(text):
-            if m.group(1) in found:
-                found[m.group(1)].add(f)
-        for m in LINK_RE.finditer(text):
-            href = m.group(1)
-            if re.match(r"^[a-z]+:", href) or href.startswith("#"):
+        text = f.read_text(encoding="utf-8")
+        title = _doc_title(text)
+        for is_code, line in iter_body_segments(text):
+            if is_code:
                 continue
-            target = (f.parent / href.split("#", 1)[0]).resolve()
-            slug = by_path.get(target)
-            if not slug:
+            cands: dict[str, tuple[int, int, int | None]] = {}
+            for m in P_RE.finditer(line):
+                if m.group(1) in found and m.group(1) not in cands:
+                    cands[m.group(1)] = (m.start(), m.end(), None)
+            for m in LINK_RE.finditer(line):
+                href = m.group(1)
+                if re.match(r"^[a-z]+:", href) or href.startswith("#"):
+                    continue
+                target = (f.parent / href.split("#", 1)[0]).resolve()
+                slug = by_path.get(target)
+                if not slug or slug in cands or slug not in found:
+                    continue
+                country = idx[slug][0]
+                if (PERSONS / country / slug) in f.parents:
+                    continue  # документ у папці самої персони не є згадкою про неї
+                s = line.rfind("[", 0, m.start())  # [, що відкриває текст цього посилання
+                if s == -1:
+                    continue
+                text_len = m.start() - s - 1  # текст між [ і ](
+                cands[slug] = (s, m.end(), text_len)
+            if not cands:
                 continue
-            country = idx[slug][0]
-            if (PERSONS / country / slug) in f.parents:
-                continue  # документ у папці самої персони не є згадкою про неї
-            found[slug].add(f)
+            cleaned, imap = _clean_with_map(line)
+            for slug, (s, _e, text_len) in cands.items():
+                cstart = imap[s]
+                cend = cstart + text_len if text_len is not None else imap[_e - 1] + 1
+                found[slug].setdefault(f, (title, []))[1].append(_around(cleaned, cstart, cend))
     return found
 
 
-def backlinks_block(slug: str, docs: set[Path], readme: Path) -> str:
+def backlinks_block(slug: str, docs: dict[Path, tuple[str, list[str]]], readme: Path) -> str:
     if not docs:
         return ""
     lines = [P_MARKER, "", "## Згадки в аналізах", ""]
     for d in sorted(docs):
+        title, spots = docs[d]
         lines.append(f"- [{d.relative_to(ROOT).as_posix()}]({_rel(d, readme.parent)})")
+        if title:
+            lines.append(f"  {title}")
+        for sp in spots:
+            lines.append(f"  - {sp}")
     return "\n".join(lines) + "\n"
 
 

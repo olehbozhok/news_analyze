@@ -32,3 +32,5 @@
 ## Згадки в аналізах
 
 - [analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md)
+  Захист енергетики: скандал довкола витрат на Київщині — обшуки, договори, конфлікт підрядників
+  - | **Владислав Соколов** | дніпровський бізнесмен, якого ЗМІ пов'язують із «Сталь Плюс» і «ТД Тризуб» | Newformat, OBOZ | в ухвалі особа знеособлена («ОСОБА7»); ід …

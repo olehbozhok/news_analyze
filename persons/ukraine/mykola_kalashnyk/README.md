@@ -32,3 +32,5 @@
 ## Згадки в аналізах
 
 - [analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md)
+  Захист енергетики: скандал довкола витрат на Київщині — обшуки, договори, конфлікт підрядників
+  - | **Микола Калашник** | міністр відновлення, екс-голова Київської ОВА | Стерненко, УНІАН, Гончаренко | підозр немає; ТСК може викликати (13.11.2026) [SC-03], [SC …
