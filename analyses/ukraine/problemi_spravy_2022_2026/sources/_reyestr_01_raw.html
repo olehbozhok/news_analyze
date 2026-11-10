@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk">
+
+<head>
+    <title>Єдиний державний реєстр судових рішень</title>
+    <link rel="shortcut icon" href="/Content/Images/favicon.ico" type="image/x-icon" />
+    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/all.min.js" type="text/javascript"></script>
+    <script src="/Scripts/Common.js?1" type="text/javascript"></script>
+    <script src="/Scripts/jquery.blockUI.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.multiSelect.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        #modalcaptcha {
+            background-color: #F5F5F5;
+            border: 2px solid buttonshadow;
+            border-radius: 15px 15px 15px 15px;
+            font-family: "Times New Roman";
+            font-size: 15px;
+            margin: 0;
+            padding: 20px;
+            position: absolute;
+            z-index: 1;
+            display: inline;
+            left: 461.5px;
+            top: 192px;
+        }
+
+            #modalcaptcha button {
+                background-color: #F0F0F0;
+                border: 1px solid #AAAAAA;
+                border-radius: 12px 12px 12px 12px;
+                color: #393939;
+                font-size: 100%;
+                font-weight: bold;
+                height: 30px;
+                margin: 0 0 0 10px;
+                width: 150px;
+            }
+
+            #modalcaptcha .disabled {
+                color: #ddd;
+            }
+    </style>
+
+</head>
+<body style="visibility: hidden">
+    <div class="page">
+        <div id="content">
+            <div id="header">
+                <h1>Єдиний державний реєстр судових рішень</h1>
+                <div class="warningblock">
+                <h4 class="warningtext">Доступ до Реєстру здійснюється в тестовому (обмеженому) режимі. Для запобігання загрозам життю і здоров'ю суддів та учасників судового процесу, а також у разі виявлення ознак кіберзагрози, доступ до Реєстру або окремих рішень у ньому може бути обмежено.</h4>
+               	</div>
+                <div id="logon" class="notVisible">
+                    
+                    Ласкаво просимо, !
+                </div>
+
+                <div id="menucontainer">
+                    <table id="menu" cellpadding="0" cellspacing="0" style="text-align:center;">
+                        <tr>
+                            <td style="width: 69px; padding-left: 25px; vertical-align: middle;" class="staticTD">
+                                <img src="/Content/Images/trident2.PNG" title="Державний герб України" alt="Державний герб України" style="display: block" />
+                            </td>
+                            <td style="width: 89px">
+                                <a href="/" id="aSearch" name="aSearch">Головна</a>
+                            </td>
+                            <td style="width: 137px">
+                                <a href="/Law" id="aLaw" name="aLaw">Законодавство</a>
+                            </td>
+                            <td style="width: 96px">
+                                <a href="/Contacts" id="aContacts" name="aContacts">Контакти</a>
+                            </td>
+                            <td style="width: 91px">
+                                <a href="/Rules" id="aRules" name="aRules">Правила</a>
+                            </td>
+                            <td style="width: 100px">
+                                <a href="/Help" id="aHelp" name="aHelp">Допомога</a>
+                            </td>
+                            <td style="width: 200px">
+                                <a href="/ChangedNameCourts">Змінені назви судів</a>
+                            </td>
+                            <td style="width: 220px" class="staticTD">
+                            </td>
+                            
+                            <td style="width: 150px">
+
+<a href="/login" id="aLogin" name="aLogin">Повний доступ</a>                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="login">
+                
+
+<div id="divdocument">
+    <div id="divcasecat">
+        <table style="margin-bottom:10px;border-collapse: collapse; border-spacing: 0;" id="info">
+            <tr><td colspan="2" style="text-align:left;">Категорія&nbsp;справи № <b><form style="margin: 0; padding: 0; display:inline!important;" id="ree_doc" target="_blank" action="https://reyestr.court.gov.ua" accept-charset="utf-8" method="POST"><div style="display:none;"><input style="display: inline;" name="CaseNumber" value="759/28522/26" type="text"><input style="display: inline;" name="PagingInfo.ItemsPerPage" value="25" type="text"><input style="display: inline;" name="Sort" value="1" type="text"></div><a style="display: inline;" id="tooltp" title="Натисніть для перегляду всіх судових рішень по справі" href="#">759/28522/26</a></form>: Кримінальні справи (з 01.01.2019); Провадження за поданням правоохоронних органів, за клопотанням слідчого, прокурора та інших осіб про; арешт майна.</b></td></tr>
+            <tr><td colspan="2" style="text-align:left;">Надіслано судом: <b>15.10.2026.</b> Зареєстровано: <b>16.10.2026.</b> Забезпечено надання загального доступу: <b>19.10.2026.</b></td></tr>
+            <tr><td colspan="2" style="text-align:left;">Дата набрання законної сили:&nbsp;<b>15.10.2026</b></td></tr>
+            <tr><td colspan="2" style="text-align:left;">Номер судового провадження: <b>1-кс/759/10964/26</b></td></tr>
+            <tr><td colspan="2" style="text-align:left;">Номер кримінального провадження в ЄРДР: <b>42025110000000469</b></td></tr>
+        </table>
+    </div>
+    <div id="divprint">
+        <button id="btnPractice" title="Пошук релевантної практики у Базі правових позицій&#10;Верховного Суду працює у тестовому режимі">Релевантна практика ВС<sup>beta</sup><br /></button>
+        <input type="button" id="btnPrint" name="btnPrint" value="Версія для друку"  />
+    </div>
+    <iframe id="divframe" name="divframe"></iframe>
+    <textarea id="txtdepository"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//DE" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="Rtf2Html Converter" />
+		<title>
+			Єдиний державний реєстр судових рішень
+		</title>
+	</head>
+	<body>
+		<p>&nbsp;</p>
+		<p align="center"><b><u><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:12pt;">СВЯТОШИНСЬКИЙ&nbsp;РАЙОННИЙ&nbsp;СУД&nbsp;М.&nbsp;КИЄВА</span></u></b></p>
+		<p align="center"><b><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:12pt;">У&nbsp;Х&nbsp;В&nbsp;А&nbsp;Л&nbsp;А</span></b></p>
+		<p align="center"><b><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:12pt;">ІМЕНЕМ&nbsp;УКРАЇНИ</span></b></p>
+		<p align="right"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">пр.&nbsp;№&nbsp;1-кс/759/10964/26</span></p>
+		<p align="right"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">ун.&nbsp;№&nbsp;</span><span align="right" style="background-color:#FFFFFF;font-family:Times New Roman;font-size:11pt;">759/28522/26</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">15&nbsp;жовтня&nbsp;2026&nbsp;року</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;">&nbsp;</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">слідчий&nbsp;суддя&nbsp;Святошинського&nbsp;районного&nbsp;суду&nbsp;м.&nbsp;Києва&nbsp;ОСОБА_1&nbsp;за&nbsp;участю&nbsp;секретаря&nbsp;судового&nbsp;засідання&nbsp;ОСОБА_2&nbsp;,&nbsp;прокурора&nbsp;ОСОБА_3&nbsp;,&nbsp;представника&nbsp;власника&nbsp;майна&nbsp;-&nbsp;адвоката&nbsp;ОСОБА_4&nbsp;,&nbsp;розглянувши&nbsp;у&nbsp;відкритому&nbsp;судовому&nbsp;засіданні&nbsp;клопотання&nbsp;прокурора&nbsp;відділу&nbsp;Київської&nbsp;обласної&nbsp;прокуратури&nbsp;ОСОБА_3&nbsp;про&nbsp;арешт&nbsp;майна&nbsp;подане&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;№42025110000000469&nbsp;внесеного&nbsp;до&nbsp;ЄРДР&nbsp;04.12.2025&nbsp;за&nbsp;ознаками&nbsp;кримінальних&nbsp;правопорушень,&nbsp;передбачених&nbsp;ч.&nbsp;4&nbsp;ст.&nbsp;191,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;209,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;366</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman;font-size:11pt;">&nbsp;</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">КК&nbsp;України,</span></p>
+		<p>&nbsp;</p>
+		<p align="center"><b><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">ВСТАНОВИВ:</span></b></p>
+		<p>&nbsp;</p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">До&nbsp;слідчого&nbsp;судді&nbsp;Святошинського&nbsp;районного&nbsp;суду&nbsp;міста&nbsp;Києва&nbsp;14.10.2026&nbsp;надійшло&nbsp;згадане&nbsp;клопотання,&nbsp;в&nbsp;якому&nbsp;прокурором&nbsp;порушено&nbsp;питання&nbsp;щодо&nbsp;накладення&nbsp;арешту&nbsp;на&nbsp;майно,&nbsp;з&nbsp;метою&nbsp;забезпечення&nbsp;збереження&nbsp;речових&nbsp;доказів,&nbsp;вилучене&nbsp;13.10.2026&nbsp;під&nbsp;час&nbsp;проведення&nbsp;обшуку&nbsp;на&nbsp;підставі&nbsp;ухвали&nbsp;слідчого&nbsp;суді&nbsp;Святошинського&nbsp;районного&nbsp;суду&nbsp;м.&nbsp;Києва&nbsp;від&nbsp;29.09.2026&nbsp;у&nbsp;справі&nbsp;№759/26688/26&nbsp;за&nbsp;місцем&nbsp;розташування&nbsp;офісу&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;,&nbsp;за&nbsp;адресою&nbsp;м.&nbsp;Київ,&nbsp;вул.&nbsp;Ярославська,&nbsp;буд.&nbsp;6.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Клопотання&nbsp;обґрунтованим&nbsp;тим,&nbsp;що&nbsp;СУ&nbsp;ГУНП&nbsp;в&nbsp;Київській&nbsp;області&nbsp;(м.&nbsp;Київ,&nbsp;вул.&nbsp;Святошинська,&nbsp;2-А)&nbsp;здійснюється&nbsp;досудове&nbsp;розслідування&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;№&nbsp;42025110000000469&nbsp;від&nbsp;04.12.2025&nbsp;за&nbsp;ознаками&nbsp;кримінального&nbsp;правопорушення,&nbsp;передбаченого&nbsp;ч.&nbsp;4&nbsp;ст.&nbsp;191,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;209,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;366&nbsp;КК&nbsp;України.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Досудове&nbsp;розслідування&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;здійснюється&nbsp;за&nbsp;фактами&nbsp;можливої&nbsp;розтрати&nbsp;бюджетних&nbsp;коштів&nbsp;при&nbsp;реалізації&nbsp;договорів,&nbsp;укладених&nbsp;за&nbsp;результатами&nbsp;закупівлі&nbsp;робіт&nbsp;із&nbsp;будівництва&nbsp;та&nbsp;облаштування&nbsp;захисних&nbsp;споруд&nbsp;цивільного&nbsp;захисту,&nbsp;критичної&nbsp;інфраструктури&nbsp;під&nbsp;час&nbsp;воєнного&nbsp;стану&nbsp;на&nbsp;території&nbsp;Київської&nbsp;області,&nbsp;а&nbsp;також&nbsp;перевіряється&nbsp;інформація&nbsp;щодо&nbsp;можливого&nbsp;впровадження&nbsp;власниками&nbsp;та&nbsp;службовими&nbsp;особами&nbsp;вітчизняних&nbsp;суб`єктів&nbsp;господарювання&nbsp;схеми&nbsp;з&nbsp;легалізації&nbsp;(відмивання)&nbsp;доходів,&nbsp;отриманих&nbsp;злочинним&nbsp;шляхом.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">В&nbsp;ході&nbsp;досудового&nbsp;розслідування&nbsp;встановлено,&nbsp;що&nbsp;у&nbsp;квітні&nbsp;2025&nbsp;року&nbsp;КП&nbsp;&#171;Головне&nbsp;управління&nbsp;комунального&nbsp;господарства&#187;&nbsp;Вишневої&nbsp;міської&nbsp;ради&nbsp;Бучанського&nbsp;району&nbsp;Київської&nbsp;області&nbsp;(ЄДРПОУ&nbsp;38183153)&nbsp;оголошено&nbsp;закупівлю&nbsp;UA-2025-04-16-005101-а&nbsp;&#171;Нове&nbsp;будівництво&nbsp;захисних&nbsp;споруд&nbsp;цивільного&nbsp;захисту&nbsp;-&nbsp;протирадіаційного&nbsp;укриття&nbsp;(ПРУ)&nbsp;на&nbsp;території&nbsp;Крюківщинського&nbsp;ліцею&nbsp;&#171;Лідер&#187;&nbsp;Вишневої&nbsp;міської&nbsp;ради&nbsp;Бучанського&nbsp;району&nbsp;Київської&nbsp;області&nbsp;за&nbsp;адресою:&nbsp;с.&nbsp;Крюківщина,&nbsp;вул.&nbsp;Мічуріна,&nbsp;12&nbsp;А&#187;&nbsp;із&nbsp;очікуваною&nbsp;вартістю&nbsp;169&nbsp;155&nbsp;094,80&nbsp;грн.&#187;&nbsp;та&nbsp;строком&nbsp;виконання&nbsp;робіт&nbsp;до&nbsp;01.09.2026.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">За&nbsp;результатами&nbsp;вказаної&nbsp;закупівлі&nbsp;22.05.2025&nbsp;між&nbsp;директором&nbsp;КП&nbsp;&#171;Головне&nbsp;управління&nbsp;комунального&nbsp;господарства&#187;&nbsp;Вишневої&nbsp;міської&nbsp;ради&nbsp;ОСОБА_5&nbsp;,&nbsp;та&nbsp;директором&nbsp;ТОВ&nbsp;&#171;КОНСАЛТИНГ-БУД&nbsp;ОСОБА_6&nbsp;укладено&nbsp;договір&nbsp;№&nbsp;7/05-2025&nbsp;ПРУМ&nbsp;(надалі&nbsp;Договір)&nbsp;щодо&nbsp;будівництва&nbsp;захисних&nbsp;споруд&nbsp;цивільного&nbsp;захисту&nbsp;-&nbsp;протирадіаційного&nbsp;укриття&nbsp;(ПРУ)&nbsp;на&nbsp;території&nbsp;Крюківщинського&nbsp;ліцею&nbsp;&#171;Лідер&#187;&nbsp;Вишневої&nbsp;міської&nbsp;ради&nbsp;Бучанського&nbsp;району&nbsp;Київської&nbsp;області&nbsp;на&nbsp;загальну&nbsp;суму&nbsp;167&nbsp;061&nbsp;061,&nbsp;64&nbsp;грн.&nbsp;із&nbsp;незалученням&nbsp;субпідрядних&nbsp;організацій.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Згідно&nbsp;умов&nbsp;договору&nbsp;генпідрядник&nbsp;зобов`язаний&nbsp;використати&nbsp;одержаний&nbsp;аванс&nbsp;на&nbsp;придбання&nbsp;і&nbsp;постачання&nbsp;необхідних&nbsp;для&nbsp;виконання&nbsp;робіт&nbsp;матеріалів,&nbsp;конструкцій,&nbsp;виробів&nbsp;протягом&nbsp;трьох&nbsp;місяців&nbsp;після&nbsp;одержання&nbsp;авансу.&nbsp;По&nbsp;закінченню&nbsp;тримісячного&nbsp;терміну&nbsp;невикористані&nbsp;суми&nbsp;авансу&nbsp;повертаються&nbsp;замовнику.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Водночас&nbsp;установлено,&nbsp;що&nbsp;на&nbsp;рахунок&nbsp;ТОВ&nbsp;&#171;КОНСАЛТИНГ-БУД&#187;&nbsp;КП&nbsp;&#171;Головне&nbsp;управління&nbsp;комунального&nbsp;господарства&#187;&nbsp;Вишневої&nbsp;міської&nbsp;ради&nbsp;перераховано&nbsp;10.07.2025&nbsp;у&nbsp;якості&nbsp;попередньої&nbsp;оплати&nbsp;45&nbsp;074&nbsp;533,20&nbsp;грн.&nbsp;При&nbsp;цьому,&nbsp;24.07.2025&nbsp;здійснено&nbsp;ще&nbsp;два&nbsp;платежі&nbsp;у&nbsp;сумі&nbsp;7&nbsp;771&nbsp;561,20&nbsp;грн.&nbsp;та&nbsp;30&nbsp;000&nbsp;000,00&nbsp;грн.&nbsp;у&nbsp;якості&nbsp;попередньої&nbsp;оплати.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Незважаючи&nbsp;на&nbsp;необхідність&nbsp;повернення&nbsp;невикористаних&nbsp;сум&nbsp;попередньої&nbsp;оплати&nbsp;між&nbsp;сторонами&nbsp;укладено&nbsp;додаткові&nbsp;угоди&nbsp;згідно&nbsp;яких&nbsp;термін&nbsp;необхідності&nbsp;повернення&nbsp;невикористаних&nbsp;грошових&nbsp;коштів&nbsp;неодноразово&nbsp;продовжено.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Таким&nbsp;чином&nbsp;службовими&nbsp;особами&nbsp;КП&nbsp;&#171;Головне&nbsp;управління&nbsp;комунального&nbsp;господарства&#187;&nbsp;Вишневої&nbsp;міської&nbsp;ради&nbsp;укладено&nbsp;вказані&nbsp;додаткові&nbsp;угоди&nbsp;всупереч&nbsp;п.&nbsp;4.7&nbsp;Договору&nbsp;та&nbsp;положень&nbsp;Постанови&nbsp;Кабінету&nbsp;Міністрів&nbsp;України&nbsp;від&nbsp;04&nbsp;грудня&nbsp;2019&nbsp;року&nbsp;№&nbsp;1070&nbsp;&#171;Деякі&nbsp;питання&nbsp;здійснення&nbsp;розпорядниками&nbsp;(одержувачами)&nbsp;бюджетних&nbsp;коштів&nbsp;попередньої&nbsp;оплати&nbsp;товарів,&nbsp;робіт&nbsp;і&nbsp;послуг,&nbsp;що&nbsp;закуповуються&nbsp;за&nbsp;бюджетні&nbsp;кошти&#187;&nbsp;та&nbsp;Постанови&nbsp;Кабінету&nbsp;Міністрів&nbsp;України&nbsp;від&nbsp;27&nbsp;грудня&nbsp;2001&nbsp;року&nbsp;№&nbsp;1764&nbsp;&#171;Про&nbsp;затвердження&nbsp;Порядку&nbsp;державного&nbsp;фінансування&nbsp;капітального&nbsp;будівництва&#187;.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">В&nbsp;подальшому,&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;&nbsp;для&nbsp;виконання&nbsp;будівельних&nbsp;робіт&nbsp;на&nbsp;вказаному&nbsp;об`єкті&nbsp;залучено&nbsp;до&nbsp;субпідряду&nbsp;ТОВ&nbsp;&#171;ДіаГруп&#187;&nbsp;та&nbsp;ТОВ&nbsp;&#171;Вольт&nbsp;Ейдж&nbsp;Плюс&#187;,&nbsp;яке&nbsp;є&nbsp;підприємством&nbsp;з&nbsp;ознаками&nbsp;фіктивності.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Після&nbsp;укладення&nbsp;договорів&nbsp;субпідряду&nbsp;грошові&nbsp;кошти,&nbsp;які&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;&nbsp;одержано&nbsp;у&nbsp;якості&nbsp;попередньої&nbsp;оплати&nbsp;скеровано&nbsp;у&nbsp;якості&nbsp;попередньої&nbsp;оплати&nbsp;за&nbsp;договорами&nbsp;субпідряду&nbsp;ТОВ&nbsp;&#171;ДіаГруп&#187;&nbsp;та&nbsp;ТОВ&nbsp;&#171;Вольт&nbsp;Ейдж&nbsp;Плюс&#187;.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">В&nbsp;ході&nbsp;проведення&nbsp;аналітичного&nbsp;дослідження&nbsp;фінансово-господарських&nbsp;операцій&nbsp;ДПСУ&nbsp;встановлено,&nbsp;що&nbsp;посадові&nbsp;особи&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;&nbsp;одержавши&nbsp;бюджетні&nbsp;кошти&nbsp;від&nbsp;КП&nbsp;&#171;ГУКГ&nbsp;&#171;Вишневої&nbsp;міської&nbsp;ради&#187;&nbsp;перерахували&nbsp;їх&nbsp;на&nbsp;адресу&nbsp;ТОВ&nbsp;&#171;Вольт&nbsp;Ейдж&nbsp;Плюс&#187;&nbsp;в&nbsp;якості&nbsp;оплати&nbsp;за&nbsp;будівельно-монтажні&nbsp;роботи,&nbsp;по&nbsp;якому&nbsp;в&nbsp;ході&nbsp;проведення&nbsp;дослідження&nbsp;вбачається&nbsp;здійснення&nbsp;лише&nbsp;документального&nbsp;оформлення&nbsp;операцій&nbsp;без&nbsp;фактичного&nbsp;їх&nbsp;проведення,&nbsp;що&nbsp;призвело&nbsp;до&nbsp;привласнення&nbsp;бюджетних&nbsp;коштів&nbsp;у&nbsp;сумі&nbsp;10,8&nbsp;млн&nbsp;грн.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Головним&nbsp;постачальником&nbsp;матеріалів&nbsp;та&nbsp;конструкцій&nbsp;для&nbsp;проведення&nbsp;будівельних&nbsp;робіт&nbsp;за&nbsp;Договором&nbsp;були&nbsp;ТОВ&nbsp;&#171;Сталь&nbsp;Плюс&#187;&nbsp;та&nbsp;ПП&nbsp;&#171;ТД&nbsp;Тризуб&#187;,&nbsp;які&nbsp;пов`язані&nbsp;з&nbsp;громадянином&nbsp;України&nbsp;ОСОБА_7&nbsp;,&nbsp;ІНФОРМАЦІЯ_1&nbsp;.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Водночас&nbsp;встановлено,&nbsp;що&nbsp;Департаментом&nbsp;регіонального&nbsp;розвитку&nbsp;Київської&nbsp;обласної&nbsp;державної&nbsp;адміністрації,&nbsp;як&nbsp;замовником,&nbsp;в&nbsp;квітні&nbsp;та&nbsp;травні&nbsp;2026&nbsp;року&nbsp;укладено&nbsp;15&nbsp;договорів&nbsp;на&nbsp;виконання&nbsp;будівельних&nbsp;робіт&nbsp;із&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;&nbsp;(код&nbsp;ЄДРПОУ&nbsp;34531842)&nbsp;та&nbsp;10&nbsp;договорів&nbsp;з&nbsp;ТОВ&nbsp;&#171;Українська&nbsp;будівельна&nbsp;компанія&nbsp;&#171;Ю.Бі.Сі.&#187;&nbsp;(код&nbsp;ЄДРПОУ&nbsp;39636449)&nbsp;на&nbsp;загальну&nbsp;суму&nbsp;1&nbsp;887&nbsp;691,37&nbsp;тис&nbsp;грн.&nbsp;Фінансування&nbsp;відповідних&nbsp;робіт&nbsp;здійснюється&nbsp;за&nbsp;рахунок&nbsp;коштів&nbsp;державного&nbsp;бюджету.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Одночасно&nbsp;встановлено,&nbsp;що&nbsp;значні&nbsp;обсяги&nbsp;металопродукції&nbsp;для&nbsp;виконання&nbsp;відповідних&nbsp;робіт&nbsp;постачаються&nbsp;ТОВ&nbsp;&#171;Сталь&nbsp;Плюс&#187;&nbsp;(код&nbsp;ЄДРПОУ&nbsp;46018527),&nbsp;яке&nbsp;з&nbsp;01.05.2026&nbsp;здійснило&nbsp;поставки&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;&nbsp;на&nbsp;суму&nbsp;близько&nbsp;155,45&nbsp;млн&nbsp;грн&nbsp;без&nbsp;ПДВ,&nbsp;а&nbsp;ТОВ&nbsp;&#171;УБК&nbsp;Ю.Бі.Сі.&#187;&nbsp;-&nbsp;близько&nbsp;101,07&nbsp;млн&nbsp;грн&nbsp;без&nbsp;ПДВ.&nbsp;При&nbsp;цьому&nbsp;ТОВ&nbsp;&#171;Сталь&nbsp;Плюс&#187;&nbsp;має&nbsp;двосторонні&nbsp;товарні&nbsp;операції&nbsp;з</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">ПП&nbsp;&#171;ТД&nbsp;Тризуб&#187;&nbsp;(код&nbsp;ЄДРПОУ&nbsp;45491247),&nbsp;яке,&nbsp;у&nbsp;свою&nbsp;чергу,&nbsp;здійснює&nbsp;постачання&nbsp;товарів&nbsp;та&nbsp;надання&nbsp;послуг&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Так,&nbsp;за&nbsp;результатами&nbsp;проведеного&nbsp;аналізу&nbsp;матеріалів&nbsp;фінансово-господарських&nbsp;операцій,&nbsp;встановлено&nbsp;суттєві&nbsp;відхилення&nbsp;між&nbsp;цінами&nbsp;придбання&nbsp;та&nbsp;подальшої&nbsp;реалізації&nbsp;металопродукції,&nbsp;а&nbsp;індикативна&nbsp;розрахункова&nbsp;сума&nbsp;потенційної&nbsp;цінової&nbsp;різниці&nbsp;за&nbsp;дослідженими&nbsp;операціями&nbsp;становить&nbsp;близько&nbsp;20,8&nbsp;млн&nbsp;грн&nbsp;без&nbsp;ПДВ.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Таким&nbsp;чином,&nbsp;вищевказане&nbsp;свідчить&nbsp;про&nbsp;можливе&nbsp;використання&nbsp;постачальницьких&nbsp;та&nbsp;субпідрядних&nbsp;ланок&nbsp;для&nbsp;збільшення&nbsp;вартості&nbsp;матеріалів&nbsp;і&nbsp;будівельно-монтажних&nbsp;робіт&nbsp;із&nbsp;подальшим&nbsp;включенням&nbsp;такої&nbsp;вартості&nbsp;до&nbsp;документів&nbsp;щодо&nbsp;виконання&nbsp;бюджетних&nbsp;об`єктів&nbsp;та&nbsp;її&nbsp;оплатою&nbsp;бюджетними&nbsp;коштами,&nbsp;а&nbsp;також&nbsp;подальший&nbsp;рух&nbsp;отриманих&nbsp;коштів&nbsp;між&nbsp;зазначеними&nbsp;підприємствами,&nbsp;їх&nbsp;контрагентами&nbsp;та&nbsp;можливими&nbsp;пов`язаними&nbsp;особами.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">13.10.2026&nbsp;на&nbsp;підставі&nbsp;ухвали&nbsp;слідчого&nbsp;судді&nbsp;Святошинського&nbsp;районного&nbsp;суду&nbsp;м.&nbsp;Києва&nbsp;ОСОБА_8&nbsp;від&nbsp;29&nbsp;вересня&nbsp;2026&nbsp;року&nbsp;пр.&nbsp;№&nbsp;1-кс/759/10083/26,&nbsp;ун.&nbsp;№&nbsp;759/26688/26&nbsp;проведено&nbsp;обшук&nbsp;за&nbsp;місцем&nbsp;розташування&nbsp;офісного&nbsp;приміщення&nbsp;яким&nbsp;користується&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;,&nbsp;а&nbsp;саме&nbsp;за&nbsp;адресою&nbsp;м.&nbsp;Київ,&nbsp;вул.&nbsp;Ярославська,&nbsp;буд.&nbsp;6,&nbsp;в&nbsp;ході&nbsp;якого&nbsp;виявлено&nbsp;та&nbsp;вилучено&nbsp;речі&nbsp;та&nbsp;документи,&nbsp;які&nbsp;мають&nbsp;значення&nbsp;речових&nbsp;доказів&nbsp;у&nbsp;даному&nbsp;кримінальному&nbsp;провадженні.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Постановою&nbsp;слідчого&nbsp;від&nbsp;13.10.2026&nbsp;вищезгадані&nbsp;речі&nbsp;визнано&nbsp;речовими&nbsp;доказами</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;">&nbsp;</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman;font-size:11pt;">.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">У&nbsp;органу&nbsp;досудового&nbsp;розслідування&nbsp;є&nbsp;достатньо&nbsp;даних&nbsp;вважати,&nbsp;що&nbsp;вилучені&nbsp;предмети&nbsp;та&nbsp;інші&nbsp;речі&nbsp;містять&nbsp;відомості,&nbsp;які&nbsp;можуть&nbsp;бути&nbsp;використані&nbsp;як&nbsp;докази&nbsp;фактів&nbsp;чи&nbsp;обставин,&nbsp;що&nbsp;встановлюються&nbsp;під&nbsp;час&nbsp;кримінального&nbsp;провадження,&nbsp;у&nbsp;зв`язку&nbsp;з&nbsp;чим&nbsp;виникла&nbsp;необхідність&nbsp;у&nbsp;накладенні&nbsp;арешту.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">У&nbsp;судовому&nbsp;засіданні&nbsp;прокурор&nbsp;ОСОБА_3&nbsp;підтримав&nbsp;подане&nbsp;клопотання&nbsp;посилаючись&nbsp;на&nbsp;обставини&nbsp;зазначені&nbsp;в&nbsp;клопотанні.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">У&nbsp;судовому&nbsp;засіданні&nbsp;представник&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;&nbsp;-&nbsp;адвокат&nbsp;ОСОБА_4&nbsp;заперечував&nbsp;проти&nbsp;поданого&nbsp;прокурором&nbsp;клопотання.&nbsp;Так,&nbsp;представником&nbsp;власника&nbsp;майна&nbsp;зазначено,&nbsp;що&nbsp;досудове&nbsp;розслідування&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;здійснюється&nbsp;за&nbsp;фактами&nbsp;можливої&nbsp;розтрати&nbsp;бюджетних&nbsp;коштів&nbsp;при&nbsp;реалізації&nbsp;договорів,&nbsp;укладених&nbsp;за&nbsp;результатами&nbsp;закупівлі&nbsp;робіт&nbsp;із&nbsp;будівництва&nbsp;та&nbsp;облаштування&nbsp;захисних&nbsp;споруд&nbsp;цивільного&nbsp;захисту,&nbsp;критичної&nbsp;інфраструктури&nbsp;під&nbsp;час&nbsp;воєнного&nbsp;стану&nbsp;на&nbsp;території&nbsp;Київської&nbsp;області.&nbsp;Також&nbsp;перевіряється&nbsp;інформація&nbsp;щодо&nbsp;можливого&nbsp;впровадження&nbsp;власниками&nbsp;та&nbsp;службовими&nbsp;особами&nbsp;вітчизняних&nbsp;суб`єктів&nbsp;господарювання&nbsp;схеми&nbsp;з&nbsp;легалізації&nbsp;(відмивання)&nbsp;доходів,&nbsp;отриманих&nbsp;злочинним&nbsp;шляхом.&nbsp;Поряд&nbsp;з&nbsp;цим,&nbsp;у&nbsp;клопотанні&nbsp;сторони&nbsp;обвинувачення&nbsp;на&nbsp;думку&nbsp;представника&nbsp;власника&nbsp;майна&nbsp;не&nbsp;наведено&nbsp;жодного&nbsp;доказу&nbsp;вчинення&nbsp;кримінального&nbsp;правопорушення&nbsp;зі&nbsp;сторони&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;&nbsp;чи&nbsp;його&nbsp;членів.&nbsp;Посилання&nbsp;прокурора,&nbsp;на&nbsp;аналітичне&nbsp;дослідження&nbsp;ДПСУ&nbsp;фінансово-господарських&nbsp;операцій&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;,&nbsp;як&nbsp;на&nbsp;підставу&nbsp;вчинення&nbsp;кримінального&nbsp;правопорушення&nbsp;не&nbsp;може&nbsp;бути&nbsp;доказом&nbsp;вчинення&nbsp;кримінального&nbsp;правопорушення,&nbsp;оскільки&nbsp;аналітичний&nbsp;продукт&nbsp;є&nbsp;лише&nbsp;суб`єктивним&nbsp;упорядкуванням&nbsp;інформації&nbsp;для&nbsp;внутрішнього&nbsp;користування&nbsp;та&nbsp;не&nbsp;може&nbsp;бути&nbsp;основою&nbsp;для&nbsp;застосування&nbsp;заходу&nbsp;забезпечення&nbsp;кримінального&nbsp;провадження,&nbsp;на&nbsp;що&nbsp;наголошено&nbsp;у&nbsp;постанові&nbsp;Верховного&nbsp;суду&nbsp;від&nbsp;24.06.2025&nbsp;у&nbsp;справі&nbsp;№172/1310/23.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Вислухавши&nbsp;пояснення&nbsp;учасників&nbsp;судового&nbsp;процесу,&nbsp;дослідивши&nbsp;матеріали&nbsp;справи,&nbsp;наявні&nbsp;докази,&nbsp;слідчий&nbsp;суддя&nbsp;встановив&nbsp;наступні&nbsp;обставини.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Як&nbsp;вбачається&nbsp;із&nbsp;матеріалів&nbsp;справи,&nbsp;СУ&nbsp;ГУНП&nbsp;в&nbsp;Київській&nbsp;області&nbsp;(м.&nbsp;Київ,&nbsp;вул.&nbsp;Святошинська,&nbsp;2-А)&nbsp;здійснюється&nbsp;досудове&nbsp;розслідування&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;№&nbsp;42025110000000469&nbsp;від&nbsp;04.12.2025&nbsp;за&nbsp;ознаками&nbsp;кримінального&nbsp;правопорушення,&nbsp;передбаченого&nbsp;ч.&nbsp;4&nbsp;ст.&nbsp;191,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;209,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;366&nbsp;КК&nbsp;України.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">13.10.2026&nbsp;на&nbsp;підставі&nbsp;ухвали&nbsp;слідчого&nbsp;судді&nbsp;Святошинського&nbsp;районного&nbsp;суду&nbsp;м.&nbsp;Києва&nbsp;ОСОБА_8&nbsp;від&nbsp;29&nbsp;вересня&nbsp;2026&nbsp;року&nbsp;пр.&nbsp;№&nbsp;1-кс/759/10083/26,&nbsp;ун.&nbsp;№&nbsp;759/26688/26&nbsp;слідчими&nbsp;проведено&nbsp;обшук&nbsp;за&nbsp;місцем&nbsp;розташування&nbsp;офісного&nbsp;приміщення&nbsp;яким&nbsp;користується&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;,&nbsp;а&nbsp;саме&nbsp;за&nbsp;адресою&nbsp;м.&nbsp;Київ,&nbsp;вул.&nbsp;Ярославська,&nbsp;буд.&nbsp;6,&nbsp;в&nbsp;ході&nbsp;якого&nbsp;виявлено&nbsp;та&nbsp;вилучено&nbsp;речі&nbsp;та&nbsp;документи,&nbsp;які&nbsp;мають&nbsp;значення&nbsp;речових&nbsp;доказів&nbsp;у&nbsp;даному&nbsp;кримінальному&nbsp;провадженні.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Постановою&nbsp;слідчого&nbsp;від&nbsp;13.10.2026&nbsp;вищезгадані&nbsp;речі&nbsp;визнано&nbsp;речовими&nbsp;доказами.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Сторона&nbsp;обвинувачення&nbsp;вважає,&nbsp;що&nbsp;вилучені&nbsp;предмети&nbsp;та&nbsp;інші&nbsp;речі&nbsp;містять&nbsp;відомості,&nbsp;які&nbsp;можуть&nbsp;бути&nbsp;використані&nbsp;як&nbsp;докази&nbsp;фактів&nbsp;чи&nbsp;обставин,&nbsp;що&nbsp;встановлюються&nbsp;під&nbsp;час&nbsp;кримінального&nbsp;провадження,&nbsp;у&nbsp;зв`язку&nbsp;з&nbsp;чим&nbsp;виникла&nbsp;необхідність&nbsp;у&nbsp;накладенні&nbsp;арешту.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Відповідно&nbsp;до&nbsp;ч.&nbsp;1&nbsp;ст.&nbsp;131&nbsp;КПК&nbsp;України,&nbsp;заходи&nbsp;забезпечення&nbsp;кримінального&nbsp;провадження&nbsp;застосовуються&nbsp;з&nbsp;метою&nbsp;досягнення&nbsp;дієвості&nbsp;цього&nbsp;провадження.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Відповідно&nbsp;до&nbsp;п.&nbsp;7)&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;131&nbsp;КПК&nbsp;України&nbsp;передбачено&nbsp;такий&nbsp;вид&nbsp;заходів&nbsp;забезпечення&nbsp;кримінального&nbsp;провадження,&nbsp;як&nbsp;арешт&nbsp;майна.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">При&nbsp;застосуванні&nbsp;заходів&nbsp;забезпечення&nbsp;кримінального&nbsp;провадження&nbsp;слідчий&nbsp;суддя&nbsp;повинен&nbsp;діяти&nbsp;у&nbsp;відповідності&nbsp;до&nbsp;вимог&nbsp;КПК&nbsp;України&nbsp;та&nbsp;судовою&nbsp;процедурою&nbsp;гарантувати&nbsp;дотримання&nbsp;прав,&nbsp;свобод&nbsp;та&nbsp;законних&nbsp;інтересів&nbsp;осіб,&nbsp;а&nbsp;також&nbsp;умов,&nbsp;за&nbsp;яких&nbsp;жодна&nbsp;особа&nbsp;не&nbsp;була&nbsp;б&nbsp;піддана&nbsp;необґрунтованому&nbsp;процесуальному&nbsp;обмеженню.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Зокрема,&nbsp;при&nbsp;вирішенні&nbsp;питання&nbsp;про&nbsp;арешт&nbsp;майна&nbsp;для&nbsp;прийняття&nbsp;законного&nbsp;та&nbsp;справедливого&nbsp;рішення&nbsp;слідчий&nbsp;суддя&nbsp;згідно&nbsp;статей&nbsp;94,&nbsp;132,&nbsp;173&nbsp;КПК&nbsp;України&nbsp;повинен&nbsp;врахувати&nbsp;правову&nbsp;підставу&nbsp;для&nbsp;арешту&nbsp;майна,&nbsp;можливість&nbsp;використання&nbsp;майна&nbsp;як&nbsp;доказу&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;або&nbsp;застосування&nbsp;щодо&nbsp;нього&nbsp;конфіскації,&nbsp;в&nbsp;тому&nbsp;числі&nbsp;і&nbsp;спеціальної,&nbsp;наявність&nbsp;обґрунтованої&nbsp;підозри&nbsp;у&nbsp;вчиненні&nbsp;особою&nbsp;кримінального&nbsp;правопорушення,&nbsp;розмір&nbsp;шкоди,&nbsp;завданої&nbsp;кримінальним&nbsp;правопорушенням,&nbsp;неправомірної&nbsp;вигоди,&nbsp;яка&nbsp;отримана&nbsp;юридичною&nbsp;особою,&nbsp;розумність&nbsp;та&nbsp;співрозмірність&nbsp;обмеження&nbsp;права&nbsp;власності&nbsp;завданням&nbsp;кримінального&nbsp;провадження,&nbsp;а&nbsp;також&nbsp;наслідки&nbsp;арешту&nbsp;майна&nbsp;для&nbsp;підозрюваного,&nbsp;третіх&nbsp;осіб.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Відповідні&nbsp;дані&nbsp;мають&nbsp;міститися&nbsp;і&nbsp;у&nbsp;клопотанні&nbsp;слідчого&nbsp;чи&nbsp;прокурора,&nbsp;який&nbsp;звертається&nbsp;з&nbsp;проханням&nbsp;арештувати&nbsp;майно,&nbsp;оскільки&nbsp;відповідно&nbsp;до&nbsp;статті&nbsp;1&nbsp;Першого&nbsp;протоколу&nbsp;Конвенції&nbsp;про&nbsp;захист&nbsp;прав&nbsp;та&nbsp;основоположних&nbsp;свобод&nbsp;будь-яке&nbsp;обмеження&nbsp;права&nbsp;власності&nbsp;повинно&nbsp;здійснюватися&nbsp;відповідно&nbsp;до&nbsp;закону,&nbsp;а&nbsp;отже&nbsp;суб`єкт,&nbsp;який&nbsp;ініціює&nbsp;таке&nbsp;обмеження,&nbsp;повинен&nbsp;обґрунтувати&nbsp;свою&nbsp;ініціативу&nbsp;з&nbsp;посиланням&nbsp;на&nbsp;норми&nbsp;закону.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Згідно&nbsp;усталеної&nbsp;практики&nbsp;Європейського&nbsp;Суду&nbsp;з&nbsp;прав&nbsp;людини&nbsp;в&nbsp;контексті&nbsp;вищевказаних&nbsp;положень&nbsp;володіння&nbsp;майном&nbsp;повинно&nbsp;бути&nbsp;законним&nbsp;(див.&nbsp;рішення&nbsp;у&nbsp;справі&nbsp;&#171;Іатрідіс&nbsp;проти&nbsp;Греції&#187;&nbsp;[ВП],&nbsp;заява&nbsp;№31107/96,&nbsp;п.&nbsp;58,&nbsp;ECHR&nbsp;1999-II).&nbsp;Вимога&nbsp;щодо&nbsp;законності&nbsp;у&nbsp;розумінні&nbsp;Конвенції&nbsp;вимагає&nbsp;дотримання&nbsp;відповідних&nbsp;положень&nbsp;національного&nbsp;законодавства&nbsp;та&nbsp;відповідності&nbsp;принципові&nbsp;верховенства&nbsp;права,&nbsp;що&nbsp;включає&nbsp;свободу&nbsp;від&nbsp;свавілля&nbsp;(див.&nbsp;рішення&nbsp;у&nbsp;справі&nbsp;&#171;Антріш&nbsp;проти&nbsp;Франції&#187;,&nbsp;від&nbsp;22&nbsp;вересня&nbsp;1994&nbsp;року,&nbsp;Series&nbsp;А&nbsp;N&nbsp;296-А,&nbsp;п.&nbsp;42,&nbsp;та&nbsp;&#171;Кушоглу&nbsp;проти&nbsp;Болгарії&#187;,&nbsp;заява&nbsp;№48191/99,&nbsp;пп.&nbsp;49&nbsp;-&nbsp;62,&nbsp;від&nbsp;10&nbsp;травня&nbsp;2007&nbsp;року).&nbsp;Будь-яке&nbsp;втручання&nbsp;державного&nbsp;органу&nbsp;у&nbsp;право&nbsp;на&nbsp;мирне&nbsp;володіння&nbsp;майном&nbsp;повинно&nbsp;забезпечити&nbsp;&#171;справедливий&nbsp;баланс&#187;&nbsp;між&nbsp;загальним&nbsp;інтересом&nbsp;суспільства&nbsp;та&nbsp;вимогами&nbsp;захисту&nbsp;основоположних&nbsp;прав&nbsp;конкретної&nbsp;особи.&nbsp;Необхідність&nbsp;досягнення&nbsp;такого&nbsp;балансу&nbsp;відображена&nbsp;в&nbsp;цілому&nbsp;в&nbsp;структурі&nbsp;статті&nbsp;1&nbsp;Першого&nbsp;протоколу.&nbsp;Необхідного&nbsp;балансу&nbsp;не&nbsp;вдасться&nbsp;досягти,&nbsp;якщо&nbsp;на&nbsp;відповідну&nbsp;особу&nbsp;буде&nbsp;покладено&nbsp;індивідуальний&nbsp;та&nbsp;надмірний&nbsp;тягар&nbsp;(див.,&nbsp;серед&nbsp;інших&nbsp;джерел,&nbsp;рішення&nbsp;від&nbsp;23&nbsp;вересня&nbsp;1982&nbsp;року&nbsp;у&nbsp;справі&nbsp;&#171;Спорронг&nbsp;та&nbsp;Льонрот&nbsp;проти&nbsp;Швеції&#187;,&nbsp;пп.&nbsp;69&nbsp;і&nbsp;73,&nbsp;Series&nbsp;A&nbsp;N&nbsp;52).&nbsp;Іншими&nbsp;словами,&nbsp;має&nbsp;існувати&nbsp;обґрунтоване&nbsp;пропорційне&nbsp;співвідношення&nbsp;між&nbsp;засобами,&nbsp;які&nbsp;застосовуються,&nbsp;та&nbsp;метою,&nbsp;яку&nbsp;прагнуть&nbsp;досягти&nbsp;(див.,&nbsp;наприклад,&nbsp;рішення&nbsp;від&nbsp;21&nbsp;лютого&nbsp;1986&nbsp;року&nbsp;у&nbsp;справі&nbsp;&#171;Джеймс&nbsp;та&nbsp;інші&nbsp;проти&nbsp;Сполученого&nbsp;Королівства&#187;,&nbsp;n.&nbsp;50,&nbsp;Series&nbsp;A&nbsp;N&nbsp;98).</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">У&nbsp;кожному&nbsp;конкретному&nbsp;кримінальному&nbsp;провадженні&nbsp;слідчий&nbsp;суддя,&nbsp;застосовуючи&nbsp;вид&nbsp;обтяження,&nbsp;в&nbsp;даному&nbsp;випадку&nbsp;арешт&nbsp;майна,&nbsp;має&nbsp;неухильно&nbsp;дотримуватись&nbsp;вимог&nbsp;закону.&nbsp;При&nbsp;накладенні&nbsp;арешту&nbsp;на&nbsp;майно&nbsp;слідчий&nbsp;суддя&nbsp;має&nbsp;обов`язково&nbsp;переконатися&nbsp;в&nbsp;наявності&nbsp;доказів&nbsp;на&nbsp;підтвердження&nbsp;вчинення&nbsp;кримінального&nbsp;правопорушення.&nbsp;При&nbsp;цьому,&nbsp;закон&nbsp;не&nbsp;вимагає&nbsp;аби&nbsp;вони&nbsp;були&nbsp;повними&nbsp;та&nbsp;достатніми&nbsp;на&nbsp;цій&nbsp;стадії&nbsp;кримінального&nbsp;провадження,&nbsp;однак&nbsp;вони&nbsp;мають&nbsp;бути&nbsp;такими,&nbsp;щоб&nbsp;слідчий&nbsp;суддя&nbsp;був&nbsp;впевнений&nbsp;у&nbsp;тому,&nbsp;що&nbsp;дані&nbsp;докази&nbsp;можуть&nbsp;дати&nbsp;підстави&nbsp;для&nbsp;пред`явлення&nbsp;обґрунтованої&nbsp;підозри&nbsp;у&nbsp;вчиненні&nbsp;того&nbsp;чи&nbsp;іншого&nbsp;злочину.&nbsp;Крім&nbsp;того,&nbsp;наявність&nbsp;доказів&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;має&nbsp;давати&nbsp;слідчому&nbsp;судді&nbsp;впевненість&nbsp;в&nbsp;тому,&nbsp;що&nbsp;в&nbsp;даному&nbsp;кримінальному&nbsp;провадженні&nbsp;необхідно&nbsp;накласти&nbsp;вид&nbsp;обмеження&nbsp;з&nbsp;метою&nbsp;уникнення&nbsp;негативних&nbsp;наслідків.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Відповідно&nbsp;до&nbsp;частини&nbsp;першої&nbsp;статті&nbsp;170&nbsp;КПК&nbsp;України&nbsp;арештом&nbsp;майна&nbsp;є&nbsp;тимчасове,&nbsp;до&nbsp;скасування&nbsp;у&nbsp;встановленому&nbsp;цим&nbsp;Кодексом&nbsp;порядку,&nbsp;позбавлення&nbsp;за&nbsp;ухвалою&nbsp;слідчого&nbsp;судді&nbsp;або&nbsp;суду&nbsp;права&nbsp;на&nbsp;відчуження,&nbsp;розпорядження&nbsp;та/або&nbsp;користування&nbsp;майном,&nbsp;щодо&nbsp;якого&nbsp;існує&nbsp;сукупність&nbsp;підстав&nbsp;чи&nbsp;розумних&nbsp;підозр&nbsp;вважати,&nbsp;що&nbsp;воно&nbsp;є&nbsp;доказом&nbsp;злочину,&nbsp;підлягає&nbsp;спеціальній&nbsp;конфіскації&nbsp;у&nbsp;підозрюваного,&nbsp;обвинуваченого,&nbsp;засудженого,&nbsp;третіх&nbsp;осіб,&nbsp;конфіскації&nbsp;у&nbsp;юридичної&nbsp;особи,&nbsp;для&nbsp;забезпечення&nbsp;цивільного&nbsp;позову,&nbsp;стягнення&nbsp;з&nbsp;юридичної&nbsp;особи&nbsp;отриманої&nbsp;неправомірної&nbsp;вигоди,&nbsp;можливої&nbsp;конфіскації&nbsp;майна.&nbsp;Арешт&nbsp;майна&nbsp;скасовується&nbsp;у&nbsp;встановленому&nbsp;цим&nbsp;Кодексом&nbsp;порядку.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Згідно&nbsp;частини&nbsp;другої&nbsp;статті&nbsp;170&nbsp;КПК&nbsp;України&nbsp;арешт&nbsp;майна&nbsp;допускається&nbsp;з&nbsp;метою&nbsp;забезпечення:&nbsp;1)&nbsp;збереження&nbsp;речових&nbsp;доказів;&nbsp;2)&nbsp;спеціальної&nbsp;конфіскації;&nbsp;3)&nbsp;конфіскації&nbsp;майна&nbsp;як&nbsp;виду&nbsp;покарання&nbsp;або&nbsp;заходу&nbsp;кримінально-правового&nbsp;характеру&nbsp;щодо&nbsp;юридичної&nbsp;особи;&nbsp;4)&nbsp;відшкодування&nbsp;шкоди,&nbsp;завданої&nbsp;внаслідок&nbsp;кримінального&nbsp;правопорушення&nbsp;(цивільний&nbsp;позов),&nbsp;чи&nbsp;стягнення&nbsp;з&nbsp;юридичної&nbsp;особи&nbsp;отриманої&nbsp;неправомірної&nbsp;вигоди.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Згідно&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;173&nbsp;КПК&nbsp;України&nbsp;при&nbsp;вирішенні&nbsp;питання&nbsp;про&nbsp;арешт&nbsp;майна&nbsp;слідчий&nbsp;суддя,&nbsp;суд&nbsp;повинен&nbsp;враховувати:&nbsp;правову&nbsp;підставу&nbsp;для&nbsp;арешту&nbsp;майна;&nbsp;можливість&nbsp;використання&nbsp;майна&nbsp;як&nbsp;доказу&nbsp;у&nbsp;кримінальному&nbsp;провадженні;&nbsp;наявність&nbsp;обґрунтованої&nbsp;підозри&nbsp;у&nbsp;вчиненні&nbsp;особою&nbsp;кримінального&nbsp;правопорушення&nbsp;або&nbsp;суспільно&nbsp;небезпечного&nbsp;діяння,&nbsp;що&nbsp;підпадає&nbsp;під&nbsp;ознаки&nbsp;діяння,&nbsp;передбаченого&nbsp;законом&nbsp;України&nbsp;про&nbsp;кримінальну&nbsp;відповідальність;&nbsp;можливість&nbsp;спеціальної&nbsp;конфіскації&nbsp;майна;&nbsp;розмір&nbsp;шкоди,&nbsp;завданої&nbsp;кримінальним&nbsp;правопорушенням,&nbsp;неправомірної&nbsp;вигоди,&nbsp;яка&nbsp;отримана&nbsp;юридичною&nbsp;особою;&nbsp;розумність&nbsp;та&nbsp;співрозмірність&nbsp;обмеження&nbsp;права&nbsp;власності&nbsp;завданням&nbsp;кримінального&nbsp;провадження;&nbsp;наслідки&nbsp;арешту&nbsp;майна&nbsp;для&nbsp;підозрюваного,&nbsp;обвинуваченого,&nbsp;засудженого,&nbsp;третіх&nbsp;осіб.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Відповідно&nbsp;до&nbsp;ч.&nbsp;1&nbsp;ст.&nbsp;173&nbsp;КПК&nbsp;України&nbsp;слідчий&nbsp;суддя,&nbsp;суд&nbsp;відмовляють&nbsp;у&nbsp;задоволенні&nbsp;клопотання&nbsp;про&nbsp;арешт&nbsp;майна,&nbsp;якщо&nbsp;особа,&nbsp;що&nbsp;його&nbsp;подала,&nbsp;не&nbsp;доведе&nbsp;необхідність&nbsp;такого&nbsp;арешту,&nbsp;а&nbsp;також&nbsp;наявність&nbsp;ризиків,&nbsp;передбачених&nbsp;абзацом&nbsp;другим&nbsp;частини&nbsp;першої&nbsp;статті&nbsp;170&nbsp;цього&nbsp;Кодексу.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Відповідно&nbsp;до&nbsp;ч.&nbsp;3&nbsp;ст.&nbsp;132&nbsp;КПК&nbsp;України&nbsp;доведення&nbsp;необхідності&nbsp;застосування&nbsp;заходів&nbsp;забезпечення&nbsp;кримінального&nbsp;провадження&nbsp;покладено&nbsp;на&nbsp;слідчого,&nbsp;прокурора.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Звертаючись&nbsp;до&nbsp;суду&nbsp;зі&nbsp;згаданим&nbsp;клопотанням&nbsp;прокурором&nbsp;в&nbsp;основу&nbsp;клопотання,&nbsp;як&nbsp;на&nbsp;доказ&nbsp;необхідності&nbsp;застосування&nbsp;заходу&nbsp;забезпечення&nbsp;кримінального&nbsp;провадження&nbsp;(арешту&nbsp;майна)&nbsp;покладено&nbsp;аналітичне&nbsp;дослідження&nbsp;фінансово-господарських&nbsp;операцій&nbsp;ДПСУ,&nbsp;яким&nbsp;встановлено,&nbsp;що&nbsp;посадові&nbsp;особи&nbsp;ТОВ&nbsp;&#171;Консалтинг-Буд&#187;&nbsp;одержавши&nbsp;бюджетні&nbsp;кошти&nbsp;від&nbsp;КП&nbsp;&#171;ГУКГ&nbsp;&#171;Вишневої&nbsp;міської&nbsp;ради&#187;&nbsp;перерахували&nbsp;їх&nbsp;на&nbsp;адресу&nbsp;ТОВ&nbsp;&#171;Вольт&nbsp;Ейдж&nbsp;Плюс&#187;&nbsp;в&nbsp;якості&nbsp;оплати&nbsp;за&nbsp;будівельно-монтажні&nbsp;роботи,&nbsp;по&nbsp;якому&nbsp;в&nbsp;ході&nbsp;проведення&nbsp;дослідження&nbsp;вбачається&nbsp;здійснення&nbsp;лише&nbsp;документального&nbsp;оформлення&nbsp;операцій&nbsp;без&nbsp;фактичного&nbsp;їх&nbsp;проведення,&nbsp;що&nbsp;призвело&nbsp;до&nbsp;привласнення&nbsp;бюджетних&nbsp;коштів.&nbsp;Так,&nbsp;за&nbsp;результатами&nbsp;проведеного&nbsp;аналізу&nbsp;матеріалів&nbsp;фінансово-господарських&nbsp;операцій,&nbsp;встановлено&nbsp;суттєві&nbsp;відхилення&nbsp;між&nbsp;цінами&nbsp;придбання&nbsp;та&nbsp;подальшої&nbsp;реалізації&nbsp;продукції.</span></p>
+		<p align="justify"><i><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Поряд&nbsp;з&nbsp;цим,</span></i><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">&nbsp;п</span><i align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">осилання&nbsp;прокурора&nbsp;на&nbsp;аналітичне&nbsp;дослідження&nbsp;ДПС&nbsp;від&nbsp;21.07.2026&nbsp;№&nbsp;77/10-36-08-02-14/38183153</span></i><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman;font-size:11pt;">,</span><i align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">&nbsp;як&nbsp;на&nbsp;доказ&nbsp;вчинення&nbsp;кримінального&nbsp;правопорушення&nbsp;передбаченого&nbsp;ч.&nbsp;4&nbsp;ст.&nbsp;191,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;209,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;366&nbsp;КК&nbsp;України,</span></i><i align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman;font-size:11pt;">&nbsp;</span></i><i align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">слідчий&nbsp;суддя&nbsp;оцінює&nbsp;критично,&nbsp;так&nbsp;як&nbsp;аналітичні&nbsp;дослідження&nbsp;спеціалістів&nbsp;не&nbsp;можуть&nbsp;бути&nbsp;процесуальним&nbsp;джерелом&nbsp;доказів&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;щодо&nbsp;злочинів.</span></i></p>
+		<p align="justify"><i><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Показовим&nbsp;рішенням&nbsp;Верховного&nbsp;Суду&nbsp;щодо&nbsp;визнання&nbsp;висновку&nbsp;аналітичного&nbsp;дослідження&nbsp;недопустимим&nbsp;доказом&nbsp;є&nbsp;постанова&nbsp;від&nbsp;24.06.2025&nbsp;у&nbsp;справі&nbsp;№172/1310/23.&nbsp;Колегія&nbsp;суддів&nbsp;дійшла&nbsp;висновку,&nbsp;що&nbsp;результат&nbsp;аналітичного&nbsp;дослідження&nbsp;спіціалістів&nbsp;та&nbsp;результати&nbsp;експертиз,&nbsp;проведених&nbsp;на&nbsp;основі&nbsp;висновку&nbsp;спеціаліста,&nbsp;є&nbsp;недопустимими&nbsp;доказами.</span></i></p>
+		<p align="justify"><i><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Наведене&nbsp;вище&nbsp;узгоджується&nbsp;з&nbsp;послідовною&nbsp;практикою&nbsp;Касаційного&nbsp;кримінального&nbsp;суду&nbsp;у&nbsp;складі&nbsp;Верховного&nbsp;Суду&nbsp;(наприклад,&nbsp;із&nbsp;постановами&nbsp;від&nbsp;27&nbsp;вересня&nbsp;2018&nbsp;року&nbsp;у&nbsp;справі&nbsp;№&nbsp;533/93/16-к,&nbsp;провадження&nbsp;№&nbsp;51-4186км18;&nbsp;від&nbsp;28&nbsp;липня&nbsp;2021&nbsp;року&nbsp;у&nbsp;справі&nbsp;№&nbsp;754/7890/19,&nbsp;провадження&nbsp;№&nbsp;51-2468км21;&nbsp;від&nbsp;24&nbsp;листопада&nbsp;2021&nbsp;року&nbsp;у&nbsp;справі&nbsp;№&nbsp;711/93/17,&nbsp;провадження&nbsp;№&nbsp;51-3425км21;&nbsp;від&nbsp;29&nbsp;травня&nbsp;2023&nbsp;року&nbsp;у&nbsp;справі&nbsp;№&nbsp;583/877/21,&nbsp;провадження&nbsp;№&nbsp;51-603км23).</span></i></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Отже,&nbsp;судова&nbsp;практика&nbsp;чітко&nbsp;вказує&nbsp;на&nbsp;недопустимість&nbsp;використання&nbsp;аналітичних&nbsp;продуктів&nbsp;як&nbsp;доказів&nbsp;у&nbsp;кримінальних&nbsp;провадженнях.&nbsp;Аналітичний&nbsp;продукт&nbsp;є&nbsp;лише&nbsp;суб`єктивним&nbsp;упорядкуванням&nbsp;інформації&nbsp;для&nbsp;внутрішнього&nbsp;користування&nbsp;та&nbsp;не&nbsp;може&nbsp;бути&nbsp;основою&nbsp;для&nbsp;проведення&nbsp;заходів&nbsp;забезпечення&nbsp;кримінального&nbsp;провадження.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Відповідно&nbsp;до&nbsp;ст.&nbsp;7,&nbsp;ст.&nbsp;16&nbsp;КПК&nbsp;України&nbsp;загальною&nbsp;засадою&nbsp;кримінального&nbsp;провадження&nbsp;є&nbsp;недоторканість&nbsp;права&nbsp;власності.&nbsp;Позбавлення&nbsp;або&nbsp;обмеження&nbsp;права&nbsp;власності&nbsp;під&nbsp;час&nbsp;кримінального&nbsp;провадження&nbsp;здійснюється&nbsp;лише&nbsp;на&nbsp;підставі&nbsp;вмотивованого&nbsp;судового&nbsp;рішення,&nbsp;ухваленого&nbsp;в&nbsp;порядку,&nbsp;передбаченому&nbsp;цим&nbsp;Кодексом.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">У&nbsp;своїх&nbsp;висновках&nbsp;ЄСПЛ&nbsp;неодноразово&nbsp;нагадував,&nbsp;що&nbsp;перша&nbsp;та&nbsp;найважливіша&nbsp;вимога&nbsp;статті&nbsp;1&nbsp;Протоколу&nbsp;1&nbsp;полягає&nbsp;в&nbsp;тому,&nbsp;що&nbsp;будь-яке&nbsp;втручання&nbsp;публічної&nbsp;влади&nbsp;в&nbsp;право&nbsp;на&nbsp;мирне&nbsp;володіння&nbsp;майном&nbsp;має&nbsp;бути&nbsp;законним:&nbsp;друге&nbsp;речення&nbsp;п.&nbsp;1&nbsp;дозволяє&nbsp;позбавлення&nbsp;власності&nbsp;лише&nbsp;&#171;на&nbsp;умовах,&nbsp;передбачених&nbsp;законом&#187;,&nbsp;а&nbsp;п.&nbsp;2&nbsp;визначає,&nbsp;що&nbsp;держави&nbsp;мають&nbsp;право&nbsp;здійснювати&nbsp;контроль&nbsp;за&nbsp;користуванням&nbsp;майном&nbsp;шляхом&nbsp;введення&nbsp;в&nbsp;дію&nbsp;&#171;законів&#187;.&nbsp;Більше&nbsp;того,&nbsp;верховенство&nbsp;права,&nbsp;один&nbsp;з&nbsp;фундаментальних&nbsp;принципів&nbsp;демократичного&nbsp;суспільства,&nbsp;є&nbsp;наскрізним&nbsp;принципом&nbsp;усіх&nbsp;статей&nbsp;конвенції&nbsp;(рішення&nbsp;у&nbsp;справах&nbsp;&#171;Амюр&nbsp;проти&nbsp;Франції&#187;,&nbsp;&#171;Колишній&nbsp;король&nbsp;Греції&nbsp;та&nbsp;інші&nbsp;проти&nbsp;Греції&#187;&nbsp;та&nbsp;&#171;Малама&nbsp;проти&nbsp;Греції&#187;).</span></p>
+		<p align="justify"><i><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Верховний&nbsp;Суд&nbsp;у&nbsp;постанові&nbsp;від&nbsp;12.03.2020&nbsp;у&nbsp;справі&nbsp;№&nbsp;757/30763/19-к&nbsp;звернув&nbsp;увагу,&nbsp;що&nbsp;арешт&nbsp;майна&nbsp;третьої&nbsp;особи&nbsp;без&nbsp;доведення&nbsp;її&nbsp;зв`язку&nbsp;із&nbsp;кримінальним&nbsp;правопорушенням&nbsp;є&nbsp;невиправданим&nbsp;втручанням&nbsp;у&nbsp;право&nbsp;мирного&nbsp;володіння&nbsp;майном</span></i><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman;font-size:11pt;">.</span></p>
+		<p align="justify"><i><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Так,&nbsp;у&nbsp;постанові&nbsp;Касаційного&nbsp;кримінального&nbsp;суду&nbsp;у&nbsp;складі&nbsp;Верховного&nbsp;Суду&nbsp;від&nbsp;19.02.2019&nbsp;у&nbsp;справі&nbsp;№&nbsp;569/17036/18-к&nbsp;суд&nbsp;зазначив,&nbsp;що&nbsp;арешт&nbsp;майна&nbsp;не&nbsp;може&nbsp;ґрунтуватися&nbsp;на&nbsp;формальному&nbsp;посиланні&nbsp;на&nbsp;необхідність&nbsp;забезпечення&nbsp;кримінального&nbsp;провадження,&nbsp;а&nbsp;сторона&nbsp;обвинувачення&nbsp;зобов`язана&nbsp;довести&nbsp;наявність&nbsp;конкретних&nbsp;обставин,&nbsp;які&nbsp;підтверджують&nbsp;відповідність&nbsp;майна&nbsp;критеріям,&nbsp;визначеним&nbsp;ст.&nbsp;98&nbsp;КПК&nbsp;України.</span></i></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Відповідно&nbsp;до&nbsp;практики&nbsp;Європейського&nbsp;суду,&nbsp;для&nbsp;того,&nbsp;щоб&nbsp;втручання&nbsp;в&nbsp;право&nbsp;власності&nbsp;вважалося&nbsp;допустимим,&nbsp;воно&nbsp;повинно&nbsp;служити&nbsp;не&nbsp;лише&nbsp;законній&nbsp;меті&nbsp;в&nbsp;інтересах&nbsp;суспільства,&nbsp;а&nbsp;повинна&nbsp;бути&nbsp;розумна&nbsp;співмірність&nbsp;між&nbsp;використовуваними&nbsp;інструментами&nbsp;і&nbsp;тією&nbsp;метою,&nbsp;на&nbsp;котру&nbsp;спрямований&nbsp;будь-який&nbsp;захід,&nbsp;що&nbsp;позбавляє&nbsp;особу&nbsp;власності.&nbsp;Розумна&nbsp;рівновага&nbsp;має&nbsp;зберігатися&nbsp;між&nbsp;загальними&nbsp;інтересами&nbsp;суспільства&nbsp;та&nbsp;вимогами&nbsp;дотримання&nbsp;основних&nbsp;прав&nbsp;особи&nbsp;(рішення&nbsp;у&nbsp;справі&nbsp;&quot;АГОСІ&quot;&nbsp;проти&nbsp;Сполученого&nbsp;Королівства&quot;&nbsp;(AGOSI&nbsp;v.&nbsp;the&nbsp;United&nbsp;Kingdom&nbsp;від&nbsp;24&nbsp;жовтня&nbsp;1986&nbsp;року,&nbsp;серія&nbsp;А,&nbsp;№&nbsp;108,&nbsp;п.&nbsp;52).&nbsp;Іншими&nbsp;словами,&nbsp;заходи&nbsp;щодо&nbsp;обмеження&nbsp;права&nbsp;власності&nbsp;мають&nbsp;бути&nbsp;пропорційними&nbsp;щодо&nbsp;мети&nbsp;їх&nbsp;застосування.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Пунктом&nbsp;15&nbsp;ч.&nbsp;1&nbsp;ст.&nbsp;7&nbsp;КПК&nbsp;України&nbsp;встановлено,&nbsp;що&nbsp;зміст&nbsp;та&nbsp;форма&nbsp;кримінального&nbsp;провадження&nbsp;повинні&nbsp;відповідати&nbsp;загальним&nbsp;засадам&nbsp;кримінального&nbsp;провадження,&nbsp;до&nbsp;яких,&nbsp;зокрема,&nbsp;відносяться&nbsp;змагальність&nbsp;сторін&nbsp;та&nbsp;свобода&nbsp;в&nbsp;поданні&nbsp;ними&nbsp;суду&nbsp;своїх&nbsp;доказів&nbsp;і&nbsp;у&nbsp;доведенні&nbsp;перед&nbsp;судом&nbsp;їх&nbsp;переконливості.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Частиною&nbsp;1&nbsp;ст.&nbsp;22&nbsp;КПК&nbsp;України&nbsp;визначено,&nbsp;що&nbsp;кримінальне&nbsp;провадження&nbsp;здійснюється&nbsp;на&nbsp;основі&nbsp;змагальності,&nbsp;що&nbsp;передбачає&nbsp;самостійне&nbsp;обстоювання&nbsp;стороною&nbsp;обвинувачення&nbsp;і&nbsp;стороною&nbsp;захисту&nbsp;їхніх&nbsp;правових&nbsp;позицій,&nbsp;прав,&nbsp;свобод&nbsp;і&nbsp;законних&nbsp;інтересів&nbsp;засобами,&nbsp;передбаченими&nbsp;цим&nbsp;Кодексом.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Згідно&nbsp;до&nbsp;ч.&nbsp;1&nbsp;ст.&nbsp;9&nbsp;КПК&nbsp;України&nbsp;під&nbsp;час&nbsp;кримінального&nbsp;провадження&nbsp;суд,&nbsp;слідчий&nbsp;суддя,&nbsp;прокурор,&nbsp;керівник&nbsp;органу&nbsp;досудового&nbsp;розслідування,&nbsp;слідчий,&nbsp;інші&nbsp;службові&nbsp;особи&nbsp;органів&nbsp;державної&nbsp;влади&nbsp;зобов`язані&nbsp;неухильно&nbsp;додержуватися&nbsp;вимог&nbsp;Конституції&nbsp;України,&nbsp;цього&nbsp;Кодексу,&nbsp;міжнародних&nbsp;договорів,&nbsp;згода&nbsp;на&nbsp;обов`язковість&nbsp;яких&nbsp;надана&nbsp;Верховною&nbsp;Радою&nbsp;України,&nbsp;вимог&nbsp;інших&nbsp;актів&nbsp;законодавства.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Згідно&nbsp;з&nbsp;п.&nbsp;18)&nbsp;ч.&nbsp;1&nbsp;ст.&nbsp;3&nbsp;КПК&nbsp;України,&nbsp;до&nbsp;повноважень&nbsp;слідчого&nbsp;судді&nbsp;належить&nbsp;здійснення&nbsp;у&nbsp;порядку,&nbsp;передбаченому&nbsp;цим&nbsp;Кодексом,&nbsp;судового&nbsp;контролю&nbsp;за&nbsp;дотриманням&nbsp;прав,&nbsp;свобод&nbsp;та&nbsp;інтересів&nbsp;осіб&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;під&nbsp;час&nbsp;проведення&nbsp;досудового&nbsp;розслідування&nbsp;в&nbsp;кримінальному&nbsp;провадженні.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Процесуальним&nbsp;законом&nbsp;визначено,&nbsp;що&nbsp;обов`язок&nbsp;здійснення&nbsp;судового&nbsp;контролю&nbsp;за&nbsp;дотриманням&nbsp;прав,&nbsp;свобод&nbsp;та&nbsp;інтересів&nbsp;осіб&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;покладається&nbsp;на&nbsp;слідчого&nbsp;суддю.&nbsp;Таким&nbsp;чином,&nbsp;саме&nbsp;слідчий&nbsp;суддя&nbsp;шляхом&nbsp;застосування&nbsp;своїх&nbsp;повноважень&nbsp;має&nbsp;забезпечити&nbsp;дотримання&nbsp;закону&nbsp;усіма&nbsp;учасниками&nbsp;кримінального&nbsp;провадження,&nbsp;а&nbsp;також&nbsp;зобов`язаний&nbsp;вживати&nbsp;передбачені&nbsp;законом&nbsp;заходи&nbsp;для&nbsp;поновлення&nbsp;порушених&nbsp;під&nbsp;час&nbsp;досудового&nbsp;розслідування&nbsp;прав&nbsp;та&nbsp;інтересів&nbsp;осіб.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">На&nbsp;переконання&nbsp;слідчого&nbsp;судді,&nbsp;накладення&nbsp;арешту&nbsp;на&nbsp;майно&nbsp;третьої&nbsp;особи,&nbsp;за&nbsp;відсутності&nbsp;належних&nbsp;підстав&nbsp;її&nbsp;причетності&nbsp;до&nbsp;даного&nbsp;кримінального&nbsp;провадження,&nbsp;суперечитиме&nbsp;загальним&nbsp;засадам&nbsp;кримінального&nbsp;провадження,&nbsp;зокрема,&nbsp;принципам&nbsp;верховенства&nbsp;права,&nbsp;а&nbsp;також&nbsp;закріпленим&nbsp;у&nbsp;ст.&nbsp;2&nbsp;КПК&nbsp;України&nbsp;завданням&nbsp;кримінального&nbsp;провадження.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Зважаючи,&nbsp;що&nbsp;прокурором,&nbsp;не&nbsp;надано&nbsp;переконливих&nbsp;доказів,&nbsp;які&nbsp;б&nbsp;підтверджували&nbsp;обставини,&nbsp;для&nbsp;застосування&nbsp;заходу&nbsp;забезпечення&nbsp;кримінального&nbsp;провадження&nbsp;як&nbsp;арешт&nbsp;майна,&nbsp;слідчий&nbsp;суддя,&nbsp;виходячи&nbsp;з&nbsp;принципу&nbsp;змагальності&nbsp;сторін&nbsp;у&nbsp;кримінальному&nbsp;провадженні,&nbsp;дійшов&nbsp;до&nbsp;висновку,&nbsp;що&nbsp;у&nbsp;задоволенні&nbsp;поданого&nbsp;клопотання&nbsp;слід&nbsp;відмовити.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Керуючись&nbsp;ст.ст.&nbsp;3,&nbsp;7,&nbsp;22,&nbsp;131,&nbsp;132,&nbsp;170-173,&nbsp;309,&nbsp;395&nbsp;КПК&nbsp;України,&nbsp;слідчий&nbsp;суддя,</span></p>
+		<p>&nbsp;</p>
+		<p align="center"><b><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">ПОСТАНОВИВ:</span></b></p>
+		<p>&nbsp;</p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">У&nbsp;задоволенні&nbsp;клопотання&nbsp;прокурора&nbsp;відділу&nbsp;Київської&nbsp;обласної&nbsp;прокуратури&nbsp;ОСОБА_3&nbsp;про&nbsp;арешт&nbsp;майна&nbsp;подане&nbsp;у&nbsp;кримінальному&nbsp;провадженні&nbsp;№42025110000000469&nbsp;внесеного&nbsp;до&nbsp;ЄРДР&nbsp;04.12.2025&nbsp;за&nbsp;ознаками&nbsp;кримінальних&nbsp;правопорушень,&nbsp;передбачених&nbsp;ч.&nbsp;4&nbsp;ст.&nbsp;191,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;209,&nbsp;ч.&nbsp;2&nbsp;ст.&nbsp;366</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman;font-size:11pt;">&nbsp;</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">КК&nbsp;України&nbsp;</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman;font-size:11pt;">-&nbsp;</span><span align="justify" style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">відмовити.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Ухвала&nbsp;може&nbsp;бути&nbsp;оскаржена&nbsp;безпосередньо&nbsp;до&nbsp;Київського&nbsp;апеляційного&nbsp;суду&nbsp;протягом&nbsp;5&nbsp;днів&nbsp;з&nbsp;моменту&nbsp;її&nbsp;оголошення&nbsp;або&nbsp;отримання&nbsp;її&nbsp;копії.</span></p>
+		<p align="justify"><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Повний&nbsp;текст&nbsp;ухвали&nbsp;виготовлено&nbsp;15.10.2026.</span></p>
+		<p><span style="background-color:#FFFFFF;font-family:Times New Roman CYR;font-size:11pt;">Слідчий&nbsp;суддя&nbsp;ОСОБА_1</span></p>
+		<p>&nbsp;</p>
+
+	</body>
+</html></textarea>
+</div>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('h1').css('display', 'none');
+            $('#logon').css('display', 'none');
+            $('#menucontainer').css('display', 'none');
+            $('#header').css('margin-bottom', '10px');
+            function windowResize() {
+                var el = $('#divdocument');
+                el.height($(window).height() - 1 - el.offset().top - el.outerHeight(true) + el.height());
+                var el = $('#divframe');
+                el.width($('#divdocument').width() - el.outerWidth(true) + el.width());
+                el.height($('#divdocument').height() - $('#divcasecat').outerHeight(true) - $('#divprint').outerHeight() - el.outerHeight(true) + el.height());
+            }
+            windowResize();
+            $(window).resize(function () {
+                windowResize();
+            });
+
+            var el = $('#txtdepository');
+            var src = el.text();
+            var txt = '';
+            var pos = 0;
+            var step = 32766;
+            while (pos < src.length) {
+                el.text(src.substr(pos, step));
+                pos += step;
+                txt = txt + el.html();
+            }
+            txt = txt.replace(/&lt;/gi, "<").replace(/&gt;/gi, ">").replace(/color/gi, "tag1").replace(/font-family/gi, "tag2").replace(/font-size/gi, "tag3").replace(/line-height/gi, "tag4").replace(/text-indent/gi, "tag5").replace(/margin/gi, "tag6").replace(/padding/gi, "tag7");
+
+            var s1 = "&nbsp;";
+            var s2 = s1 + s1;
+            var ix = 0;
+            var ix2 = 0;
+            while (ix < txt.length && (ix2 = txt.indexOf(s1, ix)) >= 0) {
+                if (ix2 == txt.indexOf(s2, ix)) {
+                    ix = ix2 + s2.length;
+                } else {
+                    txt = txt.substr(0, ix2) + " " + txt.substr(ix2 + s1.length);
+                    ix = ix2;
+                }
+            }
+
+            divframe.document.open();
+            divframe.document.write(txt);
+            divframe.document.close();
+            $('#divframe').contents().find('head').each(function () {
+                try {
+                    // Для версій ІЕ <= 8 код не працює, тому ставимо обгорточку try
+                    $(this).find('title').html($('html').find('title').html());
+                } catch (e) { }
+                $(this).html('<link rel="shortcut icon" href="/Content/Images/favicon.ico" type="image/x-icon" />' + $(this).html());
+            }).parent('html').find('body').each(function () {
+                $(this).css('margin', '0').css('padding', '10px');
+                $(this).find('img').remove();
+                $(this).html('<div style="display: block; text-align: center"><img /></div>' + $(this).html());
+                $(this).find('img').attr('src', '/Content/Images/rada.gif').attr('title', 'Державний герб України').attr('alt', 'Державний герб України');
+            });
+            $('a#tooltp').click(function () {
+                $('form#ree_doc').submit();
+            });
+            $('#btnPractice').click(function () {
+                var currentUrl = window.location.href;
+                var targetUrl = 'https://lpd-api-prod.court.gov.ua/api/public/v1/search?q=' + encodeURIComponent(currentUrl);
+                window.open(targetUrl, '_blank');
+            });
+            $('#btnPrint').click(function () {
+                $('#divframe').contents().find('html').prepend('<hr />');
+                $('#divframe').contents().find('html').prepend($('div#divcasecat').html());
+                document.write($('#divframe').contents().find('html').html());
+                document.close();
+                $('a:link').css({
+                    "color": "black",
+                    "text-decoration": "none",
+                    "cursor": "text"
+                });
+                $('a:visited').css({
+                    "color": "black",
+                    "text-decoration": "none",
+                    "cursor": "text"
+                });
+                $('a:hover').css({
+                    "color": "black",
+                    "text-decoration": "none",
+                    "cursor": "text"
+                });
+                $('a:active').css({
+                    "color": "black",
+                    "text-decoration": "none",
+                    "cursor": "text"
+                });
+            });
+        });
+    });
+</script>
+            </div>
+            <div id="init">
+                <!--div class="init-caption">
+                    Введіть, будь ласка, логін та пароль
+                </div-->
+                <div class="init-log">
+                    <a>Логін:</a><br />
+                    <a>Для помилки:</a><br />
+                    <input id="initLog" type="text" />
+                </div>
+                <div class="init-pass">
+                    <a>Пароль:</a><br />
+                    <a>Для помилки:</a><br />
+                    <input id="initPass" type="password" />
+                </div>
+                <div class="init-submit">
+                    <input id="initOk" type="button" value="Вхід" />
+                    <input id="initCancel" type="button" value="Відмова" />
+                </div>
+            </div>
+
+            <script type="text/javascript">
+
+
+		    function Btn_search_click() {
+		        if ((!$('#logon').hasClass('notVisible')) || ('1' == '1'))
+                {
+		            $('#login > form').submit();
+		            blockPage();
+		        }
+                else
+                {
+		            $('#backImage2').attr('src', '/Image?id=' + (new Date()).getTime().toString());
+		            $('#modalcaptcha').show();
+		        }
+
+		        var fNumber = Math.floor(Math.random() * 11);
+
+		        if (fNumber == 0) {
+		            fNumber = 1;
+		        }
+
+		        var sNumber = Math.floor(Math.random() * 11);
+		        var captcha = "Вкажіть правильний результат " + fNumber + "+" + sNumber + " ";
+
+		        var summ = fNumber + sNumber;
+
+
+		        var width = parseInt($(document).width() / 2);
+		        var height = parseInt($(document).height() / 2);
+
+		        $('#modalcaptcha').css({
+		            top: 300,
+		            left: width - parseInt($('#modalcaptcha').width() / 2)
+		        });
+
+		        return false;
+		    }
+
+		    $(document).ready(function () {
+
+		       // $('#btn').click(Btn_search_click);
+
+
+
+		        $('#modalcaptcha .searchcapchaclose').click(function () {
+		            $('#modalcaptcha').hide();
+		        });
+
+		    });
+
+            </script>
+
+            <div id="modalcaptcha" style="display: none;">
+                <p style="width: 355px; text-align: justify;">З метою упередження перешкоджанню стабільній роботі Реєстру шляхом здійснення автоматичних або автоматизованих запитів на пошук та копіювання ("викачування") бази даних, запроваджено інтерактивний елемент захисту системи</p>
+
+                <div id="captchablock">
+                    <a id="captchaQuery">Введіть cуму цифр, зображених на малюнку:</a><br />
+
+                    <input id="backWord2" type="text" /><br />
+                    <img id="backImage2" alt="" />
+                </div>
+                <div>
+                    <button type="button" class="searchbtn">Перевірити</button>
+                    <button type="button" class="searchcapchaclose">Закрити</button>
+                </div>
+            </div>
+            <div id="back">
+                <div class="back-name">
+                    <a>Ваше ім'я:</a><br />
+                    <a>Для помилки:</a><br />
+                    <input id="backName" type="text" class="backName" />
+                </div>
+                <div class="back-mail">
+                    <a>Ваш e-mail:</a><br />
+                    <a>Для помилки:</a><br />
+                    <input id="backMail" type="text" class="backMail" />
+                </div>
+                <div class="back-message">
+                    <a>Повідомлення:</a><br />
+                    <a>Для помилки:</a><br />
+                    <textarea id="backMessage" class="backMessage" cols="0" rows="0"></textarea>
+                </div>
+                <div class="back-word">
+                    <a>Введіть в поле результат арифметичного виразу:</a><br />
+                    <a>Для помилки:</a><br />
+                    <input id="backWord" type="text" class="backWord" /><br />
+                    <img id="backImage" class="backImage" alt="" />
+                </div>
+                <div class="back-submit">
+                    <input id="backOk" type="button" class="backOk" value="Відправити" />
+                    <input id="backCancel" type="button" class="backCancel" value="Скасувати" />
+                </div>
+            </div>
+            <div id="block">
+                Зачекайте, будь ласка...
+            </div>
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        startURL = function () {
+            var url = document.URL;
+            var url_1 = url.substr(0, url.indexOf('//') + 2);
+            var url_2 = url.substr(url.indexOf('//') + 2);
+            url = url_1 + url_2.substr(0, url_2.indexOf('/') + 1);
+            return url;
+        }
+        
+        $(document).ready(function () {
+            $('#aLoginOut').click(function () {
+                if ($(this).find('label').length == 0) {
+                    $.ajax({
+                        url: startURL() + "Account/LogOff",
+                        cache: false,
+                        data: {
+                        },
+                        type: 'POST',
+                        dataType: 'json',
+                        success: function (data, statusLine) {
+                            $.each(data, function (i, rec) {
+                                if (rec.key == 'success') {
+                                    $('#logon').addClass('notVisible');
+                                    $('#aLoginOut').html('Повний доступ');
+                                    $('#tableLiga').removeClass('notVisible');
+                                    if ($('#Liga').val() == 'true') $('#divProviderLinks').removeAttr('style');
+                                    console.log(res, "res")
+                                    console.log(i,"i")
+                                }
+                                if (rec.key == 'error') {
+                                    alert(rec.mes);
+                                }
+                            });
+                        },
+                        error: function (e) {
+                            alert('Виникла непередбачувана та неконтрольована помилка [' + e.Message + ']!');
+                        }
+                    });
+                    return;
+                }
+            });
+            $('#fullAccess').click(function () {
+                if ($(this).find('label').length > 0) {
+                    $.ajax({
+                        url: startURL() + "Account/LogOff",
+                        cache: false,
+                        data: {
+                        },
+                        type: 'POST',
+                        dataType: 'json',
+                        success: function (data, statusLine) {
+                            $.each(data, function (i, rec) {
+                                if (rec.key == 'success') {
+                                    $('#logon').addClass('notVisible');
+                                    $('#fullAccess').html('Повний доступ');
+                                    $('#tableLiga').removeClass('notVisible');
+                                    if ($('#Liga').val() == 'true') $('#divProviderLinks').removeAttr('style');
+                                }
+                                if (rec.key == 'error') {
+                                    alert(rec.mes);
+                                }
+                            });
+                        },
+                        error: function (e) {
+                            alert('Виникла непередбачувана та неконтрольована помилка [' + e.Message + ']!');
+                        }
+                    });
+                    return;
+                }
+                //var fr = $('#init');
+                //fr.find('input:text, input:password').val('').prev().addClass('notVisible').prev().addClass('notVisible').addClass('redColor').prev().removeClass('notVisible').prev().removeClass('notVisible');
+                //fr.css('display', 'inline');
+                //fr.css('left', ($(window).width() - fr.outerWidth()) / 2);
+                //fr.css('top', $(window).scrollTop() + ($(window).height() - fr.outerHeight()) / 2);
+                //fr.find('input:first').focus();
+            });
+
+            $('#init').find('input:password').keydown(function (e) {
+                if (e.keyCode == 13) {
+                    $('#initOk').click();
+                }
+            });
+
+            $('#initOk').click(function () {
+                var fr = $('#init');
+                fr.find('input:text, input:password').prev().addClass('notVisible').prev().addClass('notVisible').addClass('redColor').prev().removeClass('notVisible').prev().removeClass('notVisible');
+                var _initLog = $('#initLog').val();
+                var _initPass = Sha256.hash($('#initPass').val());
+                $.ajax({
+                    url: startURL() + "Account/LoginForm",
+                    cache: false,
+                    data: {
+                        username: _initLog,
+                        password: _initPass
+                    },
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (data, statusLine) {
+                        $.each(data, function (i, rec) {
+                            if (rec.key == 'success') {
+                                if (rec.mes == '') rec.mes = _initLog;
+                                $('#logon').removeClass('notVisible').text('Ласкаво просимо, ' + rec.mes + '!');
+                                $('#fullAccess').html('<label>Вихід</label>');
+                                $('#tableLiga').addClass('notVisible');
+                                $('#divProviderLinks').attr('style', 'display: none');
+
+                                fr.css('display', 'none');
+                            }
+                            if (rec.key == 'error' && rec.mes == 'log/pass') {
+                                $('#initLog').prev().removeClass('notVisible').prev().removeClass('notVisible').text('Перевірте логін:').prev().addClass('notVisible').prev().addClass('notVisible');
+                                $('#initPass').prev().removeClass('notVisible').prev().removeClass('notVisible').text('Перевірте пароль:').prev().addClass('notVisible').prev().addClass('notVisible');
+                                $('#initLog').focus();
+                            }
+                            if (rec.key == 'error' && rec.mes != 'log/pass') {
+                                alert(key.mes);
+                            }
+                        });
+                    },
+                    error: function (e) {
+                        alert('Виникла непередбачувана та неконтрольована помилка [' + e.Message + ']!');
+                    }
+                });
+                //fr.css('display', 'none');
+            });
+
+            $('#initCancel').click(function () {
+                var fr = $('#init');
+                fr.css('display', 'none');
+            });
+
+            $('#aRemarks').click(function () {
+                backClick();
+            });
+
+            $('#backConnection').click(function () {
+                backClick();
+            });
+
+            function backClick() {
+                var fr = $('#back');
+                $('#backImage').attr('src', '/Image?id=' + (new Date()).getTime().toString());
+                fr.find('input:text').val('').prev().addClass('notVisible').prev().addClass('notVisible').addClass('redColor').prev().removeClass('notVisible').prev().removeClass('notVisible');
+                fr.find('textarea').val('').prev().addClass('notVisible').prev().addClass('notVisible').addClass('redColor').prev().removeClass('notVisible').prev().removeClass('notVisible');
+                fr.css('display', 'inline');
+                fr.css('left', ($(window).width() - fr.outerWidth()) / 2);
+                fr.css('top', $(window).scrollTop() + ($(window).height() - fr.outerHeight()) / 2);
+                fr.find('input:first').focus();
+            }
+            function CaptchaTestClick()
+            {
+
+                var _backWord = $('#backWord2').val();
+                $.ajax({
+                    url: startURL() + "Contact/Send",
+                    cache: false,
+                    data: {
+                        backWord: _backWord
+                    },
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (data, statusLine) {
+                        var suc = 0;
+                        var err = '';
+                        var inp;
+
+                        $.each(data, function (i, rec) {
+                            if (rec.key == "backWord") {
+                                suc = 1;
+                            }
+
+                        });
+
+                        if (suc == 0) {
+
+                            $('#login > form').submit();
+                            blockPage();
+                        }
+                        else {
+                            $('#backImage2').attr('src', '/Image?id=' + (new Date()).getTime().toString());
+                            $('#backWord2').val('');
+                            $("#captchaQuery").css('color', 'red');
+                        }
+                    },
+                    error: function () {
+                        alert('Виникла непередбачувана та неконтрольована помилка!');
+                    }
+                });
+                //fr.css('display', 'none');
+            }
+
+            $('#backWord2').keypress(function (e) {
+                var k = e.keyCode || e.which;
+                if (k == 13) {
+                    CaptchaTestClick();
+                    return false;
+                }
+            });
+
+            $('#modalcaptcha .searchbtn').click(CaptchaTestClick);
+
+
+            $('#backOk').click(function () {
+                var fr = $('#back');
+                fr.find('input:text').prev().addClass('notVisible').prev().addClass('notVisible').prev().removeClass('notVisible').prev().removeClass('notVisible');
+                fr.find('textarea').prev().addClass('notVisible').prev().addClass('notVisible').prev().removeClass('notVisible').prev().removeClass('notVisible');
+                var _backName = $('#backName').val();
+                var _backMail = $('#backMail').val();
+                var _backMessage = $('#backMessage').val();
+                var _backWord = $('#backWord').val();
+                $.ajax({
+                    url: startURL() + "Contact/Send",
+                    cache: false,
+                    data: {
+                        backName: _backName,
+                        backMail: _backMail,
+                        backMessage: _backMessage,
+                        backWord: _backWord
+                    },
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (data, statusLine) {
+                        var suc = '';
+                        var err = '';
+                        var inp;
+                        $.each(data, function (i, rec) {
+                            if (rec.key == 'success') {
+                                suc = rec.mes;
+                            }
+                            if (rec.key == 'error') {
+                                err = rec.mes;
+                            }
+                            if (rec.key == 'backName') {
+                                inp = $('#' + rec.key).prev().removeClass('notVisible').prev().removeClass('notVisible');
+                                if (rec.mes == 'Empty') {
+                                    inp.text("Поле для імені не може бути порожнім:");
+                                } else if (rec.mes == 'Small') {
+                                    inp.text("Поле для імені має бути змістовним:");
+                                }
+                                inp.prev().addClass('notVisible').prev().addClass('notVisible');
+                            }
+                            if (rec.key == 'backMail') {
+                                inp = $('#' + rec.key).prev().removeClass('notVisible').prev().removeClass('notVisible');
+                                if (rec.mes == 'Empty') {
+                                    inp.text("Поле для e-mail не може бути порожнім:");
+                                } else if (rec.mes == 'Incorrect') {
+                                    inp.text("Поле для e-mail має бути коректним:");
+                                }
+                                inp.prev().addClass('notVisible').prev().addClass('notVisible');
+                            }
+                            if (rec.key == 'backMessage') {
+                                inp = $('#' + rec.key).prev().removeClass('notVisible').prev().removeClass('notVisible');
+                                if (rec.mes == 'Empty') {
+                                    inp.text("Повідомлення не може бути порожнім:");
+                                } else if (rec.mes == 'Small') {
+                                    inp.text("Повідомлення має бути змістовним:");
+                                }
+                                inp.prev().addClass('notVisible').prev().addClass('notVisible');
+                            }
+                            if (rec.key == 'backWord') {
+                                inp = $('#' + rec.key).prev().removeClass('notVisible').prev().removeClass('notVisible');
+                                if (rec.mes == 'Empty') {
+                                    inp.text("Введіть в поле результат арифметичного виразу:");
+                                } else if (rec.mes == 'Incorrect') {
+                                    inp.text("Невірні символи, спробуйте ще раз:");
+                                }
+                                inp.prev().addClass('notVisible').prev().addClass('notVisible');
+                            }
+                        });
+                        if (suc != '') {
+                            fr.css('display', 'none');
+                            alert(suc);
+                        }
+                        if (err != '') {
+                            alert(err);
+                        }
+                    },
+                    error: function () {
+                        alert('Виникла непередбачувана та неконтрольована помилка!');
+                    }
+                });
+                //fr.css('display', 'none');
+            });
+
+            $('#backCancel').click(function () {
+                var fr = $('#back');
+                fr.css('display', 'none');
+            });
+
+            var bic = 10;
+            var cic = (new Date()).getTime();
+            var nr = String.fromCharCode(13) + String.fromCharCode(10);
+            $('#backImage').attr('title', 'Клікніть, щоб оновити малюнок!' + nr + 'Залишилось 10 спроб!');
+            $('#backImage').click(function () {
+                if (((new Date()).getTime() - cic) < 1000) { return; } else { cic = (new Date()).getTime(); }
+                --bic;
+                if (bic >= 0) $('#backImage').attr('src', '/Image?id=' + (new Date()).getTime().toString()).attr('title', (bic == 0) ? 'Ви використали усі спроби!' : ('Клікніть, щоб оновити малюнок!' + nr + 'Залишил' + ((bic == 1) ? 'а' : 'о') + 'сь ' + bic + ' ' + ((bic > 4) ? 'спроб' : ((bic == 1) ? 'спроба' : 'спроби')) + '!'));
+            });
+
+            $('body').css('visibility', 'visible');
+        });
+    });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript">
+    var gaJsHost = "https://www.";
+    document.write(unescape("%3Cscript src='" + gaJsHost + "googletagmanager.com/gtag/js?id=G-D5XE2RC1LW' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-D5XE2RC1LW');
+</script>
+
+<!--script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script!-->
+<!--script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-33842633-1");
+        pageTracker._trackPageview();
+    } catch (err) { }
+</script!-->
+
