@@ -1,0 +1,66 @@
+# Журнал відвіданих URL — researcher, справа «Мідас» + «Форест Гамп», 11.11.2026
+
+Формат: URL | інструмент | дата | результат
+Chrome (chrome_*) недоступний у цього агента (інструменти відсутні в наборі). Первинний інструмент — MCP web_extractor (fetch_page/check_urls; render=static для сайтів із 403 у браузерному режимі). WebSearch (google) — для пошуку URL (сторінки пошукової видачі не цитуються як джерела фактів, позначено «(пошук)»).
+ЄДРСР: reyestr.court.gov.ua відкривається в тестовому режимі; пряма ухвала у справі «Мідас» не знайдена (спроба зафіксована в R-33).
+
+## Відкрито успішно
+
+https://nabu.gov.ua/news/operatciia-midas-vykryto-vysokorivnevu-zlochynnu-organizatciiu-shcho-diiala-u-sferi-energetyky | web_extractor fetch_page render=static (у браузерному режимі 403) | 11.11.2026 | відкрився, 200
+https://nabu.gov.ua/news/operatciia-forest-gamp | web_extractor fetch_page render=static | 11.11.2026 | відкрився, 200
+https://hacc-decided.ti-ukraine.org/uk/cases/52025000000000472 | web_extractor check_urls + fetch_page | 11.11.2026 | відкрився, 200
+https://hacc-decided.ti-ukraine.org/uk/cases/52026000000000092 | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://hacc-decided.ti-ukraine.org/uk/news/operaciya-midas-nabu-ta-sap-zaversili-slidstvo | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://hacc-decided.ti-ukraine.org/uk/news/operaciya-midas-vaks-zminiv-zapobiznii-zaxid-eksradniku-ministra-energetiki-igoryu-mironyuku | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://hacc-decided.ti-ukraine.org/uk/news/za-irinu-mudru-vnesli-vsyu-sumu-zastavi | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://hacc-decided.ti-ukraine.org/uk/news/operaciya-forest-gamp-ta-femida-vaks-viznaciv-zastavu-oleksiyu-stupaku | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://hacc-decided.ti-ukraine.org/uk/news/vaks-obrav-zapobiznii-zaxid-dlya-eksgolovi-naglyadovoyi-radi-sense-bank | web_extractor fetch_page | 11.11.2026 | відкрився, 200 (тонкий контент)
+https://hacc-decided.ti-ukraine.org/uk/news/vin-boyavsya-nabu-zaxist-mikitasya-prosit-skasuvati-zapobiznii-zaxid-a-prokuror-vimagaje-200-mln-zastavi | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://uk.wikipedia.org/wiki/Операція_«Мідас» | web_extractor check_urls | 11.11.2026 | відкрився, 200 (тільки перевірка існування; факти звідти не бралися)
+https://www.dw.com/uk/nabu-zaversilo-rozsliduvanna-spravi-midas-pro-korupciu-v-energetici/a-79854264 | web_extractor check_urls | 11.11.2026 | відкрився, 200
+https://suspilne.media/1241156-nabu-ta-sap-ogolosili-pidozru-kolisnomu-ministru-energetiki-galusenku | web_extractor check_urls | 11.11.2026 | відкрився, 200
+https://suspilne.media/1392606-sap-prosit-arestuvati-150-mln-grn-zastavi-za-galusenka-vin-moze-povernutisa-do-sizo/ | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://suspilne.media/1165172-nabu-ta-sap-vrucili-cernisovu-klopotanna-pro-obranna-zapobiznogo-zahodu-u-vigladi-trimanna-pid-vartou-2/ | web_extractor fetch_page | 11.11.2026 | відкрився, 200 (перший чанк, 5000/9249 знаків)
+https://hromadske.ua/kryminal/273182-operatsiia-forest-hamp-sap-prosyt-peredaty-areshtovani-koshty-iz-zastavy-za-halushchenka-do-arma | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://lb.ua/economics/2026/10/26/776230_operatsiya_forest_gamp_sap.html | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://lb.ua/pravo/2026/10/22/775302_sud_prodovzhiv_eksministru.html | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://lb.ua/society/2026/10/08/772068_shemi_zyasuvali_hto_vnis_zastavu.html | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://interfax.com.ua/news/general/1194289.html | web_extractor fetch_page | 11.11.2026 | відкрився, 200
+https://www.dw.com/uk/sprava-forest-gamp-nabu-i-sap-povidomili-pro-pidozru-biznesmenu/a-78552447 | web_extractor fetch_page | 11.11.2026 | відкрився, 200 (підозра Астіона 28.08.2026, статті)
+https://www.dw.com/uk/bihusinfo-vadimu-stolaru-povidomili-pro-pidozru-za-5-stattami-u-spravi-forest-gamp/a-78487490 | web_extractor fetch_page | 11.11.2026 | відкрився, 200 (Столар 20.08; Микитась/Єлізаров 21.08)
+https://reyestr.court.gov.ua/Review/136648117 | web_extractor fetch_page render=static | 11.11.2026 | відкрився, 200 — але справа НЕ «Мідас» (арешт майна, Одеса); прямих ухвал «Мідасу» в ЄДРСР не знайдено
+
+## Помилки / заблоковано
+
+https://nabu.gov.ua/news/operatciia-midas-vykryto-vysokorivnevu-zlochynnu-organizatciiu-shcho-diiala-u-sferi-energetyky | web_extractor check_urls (browser) | 11.11.2026 | 403 — відкрито повторно render=static, успішно
+https://nabu.gov.ua/news/operatciia-midas-nova-pidozra | web_extractor check_urls (browser) | 11.11.2026 | 403 — не перетворювано на факт; контент покритий HACC Decided і медіа
+https://nabu.gov.ua/news/operatcii-femida-ta-forest-hamp-vykryto-zlochynnu-organizatciiu-vid-raiderstva-do-vnesennia-zastavy (припущений URL) | web_extractor fetch_page render=static | 11.11.2026 | 404 — правильний URL знайдено пошуком: nabu.gov.ua/news/operatciia-forest-gamp
+
+## З пошукової видачі (URL відомий, сторінку не відкрито — статус ДОСТУПНЕ/низька, відкрити перед цитуванням у документі)
+
+https://www.dw.com/uk/kolisnomu-vicepremeru-cernisovu-vrucili-klopotanna-pro-trimanna-pid-vartou/a-74755235 | WebSearch (пошук) | 11.11.2026 | не відкрито
+https://nv.ua/ukr/ukraine/politics/nabu-ta-sap-vruchili-klopotannya-pro-aresht-chernishovu-50560857.html | WebSearch (пошук) | 11.11.2026 | не відкрито
+https://www.slovoidilo.ua/2026/11/05/novyna/polityka/apelyaczijna-palata-zbilshyla-rozmir-zastavy-druzhyni-fihuranta-spravy-midas-fursenka | WebSearch (пошук) | 11.11.2026 | не відкрито
+https://interfax.com.ua/news/general/1232459.html | WebSearch (пошук) | 11.11.2026 | не відкрито
+https://www.dw.com/uk/sap-vvazae-so-za-zastavu-dla-galusenka-zaplatili-insi-ucasniki-mindicgejtu/a-78502179 | WebSearch + видача DW | 11.11.2026 | не відкрито (заголовок і лід зафіксовано в R-32)
+https://lb.ua/economics/2026/10/23/775662_ministerstvo_finansiv_naynyalo.html | видача посилань LB.ua | 11.11.2026 | не відкрито
+https://lb.ua/news/2026/06/29/748320_shemi_eksministra_energetiki.html | видача посилань LB.ua | 11.11.2026 | не відкрито (Схеми про заставодавців 150 млн)
+https://www.radiosvoboda.org/a/news-skhemy-khto-vnis-zastavu-za-mudru/33873010.html | LB.ua переказ | 11.11.2026 | не відкрито (оригінал Схем/РС)
+https://t.me/nab_ukraine/4147 | згадка в Interfax | 11.11.2026 | не відкрито (відео НАБУ 19.08.2026)
+https://t.me/hcacofficial/7226 | згадка в LB.ua | 11.11.2026 | не відкрито (повідомлення ВАКС 22.10.2026)
+https://www.president.gov.ua/documents/8432025-57113 | згадка в HACC Decided | 11.11.2026 | не відкрито (указ про санкції)
+https://ukrinform.ua/rubric-polytics/4155618-nabu-ogolosilo-pidozru-posadovcam-u-vidmivanni-150-miljoniv-na-zastavu-za-figuranta-spravi-midas.html | з попередніх нотаток | 10.11.2026 | не відкрито
+
+## Пошукові запити (WebSearch, 11.11.2026) — без URL-цитування
+
+1. НАБУ САП «Мідас» справа енергетика листопад 2025 Міндич Галущенко Чернишов підозра
+2. nabu.gov.ua Мідас викриття корупційної схеми енергетиці 2025
+3. НАБУ САП «Форест Гамп» 19 серпня 2026 підозри легалізація 150 млн застава
+4. sap.gov.ua «Форест Гамп» підозри повідомлення серпень 2026
+5. застава 150 млн Галущенка арешт суд ВАКС жовтень 2026 повернувся СІЗО
+6. САП клопотання арешт застави 150 млн Галущенка вересень 2026 суд рішення (загублено через ліміт паралельності, покрито п. 5 і прямими джерелами)
+7. Чернишов підозра «Мідас» листопад 2025 ВАКС застава 51,6 млн дата
+8. «Чернишову» «повідомили про підозру» «Мідас» 10 листопада 2025 незаконне збагачення
+9. Олександра Фурсенко підозра Мідас застава 10 млн АП ВАКС 25 млн листопад 2026
+10. reyestr.court.gov.ua ухвала ВАКС Галущенко застава 150 млн справа 52025000000000472
+11. site:nabu.gov.ua «Форест Гамп»

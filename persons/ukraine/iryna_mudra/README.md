@@ -20,4 +20,5 @@
 
 ## Згадки в аналізах
 
+- [analyses/ukraine/midas_2025_2026/01_midas.md](../../../analyses/ukraine/midas_2025_2026/01_midas.md)
 - [analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md)

@@ -33,6 +33,7 @@
 
 ## Згадки в аналізах
 
+- [analyses/ukraine/midas_2025_2026/01_midas.md](../../../analyses/ukraine/midas_2025_2026/01_midas.md)
 - [analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md](../../../analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md)
 - [analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/01_liudy_opu.md)
 - [analyses/ukraine/zelenskyi_opu_personnel_2019_2026/README.md](../../../analyses/ukraine/zelenskyi_opu_personnel_2019_2026/README.md)
