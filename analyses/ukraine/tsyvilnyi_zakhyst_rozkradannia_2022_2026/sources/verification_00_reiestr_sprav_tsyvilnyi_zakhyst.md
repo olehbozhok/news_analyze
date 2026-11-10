@@ -1,6 +1,6 @@
 # Звіт перевірки: 00_reiestr_sprav_tsyvilnyi_zakhyst.md
 
-**Документ:** `analyses/ukraine/problemi_spravy_2022_2026/00_reiestr_sprav_tsyvilnyi_zakhyst.md`
+**Документ:** `analyses/ukraine/tsyvilnyi_zakhyst_rozkradannia_2022_2026/00_reiestr_sprav_tsyvilnyi_zakhyst.md`
 **Verifier:** окремий агент (ZCode/GLM-5.3-Flash), не брав участі в написанні документа; чистий контекст
 **Дата перевірки:** 11.11.2026
 **Контекстні файли:** sources/source_cards_00.md (SC-01 — SC-16), sources/research_brief_2026_11.md, sources/agent_research_raw.md (вибірково), суміжна тема zakhyst_krytychnoi_infrastruktury_2026_11/01 (транзитивно, для SC-01/SC-02)
@@ -192,7 +192,7 @@
 ## Як перевіряли (інструменти)
 
 - Документ, звіт, картки SC-01–SC-23, README теми і країни, суміжна тема (для 10,8 млн Крюківщини) — читання файлів.
-- `python -I scripts/sc_links.py --check analyses/ukraine/problemi_spravy_2022_2026` — 0 помилок, 0 попереджень.
+- `python -I scripts/sc_links.py --check analyses/ukraine/tsyvilnyi_zakhyst_rozkradannia_2022_2026` — 0 помилок, 0 попереджень.
 - Точкове перевідкриття двох найспецифічніших нових claims: MCP web_extractor `fetch_page` (render=static, 200 OK, з кешу — той самий контент, що відкривав попередній прохід): ОГП gp.gov.ua (SC-19) і Суспільне ivano-frankivsk 1208314 (SC-20).
 - Арифметика агрегату — незалежний перерахунок списком (python).
 - Chrome/chrome_* недоступні (як і в основному звіті); символи поза BMP не використано.
@@ -242,7 +242,7 @@
 | AD-4 | MINOR: № 23 орган слідства | | | |
 # Звіт перевірки: 00_reiestr_sprav_tsyvilnyi_zakhyst.md
 
-**Документ:** `analyses/ukraine/problemi_spravy_2022_2026/00_reiestr_sprav_tsyvilnyi_zakhyst.md`
+**Документ:** `analyses/ukraine/tsyvilnyi_zakhyst_rozkradannia_2022_2026/00_reiestr_sprav_tsyvilnyi_zakhyst.md`
 **Verifier:** окремий агент (ZCode/GLM-5.3-Flash), не брав участі в написанні документа; чистий контекст
 **Дата перевірки:** 11.11.2026
 **Контекстні файли:** sources/source_cards_00.md (SC-01 — SC-16), sources/research_brief_2026_11.md, sources/agent_research_raw.md (вибірково), суміжна тема zakhyst_krytychnoi_infrastruktury_2026_11/01 (транзитивно, для SC-01/SC-02)
@@ -434,7 +434,7 @@
 ## Як перевіряли (інструменти)
 
 - Документ, звіт, картки SC-01–SC-23, README теми і країни, суміжна тема (для 10,8 млн Крюківщини) — читання файлів.
-- `python -I scripts/sc_links.py --check analyses/ukraine/problemi_spravy_2022_2026` — 0 помилок, 0 попереджень.
+- `python -I scripts/sc_links.py --check analyses/ukraine/tsyvilnyi_zakhyst_rozkradannia_2022_2026` — 0 помилок, 0 попереджень.
 - Точкове перевідкриття двох найспецифічніших нових claims: MCP web_extractor `fetch_page` (render=static, 200 OK, з кешу — той самий контент, що відкривав попередній прохід): ОГП gp.gov.ua (SC-19) і Суспільне ivano-frankivsk 1208314 (SC-20).
 - Арифметика агрегату — незалежний перерахунок списком (python).
 - Chrome/chrome_* недоступні (як і в основному звіті); символи поза BMP не використано.

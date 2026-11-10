@@ -1,4 +1,4 @@
-# Verification notes (problemi_spravy_2022_2026)
+# Verification notes (tsyvilnyi_zakhyst_rozkradannia_2022_2026)
 
 ## 11.11.2026 — перевірка 00_reiestr_sprav_tsyvilnyi_zakhyst.md (верdict FAIL)
 
