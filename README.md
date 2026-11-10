@@ -22,6 +22,7 @@
 | [`agents/`](agents/README.md) | Канонічні файли ролей агентів (researcher, writer, verifier, editor, red_team) |
 | [`_templates/`](_templates/README.md) | Заготовки для нового аналізу |
 | [`persons/`](persons/README.md) | Картки персон за країнами (6.5) |
+| [`TODO.md`](TODO.md) | Поточний список робіт: картки персон, рішення власника, верифікація |
 
 ---
 

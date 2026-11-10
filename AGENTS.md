@@ -279,6 +279,7 @@
 ├── AGENTS.md                      # цей файл: спільний регламент
 ├── CLAUDE.md                      # імпортує AGENTS.md для Claude Code
 ├── README.md                      # індекс верхнього рівня: країни
+├── TODO.md                        # поточний список робіт
 ├── agents/                        # канонічні файли ролей (researcher, writer, verifier, editor, red_team)
 ├── scripts/
 │   └── sc_links.py                # посилання [SC-NN] на source cards і [P:slug] на персон, перевірка посилань (6.2, 6.5)
