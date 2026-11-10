@@ -10,6 +10,8 @@ desktop.ini
 
 # Local agent settings
 .claude/settings.local.json
+.zcode/
+opencode.json
 
 # Scratch
 tmp/
