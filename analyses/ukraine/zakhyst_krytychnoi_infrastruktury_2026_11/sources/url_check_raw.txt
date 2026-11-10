@@ -1,0 +1,49 @@
+Журнал перевірки URL — zakhyst_krytychnoi_infrastruktury_2026_11
+Агент: Researcher. Дата: 10.11.2026.
+Інструменти: WE = MCP web_extractor fetch_page (render=static, якщо не вказано інше); WS = WebSearch (запасний, лише для пошуку); RM = web_extractor read_more (продовження того самого URL).
+Chrome (chrome_*) недоступний; browsermcp не знадобився.
+
+1. https://censor.net/ua/news/4032774/ — WE static -> 403 BLOCKED; WE render=browser -> OK 200 (final: .../rozkradannya-koshtiv-na-budivnytstvi-zahystu-energoob-yektiv-obshuky). Статус: ДОСТУПНЕ (browser).
+2. https://t.me/ssternenko/65871 — WE static -> 200, тільки embed (thin). Статус: ДОСТУПНЕ (обмежено).
+3. https://t.me/s/ssternenko/65871 — WE static -> 200, повний текст поста. ПЕРВИННЕ.
+4. https://t.me/s/ssternenko/65648 — WE static -> 200, повний текст поста. ПЕРВИННЕ.
+5. https://newformat.info/news/politsiia-provela-obshuky-u-spravi-pro-rozkradannia-koshtiv-na-zakhyst-enerhoob-iektiv-kyivshchyny — WE static -> 200. ВТОРИННЕ.
+6. https://apostrophe.ua/politics/government/tsk-mozhe-viklikati-ministra-vidnovlennja-cherez-skandal-iz-zakhistom-enerhetiki-kijivshchini-honcharenko.html — WE static -> 200. ВТОРИННЕ.
+7. https://patrioty.org.ua/defitsyt-60-mlrd-hrn-... (гіпотетична адреса) — WE static -> 404 NOT FOUND. Реальна адреса не шукалася далі; атрибуцію взято з первинного джерела (epravda/інтерфакс).
+8. https://epravda.com.ua/infrastruktura/na-zahist-krytychnoji-infrastrukturi-potribno-shche-60-mlrd-grn-827149/ — WE static -> 200. ВТОРИННЕ (переказ Інтерфаксу).
+9. https://hmarochos.kiev.ua/2026/11/07/vlasnyk-autostrada-zvynuvatyv-agentstvo-vidnovlennya-u-zryvi-zahystu-kyyivvodokanalu/ — WE static -> 200. ВТОРИННЕ.
+10. https://interfax.com.ua/news/general/1232744.html — WE static -> 200. ВТОРИННЕ (цитує телеграм Агентства і Facebook Шкіль).
+11. https://interfax.com.ua/news/general/1233554.html — WE static -> 200. ВТОРИННЕ (цитує телеграм Агентства).
+12. https://mind.ua/news/amp/20312027 — WE static -> 200 (амп-версія). ВТОРИННЕ.
+13. https://www.rada.gov.ua/preview/anonsy_podij/275976.html — WE static -> 200. ПЕРВИННЕ.
+14. https://reyestr.court.gov.ua/review/140656779 — WE static -> 200; RM x2 (прочитано 0-18000 з 36232 зн.). ПЕРВИННЕ.
+15. https://www.unian.ua/politics/sternenko-opublikuvav-foto-z-obshukiv-u-kompaniy-yaki-bez-tenderiv-zaluchav-ministr-transportu-kalashnik-13554678.html — WE static -> 200. ВТОРИННЕ.
+16. https://antikor.info/articles/873936 — WE static -> 404 NOT FOUND (URL з результатів пошуку).
+17. https://www.obozrevatel.com/ukr/section-ekonomika-glavnaya/economy/news-zamist-zakhystu-enerhetyky-tsarskyy-pentkhaus-z-zhyvym-krokodylom-na-kyyivshchyni-vykryly-skhemu-z-kradizhkoyu-189-mlrd-hrn-09-11-2026.html — WE static -> 200. ВТОРИННЕ.
+18. https://lb.ua/society/2026/09/23/768224_ministerstvo_z_vidnovlennya.html — WE static -> 200. ВТОРИННЕ.
+
+Пошукові запити WebSearch (запасний інструмент):
+- «обшуки розкрадання коштів захист енергооб'єктів Київщина поліція листопад 2026»
+- «Гончаренко ТСК виклик міністр відновлення Калашник листопад 2026»
+- «дефіцит 60 млрд грн захист об'єктів критичної інфраструктури Мінінфраструктури листопад 2026»
+- «Шкіль Autostrada Агентство відновлення Федоров мораторій захисні споруди листопад 2026»
+- «Toyota Land Cruiser Prado 2,9 млн грн Харківщина служба відновлення закупівля»
+- «Нацполіція повідомлення обшуки захисні споруд енергооб'єкти Київська область підозра»
+- «ТСК Верховної Ради захист критичної інфраструктури постанова вересень 2026 Гончаренко»
+- «"Калашник" міністр відновлення коментар Київщина захисні споруди листопад 2026» (без результатів)
+- «міністерство відновлення заява обшуки Консалтинг-Буд енергозахист Київська область реакція»
+
+Не відкрито (згадані в текстах, але не перевірені):
+- https://t.me/Agency_for_restoration/7309 і /7316 (телеграм Агентства відновлення)
+- https://www.facebook.com/... (пости Шкіль, Болвінова, Агентства)
+- https://interfax.com.ua/news/economic/1228646.html (первинна заява Калашника про 60 млрд)
+- Prozorro: UA-2025-04-16-005101-a, UA-2026-10-30-002810-a, UA-2026-10-07-013589-a
+- https://people.rada.gov.ua/body/view/tsk-tk_inv_284471e2-... (склад ТСК)
+- OBOZ від 10.11.2026 (дві статті-продовження) і стаття про ОГТС/бетонні блоки
+- https://renews.com.ua/politika/rezyltati-obshykiv-y-spravi-pro-rozkradannia-v-energetichnii-sferi/amp
+- https://mykyivregion.com.ua/news/kiyivska-oda-nadaje-bagatomillionni-avansi-... (скриншоти)
+
+--- Editor (виправлення за звітом Verifier), 10.11.2026, інструмент: MCP web_extractor; Chrome (chrome_*) недоступний ---
+19. https://reyestr.court.gov.ua/review/140656779 — WE fetch_page (static/text, кеш; повний текст 25077 зн., резолютивна частина прочитана). ПЕРВИННЕ: «У задоволенні клопотання прокурора... про арешт майна... — відмовити»; аналітичне дослідження ДПС від 21.07.2026 № 77/10-36-08-02-14/38183153 оцінено критично.
+20. https://reyestr.court.gov.ua/review/141136366 — WE fetch_page (static/text) + find_in_page (резолютивна частина). ПЕРВИННЕ: підозра 13.10.2026 (ч. 2 ст. 209, ч. 2 ст. 366) директору ТОВ «Консалтінг Буд»; застава 9 984 000 грн — відмовити; особисте зобов'язання до 13 грудня 2026 включно; перерахування субпідряднику 10 860 000 грн.
+21. https://interfax.com.ua/news/economic/1228646.html — WE fetch_page (static/markdown, кеш; json-ld pub 30.10.2026 12:25). ПЕРВИННЕ (заява міністра): 60 млрд, 601 об'єкт, 72%, 47 млрд, 109/134/197, ~500 ударів.

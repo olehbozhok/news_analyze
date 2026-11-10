@@ -1,0 +1,36 @@
+# Любомира Кожушко
+
+**Актуальна станом на:** 10.11.2026
+**Покриття:** картка
+**Джерело даних:** [Захист енергетики: скандал довкола витрат на Київщині](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md)
+
+## Хто це
+
+Директор/власниця ТОВ «Консалтинг-Буд» (ЄДРПОУ 34531842), екс-посадовиця Апарату ВР; фігурантка провадження № 42025110000000469 (підозра від 13.10.2026) і підозрювана у справі НАБУ про дрони Держспецзв'язку.
+
+## Хронологія посад
+
+| Посада | Період | Підстава (указ, номер, дата) | Картки теми |
+|---|---|---|---|
+| Директор/власниця ТОВ «Консалтинг-Буд» | станом на 10–11.2026 | — | [01/SC-11](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-11), [01/SC-14](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-14) |
+| Екс-посадовиця Апарату ВР | період у джерелах теми не зафіксований | — | [01/SC-11](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-11) |
+
+## Спорні епізоди
+
+- 13.10.2026 — повідомлено про підозру (ч. 2 ст. 209, ч. 2 ст. 366 КК) у провадженні № 42025110000000469; інкримінований епізод — Крюківщина (перерахування 10 860 000 грн субпідряднику ТОВ «Вольт Ейдж Плюс», акти КБ-3 від 29.10.2025), зафіксовано ухвалою Святошинського райсуду від 23.10.2026. Підозр саме за 25 договорами енергозахисту з ухвал не видно. Статус: доведено як процесуальний факт (первинне джерело — ухвала); причетність — версія слідства. → [01/SC-14](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-14), [01/SC-27](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-27)
+- 23.10.2026 — запобіжний захід: клопотання слідства про заставу 9 984 000 грн відхилено, застосовано особисте зобов'язання з обов'язками до 13.12.2026. Статус: доведено (ухвала). → [01/SC-27](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-27)
+- 12.10.2026 — ВАКС, за даними OBOZ/УНІАН, збільшив заставу Кожушко до 6,5 млн грн у справі НАБУ про дрони Держспецзв'язку (збитки, за OBOZ, 254 млн грн). Вторинні джерела; ЄДРСР-картка не відкрита. Статус: НЕПІДТВЕРДЖЕНЕ (підтверджено лише вторинними ЗМІ). → [01/SC-15](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-15)
+- 09.11.2026 — переказ OBOZ про «клопотання про тримання Кожушко під вартою» розходиться з ухвалою від 23.10.2026 (слідство клопотало про заставу, суд застосував особисте зобов'язання); медійна теза про підозру «за справою енергозахисту» без дати й органу не збігається з інкримінованим епізодом (Крюківщина). Статус: НЕПІДТВЕРДЖЕНЕ (медіа-помилка або пізніше окреме клопотання — потребує моніторингу). → [01/SC-11](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-11), [01/SC-27](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-27)
+
+## Питання / НЕПІДТВЕРДЖЕНЕ
+
+1. Чи будуть повідомлені підозри за 25 договорами енергозахисту — станом на 10.11.2026 інкримінований епізод підозри — Крюківщина. → [01/SC-14](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-14)
+2. Перегляд запобіжного заходу (особисте зобов'язання до 13.12.2026). → [01/SC-27](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-27)
+3. Першоджерело (ухвала ВАКС) рішення від 12.10.2026 про заставу 6,5 млн грн у справі НАБУ — не відкрите. → [01/SC-15](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-15)
+4. Період роботи в Апараті ВР і посада — не зафіксовані. → [01/SC-11](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/sources/source_cards_01.md#sc-11)
+
+<!-- persons-backlinks: згенеровано scripts/sc_links.py --persons, не редагувати -->
+
+## Згадки в аналізах
+
+- [analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md)
