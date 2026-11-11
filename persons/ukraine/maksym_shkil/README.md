@@ -31,4 +31,4 @@
 
 - [analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md)
   Захист енергетики: скандал довкола витрат на Київщині — обшуки, договори, конфлікт підрядників
-  - Обидві версії — позиції сторін: **Максим Шкіль** — власник підрядної компанії з комерційним інтересом, Іван Федоров — керівник відомства, яке захищає [SC-21], [SC-22]. Незалежної перевірки …
+  - [Обидві версії — позиції сторін: **Максим Шкіль** — власник підрядної компанії з комерційним інтересом, Іван Федоров — керівник відомства, яке захищає SC-21, SC-22. Незалежної перевірки …](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md#6-конфлікт-шкіль-autostrada--агентство-відновлення)

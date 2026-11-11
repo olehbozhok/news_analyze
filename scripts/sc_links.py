@@ -23,8 +23,9 @@
              посиланнями на persons/<країна>/<slug>/README.md; у картках
              персон після маркера генерується блок «Згадки в аналізах»:
              на кожен документ — посилання, під ним заголовок документа
-             і всі місця згадки у цьому файлі (кожне — рядок документа
-             навколо згадки, без markdown-розмітки, з виділеним ПІБ).
+             і всі місця згадки у цьому файлі. Кожне місце — клікабельне:
+             рядок навколо згадки з виділеним ПІБ як посилання на якір
+             найближчого заголовка над згадкою (GitHub-стиль).
              Невідомий slug — помилка.
 
 Аргументи: шляхи до тек тем (analyses/<країна>/<тема>) або до файлів;
@@ -433,9 +434,17 @@ def _around(cleaned: str, s: int, e: int) -> str:
     return f"{prefix}{before} **{mention}** {after}{suffix}".strip()
 
 
-def mentions(idx: dict[str, tuple[str, str]]) -> dict[str, dict[Path, tuple[str, list[str]]]]:
-    """slug -> {файл: (заголовок документа, [фрагмент навколо кожної згадки])}."""
-    found: dict[str, dict[Path, tuple[str, list[str]]]] = {slug: {} for slug in idx}
+def _heading_anchor(text: str) -> str:
+    """GitHub-якір заголовка: нижній регістр, без пунктуації, пробіли -> дефіси."""
+    t = text.strip().lower()
+    t = re.sub(r"[^\w\s-]", "", t)
+    t = re.sub(r"\s", "-", t)
+    return t.strip("-")
+
+
+def mentions(idx: dict[str, tuple[str, str]]) -> dict[str, dict[Path, tuple[str, list[tuple[str, str]]]]]:
+    """slug -> {файл: (заголовок документа, [(фрагмент навколо згадки, якір розділу)])}."""
+    found: dict[str, dict[Path, tuple[str, list[tuple[str, str]]]]] = {slug: {} for slug in idx}
     by_path = {
         (PERSONS / country / slug / "README.md").resolve(): slug
         for slug, (country, _t) in idx.items()
@@ -443,9 +452,17 @@ def mentions(idx: dict[str, tuple[str, str]]) -> dict[str, dict[Path, tuple[str,
     for f in person_docs():
         text = f.read_text(encoding="utf-8")
         title = _doc_title(text)
+        head_counts: dict[str, int] = {}
+        cur_anchor = ""
         for is_code, line in iter_body_segments(text):
             if is_code:
                 continue
+            if line.startswith("#"):
+                head = _clean_frag(line.lstrip("#").strip())
+                base = _heading_anchor(head)
+                n = head_counts.get(base, 0)
+                head_counts[base] = n + 1
+                cur_anchor = base if n == 0 else f"{base}-{n}"
             cands: dict[str, tuple[int, int, int | None]] = {}
             for m in P_RE.finditer(line):
                 if m.group(1) in found and m.group(1) not in cands:
@@ -472,21 +489,30 @@ def mentions(idx: dict[str, tuple[str, str]]) -> dict[str, dict[Path, tuple[str,
             for slug, (s, _e, text_len) in cands.items():
                 cstart = imap[s]
                 cend = cstart + text_len if text_len is not None else imap[_e - 1] + 1
-                found[slug].setdefault(f, (title, []))[1].append(_around(cleaned, cstart, cend))
+                found[slug].setdefault(f, (title, []))[1].append(
+                    (_around(cleaned, cstart, cend), cur_anchor)
+                )
     return found
 
 
-def backlinks_block(slug: str, docs: dict[Path, tuple[str, list[str]]], readme: Path) -> str:
+def backlinks_block(
+    slug: str, docs: dict[Path, tuple[str, list[tuple[str, str]]]], readme: Path
+) -> str:
     if not docs:
         return ""
     lines = [P_MARKER, "", "## Згадки в аналізах", ""]
     for d in sorted(docs):
         title, spots = docs[d]
-        lines.append(f"- [{d.relative_to(ROOT).as_posix()}]({_rel(d, readme.parent)})")
+        rel = _rel(d, readme.parent)
+        lines.append(f"- [{d.relative_to(ROOT).as_posix()}]({rel})")
         if title:
             lines.append(f"  {title}")
-        for sp in spots:
-            lines.append(f"  - {sp}")
+        for sp, anchor in spots:
+            text = sp.replace("][", ", ").replace("[", "").replace("]", "")
+            if anchor:
+                lines.append(f"  - [{text}]({rel}#{anchor})")
+            else:
+                lines.append(f"  - {text}")
     return "\n".join(lines) + "\n"
 
 
