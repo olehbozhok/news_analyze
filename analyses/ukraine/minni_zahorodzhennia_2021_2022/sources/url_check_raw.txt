@@ -1,0 +1,50 @@
+Журнал перевірки URL (дата: 14.11.2026; агент: Researcher/Writer, один агент за промптом)
+Формат: URL | інструмент | результат
+
+https://www.pravda.com.ua/articles/2023/07/06/7410027/ | web_extractor fetch_page (browser) | 200, повний текст інтерв'ю Сестриватовського (chars_total 12928)
+https://most.ks.ua/news/url/hto-minuvav-ta-hto-rozminuvav-chongar/ | web_extractor fetch_page (browser) | 200, повний текст (7434)
+https://www.bbc.com/russian/articles/c99nzzp1xrgo | web_extractor fetch_page (browser) | 200, частина 1 (0-12000 з 17970); друга частина не дочитана (cursor nnyek4) — використано лише цитати з першої частини
+https://nv.ua/ukr/ukraine/events/chongar-yak-minuvali-pereshiyok-z-krimom-i-chi-diysno-yogo-rozminuvali-rozsliduvannya-50355076.html | web_extractor fetch_page (browser) | 200, повний текст (5846)
+https://www.bbc.com/russian/news-64931624 | web_extractor fetch_page (browser) | 200, повний текст (10150)
+https://www.pravda.com.ua/articles/2023/09/21/7420733/ | web_extractor fetch_page (browser) | 403 blocked
+https://www.pravda.com.ua/articles/2023/09/21/7420733/ | web_extractor fetch_page (static) | 200, частина 1 (0-12000 з 32938); решта (cursor z228s2) не дочитана — цитати лише з першої частини
+https://www.bbc.com/ukrainian/features-64692874 | web_extractor fetch_page (browser) | 200, частина 1 (0-20000 з 22467)
+https://censor.net/ua/videonews/3534999/ | web_extractor fetch_page (browser) | 200, повний текст (1112)
+https://censor.net/ua/news/3534992/naev-pro-pidgotovku-do-vtorgnennya-rf-u-2022-rotsi | web_extractor fetch_page (browser) | 200, повний текст (2503)
+https://censor.net/ua/news/3534980/nayev-pro-pidgotovku-do-nastupu-rf-z-krymu | web_extractor fetch_page (browser) | 200, повний текст (3622)
+https://censor.net/ua/blogs/3431871/ | web_extractor fetch_page (browser) | 200, частина 1 (0-12000 з 118974); цитата — лише заголовок блогу (у першій частині)
+https://nv.ua/ukr/ukraine/events/hto-rozminuvav-chongar-4-golovni-problemi-i-fakti-chomu-rosiya-shvidko-zahopila-hersonshchinu-50492579.html | web_extractor fetch_page (browser) | 200, повний текст (16878)
+https://www.pravda.com.ua/news/2025/02/10/7497542/ | web_extractor fetch_page (static) | 200, повний текст (2893)
+https://most.news/2025/01/16/hto-minuvav-ta-hto-rozminuvav-chongar/ | web_extractor fetch_page (browser) | помилка DNS (вигаданий/невірний домен; замінено на most.ks.ua)
+https://www.bbc.com/ukrainian/features-64758441 | web_extractor fetch_page (browser) | 404 (ідентифікатор з пошукової видачі не відповідає сторінці; замінено на nv-дзеркало 50492579)
+https://censor.net/ua/blogs/3431871/ | WebSearch | результати пошуку підтвердили існування блогу і заголовок
+
+Не відкривались (використані як вторинні через дзеркала/цитати в інших відкритих джерелах):
+https://www.pravda.com.ua/articles/2023/09/18/7420200/ (Соколов, інтерв'ю УП) — цитати взято з NV/BBC 24.02.2025 і реконструкції УП 21.09.2023
+https://www.pravda.com.ua/articles/2023/09/21/7420733/ повний текст — лише перші 12000 символів
+https://hromadske.ua/posts/eksochilnik-sbu-na-hersonshini-yakogo-zelenskij-nazvav-zradnikom-vse-she-perebuvaye-na-sluzhbi — цитата Криворучка не використана в тексті документа
+https://investigator.org.ua/news-2/240338/ — згадка про Садохіна 03.2022, у документі не використано як опору
+
+Браузер Chrome (chrome_*) в цьому середовищі недоступний — використано web_extractor MCP (browser/static) і WebSearch; browsermcp не задіяний.
+
+# Доповнення Verifier (14.11.2026): повторна звірка карток і закриття прогалин
+
+https://www.pravda.com.ua/articles/2023/07/06/7410027/ | web_extractor fetch_page (static, fresh) | 200, повний текст (12928/12928); SC-01, SC-02, SC-18, SC-22 — дослівно; SC-05 частково (фраза про «після перемоги» в тексті відсутня)
+https://www.bbc.com/russian/articles/c99nzzp1xrgo | web_extractor fetch_page (static, fresh) | 200, повний текст (17970/17970, дочитано); SC-03, SC-04, SC-29, SC-30 — дослівно
+https://www.pravda.com.ua/articles/2023/09/21/7420733/ | web_extractor fetch_page (static, fresh) | 200, повний текст (32938/32938, дочитано); SC-19, SC-20, SC-21, SC-24 — дослівно; знайдено: «залізничний міст... міни вибухнули, але руйнувань не було»
+https://nv.ua/ukr/ukraine/events/hto-rozminuvav-chongar-4-golovni-problemi-i-fakti-chomu-rosiya-shvidko-zahopila-hersonshchinu-50492579.html | web_extractor fetch_page (static, fresh) | 200, повний текст (16878/16878); SC-07, SC-13, SC-14, SC-15, SC-16, SC-23, SC-27, SC-28 — дослівно
+https://censor.net/ua/news/3534980/nayev-pro-pidgotovku-do-nastupu-rf-z-krymu | web_extractor fetch_page static -> 403 | повтор web_extractor fetch_page (browser) | 200, повний текст (3622); SC-08, SC-25 — дослівно
+https://censor.net/ua/videonews/3534999/ | web_extractor fetch_page static -> 403 | повтор web_extractor fetch_page (browser) | 200, повний текст (1112); SC-11 — дослівно
+https://censor.net/ua/blogs/3431871/ | web_extractor fetch_page (browser) | 200, перша частина (8000 з 118974) + find_in_page «Чонгар» (103 збіги; розділ «ЛЕГЕНДА ЗЕ-ВЛАДИ ПРО ЧОНГАР» з offset ~14462); SC-12 (заголовок) — дослівно
+https://most.ks.ua/news/url/hto-minuvav-ta-hto-rozminuvav-chongar/ | web_extractor fetch_page (browser, fresh) | 200, повний текст (7434); SC-10, SC-26 — дослівно
+https://www.bbc.com/ukrainian/features-64692874 | web_extractor fetch_page (static, fresh) | 200, повний текст (22467/22467); SC-06 — цитата дослівна, але «мапа мінних полів» у джерелі відсутня (мапа російського наступу з датами 20.02/22.02)
+https://www.bbc.com/russian/news-64931624 | web_extractor fetch_page (static, fresh) | 200, повний текст (10150/10150); SC-17 — дослівно
+https://www.pravda.com.ua/news/2025/02/10/7497542/ | web_extractor fetch_page (static, fresh) | 200, повний текст (2893); SC-09 — дослівно
+https://www.pravda.com.ua/articles/2023/09/18/7420200/ | web_extractor fetch_page (static, fresh) | 200, повний текст (27017/27017); первинне інтерв'ю Соколова УП: артилерія/міні поля, дороги не заміновані без команди, 25 БТГ до 20 тисяч, мости каналів розміновані до 2018 — підтверджує SC-23, SC-13, SC-24 з першоджерела
+https://nv.ua/ukr/ukraine/events/sergiy-nayev-generala-pislya-interv-yu-hotili-priznachiti-komandirom-taktichnoji-grupi-velika-novosilka-50489086.html | web_extractor fetch_page (static) | 200, повний текст (2257); SC-32
+https://lb.ua/society/2025/02/11/660126_interfaksukraina_sergiy_naiev.html | web_extractor fetch_page (static) | 200, повний текст (2048); SC-31
+https://www.rbc.ua/rus/news/naev-zayaviv-vidvid-viysk-odniy-iz-dilyanok-1742290699.html | web_extractor fetch_page (static) | 200, повний текст (2577); SC-35
+https://tsn.ua/ukrayina/hto-zdav-pivden-ukrayini-rosiyanam-scho-vstanovilo-slidstvo-dbr-2751798.html | web_extractor fetch_page (static) | 200, повний текст (3977); SC-33
+https://ipc.org.ua/uk/2023/06/visim-prykordonnykiv-z-chongara-na-hersonshhyni-otrymaly-pidozry-dbr-za-dezertyrstvo-v-pershi-dni-povnomasshtabnoyi-vijny/ | web_extractor fetch_page (static) | 200, повний текст (4290); SC-34
+https://www.gp.gov.ua/ua/posts/povidomlennya-pro-pidozru-ta-povistki-pro-viklik-sevcuka-jea-na-05062023-07062023-09062023 | web_extractor fetch_page (static) | 200, сторінка ОГП (thin): підозра Шевчуку Є.А. від 31.05.2023, посилання на PDF
+WebSearch (пошук реакцій на Бутусова 10.02.2025) | WebSearch | знайдено ланку «розпорядження Наєву на фронт» (NV, lb.ua, РБК); прямих коментарів ОП/Резнікова не знайдено — негативний результат зафіксовано в SC-32 caveat
