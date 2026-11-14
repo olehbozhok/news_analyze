@@ -1,14 +1,16 @@
 # Sources: zakhyst_krytychnoi_infrastruktury_2026_11
 
-Стан: research завершено 10.11.2026; чернетка 01 написана 10.11.2026, source cards за неї — у `source_cards_01.md` (SC-01 — SC-28; SC-26 — SC-28 додано Editor 10.11.2026 за звітом Verifier).
+Стан: research завершено 10.11.2026; чернетка 01 написана 10.11.2026, source cards — у `source_cards_01.md` (SC-01 — SC-28; SC-26 — SC-28 додано Editor 10.11.2026 за звітом Verifier). Addendum 14.11.2026 (заява Кучеренка, ТСК): research завершено 14.11.2026, картки SC-29 — SC-46 додано 14.11.2026, SC-47 додано Editor 14.11.2026 за звітом Verifier (M-A2); вердикт Verifier по addendum: FAIL → виправлення Editor → targeted re-check PASS WITH CORRECTIONS → другий прохід Editor (R2) → фінальне підтвердження Verifier 14.11.2026: PASS WITH CORRECTIONS, документ 01 — ГОТОВО.
 
 | Файл | Що містить |
 |---|---|
 | [../scope_contract.md](../scope_contract.md) | Scope contract (6.1): ключові питання, межі, контраргументи |
-| [agent_research_raw.md](agent_research_raw.md) | Сирі нотатки Researcher: твердження T-01 — T-17 з URL, датами, цитатами, статусами; інструментальний підсумок. Не редагувати |
+| [agent_research_raw.md](agent_research_raw.md) | Сирі нотатки Researcher (основний прохід 10.11.2026): твердження T-01 — T-17 з URL, датами, цитатами, статусами; інструментальний підсумок. Не редагувати |
+| [agent_researcher_kyiv_shelters_raw.md](agent_researcher_kyiv_shelters_raw.md) | Сирі нотатки Researcher (addendum 14.11.2026): T-01 — T-17 за заявою Кучеренка, ТСК, позиціями сторін. Не редагувати |
 | [research_brief_2026_11.md](research_brief_2026_11.md) | Research brief: 24 дискретні твердження, хронологія, ключові числа з розмежуванням баз, відповіді на контраргументи, прогалини |
-| [url_check_raw.txt](url_check_raw.txt) | Журнал URL: інструмент, результат для кожного відкритого/невдалого адреси |
-| [source_cards_01.md](source_cards_01.md) | Source cards документа [01_zakhyst_enerhetyky_rozkradannia.md](../01_zakhyst_enerhetyky_rozkradannia.md): SC-01 — SC-28 |
+| [research_brief_kyiv_shelters_addendum.md](research_brief_kyiv_shelters_addendum.md) | Research brief addendum 14.11.2026: питання 1–8, співставлення баз 25/26/27, контрджерела, прогалини |
+| [url_check_raw.txt](url_check_raw.txt) | Журнал URL: інструмент, результат для кожного відкритого/невдалого адреси (включно з addendum 14.11.2026) |
+| [source_cards_01.md](source_cards_01.md) | Source cards документа [01_zakhyst_enerhetyky_rozkradannia.md](../01_zakhyst_enerhetyky_rozkradannia.md): SC-01 — SC-46 |
 
 ## Особливості сайтів
 

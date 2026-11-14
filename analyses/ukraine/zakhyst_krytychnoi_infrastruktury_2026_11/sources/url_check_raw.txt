@@ -47,3 +47,69 @@ Chrome (chrome_*) недоступний; browsermcp не знадобився.
 19. https://reyestr.court.gov.ua/review/140656779 — WE fetch_page (static/text, кеш; повний текст 25077 зн., резолютивна частина прочитана). ПЕРВИННЕ: «У задоволенні клопотання прокурора... про арешт майна... — відмовити»; аналітичне дослідження ДПС від 21.07.2026 № 77/10-36-08-02-14/38183153 оцінено критично.
 20. https://reyestr.court.gov.ua/review/141136366 — WE fetch_page (static/text) + find_in_page (резолютивна частина). ПЕРВИННЕ: підозра 13.10.2026 (ч. 2 ст. 209, ч. 2 ст. 366) директору ТОВ «Консалтінг Буд»; застава 9 984 000 грн — відмовити; особисте зобов'язання до 13 грудня 2026 включно; перерахування субпідряднику 10 860 000 грн.
 21. https://interfax.com.ua/news/economic/1228646.html — WE fetch_page (static/markdown, кеш; json-ld pub 30.10.2026 12:25). ПЕРВИННЕ (заява міністра): 60 млрд, 601 об'єкт, 72%, 47 млрд, 109/134/197, ~500 ударів.
+
+=== Дослідження addendum Кучеренко 14.11.2026 ===
+Примітка: Chrome (chrome_*) та MCP web_extractor у цьому середовищі недоступні. Використано WebFetch, WebSearch (для пошуку) та Python urllib / fetch_safe.py.
+https://www.facebook.com/Kucherenko2020/posts/pfbid02n7ZSxNn6Zk6V62cWufWegFJsSKe3w3q4aVLtxKybfr9U8AFY8E259J6285Ei7qWPl | WebFetch | ЗАБЛОКОВАНЕ (login-wall FB; текст отримано через репости) | 14.11.2026
+https://www.facebook.com/Kucherenko2020/posts/pfbid0i5xjUZaXttgsKgyWEGmW43TAF4W2umrrv9dAFh3VeDxgZdWDndRB63j1BKNo3Rj1l | WebFetch | ЗАБЛОКОВАНЕ (порожній/login-wall FB) | 14.11.2026
+https://t.me/s/OlehPopenko/10712 | WebFetch + Python urllib | OK 200 (повний репост Кучеренка; timestamp 2026-11-12T21:33:35+00:00) | 14.11.2026
+https://bitter-onion.livejournal.com/4839981.html | WebFetch | OK 200 (повний репост Кучеренка, 13.11.2026 09:06) | 14.11.2026
+https://www.rada.gov.ua/meeting/stenogr/show/8840.html | WebFetch | OK 200 (стенограма ВРУ 12.11.2026, виступи Кучеренка 10:14 і Леонова 10:17) | 14.11.2026
+https://ba.org.ua/oleksij-kucherenko-zhodne-z-26-ukrittiv-dlya-energoob%CA%BCyektiv-v-ki%D1%97vskij-oblasti-ne-dobudovanij | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 11:13) | 14.11.2026
+https://focus.ua/uk/ukraine/774584-ukrittya-dlya-energoob-yektiv-kijivshchini-ne-dobuduvali-zhodnogo-z-26-zaplanovanih | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 11:11) | 14.11.2026
+https://www.unian.ua/economics/energetics/na-kijivshchini-ne-dobuduvali-zhodnogo-z-26-ukrittiv-dlya-energoob-yektiv-nardep-novini-sogodni-amp-13558557.html | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 12:21) | 14.11.2026
+https://kyivschina24.com/news/proval-zahystu-energoobyektiv-za-18-mlrd-grn-na-kyyivshhyni-ne-zdaly-zhodnogo-ukryttya | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 12:23) | 14.11.2026
+https://kyiv.novyny.live/zhodnogo-gotovogo-ukrittia-kucherenko-pro-zriv-robit-za-chasiv-kalashnika-354305.html | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 19:13) | 14.11.2026
+https://bigkyiv.com.ua/na-kyyivshhyni-ne-dobuduvaly-zhodnogo-z-26-ukryttiv-dlya-energoobyektiv-vartistyu-18-mlrd-grn-nardep-kucherenko | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026) | 14.11.2026
+https://porady.org.ua/vidbulosya-zasidannya-tsk-po-sytuatsiyi-z-vykonannyam-planiv-stiykosti-v-kyyivskiy-obl-pro | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 14:37) | 14.11.2026
+https://t.me/s/ukrnastup/153559 | WebFetch + Python urllib | OK 200 (ВТОРИННЕ, 2026-11-13T12:50:12+00:00) | 14.11.2026
+https://texty.org.ua/fragments/118696/na-kyyivshchyni-ne-dobuduvaly-zhodnoho-z-26-ukryttiv-dlya-enerhoobyektiv-nardep-kucherenko | WebFetch | 404 NOT FOUND (наявне у сніпеті WebSearch) | 14.11.2026
+https://censor.net/ua/news/4033512/zahyst-energetyky-na-kyyivschyni-zahyst-nedobudovano | fetch_safe.py (curl) | ЗАБЛОКОВАНЕ (Cloudflare CAPTCHA) | 14.11.2026
+https://tsn.ua/exclusive/krokodyl-u-pozoloti-y-nedobudovani-pidstantsiyi-iak-firmy-bez-dosvidu-otrymaly-miliard-na-zakhyst-svitla-v-kyyevi-3216395.html | WebFetch | OK 200 (ВТОРИННЕ, інтерв'ю Забуранної, 13.11.2026 21:33) | 14.11.2026
+https://mykyivregion.com.ua/blog/miliard-bez-tenderu-abo-xto-buduje-zaxist-pidstancii-kiyivshhini-i-do-cogo-tut-krokodil | WebFetch | OK 200 (ВТОРИННЕ, блог Железняка, 13.11.2026 17:05) | 14.11.2026
+https://tsn.ua/ukrayina/iak-rozpylialy-hroshi-na-zakhysti-enerhetyky-kyyivshchyny-i-do-choho-tut-vlasnyk-krokodyla-u-radi-shokuvaly-rozsliduvanniam-3215831.html | WebFetch | OK 200 (ВТОРИННЕ, Железняк, 13.11.2026 14:49) | 14.11.2026
+https://inforesist.org/ua/184-mlrd-bez-tenderiv-i-lyshe-28-zakrytyh-robit-zheleznyak-rozpoviv-pro-zryv-zahystu-pidstanczij-kyivshhyny | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 08:35 UTC) | 14.11.2026
+https://prozorro.gov.ua/tender/UA-2026-04-10-009881-a | WebFetch | ДОСТУПНЕ (порожній SPA-рендер; відкрито дзеркало zakupivli.pro) | 14.11.2026
+https://prozorro.gov.ua/tender/UA-2026-07-08-005932-a | WebFetch | ДОСТУПНЕ (порожній SPA-рендер; відкрито дзеркало zakupivli.pro) | 14.11.2026
+https://zakupivli.pro/gov/tenders/ua-2026-04-10-009881-a | WebFetch | OK 200 (ПЕРВИННЕ дзеркало Prozorro, 10.04.2026) | 14.11.2026
+https://zakupivli.pro/gov/tenders/ua-2026-07-08-005932-a | WebFetch | OK 200 (ПЕРВИННЕ дзеркало Prozorro, 08.07.2026) | 14.11.2026
+https://zakupivli.pro/gov/company/21467647?location=07-09 | WebFetch | OK 200 (список закупівель КОДА 21467647) | 14.11.2026
+https://nashigroshi.org/2026/11/13/hto-naspravdi-vynnyj-u-provali-zahystu-energetyky-kyyivshhyny-za-19-mlrd | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026) | 14.11.2026
+https://mezha.center/news/terarium-z-krokodylom-czarskyj-budynok-i-rolls-royce-mezha-vstanovyla-v-kogo-projshly-obshuky-u-spravi-derybanu-na-zahysti-energoobyektiv/ | WebFetch | OK 200 (ВТОРИННЕ, 09.11.2026) | 14.11.2026
+https://190.today/kyyivska-oda-viddast-ponad-1-mlrd-grn-kolyshnomu-aparatnyku-verhovnoyi-rady-na-zahyst-energoobyektiv | WebFetch | OK 200 (ВТОРИННЕ, 09.07.2026) | 14.11.2026
+https://reyestr.court.gov.ua/Review/140668780 | WebFetch | OK 200 (ПЕРВИННЕ, ухвала 14.10.2026, арешт майна Сталь Плюс/ТД Тризуб) | 14.11.2026
+https://rp.gov.ua/zaxist-kriticnoyi-infrastrukturi-energosektoru-raxunkova-palata-provela-audit-realizaciyi-eksperimentalnogo-proektu | WebFetch | OK 200 (ПЕРВИННЕ, пресреліз РП 15.10.2025) | 14.11.2026
+https://epravda.com.ua/energetika/chomu-zahist-energoob-yektiv-ukrajini-nedostatno-realizovaniy-812926 | WebFetch | OK 200 (ВТОРИННЕ, 15.10.2025) | 14.11.2026
+https://t.me/s/Mykola_Kalashnyk/11436 | WebFetch + Python urllib | OK 200 (ПЕРВИННЕ, 2026-11-12T13:13:45+00:00) | 14.11.2026
+https://lb.ua/news/2026/11/12/780538_ministr_infrastrukturi_kalashnik.html | WebFetch | OK 200 (ВТОРИННЕ, 12.11.2026 15:41) | 14.11.2026
+https://glavcom.ua/country/incidents/ministr-zamishanij-v-krokodiljachomu-skandali-vijshov-na-publiku-z-zajavoju-pro-tisk-1155217.html | WebFetch | OK 200 (ВТОРИННЕ, 12.11.2026 17:59) | 14.11.2026
+https://glavcom.ua/news/ruslan-olijnik-pojasniv-prichini-zvilnennja-z-minvidnovlennja-1155313.html | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 05:40) | 14.11.2026
+https://apostrophe.ua/politics/ekszastupnik-kalashnika-olijnik-pojasniv-prichinu-zvilnennja-z-minvidnovlennja.html | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 12:15) | 14.11.2026
+https://espreso.tv/suspilstvo-zastupnik-kalashnika-oliynik-yakiy-zvilnivsya-pered-skandalom-z-krokodilom-zvinuvativ-ministra-v-intrigakh-i-manipulyatsiyakh | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 14:19) | 14.11.2026
+https://t.me/s/OlehPopenko/10714 | WebFetch + Python urllib | OK 200 (ВТОРИННЕ, 2026-11-13T06:44:48+00:00) | 14.11.2026
+https://tsn.ua/ukrayina/vlasnyk-pent-hausa-z-krokodylom-vidpoviv-na-zakydy-pro-rozkradannia-na-zakhysti-enerhetyky-kyyivshchyny-3214787.html | WebFetch | OK 200 (ВТОРИННЕ, позиція Соколова, 12.11.2026 13:14) | 14.11.2026
+https://glavcom.ua/kyiv/news/skandalnij-pidrjadnik-ukrittiv-pereviv-strilki-na-kalashnika-u-spravi-pro-miljardni-kontrakti-1155084.html | WebFetch | OK 200 (ВТОРИННЕ, 12.11.2026 10:28) | 14.11.2026
+https://suspilne.media/1451759-colovik-iz-krokodilom-detali-rozsliduvanna-budivnictva-ukrittiv-u-akomu-figurue-biznesmen-iz-dnipra-vladislav-sokolov | WebFetch + fetch_safe.py | WebFetch дав лише JSON-LD; fetch_safe.py -> OK повний текст 14392 зн. (13.11.2026 08:15) | 14.11.2026
+https://koda.gov.ua/uryad-vydilyv-1285-mlrd-grn-na-pershi-roboty-z-pidgotovky-do-nastupnoyi-zymy-v-mezhah-planiv-stijkosti-regioniv | WebFetch | OK 200 (ПЕРВИННЕ, 20.03.2026) | 14.11.2026
+https://koda.gov.ua/kyyivshhyna-predstavyla-kompleksnyj-plan-stijkosti-u-mezhah-pidgotovky-do-nastupnoyi-zymy | WebFetch | OK 200 (ПЕРВИННЕ, 23.02.2026) | 14.11.2026
+https://koda.gov.ua/vidnovlennya-elektropostachannya-bezpeka-ditej-ta-remonty-tymur-tkachenko-zustrivsya-z-kerivnykamy-gromad-obuhivshhyny/ | WebFetch | OK 200 (ПЕРВИННЕ, 13.11.2026) | 14.11.2026
+https://t.me/s/kyivoda | WebFetch | OK 200 (ПЕРВИННЕ, перевірено до 14.11.2026) | 14.11.2026
+https://mininfra.gov.ua/news/na-kyivshchyni-pereviryly-tempy-robit-iz-zakhystu-obiektiv-krytychnoi-infrastruktury | WebFetch | OK 200 (ПЕРВИННЕ, 23.10.2026) | 14.11.2026
+https://mininfra.gov.ua/news/352-mlrd-hrn-na-realizatsiiu-kompleksnykh-planiv-stiikosti-koshty-rozpodileno-mizh-rehionamy | WebFetch | OK 200 (ПЕРВИННЕ, 19.08.2026) | 14.11.2026
+https://mininfra.gov.ua/news/bilshist-rehioniv-vzhe-vykonaly-maizhe-polovynu-pidhotovchykh-robit-z-inzhenerno-tekhnichnoho-zakhystu-krytychnoi-infrastruktury-oleksii-kuleba | WebFetch | OK 200 (ПЕРВИННЕ, 07.04.2026) | 14.11.2026
+https://mev.gov.ua/novyna/denys-shmyhal-na-zustrichi-z-poslamy-zakhyst-enerhoobyektiv-doviv-svoyu-efektyvnist | WebFetch | OK 200 (ПЕРВИННЕ, 03.11.2026) | 14.11.2026
+https://restoration.gov.ua/blog/pidgotovka-do-zymy-zahyst-energetyky-ta-dorogy-yaki-mayut-praczyuvaty-za-bud-yakyh-umov | WebFetch | OK 200 (ПЕРВИННЕ, 28.10.2026) | 14.11.2026
+https://restoration.gov.ua/zahyst-ob%ca%bcyektiv-krytychnoyi-infrastruktury/ | WebFetch | OK 200 (дашборд порожній у static-рендері) | 14.11.2026
+https://t.me/s/Agency_for_restoration | WebFetch | OK 200 (ПЕРВИННЕ, перевірено до 14.11.2026) | 14.11.2026
+https://www.slovoidilo.ua/2026/11/13/infografika/ekonomika/milyardy-zymu-yaki-oblasti-otrymaly-najbilshi-subvencziyi-plany-stijkosti | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 14:52) | 14.11.2026
+https://t.me/s/V_Zelenskiy_official/21815 | WebFetch | OK 200 (ПЕРВИННЕ, 13.11.2026 12:17) | 14.11.2026
+https://kurs.com.ua/novost/1488309-zelenskii-zajaviv-pro-nedostovirni-zviti-shodo-vidnovlennja-energetiki | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 14:59) | 14.11.2026
+https://www.rada.gov.ua/preview/anonsy_podij/276532.html | WebFetch | OK 200 (ПЕРВИННЕ, анонс ТСК на 12.11.2026 14:00) | 14.11.2026
+https://www.rada.gov.ua/preview/anonsy_podij/275976.html | WebFetch | OK 200 (ПЕРВИННЕ, анонс виїзного засідання ТСК, 16.10.2026) | 14.11.2026
+https://www.rada.gov.ua/preview/anonsy_podij/275583.html | WebFetch | OK 200 (ПЕРВИННЕ, анонс засідання ТСК, 25.09.2026) | 14.11.2026
+https://www.rada.gov.ua/news/news_tsk/276581.html | WebFetch | OK 200 (ПЕРВИННЕ, 06.11.2026) | 14.11.2026
+https://zakon.rada.gov.ua/rada/show/4974-20/print | WebFetch | ЗАБЛОКОВАНЕ (403) | 14.11.2026
+https://kyiv.novyny.live/zriv-budivnitstva-ukrittiv-na-kiyivshchini-kachura-vimagaie-vidstavki-kalashnika-354270.html | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 16:41) | 14.11.2026
+https://kyiv.novyny.live/ekszastupnik-kalashnika-nazvav-iogo-vidpovidalnim-za-zakhist-energoobiektiv-354213.html | WebFetch | OK 200 (ВТОРИННЕ, 13.11.2026 13:18) | 14.11.2026
+https://antikor.ua/articles/875146-podruga_kalashnika_vozglavljaet_vsk_kotoraja_rassleduet_proval_stroiteljstva_ukrytij_vse_26_objektov_do_sih_por_ne_zaversheny | WebFetch | OK 200 (ВТОРИННЕ, кодування пошкоджено на кирилиці, сніпет WebSearch читабельний) | 14.11.2026
+https://lb.ua/kyiv/2026/10/17/773790_kiyiv_gotoviy_zimi_80_de_pravda.html | WebFetch | OK 200 (ВТОРИННЕ, 17.10.2026) | 14.11.2026
