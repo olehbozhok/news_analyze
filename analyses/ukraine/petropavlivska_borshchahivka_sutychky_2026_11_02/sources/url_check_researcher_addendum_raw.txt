@@ -1,0 +1,25 @@
+URL check log — researcher addendum 2026-11-13 (факти A, B, C)
+Агент: researcher. Дата сесії: 2026-11-13 (UTC вечір). Первинний інструмент: web_extractor.fetch_page (браузерний рендер). Chrome (chrome_*) недоступний у цього агента; browsermcp не використовувався. WebSearch використано тільки для пошуку URL (результати пошуку не цитуються як джерело); кожен цитований URL відкрито fetch_page.
+
+1. https://hromadske.ua/viyskovi/274293-viyskovi-zaiavyly-shcho-yikh-byly-v-punkti-dyslokatsiyi-u-petropavlivskiy-borshchahivtsi-ofis-viyskovoho-ombudsmana
+   Інструмент: web_extractor.fetch_page (browser). Статус: ok, HTTP 200. Відкрився: так. Повний текст прочитано (2135 знаків). Опубліковано 2026-11-12T21:40+02:00 (json-ld). Використано: A1.
+2. https://hromadske.ua/suspilstvo/274024-u-viyskovoho-iakoho-vyzvolialy-u-petropavlivskyy-borshchahivtsi-spravdi-bula-stoma-chastyna-perekonuye-shcho-dopomohu-nadavaly
+   Інструмент: web_extractor.fetch_page (browser). Статус: ok, HTTP 200. Відкрився: так. Повний текст (4566 знаків). Опубліковано 2026-11-08T18:31+02:00. Використано: B1.
+3. https://suspilne.media/kyiv/1452197-na-tsk-z-oboroni-obgovorili-suticki-u-petropavlivskij-borsagivci-pro-so-jslosa/
+   Інструмент: web_extractor.fetch_page (browser, from network). Статус: ok, HTTP 200. Відкрився: так. Повний текст (8642 знаки). Опубліковано 2026-11-13T15:27+02:00. Використано: A2, A3, B2.
+4. https://interfax.com.ua/news/general/1235971.html
+   Інструмент: web_extractor.fetch_page (browser). Статус: ok, HTTP 200. Відкрився: так. Повний текст (3642 знаки). Опубліковано 2026-11-13T11:09+02:00. Використано: C1.
+5. https://hromadske.ua/suspilstvo/274240-sutychky-u-petropavliskiy-borshchahivtsi-pravookhorontsi-zatrymaly-13-uchasnykiv-i-vstanovyly-shcho-likarka-mala-feykove-posvidchennia
+   Інструмент: web_extractor.fetch_page (browser). Статус: ok, HTTP 200. Відкрився: так. Повний текст (3675 знаків). Опубліковано 2026-11-12T10:12+02:00. Використано: C2, C5.
+6. https://unn.ua/news/sutychky-na-borshchahivtsi-natshvardiia-zavershyla-sluzhbove-rozsliduvannia-materialy-peredadut-dbr
+   Інструмент: web_extractor.fetch_page (browser). Статус: ok, HTTP 200. Відкрився: так. Повний текст (3623 знаки). Опубліковано 2026-11-13T10:37+02:00. Використано: C3.
+7. https://www.youtube.com/watch?v=dieb1SPHO-c (відеозапис ТСК, посилання зі статті Суспільного)
+   НЕ відкривався. Статус: не перевірено; у нотатнику позначено відповідно.
+8. https://t.me/SBUkr/19037 , https://t.me/UA_National_Police/81817 (Telegram СБУ і НПУ, посилання зі статті hromadske C2)
+   НЕ відкривалися. Статус: не перевірено; факт C2 цитується за повним текстом hromadske.
+9. https://nv.ua/ukr/tags/viyskoviy-ombudsmen.html
+   Інструмент: web_extractor.fetch_page. Спроба 1 (browser): 403 blocked. Спроба 2 (render=static): ok, HTTP 200, але контент thin — статті від 13.11 у списку немає (липе/пейвол). Стаття НВ про пояснення до ДБР НЕ відкрита, тому в нотатках не цитується. Зафіксовано як обмеження.
+10. https://mod.gov.ua/zahist-prav-vijskovih (пошук первинної публікації офісу омбудсмана)
+    Відкрито лише через результати WebSearch (опис сторінки); повністю не відкривалася, цитат немає. Первинну публікацію офісу не знайдено (A4: НЕПІДТВЕРДЖЕНЕ).
+
+Висновок: усі цитовані джерела (1–6) відкрито повністю через web_extractor.fetch_page; HTTP 200; 404 немає.

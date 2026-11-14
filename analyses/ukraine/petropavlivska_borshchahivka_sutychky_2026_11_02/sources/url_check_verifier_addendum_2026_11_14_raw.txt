@@ -1,0 +1,64 @@
+Журнал URL Verifier (addendum 14.11.2026)
+Інструменти: WE = web_extractor MCP (check_urls / find_in_page / fetch_page / read_more, render як зазначено); WS = WebSearch; BM = browsermcp (не підключений протягом усієї сесії).
+Формат: [інструмент/режим] статус URL — коментар.
+
+--- zakon.rada.gov.ua (норми, документ 02) ---
+WE/auto 200 https://zakon.rada.gov.ua/laws/show/2341-14 — КК, повний текст у браузерному рендері; find_in_page по всіх статтях
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/551-14 — ДС ЗСУ (картка); /print для тексту
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/550-14/print — СГВС ЗСУ, повний текст
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/548-14/print — СВЗСУ, повний текст
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/z0038-21/print — наказ МОУ № 394, повний текст
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/876-18 — ЗУ «Про НГУ» (картка); /print для тексту
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/2011-12/print — ЗУ 2011-XII, повний текст; ст. 11 п. 2 доотримано (read_more)
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/995_004 — ЄКПЛ (картка, thin); /print — повний текст
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/995_004/print — ЄКПЛ, ст. 3 і ст. 5 ч. 1 дослівно
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/475/97-вр — ратифікація, реквізит «від 17.07.1997 № 475/97-ВР»
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/254к/96-вр — Конституція, ст. 28 і 29 дослівно
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/2232-12/print — ЗУ 2232-XII, повний текст 355 308 зн.; «медичної допомоги» — 0 збігів (підтверджено аргумент від повного тексту)
+Примітка: render=auto на zakon.rada — 403 на всі 9 URL; працювати з render=browser.
+
+--- ЄДРСР (reyestr.court.gov.ua) ---
+WE/browser 200 https://reyestr.court.gov.ua/Review/124317151 — Криворізький вирок 10.01.2025: справа № 171/271/24, провадження 1-кп/177/45/25, ЄРДР 42023041330000550, ч. 5 ст. 426-1, законна сила 26.08.2026, апеляція 139245124 — все дослівно [SC-98]
+WE/browser 200 https://reyestr.court.gov.ua/Review/139069616 — Вишгородська постанова 18.08.2026, справа № 363/5241/26, «території тимчасової дислокації», ч. 3 ст. 172-20 КУпАП [SC-97]
+Примітка: сторінки Review відкриваються web_extractor'ом (browser) — «повністю заблокований ЄДРСР» не підтвердився; пошукову сторінку реєстру не тестовано.
+
+--- HUDOC ---
+WE/browser 200 https://hudoc.echr.coe.int/eng?i=001-57479 — thin (3 знаки, каркас застосунку)
+WE/static 403 https://hudoc.echr.coe.int/eng?i=001-57479
+WE/static 403 https://hudoc.echr.coe.int/app/conversion/docx/pdf?_id=001-57479
+WE/static 403 https://hudoc.echr.coe.int/app/conversion/docx/pdf?_id=001-57479&_tfile=Engel+and+Others+v.+Netherlands
+BM — помилка «No browser is connected» (розширення не встановлено/не підключено)
+WS — метадані Engel (заяви 5100/71, 5101/71, 5102/71, 5354/72, 5370/72; 08.06.1976; запис 001-57479) підтверджені лише видовою видачею
+Висновок: HUDOC — ЗАБЛОКОВАНЕ технічно; статус SC-96 НЕПІДТВЕРДЖЕНЕ залишається коректним.
+
+--- відомчі/медіа (документ 02 і документ 01 теми Borshchahivka) ---
+WE/browser 200 https://npu.gov.ua/news/natspolitsiia-ta-sbu-zatrymaly-13-uchasnykiv-sutychok-u-petropavlivskii-borshchahivtsi — пресреліз 12.11: 13 затриманих, сім (114-1/114-2), шість (296/342), 14 обшуків — дослівно [SC-64]; час 10:00 у тексті не відображено
+WE/browser 200 https://suspilne.media/kyiv/1446145-suticki-v-petropavlivskij-borsagivci-sud-obirav-zapobiznij-se-dvom/ — 06.11 18:17; Ладиця 59 днів/66 тис., Паршонков без застави, ч. 1 ст. 114-1 — дослівно [SC-99]
+WE/browser 200 https://hromadske.ua/viyskovi/274293-...-ofis-viyskovoho-ombudsmana — 12.11 21:40; «імовірно, насильницькі дії…», пояснення до ДБР і ОГП, 30 робочих днів — дослівно [SC-55]
+WE/browser 200 https://suspilne.media/kyiv/1452197-...-pro-so-jslosa/ — 13.11 15:27; «Чотири військовослужбовці повідомили…», «усім 16… ні на що не скаржаться», стома, «Після нашого впливу…» — дослівно [SC-56], [SC-57], [SC-60]
+WE/browser 200 https://hromadske.ua/suspilstvo/274024-...-spravdi-bula-stoma-... — 08.11 18:31; операція 4 вересня, служить із 20 серпня, «не рекомендували госпіталізацію» — дослівно [SC-58], [SC-59]
+WE/browser 200 https://interfax.com.ua/news/general/1235971.html — 13.11 11:09; «Вчора завершено службове розслідування…», 160/20, «13 особам… підзору» — дослівно [SC-61]
+WE/browser 200 https://hromadske.ua/suspilstvo/274240-...-zatrymaly-13-uchasnykiv-... — 12.11 10:12; «сімом…», «Після додаткових 14 додаткових обшуків… ще шестеро» — дослівно [SC-62]
+WE/browser 200 https://unn.ua/news/sutychky-na-borshchahivtsi-...-materialy-peredadut-dbr — 13.11 10:37; «жодних 40 заручників…», «спрацювали професійно» — дослівно [SC-63]
+WE/browser 200 https://espreso.tv/kryminal-blokuvav-avtobus-ngu-...-zapobizhniy-zakhid — 11.11 18:47; застава 66 тис., 4 без застави + 2 з заставою — дослівно [SC-65]
+
+--- karfahen (доповнення 14.11) ---
+WE/browser 200 https://suspilne.media/1451935-za-general-majora-sbu-sergia-duku-vnesli-povnu-sumu-zastavi-u-spravi-karfagen/ — 13.11 11:01; 65 млн, пресслужба ВАКС, САП «не вийшов», 44→50 млн — дослівно [SC-89]
+WE/browser 200 https://suspilne.media/1452375-general-major-sbu-sergij-duka-vijsov-z-sizo/ — 13.11 16:30; вихід із СІЗО, ТСК, «не має жодного стосунку до кол-центрів», «помста» (переказ) — дослівно [SC-90]
+WE/browser 200 https://interfax.com.ua/news/general/1236312.html — 13.11 16:58; «влаштували овації люди у військовій формі», «Альфа» (адвокат) — дослівно [SC-91]
+
+--- службові ---
+Bash python -I scripts/sc_links.py --check (тема Borshchahivka) — 0 помилок, 0 попереджень
+Bash python -I scripts/sc_links.py --check (тема karfahen) — 0 помилок, 0 попереджень
+
+Разом: 26 URL відкрито (web_extractor), 3 заблоковані (HUDOC static), 1 thin (HUDOC browser), 1 інструмент недоступний (browsermcp), 1 WebSearch (метадані Engel).
+
+--- re-verification (targeted addendum 14.11.2026, після виправлень Editor) ---
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/2341-14 — find_in_page/read_more: санкція ст. 426 ч. 1 (доотримана Editor в SC-71) дослівна: «…службовим обмеженням на строк до двох років, або позбавленням волі на строк до трьох років»; повторно зафіксовано ч. 5 ст. 426-1 (8-12 років) — та сама сторінка
+WE (текст) — ст. 407 ч. 5 (5-10 років) і ч. 3 (понад один місяць, 2-5 років) — звірено при першому проході 14.11.2026 (offset 799427/800155, той самий text_version 28b65b33); виправлений підпис SC-72 «ч. 5» відповідає первиннику
+WE/browser 200 https://zakon.rada.gov.ua/laws/show/2341-14 — ч. 3 ст. 127 sanction tail (SC-67, доотримана Editor) дослівна — звірено при першому проході (offset 280409)
+WE/browser 200 https://suspilne.media/1452375-general-major-sbu-sergij-duka-vijsov-z-sizo/ — цитата «помсти» (SC-90 karfahen, доотримана Editor) дослівна — звірено при першому проході (offset 3448)
+Bash grep — «ч. 3» ст. 407 у темах Borshchahivka + karfahen (docs, cards, README): 0 входжень після виправлення F1
+Bash python -I scripts/sc_links.py --check (обидві теми, після виправлень) — 0 помилок, 0 попереджень
+Bash git status/diff — пакет не закомічений; порівняння з версією першого проходу за контентом файлів: зміни обмежуються F1-F7, A1-A4, K1-K2 і статусами README
+Разом re-verification: 1 сторінка перезапитана (2341-14), решта — за фіксуванням першого проходу того ж дня (той самий text_version кешу); 0 нових знахідок.
