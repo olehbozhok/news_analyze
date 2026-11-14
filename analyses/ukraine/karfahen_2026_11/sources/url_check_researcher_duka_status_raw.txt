@@ -1,0 +1,28 @@
+Журнал URL: Researcher — статус Дуки після виходу із СІЗО 13.11.2026
+Дата: 14.11.2026
+Інструменти: WebSearch, MCP web_extractor (fetch_page), python -I fetch_safe.py (curl+санація), curl (api.fxtwitter.com). Chrome (chrome_*) у середовищі недоступний — зафіксовано.
+
+URL | Інструмент | Результат | Дата
+https://advokatpost.com/u-pidozri-heneralu-dutsi-nemaie-nepravomirnoi-vyhody-katuvan-chy-narkotorhivli-advokat-sukhov | web_extractor fetch_page | OK 200, 4877 знаків, опубл. 09.11.2026 09:44, автор Рудольф Коломийський; цитата «Він як був, так і лишається генералом…» підтверджена в тексті | 14.11.2026
+https://censor.net/ua/news/4032673/generala-duku-ne-zvilnyaly-z-sbu-podrobytsi-vid-advokata | fetch_safe.py (curl) | ЗАБЛОКОВАНЕ: CAPTCHA/antibot (677 знаків, перевірка безпеки) | 14.11.2026
+https://sloboda.org.ua/zastavu-za-serhiia-duku-majzhe-povnistiu-zibraly-spivrobitnyky-sbu-doluchylysia-do-zboru-koshtiv | fetch_safe.py (curl) | OK, 10601 знаків, 13.11.2026; цитата «Поклад усунув Дуку від керівної посади, однак не звільнив його зі служби» підтверджена в тексті | 14.11.2026
+https://t.me/s/channel5UA | fetch_safe.py (curl) | відкривається (8692 знаків HTML), пости в прев'ю не рендерені; цитату D-3.1 не звірено напряму | 14.11.2026
+https://uk.tgstat.com/channel/mGoMQww6anVmZTMy | WebSearch (сніпет) | «Радикальня»: цитата «Бачите, люди підтримують» + «Ніхто його не звільнив…»; сторінка напряму не відкривалася | 14.11.2026
+https://t.me/s/glavcomua | web_extractor find_in_page | відкривається (5129 знаків тексту), пости не рендерені; «люди підтримують» у тексті не знайдено (0 матчів) | 14.11.2026
+https://t.me/s/OlehSymoroz | curl + sanitize.py | OK; знайдено пост з «Дуці одразу вручили короткоствольну зброю…» (рядок 307 тексту) | 14.11.2026
+https://t.me/OlehSymoroz/11273 | curl (t.me/s) + витяг data-post/datetime | ПЕРВИННЕ: data-post OlehSymoroz/11273, datetime 2026-11-13T14:48:56+00:00 (16:48 Київ) | 14.11.2026
+https://politpravda.net/генерал-сбу-сергій-дука-вийшов-із-сізо | web_extractor fetch_page | OK 200, але повний текст статті не містить фрази Симороза (1740 знаків; фактично порожня заглушка); переказ підтверджено лише сніпетами пошуку | 14.11.2026
+https://api.fxtwitter.com/SymorozOfficial/status/2118740102616858866 | curl | OK 200; пост Симороза 06.11.2026 16:19 UTC про техніку Дуки (контекст позиції Симороза) | 14.11.2026
+https://zakon.rada.gov.ua/laws/show/2229-12/print | fetch_safe.py (curl, --pause 3) | OK, 59028 знаків; ст. 19 ч. 8, ст. 20, ст. 26 процитовані з повного тексту | 14.11.2026
+WebSearch: «Дука адвокат "не звільнив" "співробітником СБУ" залишається "люди підтримують"» | WebSearch | знайдено сніпети 5 канал/Глазком/Радикальня | 14.11.2026
+WebSearch: «Симороз Дука "короткоствольну зброю" вруCTB СБУ» (з опечаткою) | WebSearch | знайдено X Симороза і politpravda | 14.11.2026
+WebSearch: ""Дука" "вручили короткоствольну зброю" Симороз" | WebSearch | підтвердження дати 13.11 (17:32 за сніпетом) через Threads @bankovamailpoliticnews | 14.11.2026
+WebSearch: «адвокат Дука СІЗО 13.11.2026 відео…» | WebSearch | знайдено Глазком 1155473, Слідство.інфо FB, 5 канал FB, ukranews, Zaxid | 14.11.2026
+WebSearch: «"Ніхто його не звільнив" Дука Сухов адвокат» | WebSearch | знайдено advokatpost + slidstvo.info (60 млн на 12.11) | 14.11.2026
+WebSearch: «"Бачите, люди підтримують" Дука адвокат СІЗО» | WebSearch | підтвердження цитати в трьох Telegram-каналах (5 канал, Главком, Радикальня) | 14.11.2026
+WebSearch: «закон "Про Службу безпеки України" службова зброя…» | WebSearch | знайдено посилання на закон; текст звірено безпосередньо (zakon.rada print) | 14.11.2026
+https://www.slidstvo.info/news/na-zastavu-dlia-henerala-sbu-i-fihuranta-karfahenu-serhiia-duky-zibraly-mayzhe-60-milyoniv-hryven | WebSearch (сніпет) | не відкривалося; контекст ~60 млн станом на 12.11 — не карткується (є [SC-89]) | 14.11.2026
+
+Примітки:
+- Пошук реакцій СБУ/НПУ щодо зброї: окремих коментарів не знайдено («не знайдено», не «відсутні»).
+- Час пости Симороза з HTML: 2026-11-13T14:48:56+00:00; сніпети Threads дають 13.11 (07:54) — розбіжність часу не критична, дата збігається; для картки брати час із самого пости.

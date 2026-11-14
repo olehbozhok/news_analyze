@@ -1,0 +1,20 @@
+Журнал URL: Researcher — інтерв'ю Буркіна
+Дата: 14.11.2026
+Інструменти: MCP web_extractor (fetch_page/find_in_page), WebSearch, python -I fetch_safe.py (curl+санація), yt2text.cmd. Chrome (chrome_*) у середовищі недоступний — зафіксовано.
+
+URL | Інструмент | Результат | Дата
+https://www.youtube.com/watch?v=-G8KplCFEjc | yt2text.cmd (yt_dlp + faster-whisper) | OK: транскрипт D:/news/transcripts/-G8KplCFEjc/, 7145 сегментів, 116968 знаків; meta.json: канал «Василь Тимошенко», upload 2026-11-13, 8976 с | 14.11.2026
+https://glavcom.ua/country/criminal/kerivnik-khimpromu-nazvav-sumi-khabariv-za-prikrittja-koltsentriv-v-ukrajini-1155571.html | web_extractor fetch_page | OK 200, 4014 знаків, опубл. 14.11.2026 08:45, автор Наталія Порощук | 14.11.2026
+https://glavcom.ua/country/criminal/kerivnik-khimpromu-rozpoviv-skilki-zarobljali-ukrajinski-koltsentri-na-amerikantsjakh-1155577.html | web_extractor fetch_page | OK 200, 3359 знаків, опубл. 14.11.2026 09:29, автор Наталія Порощук | 14.11.2026
+https://crime.hab.media/258930-narkobaron_burkin_dav_imidzheve_intervju_zvinuvativ_zastupnika_golovi_op_u_kontroli_nad_shemami_a_sbu__u_krishuvanni_kol-tsentriv | web_extractor fetch_page | OK 200, 3278 знаків, опубл. 14.11.2026 09:06, автор Петро Гаврищак | 14.11.2026
+https://zmina.info/news/vaks-obrav-tyshhenku-zastavu-v-10-miljoniv-gryven-u-spravi-pro-prohannya-nepravomirnoyi-vygody | web_extractor fetch_page | OK 200, 9137 знаків (прочитано 6000), опубл. 03.07.2026 15:53, автор Yana (за ЦПК) | 14.11.2026
+WebSearch: «Буркін інтерв'ю "Хімпром" листопад 2026 Татаров» | WebSearch | знайдено hab.media + підтвердження платформи інтерв'ю | 14.11.2026
+WebSearch: «Татаров Буркін інтерв'ю Тимошенко реакція коментар» | WebSearch | реакцій Татарова не знайдено | 14.11.2026
+WebSearch: «Тищенко Буркін "Коломойськ|інтерв'ю" коментар листопад 2026» | WebSearch | реакції Тищенка на інтерв'ю не знайдено; знайдено факт справи Тищенка | 14.11.2026
+WebSearch: «Микола Тищенко підозра НАБУ незаконне збагачення застава 2026 Буркін "Мексиканець"» | WebSearch | zmina.info + suspilne.media: підозра, застава 10 млн (03.07.2026) | 14.11.2026
+WebSearch: ""Буркін" інтерв'ю "Тимошенко" реакція СБУ офіс президента коментар НАБУ» | WebSearch | реакцій СБУ/ОП/НАБУ на інтерв'ю не знайдено | 14.11.2026
+https://suspilne.media/887901-nabu-rozslidue-imovirne-zbagacenna-nardepa-tisenka-na-ponad-30-mln-grn-rozsliduvac-novikov | WebSearch (лише в результатах, не відкривалося) | ДОСТУПНЕ — контекст листопада 2024 (30 млн грн), окремо не відкрито | 14.11.2026
+https://t.me/s/glavcomua | web_extractor find_in_page + curl fetch_safe | відкривається, пости в прев'ю не рендерені; цитату «Бачите, люди підтримують» не звірено напряму (перевірка для D-3.3 у пакеті дука_status) | 14.11.2026
+D:/news/transcripts/-G8KplCFEjc/transcript.md | Read/grep (локальний файл) | цитати з таймкодами [R-1..R-9] | 14.11.2026
+
+Примітка: пошук реакцій обмежений WebSearch за трьома запитами; «не знайдено» = не знайдено в цих запитах, не «відсутні».

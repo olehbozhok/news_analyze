@@ -1,10 +1,10 @@
-# Джерела: операція «Карфаген» (01) і «Хімпром»/U420 (02)
+# Джерела: операція «Карфаген» (01), «Хімпром»/U420 (02) і інтерв'ю Буркіна (03)
 
 ### 01 — «Карфаген»
 
 | Файл | Зміст | Статус |
 |---|---|---|
-| [`source_cards_01.md`](source_cards_01.md) | 91 картка до документа `01_karfahen.md` (SC-46, SC-47 — ухвали ВАКС 06.11.2026; SC-48–SC-52 — заяви Клименка й Абакумова, апеляції АП ВАКС 16.09 і 21.09, ухвала ВАКС 22.10.2026; SC-53–SC-57 — апеляція Івахненко 15.09, застава й звільнення Куцого (TI Ukraine, УП), Осіпов під вартою в іншому провадженні (Радіо Свобода, ZN.UA); Editor 07.11.2026; SC-58–SC-77 — збір коштів на заставу Дуки 07–10.11.2026: УП (07.11, 08.11, 10.11), Zaxid.net, Інтерфакс-Україна (07.11 і 10.11), NV, ZN.UA (позиція адвоката), Суспільне, ТСН, Радіо Свобода (44 млн/1113 платників), Главком, пости ВАКС (7307, 7308–7329), сайт АП ВАКС, КПК ст. 182, канал СБУ (відсутність заяви), оцінка Ніколава; Writer 10.11.2026; SC-78–SC-88 — друге доповнення, реакція влади 05–10.11.2026: пост Буданова у Facebook 05.11 і переказ УП, пост Зеленського у Telegram 21721 07.11 і переказ Zaxid.net, законопроєкт №16220 (картка Ради + NV 09.11: зміст і фон), Осадчук/NV 10.11 (позиція нардепа і закрите засідання комітету РНБО), ОГП службове розслідування 10.11 (Слово і діло), указ №5/2026 про призначення Буданова Керівником ОП (ПЕРВИННЕ — звірено Verifier 10.11.2026 за president.gov.ua і zakon.rada.gov.ua; також звірено укази №6/2026 і №7/2026); Writer 10.11.2026; SC-89–SC-91 — доповнення 14.11.2026: повна застава 65 млн грн 13.11 (пресслужба ВАКС через Суспільне), вихід Дуки із СІЗО 13.11 (Суспільне, Інтерфакс-Україна), заяви при виході — позиція підозрюваного; Writer 14.11.2026) | ПЕРВИННЕ / ВТОРИННЕ / ДОСТУПНЕ / НЕПІДТВЕРДЖЕНЕ |
+| [`source_cards_01.md`](source_cards_01.md) | 96 карток до документа `01_karfahen.md` (SC-46, SC-47 — ухвали ВАКС 06.11.2026; SC-48–SC-52 — заяви Клименка й Абакумова, апеляції АП ВАКС 16.09 і 21.09, ухвала ВАКС 22.10.2026; SC-53–SC-57 — апеляція Івахненко 15.09, застава й звільнення Куцого (TI Ukraine, УП), Осіпов під вартою в іншому провадженні (Радіо Свобода, ZN.UA); Editor 07.11.2026; SC-58–SC-77 — збір коштів на заставу Дуки 07–10.11.2026: УП (07.11, 08.11, 10.11), Zaxid.net, Інтерфакс-Україна (07.11 і 10.11), NV, ZN.UA (позиція адвоката), Суспільне, ТСН, Радіо Свобода (44 млн/1113 платників), Главком, пости ВАКС (7307, 7308–7329), сайт АП ВАКС, КПК ст. 182, канал СБУ (відсутність заяви), оцінка Ніколава; Writer 10.11.2026; SC-78–SC-88 — друге доповнення, реакція влади 05–10.11.2026: пост Буданова у Facebook 05.11 і переказ УП, пост Зеленського у Telegram 21721 07.11 і переказ Zaxid.net, законопроєкт №16220 (картка Ради + NV 09.11: зміст і фон), Осадчук/NV 10.11 (позиція нардепа і закрите засідання комітету РНБО), ОГП службове розслідування 10.11 (Слово і діло), указ №5/2026 про призначення Буданова Керівником ОП (ПЕРВИННЕ — звірено Verifier 10.11.2026 за president.gov.ua і zakon.rada.gov.ua; також звірено укази №6/2026 і №7/2026); Writer 10.11.2026; SC-89–SC-91 — доповнення 14.11.2026: повна застава 65 млн грн 13.11 (пресслужба ВАКС через Суспільне), вихід Дуки із СІЗО 13.11 (Суспільне, Інтерфакс-Україна), заяви при виході — позиція підозрюваного; Writer 14.11.2026; SC-92–SC-96 — доповнення 7.9 14.11.2026: кадровий статус Дуки (AdvokatPost про ефір «Бутусов.Плюс» 09.11 — позиція захисту; 5 канал 13.11 — коментар біля СІЗО, ДОСТУПНЕ; пост Симороза 11273 про короткоствольну зброю — ПЕРВИННЕ як факт поста; Закон «Про СБУ» ст. 19 ч. 8, ст. 20, ст. 26 — ПЕРВИННЕ, print-текст 59 028 знаків; Слобода 13.11) | ПЕРВИННЕ / ВТОРИННЕ / ДОСТУПНЕ / НЕПІДТВЕРДЖЕНЕ |
 | [`research_brief_karfahen.md`](research_brief_karfahen.md) | Research brief за ключовими питаннями | — |
 | `agent_researcher_raw.md` | Сирі нотатки Researcher | — |
 | [`agent_researcher_duk_bail_raw.md`](agent_researcher_duk_bail_raw.md) | Сирі нотатки Researcher до доповнення про збір застави Дуки: твердження R-1–R-20, позиція захисту, позиція СБУ, найсильніше контрсвідчення, стан судової справи станом на 10.11.2026 | Researcher |
@@ -14,7 +14,7 @@
 | [`agent_researcher_duk_release_raw.md`](agent_researcher_duk_release_raw.md) | Сирі нотатки Researcher: факт D — повна застава 65 млн грн внесена 13.11.2026, Дука вийшов із СІЗО 13.11.2026 (динаміка 44 → ~50 → 65 млн, заяви при виході — позиція підозрюваного); не редагуються | Researcher |
 | [`url_check_researcher_duk_release_raw.txt`](url_check_researcher_duk_release_raw.txt) | Журнал URL Researcher до доповнення про вихід Дуки (web_extractor fetch_page, WebSearch), 13–14.11.2026 | Researcher |
 | [`writer_addendum_check_raw.md`](writer_addendum_check_raw.md) | Журнал фінального пошуку новин за 30 днів до 14.11.2026 (Writer) | Writer |
-| [`verification_01_karfahen.md`](verification_01_karfahen.md) | Звіт Verifier: PASS (після 1 CRITICAL, 5 MAJOR, 18 MINOR і трьох кіл виправлень); addendum Editor 07.11.2026 — виправлення за розбіжностями з `02` (D1–D15); targeted addendum Verifier 07.11.2026 — PASS WITH CORRECTIONS (v1–v10 MINOR, виправлено) | — |
+| [`verification_01_karfahen.md`](verification_01_karfahen.md) | Звіт Verifier: PASS (після 1 CRITICAL, 5 MAJOR, 18 MINOR і трьох кіл виправлень); addendum Editor 07.11.2026 — виправлення за розбіжностями з `02` (D1–D15); targeted addendum Verifier 07.11.2026 — PASS WITH CORRECTIONS (v1–v10 MINOR, виправлено); addendum 5 14.11.2026 — перевірка доповнення 7.9 (картки SC-92–SC-96): PASS WITH CORRECTIONS, MINOR K3–K4 виправлено Editor 14.11.2026 | — |
 | [`url_check_editor_karfahen_2026_11_07_raw.txt`](url_check_editor_karfahen_2026_11_07_raw.txt) | Журнал URL Editor, 07.11.2026 (404 ОГП, Telegram ОГП/ВАКС, пошук новин; v1–v10: Інтерфакс, LB.ua, «Факти»; a1–a4: LB.ua, TI Ukraine, УП, Радіо Свобода, ZN.UA) | — |
 | [`url_check_verifier_karfahen_2026_11_07_raw.txt`](url_check_verifier_karfahen_2026_11_07_raw.txt) | Журнал URL Verifier, targeted addendum 07.11.2026 | — |
 | [`verification_notes.md`](verification_notes.md) | Повторювані класи помилок і пропозиції до правил | — |
@@ -37,6 +37,21 @@
 | [`url_check_verifier_khimprom_raw.txt`](url_check_verifier_khimprom_raw.txt) | Журнал URL Verifier | Verifier |
 
 Сирі файли `02` створено 06.11.2026 у теці `khimprom_narkotrafik_2026/` і перенесено сюди з суфіксом `_khimprom` без змін вмісту; шляхи всередині них відповідають старій теці (`01_khimprom.md` = нинішній `02_khimprom.md`, `source_cards_01.md` = `source_cards_02.md`).
+
+## 03 — Інтерв'ю Буркіна
+
+| Файл | Зміст | Автор |
+|---|---|---|
+| [`source_cards_03.md`](source_cards_03.md) | Картки до [`../03_burkin_interviu.md`](../03_burkin_interviu.md): SC-01–SC-14 (Writer за нотатками Researcher; SC-01–SC-09 — саме інтерв'ю за машинним транскриптом з таймкодами, SC-10–SC-13 — перекази Главкома і hab.media, SC-14 — відсутність реакцій, НЕПІДТВЕРДЖЕНЕ) і SC-15 (ZN.UA 14.11 — переказ версії «Татаров» + контекст «Схем»; додано за red team) | Writer, Editor |
+| [`scope_contract_03.md`](../scope_contract_03.md) | Scope contract до `03` | — |
+| [`agent_researcher_burkin_raw.md`](agent_researcher_burkin_raw.md) | Сирі нотатки Researcher: інтерв'ю Буркіна (R-1–R-10, таймкоди, контрсвідчення) | Researcher |
+| [`url_check_researcher_burkin_raw.txt`](url_check_researcher_burkin_raw.txt) | Журнал URL Researcher (web_extractor, WebSearch, yt2text; Chrome недоступний) | Researcher |
+| [`agent_researcher_duka_status_raw.md`](agent_researcher_duka_status_raw.md) | Сирі нотатки Researcher: статус Дуки після виходу із СІЗО (D-1–D-6: адвокат, Слобода, коментар біля СІЗО, Симороз, закон про СБУ) | Researcher |
+| [`url_check_researcher_duka_status_raw.txt`](url_check_researcher_duka_status_raw.txt) | Журнал URL Researcher (WebSearch, fetch_safe, web_extractor, fxtwitter; censor.net — ЗАБЛОКОВАНЕ) | Researcher |
+| [`red_team_03.md`](red_team_03.md) | Adversarial check: альтернативні пояснення публікації, контрсвідчення ZN.UA («Схеми») і hab.media, оцінки тез T1–T5, рекомендації Writer/Editor | Red team |
+| [`verification_03_burkin_interviu.md`](verification_03_burkin_interviu.md) | Звіт Verifier: PASS WITH CORRECTIONS (0 CRITICAL, 0 MAJOR, 6 MINOR V1–V6 — дослівність цитат за транскриптом і два формулювання); «Статус виправлень» заповнено Editor 14.11.2026 | Verifier, Editor |
+
+Транскрипт інтерв'ю (машинний, faster-whisper large-v3-turbo) — `D:/news/transcripts/-G8KplCFEjc/`; цитати в картках наводяться як у транскрипті (мовлення Буркіна переважно російською), переклади — окремим рядком.
 
 ## Принципи
 
