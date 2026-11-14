@@ -30,6 +30,9 @@
 
 ## Згадки в аналізах
 
+- [analyses/ukraine/petropavlivska_borshchahivka_sutychky_2026_11_02/01_sutychky_petropavlivska_borshchahivka.md](../../../analyses/ukraine/petropavlivska_borshchahivka_sutychky_2026_11_02/01_sutychky_petropavlivska_borshchahivka.md)
+  Сутички в Петропавлівській Борщагівці 2 листопада 2026: що відомо станом на 6 листопада
+  - [… участі в обговоренні, представник ДБР також був відсутній SC-105. Голова ТСК **Олексій Гончаренко** підсумував стан перевірки на 13.11: «є пояснення... деяких з них, які говорять, що їх там били. Є інші, більшість, які говорять, що їх там …](../../../analyses/ukraine/petropavlivska_borshchahivka_sutychky_2026_11_02/01_sutychky_petropavlivska_borshchahivka.md#172-нові-деталі-з-запису-засідання-тск-вру-13112026)
 - [analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md)
   Захист енергетики: скандал довкола витрат на Київщині — обшуки, договори, конфлікт підрядників
   - [10.11.2026 нардеп **Олексій Гончаренко** заявив в етері: ТСК може викликати міністра Калашника; питання розглядатимуть на засіданні комісії у п'ятницю, 13.11.2026. За його словами, …](../../../analyses/ukraine/zakhyst_krytychnoi_infrastruktury_2026_11/01_zakhyst_enerhetyky_rozkradannia.md#8-політичний-трек-тск-і-виклик-міністра)

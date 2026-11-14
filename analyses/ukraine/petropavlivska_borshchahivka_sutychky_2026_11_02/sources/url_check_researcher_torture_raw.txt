@@ -1,0 +1,326 @@
+# Журнал перевірки URL: researcher (addendum «Теза про катування», 14.11.2026)
+
+Примітка про інструменти: у цьому субагентському середовищі браузерні інструменти `chrome_*` (Chrome / browsermcp) НЕДОСТУПНІ.
+Усі URL відкривалися через `D:/news/open_data/tools/fetch_safe.py` (curl з браузерним User-Agent + `sanitize.py`), `webfetch`, `yt-dlp` (метадані/субтитри YouTube) або шукалися через `websearch`.
+
+Дата перевірки: 14.11.2026.
+
+---
+
+1. URL: https://www.youtube.com/watch?v=Yo6hZwKFHvE
+   Інструмент: fetch_safe.py (--raw HTML) + webfetch + D:/news/transcripts/Yo6hZwKFHvE/meta.json
+   Результат: 200 OK (webfetch віддав навігацію YouTube; у сирому HTML через fetch_safe.py отримано метадані плеєра: title, author="Дмитро Гнап", channelId="UC7ac9DedL0AtDDUUStm8GZA", publishDate="2026-11-13T11:09:21-08:00")
+   Дата/час: 14.11.2026
+   Коментар відповідності: Підтверджено першоджерело відео, автора (Дмитро Гнап) і точний час публікації (13.11.2026 21:09 за Києвом / 19:09 UTC). Збігається з meta.json.
+
+2. URL: https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=Yo6hZwKFHvE&format=json
+   Інструмент: fetch_safe.py
+   Результат: 200 OK (1391 chars JSON)
+   Дата/час: 14.11.2026
+   Коментар відповідності: Незалежне підтвердження author_name ("Дмитро Гнап"), author_url ("https://www.youtube.com/@dgnap") і title.
+
+3. URL: https://t.me/SBUkr/19037?embed=1
+   Інструмент: fetch_safe.py
+   Результат: 200 OK (2632 chars)
+   Дата/час: 14.11.2026
+   Коментар відповідності: Первинний Telegram-пост СБУ від 12.11 (08:00 UTC = 10:00 Київ), 13 затриманих, відео 1:42 (вкладено посилання на медіа).
+
+4. URL: https://t.me/UA_National_Police/81817?embed=1
+   Інструмент: fetch_safe.py
+   Результат: 200 OK (1415 chars)
+   Дата/час: 14.11.2026
+   Коментар відповідності: Первинний Telegram-пост Нацполіції від 12.11 (08:00 UTC = 10:00 Київ), підтверджує час 10:00 для релізу НПУ.
+
+5. URL: https://t.me/s/UA_National_Police?before=81825
+   Інструмент: fetch_safe.py
+   Результат: 200 OK (6894 chars)
+   Дата/час: 14.11.2026
+   Коментар відповідності: Стрічка Telegram-каналу НПУ за 12.11: знайдено другий пост НПУ про 14 обшуків і 6 підозр (ст. 296, 342 ККУ) із відео 1:07.
+
+6. URL: https://t.me/UA_National_Police/81351?embed=1
+   Інструмент: fetch_safe.py
+   Результат: 200 OK (963 chars)
+   Дата/час: 14.11.2026
+   Коментар відповідності: Пост НПУ від 05.11.2026 про встановлення 130 осіб (відео 0:56, текстового опису вибачень немає).
+
+7. URL: https://t.me/s/SBUkr?before=19040
+   Інструмент: fetch_safe.py
+   Результат: 200 OK (32393 chars)
+   Дата/час: 14.11.2026
+   Коментар відповідності: Стрічка Telegram-каналу СБУ навколо 12.11.2026.
+
+8. URL: https://npu.gov.ua/news/natspolitsiia-ta-sbu-zatrymaly-13-uchasnykiv-sutychok-u-petropavlivskii-borshchahivtsi
+   Інструмент: fetch_safe.py (--raw HTML)
+   Результат: 200 OK (18358 chars)
+   Дата/час: 14.11.2026
+   Коментар відповідності: Первинний пресреліз НПУ 12.11; зі сирого HTML витягнуто вбудований YouTube-ролик НПУ https://www.youtube.com/embed/yzbvgbbyIsI.
+
+9. URL: https://www.youtube.com/watch?v=8N0yvJE9vb4
+   Інструмент: fetch_safe.py (oEmbed) + yt-dlp (--write-auto-sub --sub-lang uk)
+   Результат: 200 OK (oEmbed 1679 chars; субтитри 8N0yvJE9vb4.uk.vtt завантажено)
+   Дата/час: 14.11.2026
+   Коментар відповідності: Офіційне відео СБУ «СБУ та Нацполіція затримали 13 учасників сутичок у Петропавлівській Борщагівці». В автосубтитрах зафіксовано вибачення затриманих на камеру (00:44-01:38).
+
+10. URL: https://www.youtube.com/watch?v=yzbvgbbyIsI
+    Інструмент: fetch_safe.py (oEmbed + --raw HTML) + yt-dlp (--write-auto-sub)
+    Результат: 200 OK для oEmbed (1710 chars) і сторінки YouTube (publishDate 2026-11-12T00:00:25-08:00 = 12.11 10:00 Київ); HTTP 429 Too Many Requests при спробі завантажити автосубтитри через yt-dlp.
+    Дата/час: 14.11.2026
+    Коментар відповідності: Офіційне відео Нацполіції від 12.11. Текст субтитрів зняти не вдалося через 429 від YouTube.
+
+11. URL: https://www.youtube.com/watch?v=dieb1SPHO-c
+    Інструмент: fetch_safe.py (oEmbed) + yt-dlp (--write-auto-sub --sub-lang uk)
+    Результат: 200 OK (oEmbed 1867 chars; автосубтитри dieb1SPHO-c.uk.vtt завантажено повністю, 5085 рядків після очищення)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Повний відеозапис засідання ТСК ВРУ (канал Олексія Гончаренка) від 13.11.2026; використано для звірки свідчень Кривоноса, Решетилової, Очеретяного і запитань депутатів.
+
+12. URL: https://suspilne.media/kyiv/1452197-na-tsk-z-oboroni-obgovorili-suticki-u-petropavlivskij-borsagivci-pro-so-jslosa/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (12289 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Повний репортаж Суспільного про ТСК 13.11.2026 15:27; звірено з автосубтитрами ТСК.
+
+13. URL: https://suspilne.media/kyiv/1450713-suticki-v-petropavlivskij-borsagivci-sbu-zatrimala-13-ucasnikiv/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (9422 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Повідомлення Суспільного від 12.11.2026 10:23 про 13 затриманих.
+
+14. URL: https://suspilne.media/kyiv/1446145-suticki-v-petropavlivskij-borsagivci-sud-obirav-zapobiznij-se-dvom/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (11834 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Матеріал Суспільного від 06.11.2026 18:17 про запобіжні заходи Ладиці та Паршонкову.
+
+15. URL: https://ukranews.com/ua/news/1187426-ofis-vijskovogo-ombudsmana-znav-pro-skargy-na-budynok-u-petropavlivskij-borshhagivtsi-shhe-do
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (5784 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Матеріал від 13.11.2026 16:35 про свідчення Решетилової на ТСК: знали про скарги Кулешова до 02.11, але фізично будинок не відвідували.
+
+16. URL: https://lb.ua/society/2026/11/13/780694_vigivskiy_rozpoviv_podrobitsi.html
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (9197 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Новина LB.ua від 13.11.2026 10:27 про виступ Вигівського у ВРУ; про наказ про передачу матеріалів НГУ до ДБР та слова «спрацювали професійно».
+
+17. URL: https://www.slovoidilo.ua/2026/11/13/novyna/suspilstvo/zhodnyx-zaruchnykiv-zahyblyx-mvs-rozkryly-detali-sutychok-petropavlivskij-borshhahivczi
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (8074 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Новина Слово і Діло від 13.11.2026 13:21 про виступ Вигівського у ВРУ.
+
+18. URL: https://censor.net/ua/news/4033630/sutychky-u-petropavlivskiyi-borschagivtsi-pobyttya-viyiskovyh
+    Інструмент: fetch_safe.py (677 chars — антибот/Cloudflare) + websearch сніпет
+    Результат: ЗАБЛОКОВАНЕ (для fetch_safe.py; сніпет доступний у websearch)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Повний текст статті Цензор.НЕТ не відкрито через антибот; факти звірено через Суспільне і відео ТСК.
+
+19. URL: https://sud.ua/uk/news/ukraine/377363-blokuvav-avtobus-natshvardii-v-petropavlivskii-borshchahivtsi-ta-byv-po-kuzovu-sud-obrav-zapobizhnyi-zakhid-shche-odnomu-pidozriuvanomu
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (14772 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Новина SUD.UA від 11.11.2026 18:58 про запобіжний захід 7-му підозрюваному (повторно проіндексовано 13.11 у пошуку).
+
+20. URL: https://news.liga.net/ua/war/news/zavorushennia-u-petropavlivskiy-borshchahivtsi-sbu-zaiavyla-pro-zatrymannia-13-uchasnykiv-video
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (7129 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Новина LIGA.net від 12.11.2026 10:18 з вбудованим відео СБУ 8N0yvJE9vb4.
+
+21. URL: https://www.liga.net/ua/politics/interview/povodyvsia-neadekvatno-yak-v-azovi-poiasniuiut-konflikt-u-petropavlivskiy-borshchahivtsi
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (6011 chars — але повний текст під пейволом LIGA PRO)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Лише лід і заголовок доступні без підписки.
+
+22. URL: https://www.liga.net/ua/politics/articles/100-za-dobu-i-falshyva-shvydka-yak-orhanizuvaly-provokatsiiu-u-petropavlivskiy-borshchahivtsi
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (6546 chars — повний текст під пейволом LIGA PRO)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Лише лід і заголовок доступні без підписки.
+
+23. URL: https://focus.ua/uk/eksklyuzivy/773461-skandal-u-petropavlivskiy-borshchagivci-hto-vidpovist-za-utrimannya-viyskovih
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (18016 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Стаття Фокусу від 03.11.2026 15:11; згадані «синці під очима» (в переказі слів очевидців), коментар адвоката Романа Ліхачова; неточність у статті щодо «підлітка в підвалі».
+
+24. URL: https://www.ukrinform.ua/rubric-society/4180628-komanduvac-nacgvardii-priihav-do-budinku-v-petropavlivskij-borsagivci.html
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (4947 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Повідомлення Укрінформу від 02.11.2026 19:12 (за ТСН): питання Півненку про «синці під очима та сліди побоїв».
+
+25. URL: https://24tv.ua/podiyi-petropavlivskiy-borshhagivtsi-shho-vidomo-pro-intsident_n3172508
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (4549 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Повідомлення 24 каналу від 02.11.2026 19:27 (за УНІАН): присутні запитують Півненка, чому «буцімто синці під очима та сліди побоїв».
+
+26. URL: https://hromadske.radio/news/2026/11/02/podii-u-petropavlivskiy-borshchahivtsi-shcho-vidomo-pro-sytuatsiiu
+    Інструмент: websearch (фрагмент тексту)
+    Результат: не відкривався окремим fetch_safe (текст з'явився у розширеному виводі websearch; факт ДТП-версії вже зафіксовано в SC-54).
+    Дата/час: 14.11.2026
+    Коментар відповідності: Згадка «Один із чоловіків, за версією правоохоронців, "має синці внаслідок ДТП"» (02.11.2026).
+
+27. URL: https://zaxid.net/ofis_viyskovogo_ombudsmena_povidomiv_pro_skargi_biytsiv_na_pobittya_petropavlivskiy_borshhagivtsi_n1650060
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (9879 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Новина ZAXID.NET від 12.11.2026 22:49 (переказ hromadske).
+
+28. URL: https://tribune.com.ua/vijskovyj-ombudsman-pereviryaye-skargy-pobyttya/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (5054 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Новина Трибуни від 13.11.2026 07:16 (переказ hromadske).
+
+29. URL: https://tsn.ua/ukrayina/skandal-u-petropavlivskiy-borshchahivtsi-khto-stoiav-za-provokatsiyeiu-ta-choho-khotiv-dosiahty-3207287.html
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (16562 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Огляд ТСН від 03.11.2026 22:35 (з'явився у пошуку за запитом 13 листопада).
+
+30. URL: https://lb.ua/society/2026/11/03/778234_sihiv_2_hto_chomu_napav.html
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (18310 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Стаття LB.ua від 03.11.2026: заява т.в.о. командира 12-ї бригади «Азов» Лева (Хоруса) Пашка про неприпустимість катувань і згадка прецеденту «вибачень на камеру» у Львові (липень 2026).
+
+31. URL: https://texty.org.ua/articles/118694/v-kyeve-na-podvale-nacysty-monitorynh-rosijskoyi-dezinformaciyi-za-2-8-lystopada-2026-roku/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (22105 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Моніторинг російської дезінформації Texty.org.ua від 13.11.2026 13:18 (дані за 02–08.11.2026): 156 TikTok-відео, 19,25+ млн переглядів, 3732 коментарів про «таємні катівні», 3,5+ тис. публікацій на FIMI-ресурсах 20 мовами.
+
+32. URL: https://reyestr.court.gov.ua/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK сторінки форми, ЗАБЛОКОВАНЕ для автоматизованого пошуку (наявна CAPTCHA: «Введіть суму цифр, зображених на малюнку»)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Прямий пошук за п. 23 чекліста Verifier неможливий без інтерактивного введення CAPTCHA.
+
+33. URL: https://sl.ki.court.gov.ua/sud2609/pres-centr/news/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (4817 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Стрічка новин Солом'янського райсуду м. Києва до 12.11.2026 включно: пресрелізів про ухвали у справі Борщагівки не виявлено.
+
+34. URL: https://dbr.gov.ua/news
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (4879 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Стрічка новин ДБР за 13.11.2026: нових повідомлень щодо Петропавлівської Борщагівки немає.
+
+35. URL: https://t.me/s/dbr_gov_ua
+    Інструмент: fetch_safe.py
+    Результат: 128 chars (порожня відповідь/недоступно через t.me/s)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Канал ДБР за цим юзернеймом у web-preview не відкрився.
+
+36. URL: https://ngu.gov.ua/category/news/
+    Інструмент: fetch_safe.py
+    Результат: 404 (Сторінку не знайдено, 2533 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: URL категорії новин НГУ не існує; перевірено через t.me/s/NationalGuardUA.
+
+37. URL: https://t.me/s/NationalGuardUA
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (6219 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Останні пости каналу НГУ: реакції на відео Гнапа 13.11 чи нових заяв щодо Борщагівки немає.
+
+38. URL: https://t.me/s/azov_media
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (9584 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Останні пости каналу Азову: згадок Борщагівки / відео Гнапа 13–14.11 немає.
+
+39. URL: https://t.me/s/kyivregionpolice
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (12402 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Офіційний Telegram-канал Поліції Київщини: репост заяви Вигівського від 13.11.2026 11:34; реакцій на відео Гнапа після 13.11 21:09 немає.
+
+40. URL: https://t.me/s/kyivregionpolice?before=34860
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (6699 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Попередні пости Поліції Київщини (04–06.11).
+
+41. URL: https://t.me/s/dmytro_lubinetzs
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (20979 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Канал Омбудсмана Дмитра Лубінця: нових постів щодо Петропавлівської Борщагівки після 03.11 немає.
+
+42. URL: https://www.ombudsman.gov.ua/news
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (5154 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Сайт Уповноваженого ВРУ з прав людини: нових релізів щодо Петропавлівської Борщагівки за 12–14.11 немає.
+
+43. URL: https://cpd.gov.ua/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (8370 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Стрічка новин ЦПД (11–13.11.2026): нових публікацій щодо Борщагівки після 03.11 немає.
+
+44. URL: https://zmina.info/news/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (6233 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Стрічка ZMINA (до 14.11.2026): новин чи заяв щодо катувань у Борщагівці немає (єдина новина була 03.11 про напад на журналіста УНІАН).
+
+45. URL: https://www.helsinki.org.ua/articles/
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (2527 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Стрічка новин УГСПЛ (до 10.11.2026): публікацій про Борщагівку не виявлено.
+
+46. URL: https://mipl.org.ua/category/news/
+    Інструмент: fetch_safe.py
+    Результат: 404 (1552 chars)
+    Дата/час: 14.11.2026
+    Коментар відповідності: URL категорії не існує; додатково перевірено пошуком Google — публікацій МІПЛ щодо Борщагівки не знайдено.
+
+47. URL: https://kobl.gp.gov.ua/ua/news.html
+    Інструмент: fetch_safe.py
+    Результат: 200 OK (1669 chars — лише каркас/авторизація, стрічка новин динамічна)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Портал прокуратури не віддав новин у статичному HTML.
+
+48. URL: https://gp.gov.ua/ua/news
+    Інструмент: fetch_safe.py
+    Результат: 36 chars (порожньо / JS-рендер або блокування)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Сайт ОГП не віддав новин через curl.
+
+49. URL: https://t.me/s/dgnap
+    Інструмент: fetch_safe.py
+    Результат: 139 chars (порожній/неіснуючий web-preview або непублічний юзернейм)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Перевірявся Telegram-канал Дмитра Гнапа; web-preview порожнє.
+
+50. URL: https://www.facebook.com/UA.National.Police/videos/1077075832019131/
+    Інструмент: fetch_safe.py + websearch
+    Результат: 43 chars (Facebook блокує curl / вимагає логіну); у сніпеті websearch видно заголовок «Затримання у Петропавлівській Борщагівці: Нацполіція та СБУ викрили 13 учасників» та коментарі про вибачення.
+    Дата/час: 14.11.2026
+    Коментар відповідності: Пряме відкриття Facebook недоступне без браузера/логіну; сніпет підтверджує обговорення вибачень під відео НПУ.
+
+51. URL: https://www.facebook.com/pol.kyivregion/videos/2308410736681637/
+    Інструмент: websearch (не відкривався через fetch_safe через блокування Facebook)
+    Результат: Сніпет у пошуку («130 осіб можуть бути причетними до заворушень...»; коментарі про вибачення)
+    Дата/час: 14.11.2026
+    Коментар відповідності: Непряме підтвердження теми вибачень у відео поліції (сам ролик не переглядався).
+
+52. URL: https://zmina.info/news/u-petropavlivskij-borshhagivczi-napaly-na-korespondenta-unian-yakyj-vysvitlyuvav-sutychky/
+    Інструмент: websearch (повний текст у розширеному виводі пошуку)
+    Результат: індексований текст від 03.11.2026
+    Дата/час: 14.11.2026
+    Коментар відповідності: Єдина новина ZMINA у цій темі — про напад на журналіста УНІАН, а не про катування мобілізованих.
+
+53. URL: https://ombudsman.gov.ua/news_details/zhodnih-podvijnih-standartiv-ne-maye-buti-ombudsman-vimagaye-perevirki-situaciyi-na-petropavlivskij-borshchagivci
+    Інструмент: websearch (сніпет)
+    Результат: індексований текст від 03.11.2026
+    Дата/час: 14.11.2026
+    Коментар відповідності: Первинна позиція Лубінця від 03.11 (вже відома за SC-33).
