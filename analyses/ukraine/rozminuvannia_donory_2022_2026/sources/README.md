@@ -8,10 +8,16 @@
 | `url_check_raw.txt` | Журнал URL: інструмент, результат, дата |
 | `research_brief_rozminuvannia.md` | Research brief за ключовими питаннями scope contract |
 | `source_cards_01.md` | Source cards документа `01_donory_rozminuvannia.md`: SC-01 — SC-35 (Researcher), SC-36 — SC-44 (Writer, 14.11.2026, з витягів `raw/`), SC-45 — SC-75 (адендум Researcher за знахідками red team, 14.11.2026), SC-76 — SC-80 (Editor за звітом Verifier, 14.11.2026) |
+| `source_cards_02.md` | Source cards документа `02_shcho_pishlo_ne_tak.md`: SC-01 — SC-07 (передісторія 2014-2021: ТКГ, Єрмак, Резніков, ЗСУ, блокування РФ) і SC-08 — SC-10 (Київська міська прокуратура 22.06.2026; рішення АМКУ 27.08.2026 і 29.10.2026) — Researcher+Writer, 14.11.2026; SC-11/SC-12 (ЄДРСР: ухвала Печерського райсуду 23.06.2026 і апеляційна ухвала 05.08.2026) — Verifier за звітом, 14.11.2026 |
+| `agent_negative_outcomes_raw.md` | Сирі нотатки проходу «хороше прикриття — негативний наслідок» (14.11.2026): верифікація скаут-нотаток про Єрмака і розмінування Донбасу до вторгнення, нові знахідки (АМКУ, Київська міська прокуратура, ZMINA), негативні результати пошуку, обґрунтування розташування документа |
+| `research_brief_02_shcho_pishlo_ne_tak.md` | Research brief документа 02: ворота рішення, таблиця епізодів «хороше прикриття — негатив», ключові питання, межі |
 | `red_team_01.md` | Звіт red team щодо `01_donory_rozminuvannia.md` (14.11.2026) |
 | `corrections_log_01_redteam.md` | Журнал виправлень Editor за звітом red team і за звітом Verifier (14.11.2026) |
 | `verification_01_donory_rozminuvannia.md` | Звіт Verifier (14.11.2026, PASS WITH CORRECTIONS) зі статусом виправлень і targeted addendum (14.11.2026: усі MAJOR виправлено, вердикт PASS) |
 | `verification_notes.md` | Повторювані класи помилок і пропозиції до правил (14.11.2026) |
+| `agent_verifier_redteam_raw.md` | Сирі нотатки Verifier + Red team документа 02 (14.11.2026) |
+| `red_team_02.md` | Звіт red team щодо `02_shcho_pishlo_ne_tak.md` (14.11.2026) |
+| `verification_02_shcho_pishlo_ne_tak.md` | Звіт Verifier документа 02 (14.11.2026, PASS WITH CORRECTIONS) зі статусом виправлень і targeted addendum (14.11.2026: усі MAJOR/MINOR виправлено, вердикт PASS) |
 | `raw/vf_*.txt` | Витяги Verifier для звірки цитат (demine, monitor, u24, epravda, svoboda, unn, zaxid, kmu, me, RTF-ухвали ВАКС) |
 | `raw/rs2_*.txt` | Витяги адендуму Researcher (SC-45..SC-75) |
 | `raw/rt_*.txt` | Витяги red team (Mine Action Review, Міноборони, Мінекономіки, Euromaidan Press тощо) |

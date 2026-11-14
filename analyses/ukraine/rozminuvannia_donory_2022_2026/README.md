@@ -3,7 +3,7 @@
 **Країна:** ukraine
 **Період / горизонт:** 24.02.2022 — 14.11.2026; фінансові дані — 2022-2026 (річні, з маркуванням часткових періодів)
 **Станом на:** 14.11.2026
-**Статус:** ГОТОВО (Verifier 14.11.2026: PASS WITH CORRECTIONS; виправлення внесено; targeted addendum 14.11.2026 — усі MAJOR виправлено, вердикт PASS)
+**Статус:** ГОТОВО (Verifier 14.11.2026: PASS WITH CORRECTIONS; виправлення внесено; targeted addendum 14.11.2026 — усі MAJOR виправлено, вердикт PASS). Документ 02 — ГОТОВО (Verifier 14.11.2026: PASS WITH CORRECTIONS — 2 MAJOR, 5 MINOR; виправлення внесено, targeted addendum — PASS).
 
 > Регламент — кореневий [`AGENTS.md`](../../../AGENTS.md). Scope contract — [`scope_contract.md`](scope_contract.md).
 
@@ -29,6 +29,7 @@
 |---|---|---|
 | [`scope_contract.md`](scope_contract.md) | Scope contract (AGENTS.md, 6.1) | ГОТОВО |
 | [`01_donory_rozminuvannia.md`](01_donory_rozminuvannia.md) | Донори гуманітарного розмінування: держави, ЄС, фонди, НУО, приватні збори, держбюджет; суми за періодами, ризики, steelman | ГОТОВО (PASS WITH CORRECTIONS -> виправлення -> targeted addendum PASS, 14.11.2026) |
+| [`02_shcho_pishlo_ne_tak.md`](02_shcho_pishlo_ne_tak.md) | «Що пішло не так»: «хороша» рамка ПМД з негативним наслідком — ТКГ-рамка з нульовим результатом (2014-2021), імітація розмінування (ДБР/КМП, 55,5 млн грн; запобіжні заходи верифіковано в ЄДРСР), змови на торгах ЦГР (АМКУ, 52 торги, понад 410 млн грн), аудити РП, steelman | ГОТОВО (PASS WITH CORRECTIONS -> виправлення -> targeted addendum PASS, 14.11.2026) |
 | [`sources/`](sources/README.md) | Сирі матеріали, source cards, звіти перевірки | |
 
 ## Актуальність даних (vintage)
