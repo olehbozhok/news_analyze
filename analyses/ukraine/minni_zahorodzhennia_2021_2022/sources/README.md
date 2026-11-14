@@ -3,23 +3,38 @@
 | Файл | Зміст |
 |---|---|
 | [source_cards_01.md](source_cards_01.md) | Картки SC-01...SC-37 для документа 01 (одне твердження — одне джерело; SC-31...SC-37 додано Verifier/red team 14.11.2026) |
-| [research_brief_minni_zahorodzhennia.md](research_brief_minni_zahorodzhennia.md) | Бриф: підсумок за ключовими питаннями scope contract |
+| [source_cards_02.md](source_cards_02.md) | Картки SC-01...SC-14 для документа 02 (SC-04, SC-08 перероблено, SC-13/SC-14 додано Verifier 14.11.2026) |
+| [research_brief_minni_zahorodzhennia.md](research_brief_minni_zahorodzhennia.md) | Бриф: підсумок за ключовими питаннями scope contract (01) |
+| [research_brief_02_donbas.md](research_brief_02_donbas.md) | Бриф документа 02: поіменні звинувачення поза Чонгаром (14.11.2026) |
 | [agent_scout_raw.md](agent_scout_raw.md) | Сирі скаут-нотатки ФАЗИ 0 (не редагуються) |
+| [agent_scout_raw_02.md](agent_scout_raw_02.md) | Сирі нотатки фази 02: 25 пошукових запитів, негативні результати по напрямках |
 | [url_check_raw.txt](url_check_raw.txt) | Журнал URL: інструмент і результат для кожного |
-| [verification_01_minni_zahorodzhennia_2021_2022.md](verification_01_minni_zahorodzhennia_2021_2022.md) | Звіт Verifier (PASS WITH CORRECTIONS, 14.11.2026) |
-| [red_team_01.md](red_team_01.md) | Adversarial check (6.3) |
+| [verification_01_minni_zahorodzhennia_2021_2022.md](verification_01_minni_zahorodzhennia_2021_2022.md) | Звіт Verifier (PASS WITH CORRECTIONS, 14.11.2026) — документ 01 |
+| [verification_02_donbas_ta_inshi_napriamky.md](verification_02_donbas_ta_inshi_napriamky.md) | Звіт Verifier (PASS WITH CORRECTIONS, 14.11.2026) — документ 02 |
+| [red_team_02.md](red_team_02.md) | Adversarial check (6.3) — документ 02 |
+| [red_team_01.md](red_team_01.md) | Adversarial check (6.3) — документ 01 |
 | [verification_notes.md](verification_notes.md) | Повторювані класи помилок і пропозиції правил |
 
 ## Зведення карток за статусами
+
+Документ 01 (source_cards_01.md):
 
 - ПЕРВИННЕ: SC-01, SC-02, SC-05, SC-09, SC-11, SC-12, SC-18, SC-22, SC-17 (офіційна відповідь ДБР)
 - ВТОРИННЕ: SC-03, SC-04, SC-06, SC-07, SC-08, SC-10, SC-13, SC-14, SC-15, SC-16, SC-19, SC-20, SC-21, SC-23, SC-24, SC-25, SC-26, SC-27, SC-28, SC-29, SC-30
 - ЗАБЛОКОВАНЕ: ні (pravda 403 обійдено static-рендером, текст отримано)
 - НЕПІДТВЕРДЖЕНЕ: прес-підозри проти Баканова (SC-17 caveat), зруйнування залізничного мосту Чонгару (SC-28/SC-37: вибух мін підтверджено, руйнування — ні), «видав сітку мінних полів» Садохіна (SC-16 — позиція звинувачувача), зв'язок переведення Наєва на фронт з інтерв'ю (SC-32 — позиція Бутусова)
 
+Документ 02 (source_cards_02.md, після Verifier 14.11.2026):
+
+- ПЕРВИННЕ: SC-09 (УНІАН, інтерв'ю Кротевича), SC-10 (Укрінформ, Гайдай), SC-08 (ЄДРСР, ухвала КАС №122096003 + перша інстанція №121222817)
+- ВТОРИННЕ: SC-01, SC-02, SC-03, SC-04 (BBC: Содоль коментарів не давав), SC-05, SC-06, SC-07, SC-11, SC-12, SC-13 (УП, Волинський), SC-14 (BBC, контекст критики/підтримки)
+- НЕПІДТВЕРДЖЕНЕ: звину́вання Содоля у «некеруванні обороною Маріуполя»/«не будуванні споруд» (SC-02/SC-03 — позиція скаржника; слідчому ДБР зобов'язано внести відомості до ЄРДР за рішенням КАС, кваліфікацію визначає слідчий, підозри немає); версія про відсторонення Содоля 2022 (SC-14 — анонімне джерело BBC)
+
 ## Особливості
 
-- pravda.com.ua у browser-рендері віддає 403 на статті; static-рендер працює.
+- pravda.com.ua у browser-рендері віддає 403 на статті; static-рендер працює (новина 24.02.2023 відкрита browser без блокування).
 - nv.ua і most.ks.ua — без блокувань (browser).
 - censor.net — browser, без блокувань.
 - Довгі джерела: BBC рос. 21.09.2023 і УП-реконструкція 21.09.2023 дочитані повністю (Verifier, 14.11.2026); блог Омельченка — заголовок і розділ про Чонгар локалізовано find_in_page (використано лише заголовок).
+- Фаза 02 (14.11.2026): Chrome/chrome_* у середовищі недоступні; web_extractor MCP (browser) і WebSearch; WP (washingtonpost.com) не відкривався (пейвол) — текст скарги зафіксовано через NV/Радіо Свобода; сайт ДБР не індексується за «Содоль» (негативний пошук — caveat SC-08).
+- Verifier 14.11.2026: браузер доступний (browsermcp/Chrome); ЄДРСР відкрито без CAPTCHA (пошук за «Справа №» 761/24500/24 — 3 документи; текст ухвал зчитано з iframe сторінок /Review/122096003 і /Review/121222817); radiosvoboda.org — 403 на static, відкрито браузером; pravda.com.ua/articles (інтерв'ю Волинського) — static без блокування; WP — лише перший абзац (пейвол), web.archive.org — Access Denied.

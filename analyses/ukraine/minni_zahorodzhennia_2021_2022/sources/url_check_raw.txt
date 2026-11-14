@@ -48,3 +48,48 @@ https://tsn.ua/ukrayina/hto-zdav-pivden-ukrayini-rosiyanam-scho-vstanovilo-slids
 https://ipc.org.ua/uk/2023/06/visim-prykordonnykiv-z-chongara-na-hersonshhyni-otrymaly-pidozry-dbr-za-dezertyrstvo-v-pershi-dni-povnomasshtabnoyi-vijny/ | web_extractor fetch_page (static) | 200, повний текст (4290); SC-34
 https://www.gp.gov.ua/ua/posts/povidomlennya-pro-pidozru-ta-povistki-pro-viklik-sevcuka-jea-na-05062023-07062023-09062023 | web_extractor fetch_page (static) | 200, сторінка ОГП (thin): підозра Шевчуку Є.А. від 31.05.2023, посилання на PDF
 WebSearch (пошук реакцій на Бутусова 10.02.2025) | WebSearch | знайдено ланку «розпорядження Наєву на фронт» (NV, lb.ua, РБК); прямих коментарів ОП/Резнікова не знайдено — негативний результат зафіксовано в SC-32 caveat
+
+# Фаза 02 (14.11.2026): Донбас та інші напрямки. Chrome/chrome_* недоступні; web_extractor MCP + WebSearch
+
+https://nv.ua/ukr/ukraine/events/wp-rozkrila-tekst-zayavi-v-dbr-krotevich-zvinuvativ-sodolya-v-nizci-viyskovih-provaliv-i-pomilok-50430353.html | web_extractor fetch_page (browser) | 200, повний текст (3672); SC-02/01 (текст скарги) — дослівно
+https://www.radiosvoboda.org/a/rozsliduvannya-proty-henerala-sodolya/33011298.html | web_extractor fetch_page (browser) | 200, повний текст (2095); «Нам кінець», «не керував обороною Маріуполя» — дослівно
+https://suspilne.media/779353-skarga-krotevica-na-generala-sodola-nacstabu-azovu-otrimav-vidpovid-vid-dbr/ | web_extractor fetch_page (browser) | 200, повний текст (2146); скарга 23.06.2024, відповідь ДБР, цитати — дослівно
+https://www.ukrinform.ua/rubric-ato/3911350-nacstabu-azovu-sud-zobovazav-dbr-porusiti-spravu-proti-sodola.html | web_extractor fetch_page (browser) | 200, повний текст (2124); ухвала КАС 30.09.2024, справа №761/24500/24, ч. 2 ст. 425 КК — дослівно; згадка про заміну Содоля 24.06.2024
+https://www.unian.ua/war/hto-zdav-mariupol-azovec-rozkazav-pro-oboronu-i-prichini-padinnya-mista-video-12019518.html | web_extractor fetch_page (browser) | 200, повний текст (5593); інтерв'ю Кротевича 21.10.2022 — дослівно
+https://www.ukrinform.ua/rubric-regions/3477927-ukrainski-voini-vidijsli-vid-popasnoi-na-zazdalegid-pidgotovleni-pozicii-gajdaj.html | web_extractor fetch_page (browser) | 200, повний текст (1916); Гайдай 08.05.2022 — дослівно
+https://www.pravda.com.ua/news/2023/02/24/7390828/ | web_extractor fetch_page (browser) | 200, повний текст (4245); наративи роспропаганди (Atlantic Council) — дослівно
+https://voxukraine.org/fejk-ukrayina-planuvala-pershoyu-napasty-na-dnr-ta-vyjty-na-kordony-z-rosiyeyu | web_extractor fetch_page (browser) | 200, повний текст (4159); фейк «доповідь ОК Північ», спростування Залужного 18.02.2022 — дослівно
+
+Пошукові запити (WebSearch) з негативним результатом — перелік і висновки: sources/agent_scout_raw_02.md
+
+# Фінальний пошук новин 30 днів (15.10-14.11.2026), виконано 14.11.2026
+
+WebSearch «Содоль Кротевич ДБР справа новини листопад 2026» | WebSearch | нових подій за вікно немає; хронологія 2024-2025 без змін
+WebSearch «Чонгар розмінування мости новини жовтень листопад 2026» | WebSearch | по Чонгару новин немає; лише місячна статистика розмінування Міноборони (mod.gov.ua, інша предметна сфера)
+WebSearch «"Попасна" АБО "Золоте" АБО "Лиман" незамінування звинувачення командир новини 2026» | WebSearch | релевантних новин немає
+
+# Verifier + red team документа 02 (14.11.2026): браузер доступний (browsermcp/Chrome)
+
+https://reyestr.court.gov.ua/Review/761/24500/24 | browsermcp (Chrome, форма «Справа №») | пошук дав 3 документи справи №761/24500/24: 121222780 (ухвала 19.08.2024), 121222817 (ухвала 19.08.2024, набрала чинності 30.09.2024), 122096003 (КАС, 30.09.2024)
+https://reyestr.court.gov.ua/Review/122096003 | browsermcp (Chrome, повний текст з iframe, ~33 тис. знаків) | 200; ПЕРВИННЕ: зобов'язання слідчого ГСУ ДБР внести до ЄРДР відомості за заявою від 23.06.2024; резолютивна частина без кваліфікації ч. 2 ст. 425; заява — 3 епізоди (Маріуполь, Кринки, Харків); лист ДБР 27.06.2024 (ст. 429, ч. 4 ст. 425, провадження №62024170020003242 від 11.05.2024)
+https://reyestr.court.gov.ua/Review/121222817 | browsermcp (Chrome, повний текст з iframe) | 200; ПЕРВИННЕ: відмова першої інстанції 19.08.2024, провадження №1-кс/761/15750/2024; судді анонімізовані (ОСОБА_1)
+https://nv.ua/ukr/ukraine/events/wp-rozkrila-tekst-zayavi-v-dbr-krotevich-zvinuvativ-sodolya-v-nizci-viyskovih-provaliv-i-pomilok-50430353.html | web_extractor fetch_page (static) | 200, повний текст; цитати SC-02 дослівно; реакції Содоля на сторінці НЕМАЄ (SC-04 стара редакція не підтверджується)
+https://www.radiosvoboda.org/a/rozsliduvannya-proty-henerala-sodolya/33011298.html | web_extractor (static) = 403 → browsermcp (Chrome) | 200; «Нам кінець», «не керував обороною Маріуполя і не провів жодної години в місті» — дослівно
+https://www.washingtonpost.com/world/2024/06/26/ukraine-army-sodol-zelensky-syrsky/ | web_extractor (static) | 200, лише перший абзац (пейвол); реакції Содоля в доступному фрагменті немає
+https://web.archive.org/web/2024/https://www.washingtonpost.com/world/2024/06/26/ukraine-army-sodol-zelensky-syrsky/ | browsermcp | Access Denied
+https://tsn.ua/exclusive/skandal-navkolo-sodolya-chi-vidpovist-general-za-vtrati-zsu-chi-zillyut-po-tihomu-bez-pokaran-2608803.html | web_extractor (static) | 200; 27.06.2024: «коментарів вищого військового керівництва та правоохоронних органів досі немає»; контекст Безуглої/морпіхів LIGA
+https://tsn.ua/exclusive/use-pro-spravu-sodolya-2628657.html | web_extractor (static) | 200; 26.07.2024 хронологія: заява Корпусу морської піхоти на підтримку Содоля, скарга Кротевича до суду 22.07.2024, заява приєднана до справи про прорив на Харківщині
+https://www.bbc.com/ukrainian/articles/c3gg9v3vg02o | web_extractor (static) | 200; «ВВС Україна не вдалося отримати пояснення від Юрія Содоля. Речник ОСУВ «Хортиця»... «коментарів не дає»; біо Содоля; відсторонення 2022 (анонімне джерело); Писанко/Сухаревський
+https://glavred.net/ukraine/ne-oboronyal-mariupol-no-poluchil-geroya-novye-podrobnosti-skandala-vokrug-sodolya-10576151.html | web_extractor (static) | 200; варіант «Ми облажалися» кинула слухавку; біо Кротевича
+https://www.pravda.com.ua/articles/2026/01/26/8017820/ | web_extractor find_in_page (static) | 200; Волинський: «Він у тому числі, сто відсотків... до Юрія Івановича багато питань, починаючи від Маріуполя і закінчуючи Кринками» — дослівно (SC-13)
+https://zmina.info/news/zahysnyk-mariupolya-sergij-volynskyj-zvynuvatyv-kolyshnogo-komanduvacha-obyednanyh-syl-zsu-u-velykyh-vtratah-u-krynkah | web_extractor (static) | 200; переказ УП-інтерв'ю, дата 26.01.2026 (SC-13 caveat)
+https://www.pravda.com.ua/news/2023/02/24/7390828/ | web_extractor find_in_page (static) | 200; «Україна планує напасти на Донбас» — дослівно (SC-11)
+https://voxukraine.org/fejk-ukrayina-planuvala-pershoyu-napasty-na-dnr-ta-vyjty-na-kordony-z-rosiyeyu | web_extractor find_in_page (static) | 200; Залужний 18.02.2022 — дослівно (SC-12)
+
+Google-пошук (browsermcp/Chrome), повторна перевірка негативних результатів розділу 4:
+- «Попасна 2022 звинувачення незаміновані позиції командир Бутусов» | негативно (лише загальна аналітика)
+- «Лиман жовтень 2022 72 бригада звинувачення незамінування позиції» | негативно (AI-огляд: «У відкритих достовірних джерелах немає підтверджених даних про звинувачення... щодо незамінування»)
+- «Золоте Золотарівка 2022 оточення звинувачення командування незаміновані» | негативно (полеміка про оточення/управління)
+- «Семенченко звинувачення незаміновані позиції Генштаб Донбас» | негативно (конфлікти 2014-2021 — не про загородження)
+
+WebSearch (14.11.2026, Verifier): «Содоль спростував/заперечив звинувачення» — прямої заяви не знайдено; «Содоль вперше прокоментував» — не знайдено; «Волинський звинуватив Содоля» — підтверджено (УП 26.01.2026).
