@@ -42,3 +42,6 @@
 - [persons/ukraine/yurii_sodol/README.md](../yurii_sodol/README.md)
   Юрій Содоль
   - [- **Сергій Наєв** — попередник на посаді командувача ОС (Содоль призначений у 02.2024 «замість Сергія Наєва», за Суспільним). → 02/SC-06](../yurii_sodol/README.md#звязки-з-персонами)
+  - [- **persons/ukraine/serhiinaiev/README.md**](../yurii_sodol/README.md#згадки-в-аналізах)
+  - [- **- persons/ukraine/yuriisodol/README.md**](../yurii_sodol/README.md#згадки-в-аналізах)
+  - [- **- - Сергій Наєв — попередник на посаді командувача ОС (Содоль призначений у 02.2024 «замість Сергія Наєва», за Суспільним). → 02/SC-06**](../yurii_sodol/README.md#згадки-в-аналізах)

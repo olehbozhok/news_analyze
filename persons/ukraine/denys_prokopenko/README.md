@@ -38,8 +38,13 @@
 - [persons/ukraine/andrii_kharkiv/README.md](../andrii_kharkiv/README.md)
   Андрій Харків
   - [- **Денис Прокопенко** — службовий зв'язок: один штаб «Азову» в обороні Маріуполя. → 02/SC-09](../andrii_kharkiv/README.md#звязки-з-персонами)
+  - [- **persons/ukraine/denysprokopenko/README.md**](../andrii_kharkiv/README.md#згадки-в-аналізах)
+  - [- **- persons/ukraine/andriikharkiv/README.md**](../andrii_kharkiv/README.md#згадки-в-аналізах)
+  - [- **- - Денис Прокопенко — службовий зв'язок: один штаб «Азову» в обороні Маріуполя. → 02/SC-09**](../andrii_kharkiv/README.md#згадки-в-аналізах)
 - [persons/ukraine/bohdan_krotevych/README.md](../bohdan_krotevych/README.md)
   Богдан Кротевич («Тавр»)
   - [- **Денис Прокопенко** — службовий зв'язок: командир «Азову» 2022; за Кротевичем, разом з ним свідки планування оборони Маріуполя. → 02/SC-09](../bohdan_krotevych/README.md#звязки-з-персонами)
   - [- **persons/ukraine/denysprokopenko/README.md**](../bohdan_krotevych/README.md#згадки-в-аналізах)
   - [- **- Богдан Кротевич — службовий зв'язок: начштаб «Азову» за його командування; спільні свідки планування оборони Маріуполя (за Кротевичем). → 02/SC-09**](../bohdan_krotevych/README.md#згадки-в-аналізах)
+  - [- **- persons/ukraine/bohdankrotevych/README.md**](../bohdan_krotevych/README.md#згадки-в-аналізах)
+  - [- **- - Денис Прокопенко — службовий зв'язок: командир «Азову» 2022; за Кротевичем, разом з ним свідки планування оборони Маріуполя. → 02/SC-09**](../bohdan_krotevych/README.md#згадки-в-аналізах)
