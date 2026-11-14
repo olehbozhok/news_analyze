@@ -1,0 +1,584 @@
+<!DOCTYPE html><html
+lang="en-US" class="has-no-js"><head><meta
+charset="utf-8"/><link
+href="https://icblcmc.org/build/style.purged.min.4cb2a94acaa50d5ce89fc4674c0f1e8f6984732f.css" rel="stylesheet" integrity="sha256-+D/tYGnPRTmM1SHArMbn5oOhMv0xEG8aCys0J5ehlSM=" crossorigin="anonymous"><link
+href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link
+type="font/woff2" href="https://icblcmc.org/fonts/Graphik-Regular-Web.woff2" rel="preload" as="font" crossorigin><link
+type="font/woff2" href="https://icblcmc.org/fonts/Graphik-Medium-Web.woff2" rel="preload" as="font" crossorigin><link
+rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@1..1000&amp;display=swap" media='print' onload="this.media='all';">
+<noscript><link
+href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@1..1000&amp;display=swap" rel="stylesheet">
+</noscript><meta
+name="viewport" content="width=device-width,initial-scale=1"><link
+rel="apple-touch-icon" sizes="180x180" href="https://icblcmc.org/favicons/apple-touch-icon.png"><link
+rel="icon" type="image/png" sizes="96x96" href="https://icblcmc.org/favicons/favicon-96x96.png"><link
+rel="shortcut icon" href="https://icblcmc.org/favicons/favicon.ico"><link
+rel="manifest" href="https://icblcmc.org/favicons/manifest-monitor.json"><link
+rel="home" href="https://the-monitor.org/"><title>404 Page Not Found - The Monitor</title><meta
+name="twitter:card" content="summary_large_image"><meta
+property="og:site_name" content="The Monitor"><meta
+property="og:type" content="website"><meta
+property="og:title" content="404 Page Not Found"><meta
+name="twitter:title" content="404 Page Not Found"> <script>document.documentElement.className=document.documentElement.className.replace('has-no-js','has-js');</script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH61VS7L3F"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-GH61VS7L3F');</script> <meta
+name="build" content=":v1-css:4cb2a94acaa50d5ce89fc4674c0f1e8f6984732f-js:972afa3f1a6401a9b0a07c2f3eaf8b3f3fb285d84f0feb0886feb80f9aa68effb37c7ebd20475bde-html:v1-announcement:v1">
+</head><body
+class="text-white"><div
+class="flex flex-col min-h-screen">
+          <div
+class="bg-black sticky top-0 transition-transform duration-500 ease-in-out z-header" x-init="Alpine.store(&#039;header&#039;, {
+navToggle: Alpine.store(&#039;header.navToggle&#039;) || false,
+searchToggle: Alpine.store(&#039;header.searchToggle&#039;) || false,
+})" x-data="navScroll" x-bind="scrollHandler" x-trap.inert.noscroll="$store.header.navToggle || $store.header.searchToggle" x-bind:class="scrollingDown ? &#039;-translate-y-full&#039; : &#039;translate-y-0&#039;"><header
+class="container min-h-16 py-4 flex gap-6 sm:gap-10 md:gap-14 lg:gap-18 items-center">
+<a
+href="https://the-monitor.org/" title="Visit the The Monitor home page">
+<svg
+class="w-24 sm:w-26 md:w-28 lg:w-30 -my-1 sm:my-px h-11" width="126" height="47" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 126 47"><symbol
+id="monitor-logo627788425">
+<path
+fill="#fff" fill-rule="evenodd" d="M.14 1.28v6.5h4.102v-.982H1.299V1.281H.141zm6.456 5.694q.514 0 .854-.288a.92.92 0 0 0 .342-.735v-.374l-1.123.073q-.934.063-.935.675.001.297.236.473.237.176.626.176m-.327.86q-.728 0-1.193-.406-.465-.405-.464-1.058 0-.657.487-1.027.486-.37 1.417-.428l1.276-.076v-.36q0-.389-.25-.597-.248-.21-.702-.21-.378 0-.633.18a.75.75 0 0 0-.316.483H4.86q.022-.675.585-1.11.564-.434 1.43-.434.922-.001 1.473.44.55.443.55 1.175V7.78H7.823v-.792h-.026a1.47 1.47 0 0 1-.618.62q-.416.226-.91.226m3.42-.054V2.856h1.074v.856h.022q.445-.915 1.586-.915.817 0 1.285.487.467.486.467 1.342V7.78h-1.118V4.848q0-.527-.275-.813-.274-.286-.777-.286-.516 0-.83.333-.315.334-.315.873V7.78zm7.372-4.044q-.557 0-.892.431-.334.434-.334 1.154-.001.725.334 1.152.334.428.892.428t.892-.432q.336-.432.335-1.148 0-.713-.337-1.149a1.07 1.07 0 0 0-.89-.436m-.328 4.097q-.92 0-1.483-.686-.56-.687-.56-1.831 0-1.14.56-1.826.563-.686 1.479-.687.525 0 .925.234a1.5 1.5 0 0 1 .603.649h.026V.979h1.118v6.8h-1.096v-.838h-.022a1.5 1.5 0 0 1-.609.654 1.8 1.8 0 0 1-.941.238m3.491-.053V2.856H21.3v.865h.021q.161-.428.537-.675.375-.248.86-.249.521 0 .879.255.356.254.496.723h.023q.18-.45.59-.714t.942-.264q.724 0 1.162.447.44.445.44 1.184v3.35h-1.117V4.704q0-.46-.234-.71-.233-.25-.665-.25a.9.9 0 0 0-.687.284q-.265.285-.265.734v3.017h-1.088V4.64q0-.414-.237-.655-.24-.24-.648-.24a.9.9 0 0 0-.693.294q-.272.295-.271.75v2.99h-1.12z" clip-rule="evenodd" />
+<mask
+id="ypfgtwocmu-a" width="126" height="46" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+<path
+fill="#fff" fill-rule="evenodd" d="M0 45.156h125.443V.98H0z" clip-rule="evenodd" />
+</mask>
+<g
+mask="url(#ypfgtwocmu-a)">
+<path
+fill="#fff" fill-rule="evenodd" d="M28.065 7.78h1.12V2.857h-1.12zm.557-5.548a.62.62 0 0 1-.445-.18.59.59 0 0 1-.183-.437.62.62 0 0 1 .628-.617.615.615 0 0 1 .63.617.616.616 0 0 1-.63.617M30.02 7.78V2.856h1.074v.856h.021q.445-.915 1.586-.915.817 0 1.286.487.466.486.467 1.342V7.78h-1.119V4.848q0-.527-.274-.813-.275-.286-.778-.286-.516 0-.83.333-.315.334-.314.873V7.78zm7.309-4.117q-.49 0-.818.327t-.363.853h2.326q-.017-.531-.332-.855-.314-.325-.813-.325m1.15 2.653h1.051q-.108.684-.705 1.11-.599.425-1.455.425-1.087 0-1.72-.675-.63-.675-.63-1.837 0-1.163.627-1.856.626-.693 1.682-.693 1.032 0 1.64.657.606.658.606 1.774v.37h-3.437v.068q0 .594.347.957.346.362.906.362.405 0 .697-.178a.87.87 0 0 0 .391-.484m5.374.658q.513 0 .854-.288a.92.92 0 0 0 .341-.735v-.374l-1.123.073q-.934.063-.935.675 0 .297.237.473.235.176.626.176m-.327.86q-.728 0-1.194-.406-.464-.405-.464-1.058 0-.657.488-1.027.486-.37 1.417-.428l1.275-.076v-.36q0-.389-.249-.597-.249-.21-.703-.21-.378 0-.633.18a.75.75 0 0 0-.315.483h-1.033q.023-.675.585-1.11.564-.434 1.431-.434.922-.001 1.472.44.55.443.55 1.175V7.78H45.08v-.792h-.027a1.46 1.46 0 0 1-.618.62 1.9 1.9 0 0 1-.91.226m3.42-.054V2.856h1.075v.856h.021q.445-.915 1.587-.915.816 0 1.285.487.466.486.467 1.342V7.78h-1.12V4.848q0-.527-.274-.813-.275-.286-.778-.286-.515 0-.83.333-.314.334-.314.873V7.78zm7.373-4.044q-.558 0-.892.431-.335.434-.334 1.154-.001.725.334 1.152.334.428.892.428.556 0 .891-.432.336-.432.335-1.148 0-.713-.337-1.149a1.07 1.07 0 0 0-.89-.436m-.328 4.097q-.92 0-1.482-.686-.56-.687-.561-1.831.001-1.14.56-1.826.563-.686 1.48-.687.525 0 .925.234t.602.649h.026V.979h1.119v6.8h-1.096v-.838h-.023a1.5 1.5 0 0 1-.608.654 1.8 1.8 0 0 1-.942.238m8.291.054q-1.392 0-2.204-.9-.81-.9-.81-2.459-.001-1.55.815-2.452.816-.903 2.198-.903 1.133 0 1.91.647.777.645.885 1.69h-1.14a1.6 1.6 0 0 0-.57-.981 1.67 1.67 0 0 0-1.084-.37q-.835 0-1.332.642-.496.641-.496 1.727 0 1.094.494 1.734.495.64 1.338.64.643 0 1.08-.331.439-.332.573-.917h1.137q-.153 1.044-.899 1.64-.745.594-1.895.593m3.465-.107h1.119V.98h-1.12v6.8zm6.365-4.923V7.78h-1.074v-.861h-.026q-.202.45-.604.687t-.96.236q-.808 0-1.288-.49-.48-.491-.48-1.338V2.857h1.117V5.79q0 .532.277.818.276.285.775.286.51 0 .828-.334.317-.333.317-.878V2.857h1.119zm.711 1.423q0-.67.544-1.08.543-.41 1.428-.41.85.001 1.387.416.54.417.558 1.088h-1.042a.66.66 0 0 0-.276-.493q-.25-.183-.65-.183-.39 0-.626.165a.51.51 0 0 0-.237.435q0 .41.715.575l.863.2q.742.17 1.054.476.311.308.311.85 0 .686-.579 1.11-.58.422-1.505.422-.898 0-1.457-.416a1.47 1.47 0 0 1-.614-1.105h1.101a.72.72 0 0 0 .312.513q.262.18.703.18.427 0 .676-.16a.49.49 0 0 0 .249-.434.43.43 0 0 0-.15-.345q-.15-.128-.518-.213l-.89-.217q-1.356-.319-1.357-1.374m4.943-2.521h1.12v1.098h.928v.87h-.928V6.32q0 .6.591.6.154 0 .334-.023v.86a3 3 0 0 1-.59.045q-.78 0-1.118-.308-.337-.309-.337-1.02V3.726h-.67v-.87h.67V1.76zm4.702 1.904q-.49 0-.818.327t-.363.853h2.327q-.019-.531-.333-.855-.314-.325-.813-.325m1.15 2.653h1.051q-.107.684-.705 1.11-.598.425-1.455.425-1.087 0-1.72-.675-.63-.675-.63-1.837 0-1.163.627-1.856.626-.693 1.682-.693 1.032 0 1.64.657.606.658.606 1.774v.37h-3.437v.068q0 .594.347.957.346.362.906.362.405 0 .697-.178a.87.87 0 0 0 .391-.484m1.689 1.464V2.856h1.075v.856h.021q.118-.432.43-.67a1.2 1.2 0 0 1 .747-.24q.208 0 .342.045V3.87q-.148-.069-.444-.068-.49 0-.77.3-.282.3-.281.821V7.78zm11.768-6.499V7.78h-1.042V3.168h-.032l-1.874 4.558h-.79l-1.873-4.558h-.032V7.78h-1.047v-6.5h1.343l1.987 4.905h.036l1.985-4.905zm5.306 1.576V7.78h-1.074v-.861h-.027q-.202.45-.603.687-.403.237-.96.236-.807 0-1.289-.49-.48-.491-.48-1.338V2.857h1.117V5.79q0 .532.278.818.275.285.774.286.511 0 .828-.334.318-.333.317-.878V2.857zm.796 4.923V2.856h1.074v.856h.022q.445-.915 1.586-.915.817 0 1.285.487.467.486.467 1.342V7.78h-1.118V4.848q0-.527-.275-.813-.274-.286-.777-.286-.516 0-.83.333-.315.334-.315.873V7.78zm5.239 0h1.119V2.857h-1.119zm.556-5.548a.62.62 0 0 1-.444-.18.6.6 0 0 1-.185-.437q0-.262.185-.44a.62.62 0 0 1 .444-.177.616.616 0 1 1 0 1.234m1.714-.473h1.119v1.098h.929v.87h-.929V6.32q0 .6.592.6.152 0 .333-.023v.86a3 3 0 0 1-.589.045q-.783 0-1.118-.308-.337-.309-.337-1.02V3.726h-.67v-.87h.67V1.76zm2.723 6.021h1.119V2.857h-1.119zm.557-5.548a.62.62 0 0 1-.445-.18.59.59 0 0 1-.183-.437.62.62 0 0 1 .628-.617.615.615 0 0 1 .63.617.616.616 0 0 1-.63.617m3.554 4.723q.58 0 .905-.43t.326-1.204q-.001-.771-.326-1.202-.325-.434-.905-.433-.576 0-.901.433-.326.43-.326 1.202 0 .769.326 1.202.325.432.901.432m0 .897q-1.087 0-1.726-.68-.637-.681-.637-1.856 0-1.162.64-1.844t1.723-.682q1.087 0 1.728.68.64.68.64 1.846 0 1.175-.638 1.856-.638.68-1.73.68m2.965-.072V2.856h1.075v.856h.021q.446-.915 1.587-.915.816 0 1.285.487.467.486.467 1.342V7.78h-1.119V4.848q0-.527-.274-.813t-.778-.286q-.515 0-.83.333-.314.334-.314.873V7.78z" clip-rule="evenodd" />
+<path
+fill="#ef0a31" fill-rule="evenodd" d="M27.026 37.734c0 4.651 3.208 7.422 8.046 7.422s8.045-2.77 8.045-7.422V19.526c0-4.651-3.208-7.421-8.045-7.421-4.838 0-8.046 2.77-8.046 7.42zm8.046-19.792c.788 0 1.529.644 1.529 1.783v17.81c0 1.14-.74 1.783-1.529 1.783-.79 0-1.53-.644-1.53-1.782V19.725c0-1.14.74-1.783 1.53-1.783" clip-rule="evenodd" />
+<path
+fill="#ef0a31" d="M65.032 44.76h6.514V12.5h-6.514z" />
+<path
+fill="#ef0a31" fill-rule="evenodd" d="M89.463 18.339H73.176V12.5h16.287zm-4.887 26.42h-6.515V19.18h6.515zm6.12-7.025c0 4.651 3.207 7.422 8.046 7.422 4.837 0 8.044-2.77 8.044-7.422V19.526c0-4.651-3.207-7.421-8.044-7.421-4.84 0-8.046 2.77-8.046 7.42zm8.046-19.792c.789 0 1.529.644 1.529 1.783v17.81c0 1.14-.74 1.783-1.53 1.783s-1.53-.644-1.53-1.782V19.725c0-1.14.74-1.783 1.53-1.783z" clip-rule="evenodd" />
+<path
+fill="#ef0a31" d="M119.028 44.76V33.43c0-1.138-.592-1.732-1.382-1.732h-.642V25.86h.642c.79 0 1.382-.594 1.382-1.732v-4.107c0-1.187-.592-1.83-1.531-1.83h-1.48v26.57h-6.465V12.5h7.945c5.529 0 7.946 2.523 7.946 7.322v4.157c0 2.325-.789 4.304-2.615 4.897 1.826.595 2.615 2.574 2.615 4.9V44.76zm-100.371 0V29.472c0-3.068.197-6.58.197-6.58h-.098l-3.8 21.868H9.821l-3.85-21.868h-.099s.199 3.512.199 6.58V44.76H-.001V12.5h9.083l2.32 15.338c.444 2.821.987 7.422.987 7.422h.099s.295-4.552.789-7.422l2.517-15.337h9.08v32.26zm37.391 0-5.084-17.17h-.099s.346 2.574.346 4.75v12.42h-6.219V12.5h5.825L55.9 30.115h.097s-.345-2.622-.345-4.848V12.501h6.218v32.26z" />
+</g>
+</symbol>
+<use
+href="#monitor-logo627788425" /></svg></a><nav
+class="ml-auto flex gap-x-6 items-center"><ul
+class="hidden sm:flex items-center gap-x-3 md:gap-x-5 text-sm md:text-base -my-2 justify-end text-white bg-black"><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/country-profiles">Country Profiles</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/reports/landmine-monitor">Landmine Monitor</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/reports/cluster-munition-monitor">Cluster Munition Monitor</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/resources">Resource Hub</a></li></ul>
+<a
+href="https://icblcmc.org/" class="flex gap-1.5">
+<svg
+class="w-20 md:w-22 lg:w-26.5 h-7.25" width="106" height="29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 29" fill="none"><symbol
+id="icblcmc-logo-gray1079481599">
+<path
+fill="#EF0A31" d="M55.247 28.54h-2.832V2.106h2.832z" />
+<path
+d="M3.474 1.88H0v26.66h3.474V1.88zM19.08 8.148c0-.654-.026-1.284-.076-1.888a5.415 5.415 0 0 0-.491-1.813 3.287 3.287 0 0 0-.529-.906 2.938 2.938 0 0 0-.717-.755c-.353-.277-.819-.541-1.398-.793-.553-.252-1.321-.378-2.303-.378-.428 0-.818.025-1.17.076-.328.05-.68.138-1.058.264-.856.277-1.523.667-2.002 1.17a5.791 5.791 0 0 0-1.095 1.587 6.004 6.004 0 0 0-.49 1.586c-.05.503-.076.88-.076 1.133-.05.302-.076.604-.076.906V22.12c0 .78.038 1.574.114 2.38.075.78.352 1.51.83 2.19.152.226.353.478.605.755.277.252.604.49.982.717a5.79 5.79 0 0 0 1.321.491c.529.151 1.133.227 1.813.227.705 0 1.322-.076 1.85-.227.529-.15.982-.34 1.36-.566a4.64 4.64 0 0 0 .981-.793 5.14 5.14 0 0 0 .642-.756c.428-.654.693-1.309.793-1.963.101-.655.164-1.347.19-2.077v-4.985h-3.55v5.174c0 .503-.038 1.007-.114 1.51-.05.504-.302.92-.755 1.246-.277.202-.541.315-.793.34-.252.025-.44.038-.566.038-.504 0-.894-.076-1.171-.227a1.77 1.77 0 0 1-.642-.566 2.467 2.467 0 0 1-.264-.717 6.599 6.599 0 0 1-.038-.642 2.749 2.749 0 0 1-.038-.454V8.035c0-.504.025-1.02.076-1.548.05-.53.29-.982.717-1.36.151-.126.327-.226.529-.302.226-.1.528-.151.906-.151.58 0 1.02.126 1.322.378.302.226.516.49.642.793.126.302.189.604.189.906V11.547h3.55V8.148zM21.836 1.88v26.66h5.362c.63 0 1.284-.025 1.964-.076a3.462 3.462 0 0 0 1.85-.755c.277-.252.491-.541.642-.868.151-.328.265-.642.34-.945a3.33 3.33 0 0 0 .113-.793 6.46 6.46 0 0 0 .038-.49c.05-.554.076-1.096.076-1.624v-2.644c0-.352-.013-.704-.038-1.057 0-.931-.013-1.674-.038-2.228-.025-.554-.138-1.02-.34-1.397-.252-.428-.579-.705-.982-.83a4.808 4.808 0 0 0-1.284-.303v-.189c.05-.025.164-.038.34-.038.176 0 .34-.025.491-.075.277-.076.541-.201.793-.378.277-.201.491-.44.642-.717a3.36 3.36 0 0 0 .302-1.246c.026-.479.038-.756.038-.831.025-.428.038-.843.038-1.246.025-.403.038-.818.038-1.246 0-.227-.013-.454-.038-.68v-.68c-.025-1.183-.076-2.115-.151-2.794-.076-.705-.353-1.284-.831-1.737a2.422 2.422 0 0 0-1.473-.68 12.284 12.284 0 0 0-1.661-.113h-6.231zm3.399 3.172h1.737c.327 0 .591.012.793.037.201 0 .365.063.49.19.227.175.353.59.378 1.245.076.831.113 1.662.113 2.493 0 1.258-.037 2.152-.113 2.68-.075.655-.302 1.046-.68 1.171-.352.101-.805.164-1.359.19h-1.36V5.051zm0 10.913h1.963c.176 0 .365.025.567.076.201.025.377.1.528.226.202.201.315.466.34.793.05.327.088.617.113.869.026.453.038.906.038 1.36.025.427.038.868.038 1.32 0 .378-.013.769-.038 1.171 0 .403-.012.78-.038 1.133 0 .328-.012.63-.037.907v.528c-.05.252-.126.44-.227.567-.1.1-.226.176-.377.226-.152.05-.315.088-.492.114h-2.379v-9.29zM40.32 1.88H36.81v26.66h9.327v-3.285h-5.815V1.88zM72.958 7.204c0-.654-.025-1.284-.075-1.888a5.415 5.415 0 0 0-.491-1.812 3.287 3.287 0 0 0-.529-.907 2.938 2.938 0 0 0-.717-.755c-.353-.277-.819-.541-1.397-.793-.554-.252-1.322-.378-2.304-.378-.428 0-.818.026-1.17.076-.328.05-.68.138-1.058.264-.856.277-1.523.667-2.001 1.17a5.79 5.79 0 0 0-1.096 1.587 6.001 6.001 0 0 0-.49 1.586c-.05.503-.076.881-.076 1.133a5.51 5.51 0 0 0-.076.906V21.176c0 .78.038 1.574.114 2.38.075.78.352 1.51.83 2.19.152.226.353.478.605.755.277.252.604.49.982.717.377.202.818.366 1.321.491.529.151 1.133.227 1.813.227.705 0 1.322-.076 1.85-.227a5.66 5.66 0 0 0 1.36-.566 4.64 4.64 0 0 0 .982-.793 5.14 5.14 0 0 0 .642-.755c.427-.655.692-1.31.792-1.964.101-.655.164-1.347.19-2.077V16.57h-3.55v5.174c0 .503-.038 1.007-.114 1.51-.05.504-.302.92-.755 1.247-.277.2-.541.314-.793.34-.252.025-.44.037-.566.037-.504 0-.894-.075-1.171-.226a1.77 1.77 0 0 1-.642-.567 2.464 2.464 0 0 1-.264-.717 6.602 6.602 0 0 1-.038-.642 2.75 2.75 0 0 1-.038-.454V7.091c0-.503.025-1.02.076-1.548.05-.529.29-.982.717-1.36.151-.126.328-.226.529-.302.227-.1.529-.15.906-.15.58 0 1.02.125 1.322.377.302.226.516.49.642.793.126.302.189.604.189.906V10.603h3.55V7.204zM80.737.936h-5.022v26.66H79v-15.71c-.05-2.063-.126-4.09-.226-6.079h.34l.075 1.208c.025.403.063.819.113 1.247l.151 1.435c.076.453.139.931.19 1.435l2.378 16.464h2.984l2.34-16.993c.102-.806.19-1.599.265-2.38.076-.805.164-1.61.264-2.416h.303c-.05.655-.076 1.297-.076 1.926 0 .604-.013 1.234-.038 1.888v17.975h3.248V.936h-5.174l-2.001 13.556-.151 1.058c-.025.327-.063.667-.113 1.02-.05.604-.088 1.208-.114 1.812 0 .604-.012 1.208-.037 1.813l-.303.037c0-.83-.012-1.51-.037-2.039a18.605 18.605 0 0 0-.114-1.435 7.697 7.697 0 0 0-.15-1.133c-.05-.352-.114-.755-.19-1.208L80.738.936zM106.001 7.204c0-.654-.026-1.284-.076-1.888a5.403 5.403 0 0 0-.491-1.812 3.28 3.28 0 0 0-.529-.907 2.928 2.928 0 0 0-.717-.755c-.353-.277-.818-.541-1.397-.793-.554-.252-1.322-.378-2.304-.378-.428 0-.818.026-1.17.076-.328.05-.68.138-1.058.264-.856.277-1.523.667-2.001 1.17a5.79 5.79 0 0 0-1.095 1.587 6.001 6.001 0 0 0-.491 1.586c-.05.503-.076.881-.076 1.133a5.51 5.51 0 0 0-.075.906V21.176c0 .78.037 1.574.113 2.38.076.78.353 1.51.83 2.19.152.226.353.478.605.755.277.252.604.49.982.717.377.202.818.366 1.322.491.528.151 1.132.227 1.812.227.705 0 1.322-.076 1.85-.227.529-.15.982-.34 1.36-.566.403-.252.73-.516.982-.793.277-.277.491-.529.642-.755.428-.655.692-1.31.793-1.964.1-.655.163-1.347.189-2.077V16.57h-3.55v5.174c0 .503-.038 1.007-.113 1.51-.051.504-.303.92-.756 1.247-.277.2-.541.314-.793.34-.251.025-.44.037-.566.037-.504 0-.894-.075-1.17-.226a1.77 1.77 0 0 1-.643-.567 2.464 2.464 0 0 1-.264-.717 6.602 6.602 0 0 1-.038-.642 2.75 2.75 0 0 1-.038-.454V7.091c0-.503.026-1.02.076-1.548.05-.529.29-.982.717-1.36.151-.126.328-.226.53-.302.226-.1.528-.15.905-.15.579 0 1.02.125 1.322.377.302.226.516.49.642.793.126.302.189.604.189.906V10.603h3.55V7.204z" fill="#C5C5C5" />
+</symbol>
+<use
+href="#icblcmc-logo-gray1079481599" /></svg><svg
+class="w-2 md:w-2.5 lg:w-3" width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" fill="none"><symbol
+id="arrow-top-right-on-square23432179">
+<path
+d="M5.444 2.333V3.89H1.556v8.555h8.555V8.556h1.556v4.666a.778.778 0 0 1-.778.778H.778A.778.778 0 0 1 0 13.222V3.112a.778.778 0 0 1 .778-.779h4.666zM14 0v6.222h-1.556V2.655l-6.06 6.062-1.1-1.1 6.06-6.061H7.778V0H14z" fill="#988F8F" />
+</symbol>
+<use
+href="#arrow-top-right-on-square23432179" /></svg><span
+class="sr-only">
+Visit ICBL-CMC website
+</span>
+</a><button
+class="hover:text-gray-500 transition" x-on:click="$store.header.searchToggle = !$store.header.searchToggle">
+<svg
+width="21" height="21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="none" stroke="currentColor" x-cloak="true" x-show="!$store.header.searchToggle"><symbol
+id="magnifying-glass1704073376">
+<path
+d="m20 20-4.486-4.494L20 20zM18 9.5a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0v0z" stroke-linecap="round" />
+</symbol>
+<use
+href="#magnifying-glass1704073376" /></svg><svg
+class="size-6 hover:fill-gray-500 transition" width="1em" height="1em" fill-rule="evenodd" viewBox="64 64 896 896" fill="currentColor" x-show="$store.header.searchToggle" x-cloak="true"><symbol
+id="cross451764759">
+<path
+d="M799.86 166.31c.02 0 .04.02.08.06l57.69 57.7c.04.03.05.05.06.08a.12.12 0 010 .06c0 .03-.02.05-.06.09L569.93 512l287.7 287.7c.04.04.05.06.06.09a.12.12 0 010 .07c0 .02-.02.04-.06.08l-57.7 57.69c-.03.04-.05.05-.07.06a.12.12 0 01-.07 0c-.03 0-.05-.02-.09-.06L512 569.93l-287.7 287.7c-.04.04-.06.05-.09.06a.12.12 0 01-.07 0c-.02 0-.04-.02-.08-.06l-57.69-57.7c-.04-.03-.05-.05-.06-.07a.12.12 0 010-.07c0-.03.02-.05.06-.09L454.07 512l-287.7-287.7c-.04-.04-.05-.06-.06-.09a.12.12 0 010-.07c0-.02.02-.04.06-.08l57.7-57.69c.03-.04.05-.05.07-.06a.12.12 0 01.07 0c.03 0 .05.02.09.06L512 454.07l287.7-287.7c.04-.04.06-.05.09-.06a.12.12 0 01.07 0z" />
+</symbol>
+<use
+href="#cross451764759" /></svg><span
+class="sr-only">
+Search
+</span>
+</button><button
+class="size-10 shrink-0 flex items-center justify-center" x-on:click="$store.header.navToggle = !$store.header.navToggle">
+<svg
+class="size-10 hover:stroke-gray-500 transition" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" x-show="!$store.header.navToggle" x-cloak="true"><symbol
+id="bars-31544473580">
+<path
+stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</symbol>
+<use
+href="#bars-31544473580" /></svg><svg
+class="size-6 hover:fill-gray-500 transition" width="1em" height="1em" fill-rule="evenodd" viewBox="64 64 896 896" fill="currentColor" x-show="$store.header.navToggle" x-cloak="true"><use
+href="#cross451764759" /></svg><span
+class="sr-only">
+Menu
+</span>
+</button><dialog
+class="fixed top-16 inset-x-0 bottom-0 w-full h-full min-h-screen overflow-auto py-16 text-white bg-black/80 backdrop-blur-md" x-init="$watch(&quot;$store.header.searchToggle&quot;, val =&gt; {
+if (val) { $el.show() }
+else { $el.close() }
+})" x-on:close="$store.header.searchToggle = false" closedby="any"><div
+class="container flex h-full items-center"><form
+class="w-full max-w-256 mx-auto flex gap-x-5" action="https://the-monitor.org/search" role="search">
+<label
+class="w-full">
+<span
+class="sr-only">
+Search the site
+</span>
+<input
+type="search" class="px-2 py-3 sm:px-3 sm:py-4 w-full leading-snug placeholder:text-gray-500 border-b focus:outline-0 focus:border-b-red-600" name="q" placeholder="Search" required>
+</label>
+<button
+type="submit" class="button-rounded-base button-rounded button-magenta500">
+Search
+</button></form></div>
+</dialog><dialog
+class="fixed inset-x-0 bottom-0 w-full top-[72px] sm:top-[78px] h-[calc(100vh-72px)] sm:h-[calc(100vh-78px)] overflow-auto text-white bg-black" x-init="$watch(&quot;$store.header.navToggle&quot;, val =&gt; {
+if (val) { $el.show() }
+else { $el.close() }
+})" x-on:close="$store.header.navToggle = false" closedby="any"><div
+class="container flex flex-col justify-start sm:justify-center min-h-[calc(100vh-72px)] sm:min-h-[calc(100vh-78px)] py-8 sm:py-16"><ul
+class="flex flex-col gap-y-2 border-b mb-8 pb-8 sm:hidden border-white/20"><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/country-profiles">Country Profiles</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/reports/landmine-monitor">Landmine Monitor</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/reports/cluster-munition-monitor">Cluster Munition Monitor</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/resources">Resource Hub</a></li></ul><ul
+class="flex flex-col content-center sm:grow sm:grid sm:grid-cols-2 md:grid-cols-4 sm:gap-x-8"><li
+class=" space-y-10">
+<span
+class="font-title-adjusted block text-2xl sm:text-3xl mb-4 text-gray-500">About Us</span><ul
+class="mb-10 space-y-2 "><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/who-are-we">Who are we</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://acceptance.icblcmc.org/about-monitor">What we do</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/contact-us">Contact Us</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://acceptance.icblcmc.org/get-involved#:~:text=See%20more-,DONATE%20NOW,-You%20can%20help">Donate</a></li></ul></li><li
+class=" space-y-10">
+<span
+class="font-title-adjusted block text-2xl sm:text-3xl mb-4 text-gray-500">Other resources</span><ul
+class="mb-10 space-y-2 "><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/glossary-of-terms">Definitions and Glossary</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/impact-resources">Impact Resources</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://www.apminebanconvention.org/">Mine Ban Treaty</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://www.clusterconvention.org/">Convention on Cluster Munitions</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/unga-resolutions">UNGA resolutions</a></li></ul></li><li
+class=" space-y-10">
+<span
+class="font-title-adjusted block text-2xl sm:text-3xl mb-4 text-gray-500">Stay informed</span><ul
+class="mb-10 space-y-2 "><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://the-monitor.org/resources">Resource Hub</a></li></ul></li><li
+class=" space-y-10">
+<span
+class="font-title-adjusted block text-2xl sm:text-3xl mb-4 text-gray-500">Archives</span><ul
+class="mb-10 space-y-2 "><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="https://archives2.the-monitor.org/en-gb/home.aspx">Archive 2013-2019</a></li><li
+class=" space-y-10">
+<a
+class="hover:text-red-600 hover:no-underline transition" href="http://archives.the-monitor.org/">Archive 1999-2013</a></li></ul></li></ul><ul
+class="justify-start flex flex-wrap justify-center gap-2 lg:gap-4"><li>
+<a
+href="https://bsky.app/profile/minemonitor.bsky.social" rel="noopener noreferrer" target="_blank">
+<span
+class="sr-only">
+bluesky
+</span>
+<svg
+class="size-7.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" width="256" height="256" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="--path-color: black; --icon-color: #bbbbbb; --icon-hover-color: #909090;" viewBox="0 0 256 256"><symbol
+id="bluesky90559997">
+<g
+style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1">
+<path
+d="M45 90C20.147 90 0 69.853 0 45S20.147 0 45 0s45 20.147 45 45-20.147 45-45 45" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:currentColor;fill-rule:nonzero;opacity:1" transform="translate(1.407 1.407)scale(2.81)" />
+<path
+d="M29.977 25.793C36.058 30.358 42.599 39.615 45 44.582c2.402-4.967 8.942-14.224 15.023-18.789 4.388-3.294 11.497-5.843 11.497 2.267 0 1.62-.929 13.607-1.473 15.553-1.893 6.766-8.792 8.491-14.929 7.447 10.727 1.826 13.456 7.873 7.562 13.92-11.192 11.485-16.087-2.882-17.341-6.563-.23-.675-.337-.991-.339-.722-.002-.268-.109.047-.339.722-1.254 3.681-6.148 18.048-17.341 6.563-5.893-6.047-3.165-12.095 7.562-13.92-6.137 1.044-13.036-.681-14.929-7.447-.545-1.946-1.473-13.933-1.473-15.553 0-8.11 7.109-5.561 11.497-2.267" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:var(--path-color);fill-rule:nonzero;opacity:1" transform="translate(1.407 1.407)scale(2.81)" />
+</g>
+</symbol>
+<use
+href="#bluesky90559997" /></svg></a></li><li>
+<a
+href="https://www.flickr.com/photos/minefreeworld/collections/" rel="noopener noreferrer" target="_blank">
+<span
+class="sr-only">
+flickr
+</span>
+<svg
+id="bxntvgnpht-Design" class="size-7.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" style="--path-color: black; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><symbol
+id="flickr383272473">
+<defs><style>.bxntvgnpht-cls-2{fill:var(--path-color)}</style></defs>
+<path
+fill="currentColor" d="M400,792C183.83,792,8,616.17,8,400S183.83,8,400,8,792,183.83,792,400,616.17,792,400,792Z" />
+<path
+class="bxntvgnpht-cls-2" d="M606.87,393.54A81.86,81.86,0,1,1,525,311.68,81.83,81.83,0,0,1,606.87,393.54Z" />
+<path
+class="bxntvgnpht-cls-2" d="M356.84,393.54a81.86,81.86,0,1,1-81.9-81.86A81.85,81.85,0,0,1,356.84,393.54Z" />
+</symbol>
+<use
+href="#flickr383272473" /></svg></a></li></ul></div>
+</dialog></nav></header></div><main
+class="grow"><article
+class="h-screen"><div
+class="h-full pt-12 sm:pt-15 pb-24 sm:pb-30"><div
+class="container h-full flex items-center justify-center text-black/85"><h1 class="py-2.5 pr-6 mr-5 text-xl font-medium border-r border-black/30">
+404 Page Not Found</h1><h2 class="text-sm font-normal">
+This page could not be found.</h2></div></div></article></main><div
+class="py-12 bg-white text-black/85 border-t border-gray-300/50"><footer
+class="container layout-base gap-y-layoutGap"><div
+class="no-js:hidden col-main md:col-main-halfLeft text-sm"
+x-data="{
+csrf: null,
+isSubmitting: null,
+email: '',
+isSuccess: null,
+message: null,
+}"
+><h3 class="mb-2 font-mediumTitle text-4xl">
+Let’s stay in touch</h3><p
+class="mb-8 text-base">
+Subscribe to updates about ICBL–CMC&#039;s impact around the world</p><form
+class="flex flex-col sm:flex-row gap-5 sm:gap-7 mb-8"
+method="post"
+x-on:focusin="
+if (!csrf) {
+csrf = fetch('https://the-monitor.org/csrf.json')
+.then(r => r.json())
+.then(r => $el.insertAdjacentHTML('afterbegin', r.input))
+}
+"
+x-on:submit.prevent="
+isSubmitting = true;
+csrf
+.then((_) => {
+data = new FormData($el);
+data.append('email', email);
+return fetch('https://the-monitor.org/mailchimp/send', {
+method: 'post',
+body: data,
+})
+})
+.then(r => r.json())
+.then(status => {
+isSubmitting = false;
+isSuccess = status.success;
+message = status.msg;
+})
+"
+><div
+class="flex flex-col gap-2 grow sm:max-w-3/5">
+<label
+for="newsletter-email" class="sr-only">
+Email address
+</label>
+<input
+type="email" id="newsletter-email" class="px-3 py-1.5 text-base leading-large placeholder:text-gray-400 rounded-md border border-gray-400 focus:outline-red-600 focus:outline readonly:border-gray-100 readonly:cursor-not-allowed" name="email" required placeholder="Your email address *" x-model="email" x-bind:readonly="isSubmitting"><p
+x-show="message"
+x-transition
+x-text="message"
+x-bind:class="{
+'text-green-700': isSuccess,
+'text-red-600': !isSuccess,
+}"
+/></div>
+<button
+type="submit" class="flex justify-center items-center px-7.5 py-2.5 min-w-30 max-h-11.5 button-red600 rounded-4xl text-md disabled:opacity-50 disabled:pointer-events-none disabled:bg-gray-400" x-bind:disabled="isSubmitting"><svg
+class="size-3.5 text-gray-600 animate-[spin_.5s_linear_infinite]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" x-show="isSubmitting" x-transition.duration.150ms><symbol
+id="spinner1341433292">
+<circle
+cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25" />
+<path
+fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" class="opacity-75" />
+</symbol>
+<use
+href="#spinner1341433292" /></svg><span
+x-show="!isSubmitting">Submit</span>
+</button></form><p>By entering your email address and clicking "Submit", you agree to receive updates from the ICBL-CMC about our impact. To learn more about how we use and protect your personal data, please view our privacy policy.</p></div><div
+class="col-main md:col-main-halfRight text-sm"><dl
+class="flex flex-col sm:flex-row items-center sm:items-stretch gap-y-6 sm:divide-x divide-gray-500"><dt
+class="sr-only">
+International Campaign to Ban Landmines</dt><dd
+class="px-8 sm:w-1/3 flex flex-col items-center gap-y-5"><div
+class="flex items-start">
+<svg
+class="w-auto h-12.5 max-w-30" width="194" height="91" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194 91"><symbol
+id="icbl-logo1661045115">
+<defs>
+<path
+id="ejrzhsfvlh-a" d="M0 90.244h193.599V.001H0z" />
+</defs>
+<g
+fill="none" fill-rule="evenodd">
+<path
+fill="#1d1d1b" d="M3.69 90.03v-4.576c0-.437.039-.662-.13-.84-.155-.154-.333-.143-.536-.143H1.726v-.913h.154c.513 0 .955-.01 1.394-.33.43-.311.573-.713.691-1.199h1.19v8.002H3.692zm7.964-6.02c-.214-.7-.773-.82-1.06-.82-.095 0-.309.025-.523.142-.597.333-.597 1.021-.597 1.185 0 .216.038.418.049.475.06.249.299.902 1.083.902.716 0 .966-.522 1.048-.76a2 2 0 0 0 .072-.543c0-.096.011-.322-.072-.582m1.167 4.694c-.165.296-.38.569-.631.795-.368.32-.714.437-.903.497a3.3 3.3 0 0 1-.941.142c-.357 0-1.408-.06-2.039-1.007-.272-.415-.343-.842-.38-1.02l1.634-.226c.009.071.033.262.116.44a.89.89 0 0 0 .858.497.97.97 0 0 0 .513-.13c.644-.403.81-1.566.798-2.216a1.17 1.17 0 0 1-.477.415c-.357.2-.713.284-1.133.284-.56 0-1.046-.142-1.487-.497-.62-.524-.823-1.234-.823-2.017 0-.19.014-.735.241-1.243.236-.546.95-1.519 2.489-1.519.211 0 .878.025 1.427.369.145.093.347.224.595.533.167.213.263.38.312.475.272.508.497 1.196.497 2.43 0 1.019-.115 2.062-.666 2.998m5.345-4.693c-.214-.7-.774-.82-1.062-.82-.093 0-.307.025-.521.142-.598.333-.598 1.021-.598 1.185 0 .216.038.418.049.475.06.249.299.902 1.084.902.716 0 .965-.522 1.048-.76a2 2 0 0 0 .071-.543c0-.096.011-.322-.071-.582m1.166 4.694c-.165.296-.38.569-.631.795-.368.32-.714.437-.903.497a3.3 3.3 0 0 1-.941.142c-.357 0-1.407-.06-2.038-1.007-.272-.415-.344-.842-.382-1.02l1.635-.226c.009.071.033.262.116.44a.89.89 0 0 0 .858.497.97.97 0 0 0 .513-.13c.645-.403.81-1.566.799-2.216a1.17 1.17 0 0 1-.478.415c-.356.2-.713.284-1.132.284-.56 0-1.046-.142-1.488-.497-.62-.524-.823-1.234-.823-2.017 0-.19.014-.735.241-1.243.237-.546.95-1.519 2.489-1.519.212 0 .878.025 1.427.369.145.093.348.224.595.533.168.213.263.38.312.475.273.508.498 1.196.498 2.43 0 1.019-.116 2.062-.667 2.998m6.083-4.303c-.68 1.055-1.073 1.956-1.432 3.141a12.7 12.7 0 0 0-.472 2.49h-1.967c.452-3.402 2.25-5.62 2.966-6.627h-3.633v-1.398h5.334v1.303q-.427.52-.796 1.092m10.537 5.629-3.679-5.868.096 5.869H30.83v-8.37h1.419l3.728 5.904-.192-5.904h1.548v8.37zm5.584-4.824c-.132 0-.488.024-.807.226-.313.2-.727.688-.727 1.576 0 .284.022.533.118.806.094.284.513 1.092 1.487 1.092 1.086 0 1.572-.95 1.539-1.887-.025-.923-.56-1.813-1.61-1.813m2.859 3.165c-.237.606-1.013 1.838-2.788 1.838-.25 0-.762-.012-1.344-.273-.62-.273-1.75-1.104-1.75-2.893 0-.639.178-1.114.262-1.327.25-.592 1.013-1.79 2.785-1.79.226 0 .752.023 1.312.272.642.273 1.75 1.068 1.761 2.845 0 .214-.011.77-.238 1.328m5.187-2.549a1.42 1.42 0 0 0-1.166-.603q-.554 0-.928.39c-.477.486-.466 1.161-.466 1.352 0 .58.107 1.232.607 1.611.12.082.419.284.847.284.223 0 .75-.07 1.082-.592.31-.473.347-1.126.347-1.256.01-.154 0-.735-.323-1.186m.323 4.042a2.6 2.6 0 0 1-1.24.344c-.31 0-.809-.06-1.368-.533a3 3 0 0 1-.264-.262v.618h-1.416v-8.37h1.416l.012 2.94a3 3 0 0 1 .191-.166 2.6 2.6 0 0 1 1.512-.508 2.42 2.42 0 0 1 1.726.746c.36.366.894 1.114.894 2.359 0 1.114-.45 2.264-1.463 2.832m6.343-4.042c-.132-.284-.44-.759-1.213-.759-.312 0-.477.06-.598.109-.664.27-.82.934-.856 1.136h2.787s-.035-.284-.12-.486m1.19 3.498a3.47 3.47 0 0 1-2.356.888c-.382 0-1.323-.047-2.132-.795-.678-.639-.93-1.458-.93-2.381 0-.5.074-.972.263-1.423.263-.592 1.001-1.682 2.727-1.682 1.334 0 2.036.688 2.346 1.136.274.415.549 1.139.584 2.289h-4.408c.024.177.085.546.381.9.203.25.56.569 1.3.569.738 0 1.169-.344 1.358-.546a2 2 0 0 0 .201-.27l1.215.698c-.096.129-.263.355-.548.617" />
+<path
+fill="#1d1d1b" d="M58.887 90.031h1.454v-8.37h-1.454zm10.666-6.413C69.196 83 68.494 83 67.888 83h-1.205v2.905h1.133c.107 0 .225-.013.332-.013.81-.036 1.169-.284 1.37-.615.082-.142.227-.453.227-.877 0-.262-.06-.546-.192-.783m.692 3.094c-.727.462-1.512.473-2.333.473h-1.229v2.845h-1.572v-8.367h2.834c.203 0 .406-.014.61 0 .367.022 1.426.095 2.178.972.609.699.63 1.48.63 1.813 0 1.303-.677 1.98-1.118 2.264m5.484-.889c-.132-.284-.44-.759-1.213-.759-.312 0-.477.06-.598.109-.664.27-.82.934-.856 1.136h2.787s-.035-.284-.12-.486m1.19 3.498a3.47 3.47 0 0 1-2.356.888c-.382 0-1.323-.047-2.132-.795-.678-.639-.93-1.458-.93-2.381 0-.5.074-.972.263-1.423.263-.592 1.001-1.682 2.727-1.682 1.334 0 2.036.688 2.346 1.136.274.415.549 1.139.584 2.289h-4.408c.024.177.085.546.381.9.203.25.56.569 1.3.569.738 0 1.169-.344 1.358-.546.047-.047.118-.14.2-.27l1.216.698c-.096.129-.263.355-.548.617m4.941-2.24c-.239.117-.548.235-1.133.33-.319.06-.666.071-.963.251-.203.129-.346.33-.346.59 0 .355.261.702.977.702.785 0 1.249-.404 1.383-.677.093-.189.082-.355.082-.546zm0 2.951-.038-.463c-.225.19-.426.286-.546.332a2.8 2.8 0 0 1-1.204.273c-.286 0-1.356-.037-1.902-.914a1.66 1.66 0 0 1-.263-.948c0-.33.082-.996.809-1.48.488-.333.954-.404 1.5-.51.881-.178 1.203-.25 1.644-.402 0-.156-.013-.347-.082-.489-.12-.224-.42-.401-.944-.401-.546 0-.892.164-1.048.366-.165.202-.154.44-.154.524l-1.451-.085c.009-.262.058-.887.642-1.362.37-.309.93-.546 1.967-.546.974 0 1.547.202 1.915.463.25.178.382.378.428.473.156.309.156.724.156 1.057v3.151c0 .45.023.582.261.961zm7.532-.949c-.535.724-1.418 1.126-2.31 1.126-.214 0-.704-.036-1.24-.271-1.583-.724-1.701-2.373-1.701-2.87 0-.724.2-1.423.644-1.99a2.91 2.91 0 0 1 2.369-1.15c.38 0 .762.07 1.106.212a2.8 2.8 0 0 1 1.456 1.47l-1.278.592a1.4 1.4 0 0 0-.357-.603c-.165-.167-.45-.404-.999-.404-.417 0-.751.144-1.023.464-.442.508-.442 1.172-.442 1.374 0 .308.047.532.085.652.178.688.667 1.196 1.414 1.196 1.025 0 1.335-.9 1.442-1.16l1.216.639a3 3 0 0 1-.382.723m5.067-3.26c-.13-.284-.438-.759-1.212-.759-.312 0-.477.06-.598.109-.664.27-.82.934-.856 1.136h2.787s-.035-.284-.12-.486m1.19 3.498a3.47 3.47 0 0 1-2.356.888c-.382 0-1.323-.047-2.132-.795-.678-.639-.93-1.458-.93-2.381 0-.5.074-.972.263-1.423.263-.592 1.001-1.682 2.727-1.682 1.334 0 2.036.688 2.346 1.136.274.415.549 1.139.584 2.289h-4.408c.024.177.085.546.381.9.203.25.56.569 1.3.569.738 0 1.169-.344 1.358-.546.047-.047.118-.14.2-.27l1.216.698c-.096.129-.263.355-.548.617m9.325-5.702C104.62 83 103.917 83 103.31 83h-1.204v2.905h1.132c.107 0 .226-.013.333-.013.81-.036 1.168-.284 1.369-.615.082-.142.227-.453.227-.877 0-.262-.06-.546-.191-.783m.69 3.094c-.726.462-1.511.473-2.332.473h-1.228v2.845h-1.572v-8.367h2.834c.203 0 .406-.014.609 0 .367.022 1.427.095 2.178.972.609.699.631 1.48.631 1.813 0 1.303-.678 1.98-1.12 2.264m3.394-.189c-.11.331-.11.628-.11.97v2.54h-1.38v-5.929h1.38v.844c.096-.18.217-.358.357-.489.477-.461 1.253-.484 1.418-.484h.12v1.456c-.298 0-1.442 0-1.785 1.092m2.552 3.507h1.419v-5.926h-1.419zm0-6.85h1.419v-1.433h-1.419zm2.386 6.851v-1.09l3.214-3.568h-2.892v-1.268h4.774v1.101l-3.144 3.57h3.144v1.256zm9.795-4.208c-.131-.284-.439-.759-1.213-.759-.312 0-.477.06-.597.109-.665.27-.82.934-.857 1.136h2.788s-.036-.284-.12-.486m1.19 3.498a3.47 3.47 0 0 1-2.357.888c-.381 0-1.322-.047-2.132-.795-.677-.639-.93-1.458-.93-2.381 0-.5.074-.972.264-1.423.263-.592 1-1.682 2.727-1.682 1.333 0 2.036.688 2.346 1.136.274.415.548 1.139.584 2.289h-4.409c.025.177.085.546.382.9.203.25.56.569 1.3.569.738 0 1.168-.344 1.358-.546.047-.047.118-.14.2-.27l1.216.698c-.096.129-.263.355-.549.617m11.278-.499c-.392.5-1.308 1.423-3 1.423a4.1 4.1 0 0 1-1.691-.355c-.952-.45-2.239-1.59-2.239-4.066 0-.451 0-1.647.774-2.75.406-.582 1.371-1.625 3.215-1.625 1.608 0 2.453.794 2.834 1.327.275.404.44.82.585 1.259l-1.559.401a2 2 0 0 0-.216-.663c-.324-.593-.952-.901-1.621-.888-.473 0-.81.142-.975.224-.62.309-1.336 1.114-1.336 2.679 0 .238.014 1.232.502 1.98a2.2 2.2 0 0 0 1.833.996c.656 0 1.144-.262 1.548-.759.17-.202.298-.45.334-.51a4 4 0 0 0 .154-.415l1.49.617c-.179.426-.346.757-.632 1.125m4.07-3.615c-.131 0-.488.024-.807.226-.312.2-.727.688-.727 1.576 0 .284.023.533.118.806.094.284.513 1.092 1.488 1.092 1.086 0 1.572-.95 1.538-1.887-.024-.923-.56-1.813-1.61-1.813m2.86 3.165c-.237.606-1.013 1.838-2.788 1.838-.25 0-.763-.012-1.345-.273-.62-.273-1.75-1.104-1.75-2.893 0-.639.178-1.114.263-1.327.25-.592 1.012-1.79 2.785-1.79.225 0 .751.023 1.311.272.642.273 1.75 1.068 1.762 2.845 0 .214-.011.77-.239 1.328m.949-1.27h3.443v-1.338h-3.443zm4.73 2.929v-8.37h1.586v6.948h3.334v1.423zm9.3-2.95c-.24.117-.55.235-1.133.33-.32.06-.667.071-.964.251-.203.129-.345.33-.345.59 0 .355.26.702.976.702.785 0 1.249-.404 1.383-.677.093-.189.082-.355.082-.546v-.65zm0 2.951-.039-.463c-.225.19-.426.286-.546.332a2.8 2.8 0 0 1-1.204.273c-.285 0-1.356-.037-1.902-.914a1.66 1.66 0 0 1-.263-.948c0-.33.082-.996.81-1.48.488-.333.954-.404 1.5-.51.88-.178 1.202-.25 1.643-.402 0-.156-.013-.347-.082-.489-.12-.224-.42-.401-.943-.401-.547 0-.892.164-1.048.366-.165.202-.154.44-.154.524l-1.452-.085c.009-.262.058-.887.642-1.362.37-.309.93-.546 1.967-.546.974 0 1.548.202 1.915.463.25.178.382.378.429.473.156.309.156.724.156 1.057v3.151c0 .45.022.582.26.961zm6.735-.001-.011-.603a2.7 2.7 0 0 1-1.918.746c-.99 0-1.476-.427-1.715-.784-.381-.557-.346-1.232-.346-1.871v-3.414h1.44v3.199c0 .488-.021 1.067.478 1.351.19.12.464.178.691.178.69 0 1.037-.448 1.153-.661.241-.453.228-1.092.228-1.554v-2.513h1.429v5.927h-1.43zm4.272-3.508c-.11.331-.11.628-.11.97v2.54h-1.38v-5.929h1.38v.844c.097-.18.217-.358.358-.489.477-.461 1.253-.484 1.418-.484h.12v1.456c-.299 0-1.442 0-1.786 1.092m6.113-.7c-.132-.284-.44-.759-1.213-.759-.313 0-.478.06-.598.109-.664.27-.82.934-.856 1.136h2.787s-.036-.284-.12-.486m1.19 3.498a3.47 3.47 0 0 1-2.357.888c-.38 0-1.322-.047-2.131-.795-.678-.639-.93-1.458-.93-2.381 0-.5.073-.972.263-1.423.263-.592 1.001-1.682 2.727-1.682 1.334 0 2.036.688 2.346 1.136.274.415.549 1.139.584 2.289h-4.408c.024.177.084.546.381.9.203.25.56.569 1.3.569.738 0 1.168-.344 1.358-.546.047-.047.118-.14.2-.27l1.216.698c-.096.129-.263.355-.549.617m4.94-2.24c-.239.117-.549.235-1.133.33-.319.06-.667.071-.963.251-.203.129-.346.33-.346.59 0 .355.261.702.977.702.785 0 1.249-.404 1.382-.677.094-.189.083-.355.083-.546zm0 2.951-.038-.463a1.9 1.9 0 0 1-.546.332 2.8 2.8 0 0 1-1.202.273c-.288 0-1.358-.037-1.907-.914a1.7 1.7 0 0 1-.26-.948c0-.33.082-.996.809-1.48.488-.333.954-.404 1.5-.51.881-.178 1.202-.25 1.644-.402 0-.156-.013-.347-.083-.489-.12-.224-.419-.401-.94-.401-.55 0-.895.164-1.05.366-.166.202-.155.44-.155.524l-1.451-.085c.008-.262.058-.887.642-1.362.37-.309.93-.546 1.967-.546.974 0 1.547.202 1.915.463.25.178.381.378.428.473.156.309.156.724.156 1.057v3.151c0 .45.023.582.261.961zm4.59.047c-.787 0-1.19-.188-1.429-.475a.84.84 0 0 1-.178-.344c-.058-.188-.072-.603-.072-1.125V85.11h-.87v-1.008h.87v-2.11h1.43v2.11h1.273v1.008h-1.273v2.692c0 .238-.036.686.142.877.168.189.513.178.549.178.203 0 .403-.025.582-.072v1.197c-.19.024-.535.095-1.024.095m5.399-4.255c-.132-.284-.44-.759-1.213-.759-.313 0-.478.06-.598.109-.665.27-.82.934-.856 1.136h2.787s-.036-.284-.12-.486m1.19 3.498a3.47 3.47 0 0 1-2.357.888c-.38 0-1.322-.047-2.131-.795-.678-.639-.93-1.458-.93-2.381 0-.5.073-.972.263-1.423.263-.592 1.001-1.682 2.727-1.682 1.334 0 2.036.688 2.346 1.136.274.415.548 1.139.584 2.289h-4.408c.024.177.084.546.381.9.203.25.56.569 1.3.569.738 0 1.168-.344 1.358-.546.047-.047.118-.14.2-.27l1.216.698c-.096.129-.263.355-.549.617" mask="url(#b)" />
+<path
+fill="#ef0a31" d="M142.26 21.687c0-1.012 0-1.398-.194-1.88-.484-1.398-2.034-1.445-3.292-1.445h-2.711V29.11h2.662c.533 0 1.113 0 1.599-.097 1.354-.193 1.936-1.012 1.936-3.325zM141.825 8c0-.82-.05-1.06-.147-1.494-.435-1.59-1.789-1.638-3.098-1.638h-2.517v8.578h2.274c.872 0 1.31-.049 1.695-.095 1.21-.242 1.793-.963 1.793-3.039zm6.585 20.29c-.05.82-.244 3.807-3.004 5.059-1.5.677-3.242.677-4.841.677h-10.797V0h10.603c2.033 0 3.971-.046 5.664 1.301 1.94 1.494 2.033 3.47 2.033 5.64v3.036c0 .096 0 1.494-.191 2.41-.631 2.842-2.761 3.132-3.778 3.325 1.987.384 2.76.866 3.39 1.638 1.065 1.396.967 2.988.967 4.577v4.82c0 .531-.046 1.062-.046 1.543m12.876-19.663-2.277 14.602h4.36zm3.58 25.398-.822-5.542h-5.809l-.919 5.542h-6.297L157.653 0h7.214l6.393 34.025zm20.674 0L179.488 8.53l.53 25.494h-5.904V0h8.085l6.15 24.965L187.721 0h5.76v34.025z" mask="url(#b)" />
+<path
+fill="#1d1d1b" d="M0 73.346V39.321h6.293v28.87h9.25v5.155zm26.482-25.397L24.205 62.55h4.36l-2.083-14.602zm3.581 25.397-.823-5.542h-5.809l-.918 5.542h-6.297l6.633-34.025h7.214l6.393 34.025zm20.673 0-6.052-25.493.531 25.493H39.31V39.321h8.086l6.15 24.965-.629-24.965h5.76v34.025zm25.269-25.59c0-1.061.047-2.122-.871-2.892-.823-.675-1.887-.577-2.857-.577h-2.468v24.095h2.227c.58 0 1.211 0 1.79-.096 2.034-.386 2.18-1.88 2.18-3.567V47.756zm6.246 18.313c-.194 3.613-1.837 5.447-3.195 6.217-1.742 1.012-3.534 1.06-5.421 1.06H63.514V39.323h11.573c.918 0 2.856.144 4.694 1.686 2.325 1.978 2.52 4.482 2.52 7.278V64.19c0 .628 0 1.254-.05 1.88zm26.628 7.277.582-29.495-5.521 29.495h-5.858l-5.666-29.495.486 29.495h-6.197V39.321h10.262l4.02 23.809 4.068-23.809h10.119v34.025zm11.131.001h6.246V39.322h-6.246zm22.51-.001-6.051-25.493.53 25.493h-5.904V39.321h8.086l6.15 24.965-.63-24.965h5.76v34.025zm12.781 0V39.321h16.56v5.158h-10.267v8h9.685v5.155h-9.685v10.459h10.75v5.253zm37.956-4.482c-.776 2.748-3.05 5.205-8.861 5.205-2.422 0-4.986-.338-7.02-1.927-1.115-.868-1.55-1.784-1.793-2.313-.388-.965-.675-1.591-.675-3.518v-4.965h6.243V65.3c0 1.252-.095 2.697 1.115 3.47.386.24.968.481 1.936.481 1.113 0 1.744-.242 2.178-.626.921-.723.921-2.217.921-4.53 0-.435.096-1.977-.677-3.134-.484-.723-1.211-1.156-1.452-1.35l-5.956-3.999c-1.31-.868-1.985-1.398-2.857-2.794-.727-1.205-1.21-2.506-1.21-5.398 0-.482-.05-2.892.822-4.677 1.936-4.143 7.796-4.143 8.474-4.143 1.017 0 6.487 0 8.28 4.483.338.866.532 1.203.532 2.843V49.3h-6.295v-3.471c0-1.012-.388-2.457-2.807-2.457-1.452 0-2.81.53-2.81 3.373 0 .145-.095 2.169.678 3.276.194.291.63.626 1.31 1.11l6.098 4.193c.435.288 1.793 1.3 2.81 2.65 1.5 1.975 1.353 3.469 1.353 5.88 0 2.603 0 3.71-.337 5.01M3.066 15.125h3.55V.529h-3.55zm11.315-.001-3.05-9.508v9.508H8.337V.53h3.51l3.075 9.468V.53h3.032v14.595zM25.406 3.073v12.052h-3.592V3.073h-2.908V.529h9.426v2.544zm3.879 12.051V.53h7.581v2.565H32.84v3.37h3.8v2.561h-3.8v3.516h4.027v2.583zm14.287-11.39c-.062-.475-.417-.682-1.184-.682h-1.082v3.35h1.104c.93 0 1.222-.331 1.222-1.512 0-.39-.018-.908-.06-1.156m.312 11.39-1.996-6.22h-.582v6.22h-3.322V.53h5.004c1.953 0 3.012.497 3.47 1.594.23.557.332 1.362.332 2.52 0 2.276-.415 3.122-1.849 3.805l2.473 6.676zm10.587 0-3.055-9.508v9.508h-2.99V.53h3.51l3.075 9.468V.53h3.032v14.595zm9.714-12.279-.997 6.492h1.972zm1.827 12.279-.498-3.327h-2.722l-.518 3.327h-3.47L61.775.53h4.737l2.97 14.594zM75.23 3.073v12.052h-3.592V3.073H68.73V.529h9.426v2.544zm3.837 12.052h3.555V.529h-3.555zM90.156 4.024c0-.31 0-.352-.04-.517-.168-.621-.727-.661-1.247-.661-.06 0-.435-.022-.707.124-.497.247-.435 1.012-.435 1.054v7.482c0 .58-.042 1.241 1.204 1.241.063 0 .458 0 .727-.122.457-.229.498-.686.498-1.119zm2.762 9.82c-.664.867-1.703 1.467-3.904 1.467-1.33 0-2.616-.125-3.655-1.032a3.15 3.15 0 0 1-.852-1.201c-.25-.6-.352-1.157-.352-2.42V4.645c0-1.035.082-1.86.685-2.748C85.796.489 87.353.24 88.93.24c1.267 0 2.534.147 3.53 1.012.25.229.707.684.98 1.47.247.743.247 1.487.247 2.252v5.582c0 1.199-.023 2.295-.77 3.288zm8.365 1.28-3.052-9.508v9.508h-2.993V.53h3.51l3.075 9.468V.53h3.033v14.595zm9.715-12.279L110 9.337h1.973l-.976-6.492zm1.826 12.279-.495-3.327h-2.723l-.52 3.327h-3.47L108.588.53h4.736l2.97 14.594zm4.214 0V.53h3.575v12.01h3.655v2.583zM23.207 33.31c-1.02.951-2.576.991-3.862.991-1.851 0-2.805-.308-3.492-.89a2.3 2.3 0 0 1-.683-.825c-.25-.497-.354-.972-.354-2.047v-7.193c0-1.159.105-2.089.976-2.936.665-.662 1.702-1.157 3.675-1.157 2.576 0 3.842.848 4.362 1.962.312.642.332 1.263.332 1.945v1.757h-3.49v-1.84c0-.208 0-.392-.04-.599-.147-.6-.664-.684-1.184-.684-.272 0-.497.02-.704.167-.457.308-.397 1.074-.397 1.156v7.258c0 .93.125 1.445 1.184 1.445.042 0 .312 0 .52-.062.621-.226.601-.868.601-1.383v-1.82h3.595v1.303c0 1.238-.042 2.521-1.04 3.451m6.706-11.473-.997 6.492h1.971zm1.826 12.28-.497-3.329h-2.72l-.52 3.33h-3.468l2.968-14.596h4.736l2.97 14.595zm14.989 0v-10.5l-2.263 10.5H41.35l-2.266-10.5v10.5H35.99V19.52h4.737l2.18 10.71 2.181-10.71h4.797v14.596zm10.878-11.308c-.02-.187-.043-.642-.58-.744-.228-.042-1.082-.062-1.889-.062v4.217h1.204c.02 0 .498.02.79-.104.52-.206.497-.826.497-1.28.022-.93.022-1.696-.022-2.027m3.322 3.453c-.02.289-.08 1.468-1.037 2.087-.664.433-1.409.433-2.18.433h-2.574v5.335h-3.532V19.521h5.92c.83 0 1.142.022 1.557.124 1.973.497 1.868 2.253 1.868 2.852v3.019c0 .248 0 .497-.022.745m5.564-4.425-.996 6.492h1.97zm1.827 12.28-.498-3.329H65.1l-.52 3.33h-3.467L64.08 19.52h4.736l2.97 14.595h-3.47zm4.192.001h3.554V19.521h-3.555zm10.86-.001v-1.343a3.2 3.2 0 0 1-.771.803c-.622.478-1.14.582-1.931.582-.455 0-.643-.022-.872-.084a2.65 2.65 0 0 1-1.557-1.075c-.664-.992-.644-2.521-.644-3.638v-5.437c0-1.095.042-2.273.687-3.245a2.9 2.9 0 0 1 .934-.888c.787-.435 2.056-.54 2.926-.54.252 0 1.144 0 1.953.167.352.082 1.766.373 2.368 1.591.25.518.332 1.055.332 2.193v1.301H83.37v-1.385c0-.393.06-1.323-1.124-1.323-.06 0-.434.02-.684.164-.415.249-.415.786-.415 1.221v7.278c0 .453 0 .93.457 1.218.185.125.435.187.665.187.227 0 .457-.062.644-.167.457-.268.457-.765.457-1.218v-1.654h-1.349v-2.439h4.774v7.73H83.37zm10.917 0-3.05-9.509v9.509h-2.991V19.52h3.508l3.075 9.469V19.52h3.032v14.596zm16.299-12.053v12.052h-3.592V22.063h-2.908V19.52h9.426v2.543zm9.654.952c0-.31 0-.353-.043-.517-.165-.62-.73-.662-1.246-.662-.06 0-.435-.022-.707.125-.498.248-.437 1.012-.437 1.054v7.484c0 .577-.038 1.239 1.206 1.239.065 0 .455 0 .727-.122.457-.229.5-.684.5-1.117zm2.76 9.82c-.664.867-1.7 1.466-3.905 1.466-1.326 0-2.617-.124-3.654-1.032a3.15 3.15 0 0 1-.852-1.2c-.248-.6-.352-1.157-.352-2.418v-6.017c0-1.032.084-1.86.684-2.748.957-1.407 2.513-1.655 4.092-1.655 1.267 0 2.535.146 3.53 1.014.25.226.707.684.979 1.467.247.746.247 1.49.247 2.253v5.582c0 1.199-.022 2.295-.769 3.287z" mask="url(#b)" />
+</g>
+</symbol>
+<use
+href="#icbl-logo1661045115" /></svg></div><ul
+class=" flex flex-wrap justify-center gap-2 lg:gap-4"><li>
+<a
+href="https://www.linkedin.com/company/international-campaign-to-ban-landmines-cluster-munition-coalition/?viewAsMember=true">
+<span
+class="sr-only">
+linkedin
+</span>
+<svg
+class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" width="800" height="800" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 112.196 112.196" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><symbol
+id="linkedin1189520645">
+<circle
+cx="56.098" cy="56.097" r="56.098" style="fill:currentColor" />
+<path
+d="M89.616 60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118-3.705 0-5.906 2.491-6.878 4.903-.353.862-.444 2.059-.444 3.268v22.524h-13.41s.18-36.546 0-40.329h13.411v5.715c-.027.045-.065.089-.089.132h.089v-.132c1.782-2.742 4.96-6.662 12.085-6.662 8.822 0 15.436 5.764 15.436 18.149m-54.96-36.642c-4.587 0-7.588 3.011-7.588 6.967 0 3.872 2.914 6.97 7.412 6.97h.087c4.677 0 7.585-3.098 7.585-6.97-.089-3.956-2.908-6.967-7.496-6.967m-6.791 59.77H41.27v-40.33H27.865z" style="fill:var(--path-color);" />
+</symbol>
+<use
+href="#linkedin1189520645" /></svg></a></li><li>
+<a
+href="https://www.instagram.com/icbl_cmc/">
+<span
+class="sr-only">
+instagram
+</span>
+<svg
+class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="currentColor" viewBox="0 0 600 600" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><symbol
+id="instagram846769670">
+<circle
+cx="300" cy="300" r="297.5" />
+<path
+d="M300 123.5c-47.9 0-54 .2-72.8 1.1s-31.6 3.8-42.8 8.2c-11.6 4.5-21.5 10.5-31.3 20.4-9.8 9.8-15.8 19.7-20.4 31.3-4.4 11.2-7.4 24.1-8.2 42.8-.8 18.8-1.1 24.8-1.1 72.8 0 47.9.2 53.9 1.1 72.8.9 18.8 3.8 31.6 8.2 42.8 4.5 11.6 10.5 21.5 20.4 31.3 9.8 9.8 19.7 15.9 31.3 20.4 11.2 4.4 24.1 7.3 42.8 8.2 18.8.9 24.8 1.1 72.8 1.1 47.9 0 53.9-.2 72.8-1.1 18.8-.9 31.6-3.8 42.9-8.2 11.6-4.5 21.4-10.6 31.2-20.4s15.8-19.7 20.4-31.3c4.3-11.2 7.3-24 8.2-42.8.8-18.8 1.1-24.8 1.1-72.8 0-47.9-.2-53.9-1.1-72.8-.9-18.8-3.9-31.6-8.2-42.8-4.5-11.6-10.6-21.5-20.4-31.3s-19.6-15.8-31.3-20.4c-11.3-4.4-24.1-7.3-42.9-8.2s-24.8-1.1-72.7-1.1m-15.8 31.8H300c47.1 0 52.7.2 71.3 1 17.2.8 26.5 3.7 32.8 6.1 8.2 3.2 14.1 7 20.3 13.2s10 12.1 13.2 20.3c2.4 6.2 5.3 15.6 6.1 32.8.8 18.6 1 24.2 1 71.3s-.2 52.7-1 71.3c-.8 17.2-3.7 26.5-6.1 32.8-3.2 8.2-7 14.1-13.2 20.3s-12 10-20.3 13.2c-6.2 2.4-15.6 5.3-32.8 6.1-18.6.8-24.2 1-71.3 1s-52.7-.2-71.3-1c-17.2-.8-26.5-3.7-32.8-6.1-8.2-3.2-14.1-7-20.3-13.2s-10-12.1-13.2-20.3c-2.4-6.2-5.3-15.6-6.1-32.8-.8-18.6-1-24.2-1-71.3s.2-52.7 1-71.3c.8-17.2 3.7-26.5 6.1-32.8 3.2-8.2 7-14.1 13.2-20.3s12.1-10 20.3-13.2c6.2-2.4 15.6-5.3 32.8-6.1 16.3-.8 22.6-1 55.5-1m110 29.3c-11.7 0-21.2 9.5-21.2 21.2s9.5 21.2 21.2 21.2 21.2-9.5 21.2-21.2-9.5-21.2-21.2-21.2M300 209.4c-50.1 0-90.6 40.6-90.6 90.6 0 50.1 40.6 90.6 90.6 90.6 50.1 0 90.6-40.6 90.6-90.6 0-50.1-40.5-90.6-90.6-90.6m0 31.8c32.5 0 58.8 26.3 58.8 58.8s-26.3 58.8-58.8 58.8-58.8-26.3-58.8-58.8 26.3-58.8 58.8-58.8" style="fill:var(--path-color)" />
+</symbol>
+<use
+href="#instagram846769670" /></svg></a></li><li>
+<a
+href="https://www.facebook.com/minefreeworld?ref=hl">
+<span
+class="sr-only">
+facebook
+</span>
+<svg
+id="dgkfvuwsod-facebook-circle" class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><symbol
+id="facebook2000064826">
+<path
+d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" style="fill: currentColor;" />
+</symbol>
+<use
+href="#facebook2000064826" /></svg></a></li><li>
+<a
+href="https://www.youtube.com/channel/UConje8PMHNFOSR_eGjI5QiA">
+<span
+class="sr-only">
+youtube
+</span>
+<svg
+id="efmqeratwo-youtube-circle" class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><symbol
+id="youtube295556809">
+<path
+d="M1667 0c920 0 1667 746 1667 1667 0 920-746 1667-1667 1667C747 3334 0 2588 0 1667 0 747 746 0 1667 0zm913 1294s-18-129-74-185c-71-74-151-75-187-79-261-19-652-19-652-19h-1s-392 0-652 19c-36 4-116 5-187 79-56 56-74 185-74 185s-19 151-19 302v141c0 151 19 302 19 302s18 129 74 185c71 74 164 72 206 80 149 14 634 19 634 19s392-1 653-19c36-4 116-5 187-79 56-56 74-185 74-185s19-151 19-302v-141c0-151-19-302-19-302zm-1107 615v-524l504 263-504 261z" style="fill: currentColor;" />
+</symbol>
+<use
+href="#youtube295556809" /></svg></a></li><li>
+<a
+href="https://www.flickr.com/photos/minefreeworld/collections/">
+<span
+class="sr-only">
+flickr
+</span>
+<svg
+id="dhsdfswuik-Design" class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><use
+href="#flickr383272473" /></svg></a></li><li>
+<a
+href="https://bsky.app/profile/minefreeworld.bsky.social">
+<span
+class="sr-only">
+bluesky
+</span>
+<svg
+class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" width="256" height="256" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;" viewBox="0 0 256 256"><use
+href="#bluesky90559997" /></svg></a></li></ul></dd><dt
+class="sr-only">
+Cluster Munition Coalition</dt><dd
+class="px-8 sm:w-1/3 flex flex-col items-center gap-y-5"><div
+class="flex items-start">
+<svg
+class="w-auto h-12.5 max-w-30" width="150" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 40"><symbol
+id="cmc-logo1621048777">
+<g
+fill="#1d1c1a">
+<path
+d="M92.8 11.4c-1.6 0-2.9-.5-3.8-1.5s-1.4-2.3-1.4-4.1c0-1.7.5-3.1 1.4-4.1S91.2.2 92.8.2c.9 0 1.7.2 2.4.5.7.4 1.3.9 1.7 1.5s.7 1.4.7 2.2H95c-.1-.6-.3-1.1-.7-1.5q-.6-.6-1.5-.6-1.05 0-1.8.9c-.4.6-.7 1.4-.7 2.4s.2 1.9.7 2.5q.6.9 1.8.9c.6 0 1.1-.2 1.5-.5.4-.4.6-.9.7-1.5h2.6c-.1 1.3-.5 2.3-1.4 3.1-.9.9-2 1.3-3.4 1.3M98.6 11.2V0h2.6v11.2zM110.4 3v8.2h-2.6V9.7h-.1c-.2.5-.5 1-.9 1.3s-1 .4-1.6.4c-.9 0-1.6-.3-2.2-.8-.6-.6-.8-1.3-.8-2.3V3h2.6v4.7c0 .5.1.9.4 1.1.3.3.6.4 1.1.4.4 0 .8-.1 1.1-.4s.4-.7.4-1.2V3zM111.3 5.5c0-.8.3-1.5 1-2s1.5-.7 2.7-.7c1.1 0 2 .2 2.6.7.7.5 1 1.2 1 2h-2.4c0-.3-.1-.5-.4-.7q-.3-.3-.9-.3c-.3 0-.6.1-.8.2s-.3.3-.3.5c0 .3.3.6.9.7l1.7.4c.8.2 1.4.4 1.8.8s.6.8.6 1.5c0 .8-.4 1.5-1.1 2s-1.6.8-2.8.8-2.1-.2-2.8-.7-1-1.2-1.1-2h2.5c0 .3.2.6.4.7.2.2.6.3 1 .3s.7-.1.9-.2.3-.3.3-.5-.1-.3-.2-.4-.4-.2-.7-.3l-1.5-.3c-.7-.3-1.3-.5-1.7-1-.5-.4-.7-.9-.7-1.5M120.2 1.2h2.6V3h1.5v1.9h-1.5v3.5c0 .6.3.9 1 .9h.5v1.9c-.3.1-.7.1-1.2.1-1.1 0-1.8-.2-2.3-.5-.5-.4-.7-.9-.7-1.7v-4H119V3h1.1V1.2zM130.6 8.6h2.4c-.1.8-.5 1.5-1.2 2s-1.6.8-2.7.8c-1.3 0-2.3-.4-3.1-1.1-.7-.8-1.1-1.8-1.1-3.1s.4-2.4 1.1-3.2q1.05-1.2 3-1.2c1.2 0 2.2.4 2.9 1.1s1.1 1.7 1.1 3v.7h-5.6v.2c0 .5.2.9.5 1.2s.7.5 1.2.5c.4 0 .7-.1.9-.2.3-.2.5-.4.6-.7M129 4.7c-.4 0-.8.1-1.1.4s-.4.6-.5 1.1h3.1c0-.5-.2-.8-.5-1.1-.2-.3-.5-.4-1-.4M133.8 11.2V3h2.5v1.5h.1c.3-1.1 1-1.7 1.9-1.7.2 0 .5 0 .7.1v2.3c-.2-.1-.5-.1-.8-.1-.6 0-1 .2-1.3.5s-.5.8-.5 1.3v4.4h-2.6zM99.6 14.6v10.7h-2.4v-6.7h-.1l-2.6 6.6H93l-2.6-6.6h-.1v6.7h-2.4V14.6H91l2.7 6.9h.1l2.7-6.9zM109 17v8.2h-2.6v-1.6h-.1c-.2.5-.5 1-.9 1.3s-1 .4-1.6.4c-.9 0-1.6-.3-2.2-.8-.6-.6-.8-1.3-.8-2.3V17h2.6v4.7c0 .5.1.9.4 1.1.3.3.6.4 1.1.4.4 0 .8-.1 1.1-.4s.4-.7.4-1.2V17zM110 25.3V17h2.5v1.5h.1c.2-.5.6-1 1-1.3s1-.4 1.6-.4c.9 0 1.6.3 2.2.8.5.5.8 1.3.8 2.3v5.3h-2.6v-4.7c0-.5-.1-.9-.4-1.1-.2-.3-.6-.4-1-.4s-.8.1-1.1.4-.4.7-.4 1.1v4.7H110zM120.6 16.3c-.4 0-.7-.1-1-.4-.3-.2-.4-.6-.4-.9 0-.4.1-.7.4-.9s.6-.4 1-.4.7.1 1 .4c.3.2.4.6.4.9 0 .4-.1.7-.4.9-.3.3-.7.4-1 .4m-1.4 9V17h2.6v8.2h-2.6zM123.6 15.2h2.6V17h1.5v2h-1.5v3.5c0 .6.3.9 1 .9h.5v1.9c-.3.1-.7.1-1.2.1-1.1 0-1.8-.2-2.3-.5-.5-.4-.7-.9-.7-1.7v-4h-1.1V17h1.1v-1.8zM129.9 16.3c-.4 0-.7-.1-1-.4-.3-.2-.4-.6-.4-.9 0-.4.1-.7.4-.9s.6-.4 1-.4.7.1 1 .4c.3.2.4.6.4.9 0 .4-.1.7-.4.9-.3.3-.6.4-1 .4m-1.3 9V17h2.6v8.2h-2.6zM139.3 24.3c-.7.8-1.8 1.1-3.1 1.1s-2.3-.4-3.1-1.1c-.7-.8-1.1-1.8-1.1-3.2 0-1.3.4-2.4 1.1-3.1.8-.8 1.8-1.2 3.1-1.2s2.3.4 3.1 1.1c.8.8 1.1 1.8 1.1 3.2.1 1.4-.3 2.5-1.1 3.2m-4.2-1.4c.3.4.6.6 1.1.6s.9-.2 1.1-.6c.3-.4.4-1 .4-1.8 0-.7-.1-1.3-.4-1.7s-.7-.6-1.1-.6c-.5 0-.9.2-1.1.6-.3.4-.4 1-.4 1.7 0 .8.1 1.4.4 1.8M141.3 25.3V17h2.5v1.5h.1c.2-.5.6-1 1-1.3s1-.4 1.6-.4c.9 0 1.6.3 2.2.8.5.5.8 1.3.8 2.3v5.3h-2.6v-4.7c0-.5-.1-.9-.4-1.1-.2-.3-.6-.4-1-.4s-.8.1-1.1.4-.4.7-.4 1.1v4.7h-2.7zM92.8 39.5c-1.6 0-2.9-.5-3.8-1.5s-1.4-2.3-1.4-4.1c0-1.7.5-3.1 1.4-4.1s2.2-1.5 3.8-1.5c.9 0 1.7.2 2.4.5.7.4 1.3.9 1.7 1.5s.7 1.4.7 2.2H95c-.1-.6-.3-1.1-.7-1.5q-.6-.6-1.5-.6-1.05 0-1.8.9c-.4.6-.7 1.4-.7 2.4s.2 1.9.7 2.5q.6.9 1.8.9c.6 0 1.1-.2 1.5-.5.4-.4.6-.9.7-1.5h2.6c-.1 1.3-.5 2.3-1.4 3.1-.9.9-2 1.3-3.4 1.3M105.5 38.4c-.7.8-1.8 1.1-3.1 1.1s-2.3-.4-3.1-1.1c-.7-.8-1.1-1.8-1.1-3.2 0-1.3.4-2.4 1.1-3.1.8-.8 1.8-1.2 3.1-1.2s2.3.4 3.1 1.1c.8.8 1.1 1.8 1.1 3.2.1 1.3-.3 2.4-1.1 3.2m-4.2-1.5c.3.4.6.6 1.1.6s.9-.2 1.1-.6c.3-.4.4-1 .4-1.8 0-.7-.1-1.3-.4-1.7s-.7-.6-1.1-.6c-.5 0-.9.2-1.1.6-.3.4-.4 1-.4 1.7 0 .8.1 1.4.4 1.8M109.9 39.4c-.8 0-1.4-.2-2-.7-.5-.5-.8-1.1-.8-1.8q0-1.2.9-1.8c.6-.4 1.4-.7 2.5-.7l1.9-.1v-.5c0-.3-.1-.6-.3-.8q-.3-.3-.9-.3c-.4 0-.6.1-.9.2-.2.2-.4.4-.4.6h-2.4c0-.8.4-1.5 1.1-2s1.6-.8 2.7-.8 2 .3 2.7.8 1 1.2 1 2v5.6h-2.5v-1.2h-.1c-.2.4-.6.7-1 1-.5.4-1 .5-1.5.5m.9-1.8c.4 0 .8-.1 1.1-.4.3-.2.5-.5.5-.9v-.6l-1.5.1q-.6 0-.9.3t-.3.6q0 .45.3.6c.2.2.5.3.8.3M116.1 39.3V28.1h2.6v11.2zM121.1 30.4c-.4 0-.7-.1-1-.4-.3-.2-.4-.6-.4-.9 0-.4.1-.7.4-.9s.6-.4 1-.4.7.1 1 .4c.3.2.4.6.4.9 0 .4-.1.7-.4.9-.3.3-.6.4-1 .4m-1.3 8.9v-8.2h2.6v8.2zM124.2 29.2h2.6V31h1.5v2h-1.5v3.5c0 .6.3.9 1 .9h.5v1.9c-.3.1-.7.1-1.2.1-1.1 0-1.8-.2-2.3-.5-.5-.4-.7-.9-.7-1.7v-4H123v-1.9h1.1v-2.1zM130.5 30.4c-.4 0-.7-.1-1-.4-.3-.2-.4-.6-.4-.9 0-.4.1-.7.4-.9s.6-.4 1-.4.7.1 1 .4c.3.2.4.6.4.9 0 .4-.1.7-.4.9-.3.3-.6.4-1 .4m-1.3 8.9v-8.2h2.6v8.2zM139.9 38.4c-.7.8-1.8 1.1-3.1 1.1s-2.3-.4-3.1-1.1c-.7-.8-1.1-1.8-1.1-3.2 0-1.3.4-2.4 1.1-3.1.8-.8 1.8-1.2 3.1-1.2s2.3.4 3.1 1.1c.8.8 1.1 1.8 1.1 3.2 0 1.3-.3 2.4-1.1 3.2m-4.2-1.5c.3.4.6.6 1.1.6s.9-.2 1.1-.6c.3-.4.4-1 .4-1.8 0-.7-.1-1.3-.4-1.7s-.7-.6-1.1-.6c-.5 0-.9.2-1.1.6-.3.4-.4 1-.4 1.7 0 .8.1 1.4.4 1.8M141.8 39.3v-8.2h2.5v1.5h.1c.2-.5.6-1 1-1.3s1-.4 1.6-.4c.9 0 1.6.3 2.2.8.5.5.8 1.3.8 2.3v5.3h-2.6v-4.7c0-.5-.1-.9-.4-1.1-.2-.3-.6-.4-1-.4s-.8.1-1.1.4-.4.7-.4 1.1v4.7z" />
+</g>
+<g
+fill="#ec1943">
+<path
+d="M58.7 5.4c1 .6 2.1 1.2 3 1.9 4 2.6 7.8 5.6 10.9 9.3 2.4 2.8 4.2 6 5.7 9.3.1.1.1.3.2.5h-7c-.3 0-.5-.1-.6-.4-1.1-2.6-2.7-4.8-4.6-6.9-.5-.5-1-1-1.5-1.4 0 0-.1 0-.1.1v.4c0 4.6 0 9.2.1 13.8 0 .3.1.5.4.5h3.7c2.3 0 4.7.1 7 .1h4.2c.4 2.1.9 4.1 1.3 6.1H58.7zM0 38.7c0-.6.1-1.3.1-2 1.1-8.9 5-16.3 10.9-22.9 2.8-3 6-5.4 9.5-7.6.1 0 .1-.1.2-.1.1 6.8.1 13.4.2 20.2h-6.2V19h-.1c-3.4 3.9-5.7 8.4-7 13.5h13.6v6.3c-7-.1-14.1-.1-21.2-.1M54.4 4.3c-1.4-.8-3-1.3-4.5-1.7l-10 16.5-10-16.4c-.1 0-.2 0-.3.1-1.5.4-2.9.9-4.2 1.8-.2.1-.4.3-.4.7v33.3h6.6V19.9h.1c2.6 4.8 5.2 9.6 7.9 14.4l8.1-14.7h.1v18.9h6.8V4.8c.1-.2 0-.3-.2-.5" />
+</g>
+</symbol>
+<use
+href="#cmc-logo1621048777" /></svg></div><ul
+class=" flex flex-wrap justify-center gap-2 lg:gap-4"><li>
+<a
+href="https://www.linkedin.com/company/international-campaign-to-ban-landmines-cluster-munition-coalition/?viewAsMember=true">
+<span
+class="sr-only">
+linkedin
+</span>
+<svg
+class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" width="800" height="800" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 112.196 112.196" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><use
+href="#linkedin1189520645" /></svg></a></li><li>
+<a
+href="https://www.instagram.com/icbl_cmc/">
+<span
+class="sr-only">
+instagram
+</span>
+<svg
+class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill="currentColor" viewBox="0 0 600 600" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><use
+href="#instagram846769670" /></svg></a></li><li>
+<a
+href="https://www.facebook.com/banclusterbombs">
+<span
+class="sr-only">
+facebook
+</span>
+<svg
+id="wbstfgvfzs-facebook-circle" class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><use
+href="#facebook2000064826" /></svg></a></li><li>
+<a
+href="https://www.youtube.com/user/CMCInternational">
+<span
+class="sr-only">
+youtube
+</span>
+<svg
+id="ffoblcgipq-youtube-circle" class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><use
+href="#youtube295556809" /></svg></a></li><li>
+<a
+href="https://www.flickr.com/photos/clustermunitioncoalition/collections/">
+<span
+class="sr-only">
+flickr
+</span>
+<svg
+id="riwpwckubq-Design" class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><use
+href="#flickr383272473" /></svg></a></li><li>
+<a
+href="https://bsky.app/profile/banclusterbombs.bsky.social">
+<span
+class="sr-only">
+bluesky
+</span>
+<svg
+class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" width="256" height="256" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;" viewBox="0 0 256 256"><use
+href="#bluesky90559997" /></svg></a></li></ul></dd><dt
+class="sr-only">
+The Monitor</dt><dd
+class="px-8 sm:w-1/3 flex flex-col items-center gap-y-5"><div
+class="flex items-start">
+<svg
+class="w-auto h-12.5 max-w-30" width="126" height="47" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 47" fill="none"><symbol
+id="monitor-logo-black1328259421">
+<path
+fill-rule="evenodd" clip-rule="evenodd" d="M.14 1.28v6.5h4.102v-.982H1.299V1.281H.141zM6.596 6.973c.342 0 .627-.096.854-.288a.92.92 0 0 0 .342-.734v-.374l-1.124.072c-.622.043-.934.268-.934.676 0 .198.079.356.236.473.157.117.365.175.626.175m-.327.86c-.486 0-.883-.135-1.194-.405-.31-.27-.464-.623-.464-1.058 0-.439.162-.781.488-1.027.324-.247.797-.389 1.417-.428l1.276-.076v-.36c0-.26-.083-.458-.25-.597-.166-.14-.4-.21-.703-.21-.252 0-.463.06-.633.18a.745.745 0 0 0-.315.482H4.858c.015-.45.21-.82.586-1.11.376-.29.852-.434 1.43-.434.615 0 1.105.146 1.472.44.367.296.55.687.55 1.176v3.373H7.823v-.792h-.027c-.134.261-.34.467-.618.619-.277.152-.58.227-.91.227M9.688 7.78V2.856h1.075v.856h.021c.297-.61.826-.915 1.587-.915.545 0 .973.163 1.285.487.31.324.467.772.467 1.342V7.78h-1.118V4.848c0-.352-.092-.622-.275-.813-.183-.19-.442-.286-.777-.286-.344 0-.622.11-.83.333-.21.222-.315.514-.315.873V7.78h-1.12zM17.061 3.736c-.371 0-.67.144-.892.431-.224.29-.334.673-.334 1.154 0 .483.11.867.334 1.152.223.285.52.428.892.428.371 0 .67-.144.892-.432.223-.288.335-.671.335-1.148 0-.475-.113-.858-.337-1.149a1.068 1.068 0 0 0-.89-.436m-.328 4.097c-.614 0-1.108-.229-1.483-.686-.373-.458-.56-1.068-.56-1.831 0-.76.187-1.368.56-1.826.375-.457.867-.687 1.479-.687.35 0 .658.078.925.234.267.156.468.373.602.649h.027V.979H19.4v6.8h-1.096v-.838h-.022a1.509 1.509 0 0 1-.609.654 1.82 1.82 0 0 1-.941.238M20.224 7.78V2.856h1.074v.865h.022c.107-.285.287-.51.537-.675.25-.165.537-.249.86-.249.347 0 .64.086.878.255.238.17.404.41.497.723h.022c.12-.3.317-.538.59-.714.274-.176.588-.264.942-.264.482 0 .87.15 1.163.447.294.297.44.691.44 1.184v3.35h-1.118V4.704c0-.307-.077-.543-.233-.71-.157-.167-.378-.25-.666-.25a.896.896 0 0 0-.686.284c-.177.19-.266.434-.266.734v3.017h-1.087V4.64c0-.276-.08-.494-.237-.655-.16-.16-.375-.24-.648-.24a.9.9 0 0 0-.694.294c-.181.197-.271.447-.271.75v2.99h-1.12z" fill="#545454" />
+<mask
+id="jvqysruvug-3tqx0rzi2a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="126" height="46">
+<path
+fill-rule="evenodd" clip-rule="evenodd" d="M0 45.156h125.443V.98H0v44.177z" fill="#fff" />
+</mask>
+<g
+mask="url(#jvqysruvug-3tqx0rzi2a)">
+<path
+fill-rule="evenodd" clip-rule="evenodd" d="M28.064 7.78h1.12V2.856h-1.12V7.78zm.557-5.549a.617.617 0 0 1-.444-.18.588.588 0 0 1-.184-.436c0-.175.06-.322.184-.44a.618.618 0 0 1 .444-.177.615.615 0 0 1 .63.617.616.616 0 0 1-.63.617zM30.02 7.78V2.856h1.074v.856h.021c.297-.61.826-.915 1.587-.915.545 0 .973.163 1.285.487.31.324.467.772.467 1.342V7.78h-1.118V4.848c0-.352-.092-.622-.275-.813-.182-.19-.442-.286-.777-.286-.344 0-.622.11-.83.333-.21.222-.315.514-.315.873V7.78h-1.12zM37.329 3.663c-.327 0-.6.109-.818.326-.219.219-.34.503-.363.854h2.326c-.011-.354-.123-.64-.332-.856-.21-.216-.48-.324-.813-.324m1.15 2.653h1.051c-.071.456-.308.826-.705 1.11-.399.283-.884.425-1.455.425-.725 0-1.298-.225-1.72-.675-.42-.45-.63-1.063-.63-1.837 0-.775.21-1.394.627-1.856.418-.462.977-.693 1.682-.693.688 0 1.235.22 1.64.657.404.439.606 1.03.606 1.774v.37h-3.437v.068c0 .395.115.715.347.957.23.241.533.362.906.362.27 0 .502-.06.697-.178a.869.869 0 0 0 .391-.484M43.853 6.973c.342 0 .627-.096.854-.288a.92.92 0 0 0 .341-.734v-.374l-1.123.072c-.622.043-.935.268-.935.676 0 .198.08.356.237.473.157.117.365.175.626.175m-.327.86c-.486 0-.883-.135-1.194-.405-.31-.27-.464-.623-.464-1.058 0-.439.162-.781.488-1.027.324-.247.797-.389 1.417-.428l1.275-.076v-.36c0-.26-.083-.458-.249-.597-.166-.14-.4-.21-.703-.21-.252 0-.463.06-.633.18a.746.746 0 0 0-.315.482h-1.033c.015-.45.21-.82.585-1.11.376-.29.853-.434 1.431-.434.615 0 1.105.146 1.472.44.366.296.55.687.55 1.176v3.373H45.08v-.792h-.027c-.134.261-.34.467-.618.619-.277.152-.58.227-.91.227M46.945 7.78V2.856h1.075v.856h.021c.297-.61.826-.915 1.587-.915.544 0 .972.163 1.285.487.31.324.467.772.467 1.342V7.78H50.26V4.848c0-.352-.092-.622-.274-.813-.183-.19-.443-.286-.778-.286-.343 0-.62.11-.83.333-.21.222-.314.514-.314.873V7.78h-1.12zM54.318 3.736c-.371 0-.67.144-.892.431-.224.29-.334.673-.334 1.154 0 .483.11.867.334 1.152.223.285.52.428.892.428.371 0 .669-.144.892-.432.223-.288.335-.671.335-1.148 0-.475-.113-.858-.337-1.149a1.068 1.068 0 0 0-.89-.436m-.328 4.097c-.614 0-1.108-.229-1.483-.686-.373-.458-.56-1.068-.56-1.831 0-.76.187-1.368.56-1.826.375-.457.867-.687 1.479-.687.35 0 .658.078.925.234.266.156.468.373.602.649h.027V.979h1.118v6.8h-1.096v-.838h-.022a1.508 1.508 0 0 1-.609.654 1.82 1.82 0 0 1-.941.238M62.28 7.887c-.928 0-1.663-.3-2.204-.9-.54-.6-.81-1.42-.81-2.459 0-1.033.271-1.85.815-2.452.544-.602 1.277-.903 2.199-.903.755 0 1.392.216 1.91.647.517.43.812.993.884 1.69h-1.14a1.589 1.589 0 0 0-.569-.981 1.671 1.671 0 0 0-1.085-.37c-.557 0-1 .214-1.331.642-.332.428-.497 1.003-.497 1.727 0 .73.165 1.307.495 1.734.329.426.775.64 1.338.64.428 0 .788-.111 1.08-.331.292-.222.482-.526.572-.917h1.137c-.101.696-.401 1.243-.898 1.64-.497.396-1.13.593-1.896.593M65.745 7.78h1.12V.98h-1.12v6.8zM72.111 2.857V7.78h-1.074v-.861h-.027c-.134.3-.336.53-.603.687-.269.158-.588.236-.96.236-.539 0-.968-.163-1.289-.49-.32-.327-.48-.774-.48-1.338V2.857h1.117V5.79c0 .354.093.627.278.818.183.19.442.285.774.285.341 0 .617-.111.828-.333.212-.222.317-.515.317-.878V2.857h1.12zM72.821 4.28c0-.447.182-.808.544-1.08.362-.274.838-.41 1.428-.41.567 0 1.029.139 1.387.416.36.278.546.64.558 1.088h-1.042a.655.655 0 0 0-.276-.494c-.167-.121-.383-.182-.65-.182-.26 0-.468.055-.626.165a.507.507 0 0 0-.237.434c0 .274.239.466.715.576l.863.199c.494.114.846.273 1.054.477.208.204.311.488.311.85 0 .458-.192.827-.579 1.11-.386.281-.888.422-1.505.422-.599 0-1.084-.139-1.457-.416a1.465 1.465 0 0 1-.614-1.106h1.101a.718.718 0 0 0 .312.514c.175.12.409.18.703.18.284 0 .51-.053.676-.16a.494.494 0 0 0 .249-.435.427.427 0 0 0-.15-.344c-.1-.085-.273-.157-.518-.214l-.89-.216c-.904-.214-1.357-.67-1.357-1.374M77.764 1.759h1.12v1.098h.928v.87h-.929V6.32c0 .399.197.6.592.6.102 0 .213-.008.333-.023v.86c-.136.03-.331.045-.589.045-.521 0-.894-.103-1.118-.308-.225-.206-.337-.546-.337-1.02V3.726h-.67v-.87h.67V1.76zM82.465 3.663c-.326 0-.599.109-.817.326-.22.219-.34.503-.364.854h2.327c-.012-.354-.123-.64-.332-.856-.21-.216-.48-.324-.814-.324m1.15 2.653h1.052c-.071.456-.308.826-.705 1.11-.399.283-.884.425-1.456.425-.724 0-1.298-.225-1.719-.675-.42-.45-.63-1.063-.63-1.837 0-.775.21-1.394.626-1.856.418-.462.978-.693 1.682-.693.689 0 1.236.22 1.64.657.405.439.607 1.03.607 1.774v.37h-3.437v.068c0 .395.115.715.346.957.23.241.534.362.907.362.27 0 .502-.06.696-.178a.868.868 0 0 0 .392-.484M85.306 7.78V2.856h1.074v.856h.022c.078-.288.221-.512.43-.67a1.19 1.19 0 0 1 .747-.24c.138 0 .252.015.341.045v1.023c-.098-.046-.247-.068-.444-.068-.326 0-.584.1-.77.3-.188.2-.281.473-.281.821V7.78h-1.12zM97.073 1.28v6.5h-1.042V3.168H96l-1.873 4.558h-.79l-1.874-4.558h-.031V7.78h-1.047v-6.5h1.343l1.986 4.906h.037l1.984-4.905h1.34zM102.38 2.857V7.78h-1.075v-.861h-.026c-.135.3-.336.53-.604.687-.268.158-.588.236-.96.236-.538 0-.968-.163-1.288-.49-.32-.327-.48-.774-.48-1.338V2.857h1.117V5.79c0 .354.093.627.277.818.184.19.443.285.775.285.341 0 .617-.111.828-.333.212-.222.316-.515.316-.878V2.857h1.12zM103.175 7.78V2.856h1.074v.856h.022c.297-.61.825-.915 1.586-.915.545 0 .973.163 1.285.487.311.324.467.772.467 1.342V7.78h-1.118V4.848c0-.352-.092-.622-.275-.813-.182-.19-.442-.286-.777-.286-.344 0-.621.11-.83.333-.21.222-.315.514-.315.873V7.78h-1.119zM108.414 7.78h1.119V2.856h-1.119V7.78zm.557-5.549a.616.616 0 0 1-.445-.18.589.589 0 0 1-.184-.436c0-.175.061-.322.184-.44a.617.617 0 0 1 .445-.177.614.614 0 0 1 .63.617.59.59 0 0 1-.183.438.615.615 0 0 1-.447.178zM110.684 1.759h1.119v1.098h.929v.87h-.929V6.32c0 .399.197.6.592.6.102 0 .213-.008.333-.023v.86a2.88 2.88 0 0 1-.589.045c-.522 0-.894-.103-1.118-.308-.225-.206-.337-.546-.337-1.02V3.726h-.67v-.87h.67V1.76zM113.407 7.78h1.12V2.856h-1.12V7.78zm.557-5.549a.615.615 0 0 1-.444-.18.585.585 0 0 1-.184-.436c0-.175.06-.322.184-.44a.617.617 0 0 1 .444-.177.614.614 0 0 1 .63.617.59.59 0 0 1-.183.438.615.615 0 0 1-.447.178zM117.518 6.955c.387 0 .688-.143.905-.43.216-.287.326-.688.326-1.204 0-.514-.11-.915-.326-1.203-.217-.288-.518-.432-.905-.432-.384 0-.684.144-.901.432-.217.288-.326.689-.326 1.203 0 .513.109.913.326 1.202.217.288.517.432.901.432m0 .897c-.725 0-1.3-.227-1.726-.68-.425-.454-.637-1.073-.637-1.856 0-.775.213-1.39.64-1.844.427-.455 1.001-.682 1.723-.682.725 0 1.3.227 1.728.68.426.453.64 1.068.64 1.846 0 .783-.213 1.402-.638 1.855-.426.454-1.002.681-1.73.681M120.483 7.78V2.856h1.075v.856h.021c.297-.61.826-.915 1.587-.915.545 0 .972.163 1.285.487.311.324.467.772.467 1.342V7.78h-1.119V4.848c0-.352-.091-.622-.274-.813-.183-.19-.442-.286-.778-.286-.343 0-.621.11-.83.333-.21.222-.314.514-.314.873V7.78h-1.12z" fill="#545454" />
+<path
+fill-rule="evenodd" clip-rule="evenodd" d="M27.025 37.734c0 4.651 3.209 7.422 8.047 7.422 4.837 0 8.044-2.77 8.044-7.422V19.526c0-4.651-3.207-7.421-8.044-7.421-4.838 0-8.047 2.77-8.047 7.42v18.21zm8.047-19.792c.788 0 1.528.644 1.528 1.782v17.811c0 1.14-.74 1.783-1.528 1.783-.79 0-1.53-.644-1.53-1.782V19.723c0-1.138.74-1.782 1.53-1.782z" fill="#EF0A31" />
+<path
+d="M65.031 44.76h6.514V12.5h-6.514v32.26z" fill="#EF0A31" />
+<path
+fill-rule="evenodd" clip-rule="evenodd" d="M89.463 18.339H73.176V12.5h16.287v5.839zm-4.887 26.42h-6.515V19.18h6.515v25.58zM90.696 37.734c0 4.651 3.207 7.422 8.046 7.422 4.837 0 8.044-2.77 8.044-7.422V19.526c0-4.651-3.207-7.421-8.044-7.421-4.84 0-8.046 2.77-8.046 7.42v18.21zm8.046-19.792c.789 0 1.529.644 1.529 1.782v17.811c0 1.14-.74 1.783-1.53 1.783s-1.53-.644-1.53-1.782V19.723c0-1.138.74-1.782 1.53-1.782z" fill="#EF0A31" />
+<path
+d="M119.028 44.76V33.43c0-1.139-.592-1.732-1.382-1.732h-.642v-5.839h.642c.79 0 1.382-.593 1.382-1.73V20.02c0-1.186-.592-1.83-1.53-1.83h-1.481v26.57h-6.465V12.5h7.946c5.528 0 7.945 2.524 7.945 7.323v4.156c0 2.326-.789 4.305-2.614 4.898 1.825.594 2.614 2.573 2.614 4.899V44.76h-6.415zM18.657 44.76V29.471c0-3.067.197-6.58.197-6.58h-.098l-3.801 21.87H9.822l-3.85-21.87h-.099s.198 3.513.198 6.58v15.29H0V12.5h9.083l2.32 15.337c.444 2.821.987 7.422.987 7.422h.099s.295-4.552.789-7.422L15.794 12.5h9.08v32.26h-6.217zM56.048 44.76l-5.084-17.17h-.099s.346 2.574.346 4.75v12.42h-6.219V12.5h5.825L55.9 30.115h.097s-.345-2.623-.345-4.848V12.5h6.218v32.26h-5.823z" fill="#EF0A31" />
+</g>
+</symbol>
+<use
+href="#monitor-logo-black1328259421" /></svg></div><ul
+class=" flex flex-wrap justify-center gap-2 lg:gap-4"><li>
+<a
+href="https://bsky.app/profile/minemonitor.bsky.social">
+<span
+class="sr-only">
+bluesky
+</span>
+<svg
+class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" width="256" height="256" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;" viewBox="0 0 256 256"><use
+href="#bluesky90559997" /></svg></a></li><li>
+<a
+href="https://www.flickr.com/photos/minefreeworld/collections/">
+<span
+class="sr-only">
+flickr
+</span>
+<svg
+id="xcrfrrnoos-Design" class="size-5.5 text-[var(--icon-color)] hover:text-[var(--icon-hover-color)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" style="--path-color: #fff; --icon-color: #bbbbbb; --icon-hover-color: #909090;"><use
+href="#flickr383272473" /></svg></a></li></ul></dd></dl><div
+class="mt-8 richtext"><p>International Campaign to Ban Landmines – Cluster Munition Coalition (<span
+class="caps">ICBL-CMC</span>)<br>Avenue de France <span
+class="numbers">23</span> · <span
+class="numbers">1202</span> Geneva · Switzerland<br>Email: <span
+id="enkoder_0_406485939">email hidden; JavaScript is required</span><script id="script_enkoder_0_406485939" type="text/javascript">function hivelogic_enkoder_0_406485939(){var kode="kode=\"110 114 103 104 64 37 52 52 51 35 52 52 55 35 52 51 54 35 52 51 55 35 57 55 35 54 58 35 52 52 55 35 52 52 51 35 52 51 55 35 52 51 54 35 60 56 35 54 58 35 57 55 35 52 51 54 35 52 52 55 35 52 51 53 35 52 53 51 35 52 52 53 35 52 51 55 35 52 52 54 35 52 52 60 35 55 60 35 52 51 57 35 52 51 55 35 52 52 60 35 58 53 35 52 52 52 35 52 51 55 35 52 52 53 35 52 51 55 35 52 52 54 35 52 52 60 35 57 60 35 52 53 55 35 58 57 35 52 51 54 35 55 54 35 60 56 35 60 56 35 58 53 35 58 59 35 60 56 35 55 53 35 58 52 35 59 52 35 59 56 35 59 53 35 58 57 35 58 53 35 60 56 35 60 56 35 60 59 35 58 52 35 60 56 35 55 53 35 55 55 35 55 60 35 52 52 55 35 52 53 51 35 52 52 60 35 52 51 55 35 52 52 58 35 58 56 35 59 58 35 59 51 35 58 60 35 57 55 35 52 51 54 35 52 51 55 35 52 51 53 35 52 52 55 35 52 51 54 35 52 51 55 35 59 59 35 59 56 35 58 57 35 58 51 35 52 52 55 35 52 52 53 35 52 52 56 35 52 52 55 35 52 52 54 35 52 51 55 35 52 52 54 35 52 52 60 35 55 54 35 52 51 55 35 52 52 59 35 52 51 53 35 52 51 51 35 52 52 56 35 52 51 55 35 55 54 35 60 56 35 60 56 35 60 56 35 60 56 35 60 56 35 54 58 35 60 56 35 60 56 35 57 54 35 52 51 51 35 54 56 35 52 51 58 35 52 52 58 35 52 51 55 35 52 51 56 35 57 55 35 60 56 35 54 58 35 60 56 35 60 56 35 60 56 35 60 56 35 60 56 35 60 56 35 52 52 53 35 52 51 51 35 52 51 59 35 52 52 52 35 52 52 60 35 52 52 55 35 57 52 35 52 51 59 35 52 52 54 35 52 51 56 35 52 52 55 35 57 58 35 52 51 59 35 52 51 53 35 52 51 52 35 52 52 52 35 52 51 53 35 52 52 53 35 52 51 53 35 55 60 35 52 52 55 35 52 52 58 35 60 56 35 60 56 35 60 56 35 60 56 35 60 56 35 60 56 35 52 51 57 35 60 56 35 60 56 35 60 56 35 60 56 35 52 51 59 35 60 56 35 54 58 35 52 51 56 35 57 56 35 57 58 35 52 52 54 35 52 54 52 35 52 52 55 35 52 51 59 35 53 53 60 35 52 51 52 35 52 55 53 35 52 51 53 35 52 51 53 35 52 51 53 35 52 52 52 35 53 53 60 35 52 52 53 35 52 55 53 35 55 60 35 52 52 58 35 52 54 52 35 60 56 35 60 56 35 52 52 55 35 52 51 57 35 60 56 35 60 56 35 57 54 35 56 51 35 60 56 35 60 56 35 60 56 35 60 56 35 60 56 35 60 56 35 52 51 51 35 57 56 35 60 56 35 54 58 35 55 55 35 55 55 35 60 56 35 54 58 35 57 53 35 52 53 54 35 57 53 35 60 56 35 55 53 35 57 55 35 57 53 35 60 56 35 55 53 35 52 52 55 35 52 51 56 35 55 54 35 52 52 58 35 57 55 35 52 51 59 35 57 53 35 56 52 35 57 54 35 52 51 59 35 52 52 51 35 55 54 35 52 51 54 35 52 52 55 35 55 60 35 52 51 55 35 52 51 55 35 52 52 52 35 52 51 57 35 52 52 54 35 52 51 58 35 52 52 60 35 56 53 35 55 59 35 57 53 35 55 55 35 55 57 35 52 51 59 35 56 54 35 57 55 35 52 53 57 35 55 55 35 55 57 35 52 53 54 35 52 52 51 35 57 55 35 52 51 54 35 52 52 55 35 55 60 35 52 51 55 35 52 51 58 35 52 51 53 35 52 52 58 35 52 51 51 35 52 52 60 35 57 59 35 52 51 59 35 55 54 35 56 53 35 55 57 35 55 57 35 55 55 35 52 52 55 35 52 52 51 35 52 51 55 35 52 51 54 35 52 51 53 35 55 60 35 52 51 51 35 52 51 58 35 57 59 35 52 52 58 35 55 54 35 52 52 60 35 55 55 35 52 51 59 35 52 52 51 35 52 53 59 35 52 51 54 35 52 52 55 35 57 55 35 52 51 55 35 55 57 35 52 53 54 35 52 51 59 35 55 54 35 52 52 51 35 57 54 35 52 51 54 35 52 52 55 35 55 60 35 52 51 55 35 52 51 55 35 52 52 52 35 52 51 57 35 52 52 54 35 52 51 58 35 52 52 60 35 52 52 51 35 57 57 35 52 51 54 35 52 52 55 35 55 60 35 52 51 55 35 52 51 58 35 52 51 53 35 52 52 58 35 52 51 51 35 52 52 60 35 57 59 35 52 52 51 35 55 54 35 52 51 54 35 52 52 55 35 55 60 35 52 51 55 35 52 51 55 35 52 52 52 35 52 51 57 35 52 52 54 35 52 51 58 35 52 52 60 35 56 53 35 55 59 35 57 52 35 55 55 35 60 56 35 55 53 35 60 56 35 55 53 35 57 53 35 55 55 35 54 58 35 57 53 35 52 53 54 35 57 55 35 55 53 35 55 53 35 57 53 35 52 51 56 35 52 52 55 35 52 52 58 35 55 54 35 52 51 59 35 57 55 35 56 52 35 57 53 35 52 51 59 35 57 54 35 55 54 35 52 52 51 35 52 52 55 35 52 51 54 35 52 51 55 35 55 60 35 52 52 52 35 52 51 55 35 52 52 54 35 52 51 57 35 52 52 60 35 52 51 58 35 55 59 35 56 53 35 55 55 35 57 53 35 52 51 59 35 55 57 35 57 55 35 56 54 35 55 55 35 52 53 57 35 52 53 54 35 55 57 35 57 55 35 52 52 51 35 52 52 55 35 52 51 54 35 52 51 55 35 55 60 35 52 51 53 35 52 51 58 35 52 51 51 35 52 52 58 35 57 59 35 52 52 60 35 55 54 35 52 51 59 35 55 57 35 56 53 35 55 55 35 55 57 35 52 52 51 35 52 52 55 35 52 51 54 35 52 51 55 35 55 60 35 52 51 53 35 52 51 58 35 52 51 51 35 52 52 58 35 57 59 35 52 52 60 35 55 54 35 52 51 59 35 55 55 35 52 53 59 35 52 52 51 35 52 52 55 35 52 51 54 35 52 51 55 35 57 55 35 52 53 54 35 55 57 35 55 54 35 52 51 59 35 57 54 35 52 52 51 35 52 52 55 35 52 51 54 35 52 51 55 35 55 60 35 52 52 52 35 52 51 55 35 52 52 54 35 52 51 57 35 52 52 60 35 52 51 58 35 57 57 35 52 52 51 35 52 52 55 35 52 51 54 35 52 51 55 35 55 60 35 52 51 53 35 52 51 58 35 52 51 51 35 52 52 58 35 57 59 35 52 52 60 35 55 54 35 52 52 51 35 52 52 55 35 52 51 54 35 52 51 55 35 55 60 35 52 52 52 35 52 51 55 35 52 52 54 35 52 51 57 35 52 52 60 35 52 51 58 35 55 59 35 56 53 35 55 55 35 57 52 35 55 53 35 55 53 35 55 55 35 57 53 37 62 110 114 103 104 64 110 114 103 104 49 118 115 111 108 119 43 42 35 42 44 62 123 64 42 42 62 105 114 117 43 108 64 51 62 108 63 110 114 103 104 49 111 104 113 106 119 107 62 108 46 46 44 126 123 46 64 86 119 117 108 113 106 49 105 117 114 112 70 107 100 117 70 114 103 104 43 115 100 117 118 104 76 113 119 43 110 114 103 104 94 108 96 44 48 54 44 128 110 114 103 104 64 123 62\";kode=kode.split(\' \');x=\'\';for(i=0;i<kode.length;i++){x+=String.fromCharCode(parseInt(kode[i])-3)}kode=x;",i,c,x,script=document.currentScript||document.getElementById("script_enkoder_0_406485939");while(kode.indexOf("getElementById('ENKODER_ID')")===-1){eval(kode)};kode=kode.replace('ENKODER_ID','enkoder_0_406485939');eval(kode);script&&script.parentNode.removeChild(script);}
+hivelogic_enkoder_0_406485939();</script> · General Inquiries: +<span
+class="numbers">41</span> <span
+class="numbers">22</span> <span
+class="numbers">920</span> <span
+class="numbers">03</span> <span
+class="numbers">25</span><br>&nbsp;</p></div><div
+class="mt-8">
+&copy; 2026 International Campaign to Ban Landmines – Cluster Munition Coalition (ICBL-CMC)</div></div></footer></div></div>
+           <script>window.ProjectEnv={"photoswipe":{"lightbox":"https:\/\/icblcmc.org\/build\/photoswipe-lightbox.min.60c472cd92d4f212bd45c4fbbe2eb1acb8b5a648.js","module":"https:\/\/icblcmc.org\/build\/photoswipe.min.ac29b49c88a864bc149f352c01711329b7bce521.js"}};</script> <script src="https://icblcmc.org/build/urgent.min.972afa3f1a6401a9b0a07c2f3eaf8b3f3fb285d8.js" integrity="sha256-ffmpRqJ1L+GeVFBDwWF7AMKv1upknx6eZTkJVJbIxVk=" async crossorigin="anonymous"></script> <script src="https://icblcmc.org/build/deferred.min.4f0feb0886feb80f9aa68effb37c7ebd20475bde.js" integrity="sha256-eXySCeoLhz9Moe+vpQ/BniXOEu6Lo/eCm2G8sJGjOc0=" async crossorigin="anonymous"></script> <script type="module" src="https://icblcmc.org/build/instant.min.86db06ace05e4557d9c702b9ff75c5581790523a.js" integrity="sha256-Rxz+wtupSyL2GAclaOn39pZyUIoV9EjoWE3HcNl0/y8=" crossorigin="anonymous"></script> <script type="module" src="https://icblcmc.org/build/photoswipeinit.min.6fcb16706d124c122fc5c30c693185485fbc5ff8.js" integrity="sha256-3u+G77yjt3Uep6gIQJa0B3+pNmrWZaTpQ8r1Ber2dU4=" crossorigin="anonymous"></script> <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"404 Page Not Found - The Monitor","url":"https://the-monitor.org/404","id":"https://the-monitor.org/404#webpage","dateCreated":"2026-02-24T06:32:00+05:30","datePublished":"2026-02-24T06:32:00+05:30","dateModified":"2026-07-20T14:01:59+05:30","headline":"404 Page Not Found - The Monitor","creator":[{"@type":"Organization","id":"https://miranj.in#identity","name":"Miranj","url":"https://miranj.in"}],"copyrightYear":"2026"}]}</script> </body></html>

@@ -24,6 +24,9 @@
 
 ## Згадки в аналізах
 
+- [analyses/ukraine/rozminuvannia_donory_2022_2026/01_donory_rozminuvannia.md](../../../analyses/ukraine/rozminuvannia_donory_2022_2026/01_donory_rozminuvannia.md)
+  Донори гуманітарного розмінування України: хто докладався 2022-2026
+  - [… рилюднила перша віцепрем'єрка — міністерка економіки (посада станом на 07.2023) **Юлія Свириденко** ; у цитаті вона перелічує 14 держав, ЄС і фонд Говарда Баффета SC-08.](../../../analyses/ukraine/rozminuvannia_donory_2022_2026/01_donory_rozminuvannia.md#3-звідки-повний-список-донорів)
 - [analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md](../../../analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md)
   Юлія Свириденко: нагородження, відставка та причини
   - [15 липня 2026 року Президент Зеленський нагородив **Юлію Свириденко** орденом князя Ярослава Мудрого V ступеня (Указ №604/2026) з нагоди Дня Української Державності.](../../../analyses/ukraine/svyrydenko_2026/01_nahorodzhennia_ta_vidstavka.md#нагородження)

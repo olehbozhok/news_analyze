@@ -1,0 +1,96 @@
+# Журнал URL, Researcher, 14.11.2026
+# Chrome (chrome_*) недоступний: використано WebFetch / WebSearch / fetch_safe.py (curl + санація)
+# Формат: URL | інструмент | результат | дата
+https://demine.gov.ua/ | fetch_safe.py (curl+санація) | OK 200, 10039 chars -> raw/demine_main.txt | 14.11.2026
+https://demine.gov.ua/partneram/spivpratsia | fetch_safe.py | OK 200, 6798 chars -> raw/demine_spivpratsia.txt | 14.11.2026
+zakon.rada.gov.ua 2642-VIII /print | (раніше зібрано) raw/zakon_2642_pmd.txt | не перезавантажувалось | 14.11.2026
+zakon.rada.gov.ua 3310-IX /print | (раніше зібрано) raw/zakon_3310_pmd.txt | УВАГА: це закон «Про державні резерви», не ПМД | 14.11.2026
+https://demine.gov.ua/partneram/donorska-sektoralna-robocha-hrupa | fetch_safe.py | OK 200, 7628 chars | 14.11.2026
+https://demine.gov.ua/staty-donorom | fetch_safe.py | OK 200, 4611 chars | 14.11.2026
+https://demine.gov.ua/news | WebFetch | OK, але новини вантажаться JS; списку новин немає | 14.11.2026
+https://demine.gov.ua/timeline | curl | OK 200, новини рендеряться JS, посилань на новини в HTML немає | 14.11.2026
+https://newsukraine.rbc.ua/news/ukraine-to-receive-part-of-new-1-billion-1781683510.html | fetch_safe.py | OK 200, 4183 chars | 14.11.2026
+https://www.kmu.gov.ua/news/konferentsiia-z-protyminnoi-diialnosti-v-ukraini-vidbudetsia-v-seredyni-lystopada-u-briusseli | fetch_safe.py | ЗАБЛОКОВАНЕ (Radware captcha) | 14.11.2026
+https://www.me.gov.ua/News/Detail/ad3dd58d-6f34-40ec-9be6-01a5ae801e85 | fetch_safe.py | OK 200, 13270 chars | 14.11.2026
+https://forbes.ua/news/ssha-vidilyayut-ponad-1-mlrd-gumanitarnoi-dopomogi-yunisef-i-oon-ukraina-sered-otrimuvachiv-17062026-39689 | fetch_safe.py | OK 200 (не використано, дубль RBC) | 14.11.2026
+https://www.ukrinform.net/rubric-economy/3740234-intl-partners-to-provide-ukraine-with-244m-for-demining-svyrydenko.html | fetch_safe.py | OK 200, 5632 chars | 14.11.2026
+https://me.gov.ua/News/Print/85e7f601-223f-4828-85d9-9784cae844f6?lang=uk-UA | fetch_safe.py | OK 200, 2461 chars (новина 04.04.2024) | 14.11.2026
+https://rp.gov.ua/upload-files/Activity/Collegium/2025/21-2_2025/Zvit_21-2_2025.pdf | curl + pdftotext | OK 200, PDF 4,7 МБ, повний текст -> raw/rp_zvit_21-2_2025.txt | 14.11.2026
+https://epravda.com.ua/biznes/ukrajinski-teritoriji-rozminovuyut-duzhe-nizkimi-tempami-rahunkova-palata-811258/ | fetch_safe.py | OK 200 | 14.11.2026
+https://epravda.com.ua/biznes/mehanizm-kompensaciji-vitrat-za-rozminuvannya-zemel-zabyurokratizovaniy-rahunkova-palata-811259/ | fetch_safe.py | OK 200 | 14.11.2026
+https://epravda.com.ua/biznes/pravoohoronci-vikrili-fiktivne-rozminuvannya-zemel-na-desyatki-milyoniv-griven-822902/ | fetch_safe.py | OK 200 | 14.11.2026
+https://www.radiosvoboda.org/a/novyny-pryazovya-rozminuvannya-mykolayivshchyny/33422282.html | fetch_safe.py | OK 200 | 14.11.2026
+https://24tv.ua/agro24/fiktivne-rozminuvannya-poliv-ukrayini-shistom-lyudyam-ogolosili_n3092841 | fetch_safe.py + curl (datePublished) | OK 200, 23.06.2026 | 14.11.2026
+https://bihus.info/?s=розмінування | fetch_safe.py | 200, але порожньо (21 символ; ймовірно JS-пошук) — матеріал не знайдено | 14.11.2026
+WebSearch "Bihus розмінування" (standard + extended) | WebSearch | 0 релевантних результатів | 14.11.2026
+WebSearch ЄДРСР ухвали ЦГР / ст.191 | WebSearch | 0 релевантних результатів; reyestr.court.gov.ua напряму не перевірявся | 14.11.2026
+https://u24.gov.ua/news/humanitarian_demining_direction | fetch_safe.py | OK 200, 4227 chars | 14.11.2026
+https://epravda.com.ua/biznes/kijivstar-ta-povernis-zhivim-zibrali-ponad-106-mln-grn-na-rozminuvannya-krajini-803131/ | fetch_safe.py + curl (datePublished 2025-02-12) | OK 200 | 14.11.2026
+https://privatbank.ua/news/2025/9/8/zadlya-rozminuvannya-ukrajini-spilniy-zbir-privatbanku-ta-fondu-sergiya-prituli | fetch_safe.py | OK 200 | 14.11.2026
+https://www.kmu.gov.ua/news/ukraina-perekhodyt-do-tsyfrovoho-planuvannia-humanitarnoho-rozminuvannia-vyznacheno-priorytety-na-2026-rik | fetch_safe.py | ЗАБЛОКОВАНЕ (Radware captcha) | 14.11.2026
+https://me.gov.ua/News/Print/a03aa71d-6063-46d9-93a7-43db20c6f4dc?lang=uk-UA | fetch_safe.py | OK 200 (06.01.2026) | 14.11.2026
+https://me.gov.ua/News/Print/1ecb6321-2015-4e8a-b3ee-0b3e18ea99bb?lang=uk-UA | fetch_safe.py | OK 200 (08.01.2025) | 14.11.2026
+https://me.gov.ua/News/Print/f9f18a5a-63c1-43d4-8fec-b4dcc721caba?lang=uk-UA | fetch_safe.py | OK 200 (27.02.2025) | 14.11.2026
+https://me.gov.ua/News/Print/1b57d015-25ec-4f79-8f2a-f2c3bc6dfc77?lang=uk-UA | fetch_safe.py | OK 200 (UNITED24 «Крок за кроком» закрито) | 14.11.2026
+https://me.gov.ua/News/Print/4fb98e4d-7bbe-4217-a889-b62495164013?lang=uk-UA | fetch_safe.py | OK 200 | 14.11.2026
+https://newsukraine.rbc.ua/news/us-suspends-mine-action-programs-worldwide-1737841381.html | fetch_safe.py | OK 200 | 14.11.2026
+https://unn.ua/en/news/ukraine-loses-sappers-due-to-suspension-of-funding-by-the-us-state-department-asu | fetch_safe.py + curl (datePublished 2025-02-14) | OK 200 | 14.11.2026
+https://www.state.gov/wp-content/uploads/2025/12/Report-to-Congress-on-Unexploded-Ordnance-Clearance-in-Ukraine-Accessible-12.3.2025.pdf | WebFetch 403; curl -> HTML-заглушка; fetch_safe.py --raw | OK, PDF 6 стор., pdftotext | 14.11.2026
+https://www.csis.org/analysis/demining-ukraine-outcomes-2025-ukraine-mine-action-conference | fetch_safe.py | OK 200, 54996 chars | 14.11.2026
+https://lb.ua/economics/2024/09/02/632626_uryad_povnistyu_kompensovuvatime.html | fetch_safe.py | OK 200 | 14.11.2026
+https://www.the-monitor.org/api/assets/reports/Landmine-Monitors/LMM2025/Downloads/LM2025-press-release_EN.pdf | curl | повернуло HTML замість PDF (не відкрито) | 14.11.2026
+https://interfax.com.ua/news/general/1165737.html | fetch_safe.py | OK 200 (07.05.2026) | 14.11.2026
+https://backend.icblcmc.org/assets/reports/Landmine-Monitors/LMM2024/Downloads/Major-Findings_EN.pdf | fetch_safe.py --raw + pdftotext | OK, PDF 5 стор. | 14.11.2026
+https://backend.icblcmc.org/assets/reports/Landmine-Monitors/LMM2025/Downloads/Major-Findings_EN.pdf | fetch_safe.py --raw | НЕ ІСНУЄ за цим шляхом (повернуто HTML) | 14.11.2026
+https://the-monitor.org/country-profile/ukraine/funding-for-mine-action | fetch_safe.py | OK 200, 13484 chars | 14.11.2026
+https://www.admin.ch/gov/en/start/documentation/media-releases.msg-id-97986.html | fetch_safe.py | ЗАБЛОКОВАНЕ (403 permission denied) | 14.11.2026
+https://www.admin.ch/gov/en/start/documentation/media-releases.msg-id-102724.html | fetch_safe.py | ЗАБЛОКОВАНЕ (403) | 14.11.2026
+https://me.gov.ua/News/Print/3adb44bf-2afd-4809-8942-71d4c11cbb14?lang=uk-UA | fetch_safe.py | 200, але загальна сторінка без новини (не використано) | 14.11.2026
+https://ukrainedonorplatform.com/ | fetch_safe.py | OK 200, 4089 chars | 14.11.2026
+https://www.kmu.gov.ua/news/didzhytalizatsiia-dopomohy-u-protyminnii-diialnosti-uriad-zapustyv-stvorennia-donorskoi-platformy | WebFetch | OK (curl блокує, WebFetch пройшов) | 14.11.2026
+https://demine.gov.ua/ (посилання на новини) | WebFetch | OK | 14.11.2026
+https://demine.gov.ua/news/publichni-investytsii-v-humanitarnomu-rozminuvanni-pid-chas-stratsesii-napratsiuvaly-osnovy-sektoralnoi-stratehii | fetch_safe.py | OK 200, 7073 chars | 14.11.2026
+https://opencharities.uk/ew/1001813/files/2025-03-31-accounts.html | fetch_safe.py | OK 200, 178385 chars (HALO Trust accounts FY to 31.03.2025) | 14.11.2026
+https://www.halousa.org/media/a4fhqlkm/annual-report-and-financial-statements-2025.pdf | fetch_safe.py --raw | повернуто HTML, PDF не отримано | 14.11.2026
+# Red team pass (red_team_01.md), 14.11.2026; Chrome недоступний
+https://www.kmu.gov.ua/news/ponad-40-tysiach-kv-km-ukrainskykh-zemel-povernuto-do-vykorystannia-rezultaty-humanitarnoho-rozminuvannia | fetch_safe.py | ЗАБЛОКОВАНЕ (Radware captcha) | 14.11.2026
+https://euromaidanpress.com/?p=383900 | fetch_safe.py | OK, 7553 chars -> raw/rt_emp_120km2.txt | 14.11.2026
+https://www.slovoidilo.ua/2026/10/22/infografika/bezpeka/pryxovana-zahroza-min-132-tysyachi-kvadratnyx-kilometriv-ukrayini-dosi-nebezpechni | fetch_safe.py | OK, 8163 chars -> raw/rt_slovoidilo_132k.txt | 14.11.2026
+https://mod.gov.ua/en/news/the-area-of-ukrainian-territories-potentially-contaminated-by-mines-and-explosive-hazards-decreased-by-17-000-km-in-2024 | fetch_safe.py | OK, 3803 chars -> raw/rt_mod_17000.txt | 14.11.2026
+https://me.gov.ua/News/Print/fcbc082d-97d1-475c-b8d9-c2e96702a571?lang=uk-UA | fetch_safe.py | OK, 2425 chars -> raw/rt_me_fcbc.txt | 14.11.2026
+https://me.gov.ua/News/Print/905bff60-279e-4069-99e6-8154e74022f8?lang=uk-UA | fetch_safe.py | OK, 2538 chars -> raw/rt_me_905b.txt | 14.11.2026
+https://mod.gov.ua/en/news/in-2025-the-ministry-of-defence-of-ukraine-s-mine-clearance-units-cleared-over-66-200-hectares-of-liberated-territories | fetch_safe.py | OK, 3358 chars -> raw/rt_mod_2025_66200.txt | 14.11.2026
+https://www.mineactionreview.org/assets/downloads/Ukraine_Clearing_the_Mines_2025.pdf | curl + pdftotext | OK, PDF 20 pp. -> raw/rt_mar_ctm2025_ukraine.* | 14.11.2026
+https://www.mineactionreview.org/assets/downloads/Clearing_CMR_2026_Ukraine.pdf | curl + pdftotext | OK, PDF 32 pp. -> raw/rt_mar_cmr2026_ukraine.* | 14.11.2026
+https://unn.ua/en/news/abuse-in-humanitarian-demining-for-uah-129-million-law-enforcement-conducted-searches-and-are-identifying-those-involved | fetch_safe.py | OK, 7273 chars -> raw/rt_unn_129m.txt | 14.11.2026
+https://www.radiosvoboda.org/a/news-politsia-rozsliduvannia-koshty-humanitarne-rozminuvannia/33653717.html | fetch_safe.py | OK, 6180 chars -> raw/rt_svoboda_129m.txt | 14.11.2026
+https://www.kmu.gov.ua/news/humanitarne-rozminuvannia-pidsumky-2025-roku | fetch_safe.py | ЗАБЛОКОВАНЕ (Radware captcha) | 14.11.2026
+https://me.gov.ua/News/Print/e47188f1-9169-4a22-b752-50395131498e?lang=uk-UA | fetch_safe.py | OK, 2411 chars -> raw/rt_me_e471.txt | 14.11.2026
+https://epravda.com.ua/biznes/pravoohoronci-vikrili-fiktivne-rozminuvannya-zemel-na-desyatki-milyoniv-griven-822902/ | fetch_safe.py | OK 6815 chars, але лише навігація, тексту статті немає -> raw/rt_epravda_822902.txt | 14.11.2026
+# Researcher addendum (SC-45..SC-75), 14.11.2026; Chrome недоступний
+WebSearch: "gp.gov.ua гуманітарне розмінування 129 млн грн обшуки ч. 2 ст. 364 січень 2026" | WebSearch | публікації ОГП не знайдено; лише Радіо Свобода, УНН, Мінекономіки | 14.11.2026
+WebSearch (allowed_domains gp.gov.ua, npu.gov.ua): "Офіс Генерального прокурора зловживання під час закупівлі робіт з гуманітарного розмінування 129 млн грн" | WebSearch | знайдено лише інші справи (херсонська 6,3 млн; енергетичні тендери 129 млн) | 14.11.2026
+WebSearch: "гуманітарного розмінування" "129 млн грн" прокуратура обшуки 1,7 тис. гектарів | WebSearch | УНН, Радіо Свобода, ЕП; першоджерела ОГП немає | 14.11.2026
+https://gp.gov.ua/ua/search?query=розмінування | curl | 200, але результати формуються JS; посилань на новини про розмінування у HTML немає | 14.11.2026
+https://gp.gov.ua/ua/posts?search=розмінування | curl | 404 | 14.11.2026
+https://bit.ly/49G7iT7 (MAR CMR 2026, виноска 50) | curl -I | 301 -> https://uachd.gov.ua/en/gumanitarne-rozminuvannya-bez-manipulyacij-sho-stoyit-za-ciframi-programi-kompensaciyi/ | 14.11.2026
+https://uachd.gov.ua/gumanitarne-rozminuvannya-bez-manipulyacij-sho-stoyit-za-ciframi-programi-kompensaciyi/ | fetch_safe.py | OK, 44877 chars -> raw/rs2_uachd_bez_manipulyacij_uk.txt (стаття ЦГР 17.07.2025) | 14.11.2026
+https://uachd.gov.ua/en/gumanitarne-rozminuvannya-bez-manipulyacij-sho-stoyit-za-ciframi-programi-kompensaciyi/ | fetch_safe.py | OK, 47656 chars -> raw/rs2_uachd_bez_manipulyacij_en.txt | 14.11.2026
+https://unn.ua/en/news/abuse-in-humanitarian-demining-for-uah-129-million-law-enforcement-conducted-searches-and-are-identifying-those-involved | fetch_safe.py | OK, 7237 chars -> raw/rs2_unn_129m.txt (повторна звірка) | 14.11.2026
+https://www.radiosvoboda.org/a/news-politsia-rozsliduvannia-koshty-humanitarne-rozminuvannia/33653717.html | fetch_safe.py | OK, 6180 chars -> raw/rs2_svoboda_129m.txt (повторна звірка) | 14.11.2026
+https://the-monitor.org/country-profile/ukraine/funding-for-mine-action | fetch_safe.py | OK, 13484 chars -> raw/rs2_monitor_funding.txt (повторна звірка) | 14.11.2026
+https://me.gov.ua/News/Print/905bff60-279e-4069-99e6-8154e74022f8?lang=uk-UA | fetch_safe.py | OK, 2538 chars -> raw/rs2_me_905b.txt (27.06.2026) | 14.11.2026
+https://me.gov.ua/News/Print/fcbc082d-97d1-475c-b8d9-c2e96702a571?lang=uk-UA | fetch_safe.py | OK, 2425 chars -> raw/rs2_me_fcbc.txt (07.08.2025) | 14.11.2026
+https://me.gov.ua/News/Print/e47188f1-9169-4a22-b752-50395131498e?lang=uk-UA | fetch_safe.py | OK, 2411 chars -> raw/rs2_me_e471.txt (06.02.2026) | 14.11.2026
+https://mod.gov.ua/en/news/the-area-of-ukrainian-territories-potentially-contaminated-by-mines-and-explosive-hazards-decreased-by-17-000-km-in-2024 | fetch_safe.py | OK, 3803 chars -> raw/rs2_mod_17000.txt (21.12.2024) | 14.11.2026
+https://mod.gov.ua/en/news/in-2025-the-ministry-of-defence-of-ukraine-s-mine-clearance-units-cleared-over-66-200-hectares-of-liberated-territories | fetch_safe.py | OK, 3358 chars -> raw/rs2_mod_66200.txt (06.01.2026) | 14.11.2026
+https://euromaidanpress.com/?p=383900 | fetch_safe.py | OK, 7553 chars -> raw/rs2_emp_120km2.txt (30.12.2025) | 14.11.2026
+https://www.slovoidilo.ua/2026/10/22/infografika/bezpeka/pryxovana-zahroza-min-132-tysyachi-kvadratnyx-kilometriv-ukrayini-dosi-nebezpechni | fetch_safe.py | OK, 8161 chars -> raw/rs2_slovoidilo_132k.txt | 14.11.2026
+https://www.mineactionreview.org/assets/downloads/Ukraine_Clearing_the_Mines_2025.pdf | curl | 200, application/pdf, 356921 bytes (= raw/rt_mar_ctm2025_ukraine.pdf); цитати з витягів rt_* | 14.11.2026
+https://www.mineactionreview.org/assets/downloads/Clearing_CMR_2026_Ukraine.pdf | curl | 200, application/pdf, 530814 bytes (= raw/rt_mar_cmr2026_ukraine.pdf); цитати з витягу rt_* | 14.11.2026
+https://www.state.gov/wp-content/uploads/2025/12/Report-to-Congress-on-Unexploded-Ordnance-Clearance-in-Ukraine-Accessible-12.3.2025.pdf | не відкривався повторно; цитата з наявного raw/state_report_uxo_ukraine_2025-12.txt (рядок 5) | 14.11.2026
+https://zaxid.net/kerivnitsya_saperiv_ta_privatniy_pidpriyemets_rozikrali_6_mln_grn_na_rozminuvanni_hersonshhini_n1633953 | fetch_safe.py (Editor; Chrome недоступний) | OK, 9858 chars -> raw/ed2_zaxid.txt (02.04.2026); SC-76 | 14.11.2026
+https://recovery.win/novyny/ukrayina-otrymaye-shhe-bilsh-nizh-35-miljoniv-dolariv-na-rozminuvannya | fetch_safe.py (Editor) | OK, 8504 chars -> raw/ed2_recoverywin_35m.txt (13.06.2024) | 14.11.2026
+https://me.gov.ua/News/Print/786c93f9-f3e5-4781-a503-b6ede231f7ad?lang=uk-UA | WebSearch (пошук) -> fetch_safe.py (Editor) | OK, 2719 chars -> raw/ed2_me_786c93f9-....txt (12.06.2024 16:43); SC-77 | 14.11.2026
+https://me.gov.ua/News/Print/93cc36ca-2ede-4b7b-9548-4f1dcfca69df?lang=uk-UA | fetch_safe.py (Editor) | OK, 3771 chars -> raw/ed2_me_93cc36ca-....txt (12.06.2024 17:59) | 14.11.2026
+https://me.gov.ua/News/Print/05f58d00-8290-4f17-aff9-da11b6a3c360?lang=uk-UA | fetch_safe.py (Editor) | OK, 3603 chars -> raw/ed2_me_05f58d00-....txt (08.04.2025); нерелевантний | 14.11.2026
