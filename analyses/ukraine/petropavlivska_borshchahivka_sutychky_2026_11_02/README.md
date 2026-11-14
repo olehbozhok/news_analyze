@@ -3,7 +3,7 @@
 **Країна:** Україна
 **Період / горизонт:** 02.11.2026 — 13.11.2026 (контекст — 2025–2026; розділи 1–15 документа 01 — стан на 06.11.2026)
 **Станом на:** 14.11.2026
-**Статус:** ГОТОВО (01 — доповнення 14.11.2026: Verifier PASS WITH CORRECTIONS, виправлення A1–A4 внесено Editor 14.11.2026, targeted re-verification 14.11.2026 — PASS; попередні перевірки: Verifier PASS WITH CORRECTIONS 06.11.2026, F1–F11 виправлено. 02 — Verifier 14.11.2026 PASS WITH CORRECTIONS, виправлення F1–F7 внесено Editor 14.11.2026, targeted re-verification 14.11.2026 — PASS)
+**Статус:** ГОТОВО (browser addendum 14.11.2026 — звірки HUDOC/zakon.rada/ЄДРСР у браузері, виправлення B1–B4a внесено Editor 14.11.2026, фінальний re-check Verifier 14.11.2026 — PASS. Попередній стан — ГОТОВО: 01 — доповнення 14.11.2026, Verifier PASS WITH CORRECTIONS, виправлення A1–A4 внесено, targeted re-verification 14.11.2026 — PASS; 02 — Verifier PASS WITH CORRECTIONS, виправлення F1–F7 внесено, targeted re-verification 14.11.2026 — PASS)
 
 ---
 
@@ -16,11 +16,11 @@
 | Файл | Зміст | Статус |
 |---|---|---|
 | [`01_sutychky_petropavlivska_borshchahivka.md`](01_sutychky_petropavlivska_borshchahivka.md) | Основний документ: хронологія, учасники, наслідки, версії, провадження, steelman, vintage; розділ 16 — доповнення 14.11.2026 (події 07–13.11: перевірка офісу військового омбудсмана, стома Кулешова, 13 підозр, службове розслідування НГУ, методологічне застереження про тиск) | ГОТОВО |
-| [`02_zakonnist_utrymannia.md`](02_zakonnist_utrymannia.md) | Правова рамка утримання в ПТД: термін «пункт тимчасової дислокації», статути і наказ МОУ № 394 (гауптвахта/КТЗ) проти орендованого будинку, пересування мобілізованих без СЗЧ, медичне право і стома, кримінальні кваліфікації (гіпотези), ЄДРСР і судова практика, ст. 3 і 5 ЄКПЛ (практика ЄСПЛ — НЕПІДТВЕРДЖЕНЕ, HUDOC не відкрито), steelman | ГОТОВО |
+| [`02_zakonnist_utrymannia.md`](02_zakonnist_utrymannia.md) | Правова рамка утримання в ПТД: термін «пункт тимчасової дислокації», статути і наказ МОУ № 394 (гауптвахта/КТЗ) проти орендованого будинку, пересування мобілізованих без СЗЧ, медичне право і стома, кримінальні кваліфікації (гіпотези), ЄДРСР і судова практика, ст. 3 і 5 ЄКПЛ і критерій Engel (SC-96 — ПЕРВИННЕ, звірено в браузері 14.11.2026), steelman | ГОТОВО |
 | [`scope_contract.md`](scope_contract.md) | Scope contract документа 01 (AGENTS.md, 6.1) | — |
 | [`scope_contract_02.md`](scope_contract_02.md) | Scope contract документа 02 (питання, межі, контраргументи) | — |
 | [`sources/source_cards_01.md`](sources/source_cards_01.md) | Source cards документа 01 (SC-01 — SC-54 — основний документ; SC-55 — SC-65 — доповнення 14.11.2026: офіс військового омбудсмана [SC-55–SC-57], стома Кулешова [SC-58–SC-60], 13 підозр і службове розслідування НГУ [SC-61–SC-64], запобіжні заходи сьомого підозрюваного [SC-65]) | — |
-| [`sources/source_cards_02.md`](sources/source_cards_02.md) | Source cards документа 02 (SC-66 — SC-99: КК ст. 126, 127, 365, 425, 426-1, 426, 407 [SC-66–SC-72]; ЗУ «Про НГУ» ст. 1, 5, 15, 22, 23 [SC-73–SC-77]; СВЗСУ [SC-78–SC-82]; ДС ЗСУ [SC-83], [SC-84]; СГВС ЗСУ [SC-85–SC-87]; наказ МОУ № 394 [SC-88], [SC-89]; ЗУ 2011-XII ст. 11 [SC-90]; Конституція [SC-91], [SC-92]; ЄКПЛ [SC-93–SC-95]; Engel — НЕПІДТВЕРДЖЕНЕ [SC-96]; судова практика [SC-97–SC-99]) | — |
+| [`sources/source_cards_02.md`](sources/source_cards_02.md) | Source cards документа 02 (SC-66 — SC-100: КК ст. 126, 127, 365, 425, 426-1, 426, 407 [SC-66–SC-72]; ЗУ «Про НГУ» ст. 1, 5, 15, 22, 23 [SC-73–SC-77]; СВЗСУ [SC-78–SC-82]; ДС ЗСУ [SC-83], [SC-84]; СГВС ЗСУ [SC-85–SC-87]; наказ МОУ № 394 [SC-88], [SC-89]; ЗУ 2011-XII ст. 11 [SC-90]; Конституція [SC-91], [SC-92]; ЄКПЛ [SC-93–SC-95]; Engel — ПЕРВИННЕ, звірено в браузері 14.11.2026 [SC-96]; судова практика [SC-97–SC-99]; наказ МВС № 505 z1168-25 [SC-100]) | — |
 | [`sources/verification_01_sutychky_petropavlivska_borshchahivka.md`](sources/verification_01_sutychky_petropavlivska_borshchahivka.md) | Звіт Verifier: PASS WITH CORRECTIONS; F1–F11 виправлено 06.11.2026 (F9 — після зауваження користувача) | ГОТОВО |
 | [`sources/agent_red_team_raw.md`](sources/agent_red_team_raw.md) | Сирі матеріали red team; не редагуються | — |
 | [`sources/verification_notes.md`](sources/verification_notes.md) | Повторювані класи помилок за звітом Verifier | — |
