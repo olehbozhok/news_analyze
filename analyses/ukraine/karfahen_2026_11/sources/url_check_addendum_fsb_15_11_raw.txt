@@ -1,0 +1,30 @@
+Журнал URL доповнення 15.11.2026 до 02_khimprom.md (розділ 9.1; картки SC-75–SC-77).
+Автор доповнення: головний агент (Writer-прохід). Інструменти: web_extractor fetch_page/find_in_page (MCP), WebSearch, yt2text.
+
+Транскрипт відео (поштовх доповнення):
+[OK] https://youtu.be/Ov521MB8kis — «Є ПИТАННЯ» (Трегубова), 13.11.2026; yt2text, auto_subs, 1085 сегментів; транскрипт D:/news/transcripts/Ov521MB8kis/ (поза репозиторієм)
+
+[OK, ПЕРВИННІЙ ТЕКСТ ВІДКРИТО ПОВНІСТЮ] https://zn.ua/ukr/anticorruption/karfahen-2-shcho-nam-teper-robiti-znajuchi-shcho-vlada-perebuvaje-pid-kontrolem-kriminalu-ta-fsb.html
+  fetch_page render=auto: 30702 знаків (markdown, обрізано, cursor); fetch_page render=static: перші 2500; find_in_page: повний текст 31114 знаків, пошук «Ведернікова» у body — 0 (автор лише в метаданих author + посилання в listing_links); published json-ld 2026-11-12T17:27+02:00; author (метадані): Інна Ведернікова
+  → SC-75 (версія ФСБ), SC-76 (збір на заставу)
+
+[OK] https://www.ukrinform.ua/rubric-society/4183787-ssa-dopomogli-ukraini-vikriti-narkokartel-himprom-vigivskij.html
+  fetch_page render=static: повний текст 2891 знак; published json-ld 2026-11-11T14:47+02:00; першоджерело заяви — пост Facebook (reel 1622544985459680) — НЕ відкривався, зафіксовано в caveat SC-77
+  → SC-77 (DEA/Вигівський)
+
+Пошук новин за 30 днів (16.10–15.11.2026), WebSearch:
+  «Хімпром»/U420 листопад 2026: NPU 05.11 (вже в картках), Укрінформ 11.11 (→ SC-77), mezha.net 87 груп (дублює статистику Вигівського, окремої картки не потребує), публікації 15.11 про «інсайди» — не відкривалися, до справи U420 нового не дають
+  Пошук URL статті ZN.UA: WebSearch → URL знайдено, потім відкрито напряму (вище)
+
+sc_links.py --fix: 02_khimprom.md, source_cards_02.md оновлено; --check: 0 помилок
+
+Доповнення 15.11.2026 (друге коло Editor): повторна перевірка ЄДРСР за п. 20 чекліста (m5 Verifier).
+[OK] https://reyestr.court.gov.ua/?SearchNumber=461%2F2248%2F26 — browsermcp (Chrome): форма «Справа №» = 461/2248/26; знайдено 22 рішення (було 15 на 06.11); 7 нових ухвал 04-11.11.2026: 141327394 (04.11), 141327408 (05.11), 141327394+141404002, 141403921, 141404016, 141418948, 141421076 (11.11)
+[OK] https://reyestr.court.gov.ua/Review/141327394 — browsermcp: відмова у скасуванні арешту авто JEEP RENEGADE, речовий доказ → SC-80
+[OK] https://reyestr.court.gov.ua/Review/141327408 — browsermcp: зменшення застави 166 400 -> 149 760 грн → SC-79
+[OK] https://reyestr.court.gov.ua/Review/141404002 — browsermcp: тримання під вартою 60 діб до 08.01.2027, без застави → SC-78
+[OK] https://reyestr.court.gov.ua/Review/141404016 — browsermcp: те саме рішення, формулювання «продовження» варти → SC-78
+[OK] https://reyestr.court.gov.ua/Review/141418948 — browsermcp: те саме рішення → SC-78
+[OK] https://reyestr.court.gov.ua/Review/141421076 — browsermcp: те саме рішення; мотивування — епізод 19.05.2026, кратом (Mitragyna speciоsa), Нова пошта Дніпро → SC-78
+[OK] https://reyestr.court.gov.ua/Review/141403921 — browsermcp: арешт майна, вилученого 10.11.2026 при обшуках; повний перелік майна не переглянуто → SC-81
+Повторний пошук за ЄРДР 12025140000001227 у вікні 07.10-15.11 окремо НЕ проводився — зафіксовано в 5.4 як обмеження.

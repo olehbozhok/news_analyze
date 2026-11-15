@@ -1,0 +1,23 @@
+Журнал URL Verifier: targeted addendum до 02_khimprom.md (доповнення 15.11.2026, розділ 9.1; картки SC-75-SC-77).
+Дата: 15.11.2026. Інструменти: web_extractor (MCP fetch_page/find_in_page, один запит із вбудованим браузером), Bash curl, WebSearch. Інструменти browsermcp (chrome_*) у сесії не завантажені; власне вікно Chrome не відкривалося.
+
+[OK] https://zn.ua/ukr/anticorruption/karfahen-2-shcho-nam-teper-robiti-znajuchi-shcho-vlada-perebuvaje-pid-kontrolem-kriminalu-ta-fsb.html
+  web_extractor fetch_page render=static: 200; повний текст 30702 знаків (перший фетч, truncated view); title і published json-ld 2026-11-12T17:27+02:00 збігаються з картками SC-75/SC-76
+  Три цитати SC-75 і цитата SC-76 знайдені дослівно в body (перевірено читанням повного тексту)
+  curl (HTTP 200, 223523 байт): json-ld author = "Інна Ведернікова" (Person, /ukr/author/inna__vedernikova2); 5 входжень імені в HTML - усі в метаданих/byline-елементах (json-ld, alt фото, посилання на автора, support-author), у параграфах статті імені немає
+  web_extractor fetch_page render=static (другий фетч, listing links): 36 посилань; підтверджені супутні матеріали: «Ворожа спецоперація» Дуки, Буркін «тисячі таких, як він», Буркін «до 370 млн доларів на рік», реакція Зеленського, Єврокомісія щодо тиску на НАБУ/САП - рядок 12-14.11 у розділі 15 документа відповідає дійсності
+  → SC-75, SC-76
+
+[OK] https://www.ukrinform.ua/rubric-society/4183787-ssa-dopomogli-ukraini-vikriti-narkokartel-himprom-vigivskij.html
+  web_extractor fetch_page render=static: 200; повний текст 2891 знак (збігається з журналом доповнення); published json-ld 2026-11-11T14:47+02:00
+  Цитата Вигівського знайдена дослівно (включно з дефісом і лапками “Хімпром”); первинне джерело - пост Facebook (reel 1622544985459680), у статті є гіперпосилання
+  → SC-77
+
+[OK] https://www.pravda.com.ua/news/2026/11/08/8061813/
+  web_extractor find_in_page за «готівк» (ignore_case): 0 збігів; повний текст 2559 знаків; published 2026-11-08T14:34 (json-ld); title «У регіонах зі співробітників СБУ збирають по 50-150 тисяч на заставу Дуці - джерела»
+  Підтверджує негативне твердження розділу 9.1: деталі «обіцяють повернути їх готівкою» в УП від 08.11.2026 не було (п. 22/27 чекліста - за повним текстом)
+
+[Search] WebSearch «Хімпром ФСБ заява НАБУ СБУ ОГП листопад 2026» (15.11.2026)
+  Офіційних заяв НАБУ/СБУ/ОГП про зв'язок «Хімпрому» з ФСБ не знайдено; найближчий новий елемент - DSnews 14.11.2026 «ФСБ, наркокартель "Хімпром" та НАБУ: хто стоїть за інформаційними атаками на СБУ» (медійна публікація, не офіційна заява; не суперечить розділу 9.1)
+
+[Check] python -I scripts/sc_links.py --check analyses/ukraine/karfahen_2026_11 -> 0 помилок, 0 попереджень (вивод у консолі - cp1251; зміст: «Перевірка: 0 помилок, 0 попереджень»)

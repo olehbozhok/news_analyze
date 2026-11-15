@@ -25,7 +25,7 @@
 
 | Файл | Зміст | Автор |
 |---|---|---|
-| [`source_cards_02.md`](source_cards_02.md) | Картки до [`../02_khimprom.md`](../02_khimprom.md): SC-01–SC-37 (Researcher), SC-38–SC-48 (Writer), SC-49–SC-74 (Editor; SC-58–SC-66 — ухвали ЄДРСР і пошук за справою № 461/2248/26, друге коло; SC-67–SC-74 — ухвали 14.04.2026 (справа № 461/2715/26) і 11.06.2026, пошук за ЄРДР 12025140000001227, господарська справа № 914/2329/26, третє коло) | Researcher, Writer, Editor |
+| [`source_cards_02.md`](source_cards_02.md) | Картки до [`../02_khimprom.md`](../02_khimprom.md): SC-01–SC-37 (Researcher), SC-38–SC-48 (Writer), SC-49–SC-74 (Editor; SC-58–SC-66 — ухвали ЄДРСР і пошук за справою № 461/2248/26, друге коло; SC-67–SC-74 — ухвали 14.04.2026 (справа № 461/2715/26) і 11.06.2026, пошук за ЄРДР 12025140000001227, господарська справа № 914/2329/26, третє коло), SC-75–SC-77 (доповнення 15.11.2026: ZN.UA «Карфаген-2» — версія ФСБ і збір на заставу; Укрінформ — DEA і Вигівський), SC-78–SC-81 (доповнення 15.11.2026: нові ухвали ЄДРСР 04–11.11.2026 за справою № 461/2248/26) | Researcher, Writer, Editor |
 | [`research_brief_khimprom.md`](research_brief_khimprom.md) | Research brief | Researcher |
 | [`agent_researcher_khimprom_raw.md`](agent_researcher_khimprom_raw.md) | Сирі нотатки Researcher | Researcher |
 | [`agent_red_team_khimprom_raw.md`](agent_red_team_khimprom_raw.md) | Adversarial check (red team); RT-джерела без картки в документі не цитуються | Red team |
@@ -33,6 +33,7 @@
 | [`url_check_red_team_khimprom_raw.txt`](url_check_red_team_khimprom_raw.txt) | Журнал URL red team | Red team |
 | [`url_check_writer_khimprom_raw.txt`](url_check_writer_khimprom_raw.txt) | Журнал URL Writer (нові картки, пошук новин за 30 днів) | Writer |
 | [`url_check_editor_khimprom_raw.txt`](url_check_editor_khimprom_raw.txt) | Журнал URL Editor (нові картки SC-49–SC-74, доповнені цитати, пошук за m10, ЄДРСР за N2 і n5/n6) | Editor |
+| [`url_check_addendum_fsb_15_11_raw.txt`](url_check_addendum_fsb_15_11_raw.txt) | Журнал URL доповнення 15.11.2026 до `02` (розділ 9.1 і 5.4): ZN.UA «Карфаген-2», Укрінформ/DEA, транскрипт «Є ПИТАННЯ» 13.11.2026, повторний пошук ЄДРСР (7 нових ухвал 04–11.11.2026) | Editor |
 | [`verification_02_khimprom.md`](verification_02_khimprom.md) | Звіт Verifier до `02`: PASS WITH CORRECTIONS (0 CRITICAL, 3 MAJOR, 10 MINOR), addendum 06.11.2026 (N1, N2 MAJOR; n3, n4 MINOR), addendum 2 (n5–n8 MINOR), addendum 3, 07.11.2026 (PASS WITH CORRECTIONS, n9–n11 MINOR, виправлено), таблиці «Статус виправлень» | Verifier, Editor |
 | [`url_check_verifier_khimprom_raw.txt`](url_check_verifier_khimprom_raw.txt) | Журнал URL Verifier | Verifier |
 
