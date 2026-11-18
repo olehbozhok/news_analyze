@@ -1,0 +1,46 @@
+Журнал перевірки URL — Researcher, справа «Кальміус» (addendum до 01_zakhyst_enerhetyky_rozkradannia.md)
+Дата: 18.11.2026. Агент: Researcher (окремий субагент).
+Інструменти: chrome_* у цьому середовищі НЕДОСТУПНІ (зафіксовано). Основний — MCP web_extractor (fetch_page, find_in_page, check_urls), fetcher=browser або http; запасні — WebSearch (пошук), curl (тільки технічні перевірки доступності).
+
+1. https://nashigroshi.org/2026/11/08/top-tendery-tyzhnia-naybilshi-pidriady-po-ukraini-zabrav-kalmius-z-otochennia-i-fedorova/
+   Інструмент: web_extractor fetch_page (browser). Результат: 200, повний текст 6123 знаків, датується json_ld 2026-11-08. Відкрито і звірено повністю.
+2. https://nashigroshi.org/2026/09/28/top-tendery-tyzhnia-pislia-pryznachennia-fedorova-holovoiu-derzhvidnovlennia-kalmius-tut-zhe-otrymav-vid-yoho-sluzhb-2-1-mlrd/
+   Інструмент: web_extractor fetch_page (browser). Результат: 200, повний текст 10316 знаків, 2026-09-28. Відкрито повністю.
+3. https://nashigroshi.org/2026/10/30/hrupa-ivana-fedorova-kryminalne-dosie/
+   Інструмент: web_extractor fetch_page (browser). Результат: 200, повний текст 10635 знаків, 2026-10-30. Відкрито повністю.
+4. https://www.rbc.ua/rus/news/milyardni-pidryadi-ta-biznes-zv-yazki-k-kompaniyi-1793027195.html
+   Інструмент: web_extractor fetch_page (browser). Результат: 200, 18605 знаків, прочитано 18000 (хвіст ~600 знаків не прочитано — обрізана службова частина), 2026-10-27. Фактично повністю.
+5. https://restoration.gov.ua/blog/v-agentstvi-vidnovlennya-predstavyly-novogo-kerivnyka/
+   Інструмент: web_extractor fetch_page (browser). Результат: 200, повний текст 1697 знаків. ПЕРВИННЕ (сайт відомства).
+6. https://368.media/2025/05/30/nardep-minko-vikoristav-firmu-ustanovnika-saun-dlya-peremogi-v-tenderah-na-660-mln-griven/
+   Інструмент: web_extractor fetch_page, render=browser — помилка network; повторно render=static (http) — 200, повний текст 4162 знаків, 2025-05-30.
+7. https://prozorro.gov.ua/uk/tender/UA-2026-11-04-015068-a
+   Інструмент: web_extractor fetch_page (browser). Результат: empty_render — SPA, тексту немає. Повторні спроби: api.prozorro.gov.ua (curl з пісочниці — DNS/порожньо; check_urls — HTTP 200 але JSON, витяг не підтримується). Тендер первинно НЕ відкрито; деталі підтверджені вторинно («Наші гроші» 08.11, YouControl, antikorexpert).
+8. https://prozorro.gov.ua/uk/tender/UA-2026-11-05-014586-a
+   Інструмент: web_extractor fetch_page (browser). Результат: 200, але content thin — SPA-заглушка «версія браузера застаріла». Тендер первинно НЕ відкрито; підтверджено вторинно. WebFetch (запасний) — теж лише SPA-оболонка.
+9. https://opendatabot.ua/tender/UA-2026-11-04-015068-a і .../UA-2026-11-05-014586-a
+   Інструмент: check_urls (browser) — 403 Cloudflare; render=static — 404 (сторінки такого формату немає). СТАТУС: ЗАБЛОКОВАНЕ.
+10. https://youcontrol.com.ua/contractor/?id=76227555 (редирект на https://youcontrol.com.ua/catalog/company_details/45842134/)
+    Інструмент: web_extractor fetch_page (browser). Результат: 200, повний текст 9805 знаків, дані оновлені 18.11.2026. curl з пісочниці — 403 (Cloudflare), браузерний рендер web_extractor пройшов.
+11. https://zakon.rada.gov.ua/go/393-2026-п (393-2026-П)
+    Інструмент: web_extractor fetch_page, render=static — 403; render=browser — 200, метадані акта; повний текст — /print версія ( див. п.12).
+12. https://zakon.rada.gov.ua/laws/show/393-2026-п/print
+    Інструмент: web_extractor fetch_page (browser). Результат: 200, повний текст 59180 знаків (прочитано 16000 + find_in_page за повним текстом 71281 знаків text-версії: «закупівлі» — лише 2 збіги). ПЕРВИННЕ.
+13. https://zakon.rada.gov.ua/laws/show/445-2026-п/print
+    Інструмент: web_extractor fetch_page (browser). Результат: 200, повний текст 4527 знаків. ПЕРВИННЕ.
+14. https://suspilne.media/1313997-firmi-novacki-j-figurant-spravi-pro-fortifikacii-ak-u-zaporizzi-rozdilili-milard-na-ukritta-dla-ditej/
+    Інструмент: web_extractor fetch_page (browser). Результат: 200, 34074 знаків, прочитано перші 12000 (лише частково; саме ця частина використана). 2026-05-22.
+15. https://368.media/2026/11/18/groshi-lyublyat-tyshu-konsensus-vijny-fedorova-ta-shkilya/
+    Інструмент: web_extractor fetch_page render=browser — timeout; повторно render=static — 200, повний текст 3108 знаків, 2026-11-18.
+16. https://antikorexpert.com/ua/news/kalmius-828-mln-ukryttia-zaporizhzhia-fedorov-bez-tendera
+    Інструмент: web_extractor fetch_page, render=static (http). Результат: 200, повний текст 4841 знаків, 2026-11-12.
+17. https://tsn.ua/politika/za-pivtora-roky-kompaniyi-ivana-fedorova-otrymaly-vid-derzavy-56-mlrd-hrn-rozsliduvannia-nashykh-hroshey-3197343.html
+    Інструмент: web_extractor fetch_page, render=static (http). Результат: 200, повний текст 2666 знаків, 2026-10-22.
+18. https://www.rbc.ua/rus/news/kompaniya-otochennya-novogo-golovi-derzhvidnovlennya-1792689596.html
+    Інструмент: web_extractor fetch_page (browser). Результат: 200, повний текст 3634 знаків, 2026-10-22.
+19. https://reyestr.court.gov.ua/Review/131343503
+    Інструмент: web_extractor fetch_page (browser) + find_in_page («Морена») за повним текстом 29438 знаків. Результат: 200, ухвала Київського апеляційного суду від 29.09.2025, справа №761/33804/25. ПЕРВИННЕ.
+20. https://api.prozorro.gov.ua/api/2.5/tenders?search=UA-2026-11-04-015068-a
+    Інструмент: check_urls (static) — HTTP 200, content-type application/json, витяг не підтримується інструментом; curl з пісочниці — запит ігнорує параметр search (віддає ліст останніх тендерів). Отримати tenderID->uuid не вдалося.
+Технічні (curl, статус-коди): nashigroshi.org 200; opendatabot.ua 403; youcontrol.com.ua 403; court.opendatabot.ua 403; search.prozorro.gov.ua — DNS не розв'язується; public-api.openprocurement.org — DNS не розв'язується; api.public.gov.ua — DNS не розв'язується.
+WebSearch (запасний) використано для пошуку: номери тендерів, постанова №393/№445, коментарі замовника, TSN-версія. Результати WebSearch — AI-резюме, не цитуються в картках напряму; все, що потрапило в картки, перевірено відкриттям відповідних сторінок (пп. 1-19).
