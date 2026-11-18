@@ -451,6 +451,13 @@ def mentions(idx: dict[str, tuple[str, str]]) -> dict[str, dict[Path, tuple[str,
     }
     for f in person_docs():
         text = f.read_text(encoding="utf-8")
+        if "persons" in f.parts:
+            # у картках персон згенерований блок «Згадки в аналізах» не сканувати:
+            # він містить посилання на інші картки, і без обрізання кожен прогін
+            # --persons додає нові «згадки» зі згенерованого ж блоку (цикл дублікатів)
+            pos = text.find(P_MARKER)
+            if pos != -1:
+                text = text[:pos]
         title = _doc_title(text)
         head_counts: dict[str, int] = {}
         cur_anchor = ""

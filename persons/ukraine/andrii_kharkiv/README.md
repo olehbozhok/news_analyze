@@ -26,22 +26,3 @@
 ## Питання / НЕПІДТВЕРДЖЕНЕ
 
 1. Дата і обставини загибелі — у джерелі (УНІАН) не деталізовані.
-
-<!-- persons-backlinks: згенеровано scripts/sc_links.py --persons, не редагувати -->
-
-## Згадки в аналізах
-
-- [persons/ukraine/bohdan_krotevych/README.md](../bohdan_krotevych/README.md)
-  Богдан Кротевич («Тавр»)
-  - [- **persons/ukraine/andriikharkiv/README.md**](../bohdan_krotevych/README.md#згадки-в-аналізах)
-  - [- **- Богдан Кротевич — службовий зв'язок: спільна робота над плануванням оборони Маріуполя (за Кротевичем). → 02/SC-09**](../bohdan_krotevych/README.md#згадки-в-аналізах)
-  - [- **- persons/ukraine/bohdankrotevych/README.md**](../bohdan_krotevych/README.md#згадки-в-аналізах)
-  - [- **- - persons/ukraine/andriikharkiv/README.md**](../bohdan_krotevych/README.md#згадки-в-аналізах)
-  - [- **- - - Богдан Кротевич — службовий зв'язок: спільна робота над плануванням оборони Маріуполя (за Кротевичем). → 02/SC-09**](../bohdan_krotevych/README.md#згадки-в-аналізах)
-- [persons/ukraine/denys_prokopenko/README.md](../denys_prokopenko/README.md)
-  Денис Прокопенко («Редіс»)
-  - [- **persons/ukraine/andriikharkiv/README.md**](../denys_prokopenko/README.md#згадки-в-аналізах)
-  - [- **- Денис Прокопенко — службовий зв'язок: один штаб «Азову» в обороні Маріуполя. → 02/SC-09**](../denys_prokopenko/README.md#згадки-в-аналізах)
-  - [- **- persons/ukraine/denysprokopenko/README.md**](../denys_prokopenko/README.md#згадки-в-аналізах)
-  - [- **- - persons/ukraine/andriikharkiv/README.md**](../denys_prokopenko/README.md#згадки-в-аналізах)
-  - [- **- - - Денис Прокопенко — службовий зв'язок: один штаб «Азову» в обороні Маріуполя. → 02/SC-09**](../denys_prokopenko/README.md#згадки-в-аналізах)

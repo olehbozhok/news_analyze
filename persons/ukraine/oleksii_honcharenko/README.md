@@ -30,6 +30,9 @@
 
 ## Згадки в аналізах
 
+- [analyses/ukraine/karfahen_2026_11/01_karfahen.md](../../../analyses/ukraine/karfahen_2026_11/01_karfahen.md)
+  Операція «Карфаген»: хабарі, кол-центри і наркотрафік
+  - [… свідченнями на засіданні Тимчасової слідчої комісії Верховної Ради, яку очолює **Олексій Гончаренко** SC-108, SC-109. Час прибуття Дуки на засідання у source cards не покритий — статус НЕПІДТВЕРДЖЕНЕ (без картки): у текстах чотирьох реда …](../../../analyses/ukraine/karfahen_2026_11/01_karfahen.md#710-свідчення-дуки-на-тск-верховної-ради-18112026-знайомство-з-осіповим-і-роль-малюка-доповнення-18112026)
 - [analyses/ukraine/petropavlivska_borshchahivka_sutychky_2026_11_02/01_sutychky_petropavlivska_borshchahivka.md](../../../analyses/ukraine/petropavlivska_borshchahivka_sutychky_2026_11_02/01_sutychky_petropavlivska_borshchahivka.md)
   Сутички в Петропавлівській Борщагівці 2 листопада 2026: що відомо станом на 6 листопада
   - [… участі в обговоренні, представник ДБР також був відсутній SC-105. Голова ТСК **Олексій Гончаренко** підсумував стан перевірки на 13.11: «є пояснення... деяких з них, які говорять, що їх там били. Є інші, більшість, які говорять, що їх там …](../../../analyses/ukraine/petropavlivska_borshchahivka_sutychky_2026_11_02/01_sutychky_petropavlivska_borshchahivka.md#172-нові-деталі-з-запису-засідання-тск-вру-13112026)
