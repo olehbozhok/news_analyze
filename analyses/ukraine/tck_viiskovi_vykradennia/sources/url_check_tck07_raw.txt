@@ -1,0 +1,126 @@
+Журнал перевірки URL — Researcher tck07, розділ 07 (тема tck_viiskovi_vykradennia)
+Дата: 18.11.2026
+Примітка: інструменти chrome_* у середовищі відсутні. Браузер Chrome користувача доступний
+через browsermcp (mcp__browsermcp__browser) — використано для ЄДРСР. Основний канал —
+MCP web_extractor (fetch_page; render=browser для Facebook/динамічних сторінок, static/auto
+для медіа). WebSearch — запасний (пошук без відкриття сторінки; позначено "search").
+Результати перевірено вручну; "OK (повністю)" = текст сторінки прочитано повністю,
+"OK (частково)" = прочитано частину, вказано обсяг.
+
+# Епізод 1 (Миронов / А3211)
+1. https://www.facebook.com/alex.lupanosoff/posts/28905561092448681
+   інструмент: web_extractor fetch_page (render=browser) | результат: 200 OK (повністю) —
+   дослівна цитата Миронова | дата відкриття: 18.11.2026
+2. https://www.facebook.com/george.far.56/videos/2379708972851988
+   інструмент: web_extractor check_urls | результат: 200 OK — заголовок з дослівною цитатою | 18.11.2026
+3. https://www.facebook.com/yuriy.oleksiyovich/videos/1802356164364676
+   інструмент: WebSearch (не відкривався напряму) | результат: знайдено пошуком; повторна
+   публікація того самого відео | 18.11.2026
+4. https://www.facebook.com/61596189363077/posts/122108988027539645
+   інструмент: web_extractor fetch_page (render=browser) | результат: 200 OK (повністю,
+   редірект на /videos/...) — пост «Актуальної Правди» | 18.11.2026
+5. https://www.facebook.com/100075641468292/videos/1332169118845700
+   інструмент: web_extractor fetch_page (render=browser) | результат: 200 OK (повністю) —
+   пост Стахіва 21.05.2026 з листом Миронова (944/1660/26, застава 266 240) | 18.11.2026
+6. https://www.facebook.com/100075641468292/posts/966707175860656
+   інструмент: web_extractor fetch_page (render=browser) | результат: 200 OK (повністю) —
+   пост Стахіва 25.03.2026 (апеляція 26.03, Шептицький міськсуд, суддя Отчак) | 18.11.2026
+7. https://www.facebook.com/groups/1016867808370270/posts/29354317554198583
+   інструмент: WebSearch (не відкривався) | результат: лише згадка (КОРОСТЕНЬ-INFO) | 18.11.2026
+8. https://uk.wikipedia.org/wiki/355-й_навчальний_механізований_полк_(Україна)
+   інструмент: web_extractor fetch_page (static) | результат: 200 OK (повністю) — в/ч А3211,
+   Старичі, 184-й навчальний центр | 18.11.2026
+9. https://reyestr.court.gov.ua/search?Query=Миронов (+ параметри: «А3211 Миронов»,
+   «А3211», справа № 944/1660/26 у полі «Справа №»)
+   інструмент: browsermcp (Chrome) — snapshot/find/get text; також web_extractor fetch_page
+   (browser) — без очікування асинхронного результату
+   результат: 200 OK; «А3211» → 275 документів; «А3211 Миронов» → «На Ваш запит не знайдено
+   жодного документа»; справа № 944/1660/26 → 0 документів; «Миронов» → 0 документів
+   | 18.11.2026
+10. https://court.opendatabot.ua/search?query=Миронов Шептицький
+    інструмент: web_extractor fetch_page (browser) | результат: ЗАБЛОКОВАНЕ (403);
+    повтор render=static не виконано — перейшли на прямий пошук у ЄДРСР | 18.11.2026
+11. https://zaxid.net/viyskova_chastina_na_lvivshhini_pereplatila_18_mln_grn_na_zakupivli_generatoriv_n1640088
+    інструмент: web_extractor fetch_page (static) | результат: 200 OK (повністю) —
+    ДБР, підозра офіцерці А3211, 18,6 млн грн | 18.11.2026
+12. https://www.pravda.com.ua/news/2026/11/05/8061403/
+    інструмент: web_extractor check_urls + fetch_page (browser, з кешу) | результат:
+    200 OK (частково: 3500/3787) — Стахів, СЗЧ 05.11.2026 | 18.11.2026
+13. https://www.pravda.com.ua/news/2026/11/01/8060760/
+    інструмент: web_extractor fetch_page (static) | результат: 200 OK (повністю) —
+    Стахів мобілізований (речник Оперативного командування «Захід») | 18.11.2026
+14. Ліди (не відкривалися, зі сніпетів WebSearch; у картки не внесені):
+    - https://www.facebook.com/sprynskyi/videos/1370614045228609
+    - https://www.facebook.com/sprynskyivan/videos/1841304163969005
+    - https://www.facebook.com/sprynskyi/posts/4378631252390113
+    інструмент: WebSearch | результат: сніпети про катування в А3211/ДБР | 18.11.2026
+
+# Епізод 2 (Ковальський / Печерський ТЦК, Київ)
+15. https://www.youtube.com/watch?v=vnCpLWjCA5E
+    інструмент: yt2text (D:\dev\youtube_tanscriber\yt2text.cmd, engine auto_subs) + читання
+    meta.json і transcript.md | результат: OK — відео «ПОЛІЦІЯ "ЗАМІТАЄ СЛІДИ" СТРІЛЯНИНИ В
+    ТЦК КИЄВА», канал «Дмитро Гнап», 2026-11-17, 592 с., 219 сегментів; транскрипт прочитано
+    повністю; слово «Ковель» відсутнє | 18.11.2026
+16. https://www.pravda.com.ua/news/2026/10/20/8058957
+    інструмент: web_extractor fetch_page (static) | результат: 200 OK (повністю) —
+    версія поліції, підозра | 18.11.2026
+17. https://www.slidstvo.info/news/slidstvo-info-diznalosia-podrobytsi-strilianyny-u-pecherskomu-ttsk-politseyski-ta-viyskovi-poraneni-pidozriuvanyy-pobytyy
+    інструмент: web_extractor fetch_page (static) + check_urls | результат: 200 OK
+    (повністю) — Ковальський, Осика, Трубніков, ОГП | 18.11.2026
+18. https://bastion.tv/napad-chi-neobhidna-oborona-dvi-versiyi-strilyanini-v-tck_n84883
+    інструмент: web_extractor fetch_page (static) | результат: 200 OK (повністю) —
+    дві версії, зникнення $200 тис., Учайкін | 18.11.2026
+19. https://kyivvlada.com.ua/news/pidozryuvanyj-u-strilyanyni-v-pecherskomu-tczk-kyyeva-perebuvaye-u-likarni-zmi
+    інструмент: web_extractor check_urls + fetch_page (browser, з кешу) | результат: 200 OK
+    (повністю) — ЗЧМТ/струс/перелом носа; суд — «Печерський райсуд» (розбіжність зі Слідство.Інфо) | 18.11.2026
+20. https://novosti-n.org/ua/ukraine/Strilyanyna-v-kyyivskomu-TCZK-pidozryuvanyj-potrapyv-do-likarni--345032
+    інструмент: WebSearch (не відкривався) | результат: сніпет | 18.11.2026
+21. https://kovel.media/za-faktom-inczydentu-v-koveli-bilya-tczk-policziya-vidkryla-dva-kryminalnyh-provadzhennya
+    інструмент: WebSearch (не відкривався) | результат: сніпет — інший епізод (08.2024),
+    до тези scope не належить | 18.11.2026
+
+# Епізод 3 (Веніславський)
+22. https://www.rbc.ua/rus/news/konflikti-ttsk-cherez-busifikatsiyu-praktichno-1794924618.html
+    інструмент: web_extractor fetch_page (static) + read_more | результат: 200 OK
+    (частково: 12000/34633; розділ про бусифікацію — у непрочитаному хвості) —
+    інтерв'ю Веніславського 18.11.2026 | 18.11.2026
+23. https://tsn.ua/ukrayina/busyfikatsiia-v-ukrayini-mayze-znykla-venislavskyy-zrobyv-huchnu-zaiavu-pro-ttsk-3220155.html
+    інструмент: web_extractor fetch_page (static) | результат: 200 OK (повністю) —
+    дослівна цитата | 18.11.2026
+24. https://ua.korrespondent.net/ukraine/4929817-nardep-pro-konflikty-z-ttsk-busyfikatsiia-v-ukraini-maizhe-znykla
+    інструмент: web_extractor check_urls | результат: 200 OK (текст не читано; only метадані) | 18.11.2026
+25. https://korabelov.info/2026/11/638108/konflikty-cherez-busyfikatsiiu-majzhe-znykly-stverdzhuie-venislavskyj
+    інструмент: WebSearch (не відкривався) | результат: сніпет (згадка квітневої заяви) | 18.11.2026
+
+# Епізод 4 (Лубінець)
+26. https://www.pravda.com.ua/columns/2026/07/17/8044570/
+    інструмент: web_extractor fetch_page (static) | результат: 200 OK (частково:
+    12000/13962; хвіст не дочитано — відзначено у брифі) — колонка Лубінця 17.07.2026 | 18.11.2026
+27. https://www.pravda.com.ua/news/2026/11/07/8061724/
+    інструмент: web_extractor fetch_page (static) | результат: 200 OK (повністю) —
+    Лубінець, смерті після ТЦК, Черкащина | 18.11.2026
+28. https://t.me/dmytro_lubinetzs/13029
+    інструмент: — | результат: не відкривався (первинний тг-пост Лубінця; джерело УП) | 18.11.2026
+29. https://ombudsman.gov.ua/news_details/ombudsman-ukrayini-dmitro-lubinec-shchodo-situaciyi-u-bilocerkivskomu-rajonnomu-tck-ta-sp
+    інструмент: web_extractor check_urls | результат: 200 OK (текст не читано; метадані) | 18.11.2026
+30. https://www.ombudsman.gov.ua/news_details/vid-18-do-6-127-kilkist-zvernen-do-ofisu-ombudsmana-shchodo-dij-okremih-predstavnikiv-tck-ta-sp-zrosla-u-333-razi-chomu-sistema-primusu-bilshe-ne-pracyuye
+    інструмент: web_extractor check_urls | результат: 200 OK (текст не читано) | 18.11.2026
+31. https://www.pravda.com.ua/news/2026/04/04/8028753
+    інструмент: web_extractor fetch_page (static) | результат: 200 OK (повністю) —
+    Лубінець «місця несвободи» (Ужгород) | 18.11.2026
+32. Пошук точної фрази «свавілля ТЦК підриває і без того хитку довіру до ТЦК та СП»
+    інструмент: WebSearch (4 запити) | результат: первинного поста/пресрелізу не знайдено;
+    буквальний збіг — лише коментар користувача Threads (vitaliy.100hid), URL не повернуто
+    | 18.11.2026
+
+# Контр-перевірки
+33. https://suspilne.media/kropyvnytskiy/1340118-smerti-vid-pnevmonij-perelomi-j-konvoj-kropivnicki-mobilizovani-pro-sluzbu-v-skeli-ta-vidstoronenna-komandira
+    інструмент: web_extractor fetch_page (static) | результат: 200 OK (частково:
+    9000/17326) — «єгоза» і яма у «Скелі», свідчення Андрія; позиція полку | 18.11.2026
+34. Пошук реакції в/ч А3211 / Західного ОК / Міноборони на заяву Миронова
+    інструмент: WebSearch (запити «А3211 ДБР прокуратура перевірка Старичі листопад 2026»,
+    «Західне оперативне командування А3211 Миронов відповідь заява катування») | результат:
+    офіційної реакції не знайдено | 18.11.2026
+35. Пошук підтвердження «сервери знищені сокирою» у справі Ковальського
+    інструмент: WebSearch | результат: лише тг/YouTube-коментатори; незалежного підтвердження
+    немає (Bastion.tv прямо це констатує) | 18.11.2026
