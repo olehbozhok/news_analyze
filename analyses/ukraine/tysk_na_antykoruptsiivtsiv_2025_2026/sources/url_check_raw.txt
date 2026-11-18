@@ -1,0 +1,38 @@
+# Журнал перевірки URL — Researcher, 19.11.2026
+
+Контекст: інструменти chrome_* у середовищі Researcher НЕДОСТУПНІ (не завантажені; завантажити через «пошук інструментів» не вдалося — в середовищі немає такого механізму для субагента).
+Основний інструмент — MCP web_extractor (fetch_page render=static/browser, find_in_page, check_urls, read_more); запасний — WebSearch; дати постів Telegram — curl+grep datetime-атрибутів HTML (fetch_page не показує datetime).
+
+| # | URL | Інструмент | Результат | Дата |
+|---|---|---|---|---|
+| 1 | https://tsn.ua/politika/nikolov-otrymav-53-mln-hrn-...-3217355.html | web_extractor fetch_page render=browser | таймаут 30с | 19.11.2026 |
+| 2 | (та сама) | web_extractor fetch_page render=static | OK 200, текст повний, published 2026-11-15T13:35+02:00 | 19.11.2026 |
+| 3 | https://ukranews.com/ua/amp/news/1187909-... | web_extractor fetch_page render=static | 403 ЗАБЛОКОВАНЕ | 19.11.2026 |
+| 4 | https://politeka.net/ru/kompromat/481438-... | web_extractor fetch_page render=static | OK 200, published 2026-11-15T16:37+02:00, посилання на t.me/getmantsevdanil/13578 | 19.11.2026 |
+| 5 | https://t.me/getmantsevdanil/13578 | web_extractor fetch_page render=static | OK 200, thin (embed-заглушка), є посилання на /s/-версію | 19.11.2026 |
+| 6 | https://t.me/s/getmantsevdanil/13578 | web_extractor fetch_page render=static + read_more | OK, повний текст поста 13578 | 19.11.2026 |
+| 7 | https://t.me/s/getmantsevdanil/13578 | curl + grep datetime | пост 13578: 2026-11-12T13:16:50+00:00 | 19.11.2026 |
+| 8 | https://t.me/s/getmantsevdanil/13497 | web_extractor fetch_page render=static + read_more | OK, повний текст поста 13497 | 19.11.2026 |
+| 9 | https://t.me/s/getmantsevdanil/13497 | curl + grep datetime | пост 13497: 2026-11-02T06:01:16+00:00 | 19.11.2026 |
+| 10 | https://t.me/s/getmantsevdanil/13580 | web_extractor fetch_page render=static | OK, контекст постів 12.11 (13577 «Ярославе» тощо) | 19.11.2026 |
+| 11 | https://www.rbc.ua/rus/news/getmantsev-rozkritikuvav-finansovu-model-1794743599.html | web_extractor fetch_page render=static | OK 200, published 2026-11-15T14:36+02:00 | 19.11.2026 |
+| 12 | https://komersant.ua/golova-podatkovogo-komitetu-zayavyv-pro-finansovi-zvyazky-zhurnalista-nikolova-z-golovoyu-czpk-shabuninym | web_extractor fetch_page render=static | 403 ЗАБЛОКОВАНЕ (не повторював render=browser для komersant) | 19.11.2026 |
+| 13 | https://unn.ua/news/tspk-shabunina-unyknuv-splaty-maizhe-23-mln-hrn-podatkiv-zadiiavshy-199-zarplatnykh-fopiv-nardep | web_extractor fetch_page render=static | OK 200, published 2026-11-02T18:45+02:00 | 19.11.2026 |
+| 14 | https://ukranews.com/ua/news/1185995 | web_extractor fetch_page render=static | 403 ЗАБЛОКОВАНЕ | 19.11.2026 |
+| 15 | https://t.me/s/fuckcorruption | web_extractor fetch_page render=static | OK, останні пости 7615–7637 (18–19.11) | 19.11.2026 |
+| 16 | https://t.me/s/fuckcorruption?before=7400/7440/7460 | curl + grep | OK, пости 02–05.11; «Гетманцев» збігів немає | 19.11.2026 |
+| 17 | https://t.me/s/fuckcorruption?before=7300–7580 (близько 15 сторінок fc_*.html/fc2_*.html) | curl + grep | єдиний збіг «Гетманцев» — пост 7353 (не листопад); у 7548/7551 — цитати Ніколова | 19.11.2026 |
+| 18 | https://www.facebook.com/antac.ua/posts/1373714684559882 | web_extractor fetch_page render=static → render=browser | thin → стіна логіну (Увійти); ЗАБЛОКОВАНЕ | 19.11.2026 |
+| 19 | https://antac.org.ua/news/dyskredytatsiia-obshuky-bez-ukhvaly-sudu-tysk-na-rodynu-... | web_extractor fetch_page render=static | OK 200 (липень 2025) | 19.11.2026 |
+| 20 | https://antac.org.ua/report/ | web_extractor fetch_page render=static | OK 200, розділ Звітність (фінзвіти, аудити, Світовий банк 2024-2025) | 19.11.2026 |
+| 21 | https://zmina.info/news/zhurnalist-rozsliduvach-yurij-nikolov-povidomyv-pro-tysk-i-zalyakuvannya | web_extractor fetch_page render=static | OK 200, published 2024-01-15 | 19.11.2026 |
+| 22 | https://zmina.info/news/do-richnyczi-obshukiv-u-shabunina-czpk-stvoryv-sajt-pro-tyh-kogo-vvazhaye-prychetnymy-do-peresliduvannya | web_extractor fetch_page render=static | OK 200, published 2026-07-13 | 19.11.2026 |
+| 23 | https://zmina.info/articles/fabryka-nedoviry-yak-formuyetsya-dyskredytacziya-... | web_extractor fetch_page render=static | OK 200, published 2026-05-07 (перший фрагмент 9000 з 26934 зн.) | 19.11.2026 |
+| 24 | https://informator.ua/uk/zhurnalist-nikolov-zayaviv-shcho-siloviki-pov-yazuyut-getmanceva-... | web_extractor fetch_page render=static + find_in_page | OK 200, published 2023-09-15; ключові цитати знайдено (offset ~26300) | 19.11.2026 |
+| 25 | https://www.facebook.com/d.getmancev/posts/1485248637151148 | WebSearch (фрагмент) + knowledge про fb | сам URL не відкривався — стіна логіну; цитата з пошукової видачі | 19.11.2026 |
+| 26 | https://komersant.ua/getmanczev-rozkrytykuvav-shabunina-cherez-skandal-iz-podatkamy-... | не відкривався (komersant.ua раніше 403) | НЕВІДОМЕ | 19.11.2026 |
+| 27 | https://www.facebook.com/d.getmancev/posts/1493145213028157 (fb-дзеркало поста 13578) | не відкривався | стіна логіну очікувана | 19.11.2026 |
+| 28 | https://www.dw.com/uk/imi-vimagae-... a-68007641, https://detector.media/infospace/article/221798/ (Медіарух, 17.01.2024) | не відкривався — лише WebSearch сніпети | НЕВІДОМЕ (прогалина) | 19.11.2026 |
+| 29 | https://www.unian.ua/society/...13561773.html, https://glavred.net/..., https://kp.ua/ua/amp/a738948, https://unn.ua/amp/nikolov-zarobyv-... | не відкривалися — дублі переказів | не верифікували | 19.11.2026 |
+
+WebSearch запити (запасний інструмент): «Гетманцев Ніколов ЦПК Шабунін 5,3 млн ФОП листопад 2026»; «Гетманцев заява Ніколов "улюблений ФОП"»; «politeka.net 481438»; «Ніколов відповідь Гетманцев "Наші гроші"»; «"Ніколов" Гетманцев ЦПК Шабунін реакція»; «ЦПК відповіла Гетманцеву»; «Ніколов Facebook Гетманцев ФОП»; «nashigroshi.org ... 199»; «Гетманцев "199 ФОП" ЦПК вересень 2022»; «ЦПК ... "тиск" "замовна кампанія"»; «Ніколов відповів Гетманцеву»; «ЦПК Гетманцев antac.org.ua донори 188 млн»; «t.me fuckcorruption Гетманцев»; ""Шабунін" інтерв'ю "відповідає на питання""; «"Чим сильніше ми тиснемо на корупціонерів"»; «ІМІ УПМ Гетманцев Ніколов тиск»; «Гетманцев "188,7 млн"»; ""Ніколов" OR "Шабунін" реакція Гетманцев після 15 листопада 2026".
