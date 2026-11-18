@@ -1,0 +1,67 @@
+Журнал URL Verifier: addendum 18.11.2026 (доповнення 5.1 у 01_karfahen.md, SC-97–SC-103; міні-доповнення в 03_burkin_interviu.md, SC-16)
+Дата: 18.11.2026
+Інструменти: MCP web_extractor (check_urls, find_in_page, fetch_page render=static і browser), локальні grep/python.
+Chrome (chrome_*) у цьому середовищі НЕДОСТУПНИЙ — браузерні інструменти не завантажені; browsermcp не залучався, бо основний канал працював без CAPTCHA і порожніх рендерів. WebFetch/WebSearch не використовувалися.
+Всі часи — 18.11.2026 UTC (fetch_about 20:13–20:15).
+
+1. check_urls (web_extractor), 7 URL, усі 200 OK:
+   1.1 https://zn.ua/ukr/anticorruption/politsija-avstriji-pidtverdila-vitik-svojikh-materialiv-do-fihuranta-karfahenu.html
+       200, title «Поліція Австрії підтвердила витік своїх матеріалів до фігуранта «Карфагену»», 3195 зн. (markdown), published json_ld 2026-11-15T20:19+02:00 — збігається з картками SC-97/98/99 (дата 15.11.2026 20:19). Карта: SC-97, SC-98, SC-99. Результат: ВІДКРИТО, підтверджує.
+   1.2 https://zn.ua/ukr/anticorruption/katuvannja-pid-dakhom-silovikiv-novi-dokazi-nabu-u-spravi-karfahen.html
+       200, title «Катування під дахом силовиків…», 3967 зн., published 2026-11-04T17:54+02:00 — збігається з SC-102 (04.11.2026 17:54). Результат: ВІДКРИТО.
+   1.3 https://nv.ua/ukr/ukraine/events/sprava-karfagen-ukrajinski-pravoohoronci-poperedili-kriminala-shcho-nim-zacikavilisya-v-yevropi-50657015.html
+       200, 6796 зн., published 2026-11-06T17:04+02:00 — збігається з SC-101 (06.11.2026 17:04). Результат: ВІДКРИТО.
+   1.4 https://www.derstandard.de/story/3000000349212/ukrainischer-callcenterbetrug-auch-aktivitaeten-in-oesterreich-vermutet
+       200, final_url redirect на /consent/tcf/story/…, content thin 731 зн. — consent-стіна підтверджена (як і в Researcher). Лід і підзаголовок доступні в thin-рендері. Результат: ВІДКРИТО (лише лід).
+   1.5 https://nabu.gov.ua/news/operatciia-karfagen-vykryto-novu-zlochynnu-organizatciiu/
+       200, 1400 зн. (markdown), title «Операція «Карфаген»: викрито нову злочинну організацію (ВІДЕО)». Результат: ВІДКРИТО.
+   1.6 https://t.me/s/nab_ukraine
+       200, 12264 зн., title «НАБУ». Результат: ВІДКРИТО (прочитано повністю, 3 чанки).
+   1.7 https://www.youtube.com/watch?v=-G8KplCFEjc
+       200, title «Єгор Буркін. Перше велике інтерв'ю. Хімпром. НАБУ. Операція Карфаген.», published meta 2026-11-13 — збігається з SC-16 (канал інтерв'ю, 13.11.2026). Результат: ВІДКРИТО.
+
+2. find_in_page (web_extractor), звірка дослівних цитат:
+   2.1 ZN 15.11, запит «Федеральне кримінальне відомство Австрії підтвердило витік матеріалів доповіді про Андрія Осіпова» — 1 exact match; контекст дослівно збігається з цитатою SC-97. Крім того, підтверджено фрагмент «У відомстві пояснили, що цю доповідь представили на заході Інтерполу в одній із європейських …». Результат: ЦИТАТА SC-97 ДОСЛІВНА.
+   2.2 ZN 15.11, запит «9 квітня 2025 року Осіпов переслав фотографії слайдів» — 1 exact match; контекст повністю збігається з цитатою SC-98 (Паша, Австрія за кілька тижнів, Італія, протиугінна система з димовою шашкою). Результат: ЦИТАТА SC-98 ДОСЛІВНА.
+   2.3 ZN 15.11, запит «У НАБУ заявили, що співпрацюють у цій справі з компетентними австрійськими органами» — 1 exact match; контекст збігається з цитатою SC-99 (співпраця + немає відкритого провадження). Фрагмент «За версією НАБУ, злочинна організація Осіпова виконувала замовлення на насильство й за кордоном, зокрема у Відні. У відео, яке бюро оприлюднило минулого тижня, є листування учасників угруповання за березень 2025 року й кадри, на яких жорстоко б'ють працівника офісу, імені якого не називають.» підтверджено в тому ж контексті. Результат: ЦИТАТА SC-99 ДОСЛІВНА.
+   2.4 NV 06.11, запит «Підлеглі «Кримінала» … із силового блоку виїжджають до європейської країни» — 1 exact match; у контексті РОЗБІЖНІСТЬ: живий текст — «Дивись, тебе вже в Європі шукають», картка SC-101 і текст 01 (розділ 5.1) — «шукают» (без «ь»). Інша частина цитати дослівна. Результат: ЗНАХІДКА A-1 (MINOR).
+   2.5 NV 06.11, запит «Після побиття людей молотками у Відні злочинці отримали дані австрійського слідства» — 1 exact match (підзаголовок/опис фото, як і вказано в SC-101). Результат: ПІДЗАГОЛОВОК ДОСЛІВНИЙ.
+   2.6 ZN 04.11, запит «9 квітня 2025 року Кримінал переслав Паші фото» — 1 exact match; контекст збігається з цитатою SC-102 (фото «імовірно, отримане від учасника наради…»); фрагмент «Група виконувала подібні замовлення й за кордоном, зокрема у Відні.» підтверджено в контексті. Результат: ЦИТАТА SC-102 ДОСЛІВНА.
+   2.7 Der Standard (живий сайт за consent-стіною), запит «Zudem wurden an einen Beschuldigten polizeiinterne Informationen des österreichischen Bundeskriminalamts über ihn selbst geleakt» — 1 exact match; у thin-рендері також підзаголовок «Laut dem Bundeskriminalamt gab es einen Informationsabfluss an ukrainische Beschuldigte. Derzeit ist kein österreichisches Ermittlungsverfahren anhängig» — дослівно як у SC-100. Датлайн «Kyjiw/Wien». Результат: ЛІД І ПІДЗАГОЛОВОК SC-100 ДОСЛІВНІ.
+   2.8 nabu.gov.ua пресреліз, запит «Австрія Відень Інтерпол» — 0 matches; текст 1389 знаків — точно як зафіксовано в SC-103. Результат: НЕГАТИВНЕ ТВЕРДЖЕННЯ SC-103 (ПРЕСРЕЛІЗ) ПІДТВЕРДЖЕНО.
+
+3. fetch_page (web_extractor, render=static), архівна копія Der Standard:
+   3.1 https://web.archive.org/web/2026/https://www.derstandard.de/story/3000000349212/ukrainischer-callcenterbetrug-auch-aktivitaeten-in-oesterreich-vermutet
+       → редірект на снапшот https://web.archive.org/web/20261115044359/… ; 200, повний текст 4603 зн., author «Redaktion Newsteam», published json_ld 2026-11-14T09:17 UTC (= 10:17 за київсько-австрійським часом CET) — збігається з SC-100 (14.11.2026 10:17). Наприкінці — «(APA, 14.11.2026)».
+       Звірка деталей SC-100 (переказ архівного тексту в caveat):
+       - відео НАБУ «vergangene Woche», замовлення у Відні, комунікація «mit März 2025 datiert», «brutal verprügelt» працівник unspecified Büros — ПІДТВЕРДЖЕНО;
+       - відмова НАБУ від деталей («fehlende Bewilligung durch den zuständigen Ermittler») — ПІДТВЕРДЖЕНО;
+       - співпраця НАБУ з «zuständige österreichische Stellen» (відповідь на APA-Anfrage «am Mittwoch») — ПІДТВЕРДЖЕНО;
+       - Sprecherin BKA у Відні проти APA «am Donnerstag»: «Österreichweit … kein Ermittlungsverfahren anhängig» — ПІДТВЕРДЖЕНО;
+       - фото презентації BKA про особу alias «Kryminal», «an ihn selbst geleakt», розсилка «Anfang April 2025» — ПІДТВЕРДЖЕНО;
+       - презентація на «Interpol-Veranstaltung im europäischen Ausland», внутрішній обмін інформацією між державами — ПІДТВЕРДЖЕНО;
+       - Австрія-перебування за кілька тижнів до того, Pkw «stark manipuliert» з «Diebstahlsicherung mit Rauchbombe» при виїзді до Італії — ПІДТВЕРДЖЕНО;
+       - «Der Informationsfluss sei bekannt, hieß es aus dem Bundeskriminalamt» (BKA знав про витік) — ПІДТВЕРДЖЕНО.
+       Результат: SC-100 ПІДТВЕРДЖЕНО ПОВНІСТЮ (повторне відкриття архіву, як вимагав caveat картки).
+
+4. fetch_page (web_extractor, render=browser), t.me/s/nab_ukraine — повний текст 12264 зн. у 3 чанки:
+   4.1 Видимі пости 09–18.11.2026: вирок Чорноморськ (09–10.11), закон ОЕСР (10.11), вирок бронежилети (11–12.11), «Дамоклів Меч» (16.11), підозри ДПСУ (18.11, пост 4289), вирок Держлісагентство (18.11, пост 4290). Згадок Австрії/Витоку/Інтерполу в видимому тексті НЕМАЄ.
+   4.2 Пости 4279–4283 і 4287–4288 (12–17.11) — медіа-пости без тексту в прев'ю («Please open Telegram to view this post») — обмеження негативного висновку SC-103 підтверджене.
+   Результат: НЕГАТИВНЕ ТВЕРДЖЕННЯ SC-103 (TG) ПІДТВЕРДЖЕНО В ЧАСТИНІ ВИДИМОГО ТЕКСТУ; обмеження зафіксовані коректно.
+
+5. Локальні артефакти (не веб):
+   5.1 D:/news/transcripts/-G8KplCFEjc/transcript.md — grep: «не чули» 0, «не чути» 0, «плівк» 1 (про прізвисько «Мексиканець», не Татаров), «голос» 1 ([00:31:30], голос Буркіна про самого себе), «не слышал» 1 ([02:02:47], про «ексклюзивну інформацію», не про плівки НАБУ). Твердження «голос Татарова досі не чули на плівках НАБУ» в транскрипті ВІДСУТНЄ — SC-16 і міні-доповнення 03 підтверджені. Той самий транскрипт підтверджує фрагмент 00:36:53–00:38:27 про Татарова ([03/SC-05]).
+   5.2 python -I scripts/sc_links.py --check analyses/ukraine/karfahen_2026_11 — «Перевірка: 0 помилок, 0 попереджень».
+   5.3 persons/ukraine/ — картки serhii_duk, yehor_burkin, oleh_tatarov існують; карток andrii_osipov і oleksandr_abakumov НЕМАЄ (звірка правила 6.5 для нових згадок у 5.1 — знахідка A-2).
+   5.4 Старі картки SC-09, SC-10, SC-14, SC-41, SC-56, SC-57 (прочитано локально) — суперечностей із 5.1 немає: Осіпов «головний організатор» (SC-10), «Паша» — виконавець силових завдань (SC-09), Осіпов під вартою в іншому провадженні (SC-56/SC-57); у 5.1 ці зв'язки коректно перехресно позначені.
+
+Підсумок: 404 серед ключових URL НЕМАЄ; усі 7 ключових URL відкрито; SC-100 повторно відкрито через web.archive.org (снапшот 20261115044359).
+
+# Targeted re-check 18.11.2026 (другий прохід Verifier після виправлень Editor)
+Дата: 18.11.2026. Інструменти: MCP web_extractor find_in_page, локальний grep, python3 -I scripts/sc_links.py --check, читання файлів. Chrome (chrome_*) недоступний — браузерні інструменти не завантажені.
+- nv.ua/ukr/ukraine/events/sprava-karfagen-ukrajinski-pravoohoronci-poperedili-kriminala-shcho-nim-zacikavilisya-v-yevropi-50657015.html — find_in_page «тебе вже в Європі шукають» — exact match 1/1, offset 1626 (кеш 20 хв, text_version 2f0d1d03); цитата SC-101 після виправлення A-1 дослівна, контекст збігається.
+- D:/news/transcripts/-G8KplCFEjc/transcript.md — локальна перевірка існування (ls): файл є (230318 байт; в теці meta.json, audio.webm); B-1 підтверджено.
+- grep «шукают» по 01_karfahen.md, source_cards_01/02/03, persons/ukraine/andrii_osipov/, persons/ukraine/oleksandr_abakumov/ — 0 збігів (A-1 виправлено всюди).
+- python3 -I scripts/sc_links.py --check analyses/ukraine/karfahen_2026_11 — 0 помилок, 0 попереджень.
+- Прочитано локально (без вебу): persons/ukraine/andrii_osipov/README.md, persons/ukraine/oleksandr_abakumov/README.md, persons/ukraine/oleh_tatarov/README.md, persons/ukraine/README.md, README теми, картки SC-09, SC-10, SC-49, SC-56, SC-57, SC-101, SC-102 (source_cards_01.md), SC-01, SC-16 (source_cards_03.md), 01 розд. 5.1, 03 розд. 4 (ряд. 24, 66), verification_notes.md.
+Підсумок re-check: PASS для обох документів; знахідок немає.

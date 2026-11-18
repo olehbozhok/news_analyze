@@ -1,0 +1,54 @@
+Журнал URL Researcher: заява Дуки на ТСК про знайомство з Осіповим і роль Малюка
+Дата: 18.11.2026
+Інструменти середовища: MCP web_extractor (fetch_page, find_in_page), WebSearch (запасний).
+Інструменти chrome_* у цьому середовищі ВІДСУТНІ (зафіксовано згідно з промптом). WebFetch не використовувався.
+
+Формат: URL | інструмент | результат | дата
+
+--- Основні URL (відкрито, зміст звірено) ---
+
+https://unn.ua/news/mene-z-osipovym-poznaiomyv-maliuk-serhii-duka-rozpoviv-yak-vdalosia-zirvaty-bunty-u-viaznytsiakh-ta-verbuvannia-do-pvk-vahner | web_extractor fetch_page (browser) | 200 ok, повний текст 4028 зн., published 2026-11-18T16:26 (json-ld), автор Юлія Мельник | 18.11.2026
+https://zn.ua/ukr/anticorruption/duka-zajaviv-shcho-maljuk-poznajomim-joho-z-osipovim-shche-v-2020-rotsi.html | web_extractor fetch_page (browser) | 200 ok, повний текст 4852 зн., published 2026-11-18T18:52, автор Анна Конюченко | 18.11.2026
+https://espreso.tv/news-figuranta-spravi-karfagen-andriya-osipova-vzyali-pid-vartu | web_extractor fetch_page (browser) | 200 ok, повний текст 5945 зн., published 2026-11-18T15:15, автор Наталя Пристанська | 18.11.2026
+https://www.slidstvo.info/news/heneral-sbu-i-fihurant-karfahenu-serhiy-duka-zaiavyv-shcho-osipovym-na-prizvysko-kryminal-yoho-poznayomyv-eks-holova-sbu-vasyl-maliuk | web_extractor fetch_page (browser) | 200 ok, повний текст 2636 зн., published 2026-11-18T14:05 UTC, автор Ліза Бикова | 18.11.2026
+https://www.slidstvo.info/articles/vid-1-mln-khabaria-do-karfahenu-iak-telefon-retsydyvista-osipova-na-prizvysko-kryminal-dopomih-vykryty-novyy-zlochynnyy-klan/ | web_extractor find_in_page (запити «хуліган», «Коростиш») | 200 ok, текст 12400 зн., published 2026-11-06T09:34; збіги знайдено (дослівна цитата з плівок) | 18.11.2026
+https://www.slidstvo.info/news/200-000-osobysto-dlia-maliuka-sud-vziav-pid-vartu-cholovika-iakyy-vymahav-1-mln-u-rosiianyna-za-vyrishennia-pytannia-ekstradytsii-z-sbu/ | web_extractor find_in_page («Коростиш») + fetch_page (static, повний текст 5200 зн.) | 200 ok, published 2026-07-31T16:50, автор Софія Афоніна, оновлено 05.08.2026 | 18.11.2026
+https://zn.ua/ukr/anticorruption/karfahen-2-shcho-nam-teper-robiti-znajuchi-shcho-vlada-perebuvaje-pid-kontrolem-kriminalu-ta-fsb.html | web_extractor find_in_page («коростишівський хуліган») | 200 ok, текст 31114 зн., published 2026-11-12T17:27; 1 збіг (дослівно) | 18.11.2026
+https://www.radiosvoboda.org/amp/news-tsk-svidchennja-duky-vyklyk-holiv-nabu-sap/33901257.html | web_extractor fetch_page (browser) | 200 ok, повний текст 2858 зн., published 2026-11-18T16:11 UTC, автор Антон Шульга | 18.11.2026
+https://www.radiosvoboda.org/a/news-duka-slidcha-komisija-parlamentu/33901243.html | web_extractor fetch_page (browser) | 200 ok, повний текст 2599 зн., published 2026-11-18T15:48 UTC, автор Антон Шульга | 18.11.2026
+https://zn.ua/ukr/anticorruption/ne-bulo-vkazivki-zverkhu-heneral-sbu-duka-na-tsk-zaperechiv-zvjazok-obshukiv-u-nabu-z-atakoju-na-antikoruptsijni-orhani.html | web_extractor fetch_page (browser) | 200 ok, повний текст 5651 зн., published 2026-11-18T17:37, автор Андрій Стадник | 18.11.2026
+https://marker-media.org/haccundermarker/%D1%8F-%D0%B7-%D0%B2%D0%B2-%D1%82%D0%B0-%D1%85%D1%80%D0%BE%D0%BF%D0%B5-%D0%BA%D0%BE%D1%80%D0%BE%D1%82%D1%88%D0%B5-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE | web_extractor fetch_page (browser) | 200 ok, текст 20866 зн., прочитано 0-12000 (обрізано; для цілей картки SC-117 достатньо), published 2026-11-13T14:31 UTC, автор Badeshko Tetiana | 18.11.2026
+https://www.facenews.ua/video/2026/326498 | web_extractor fetch_page (browser) | 200 ok, повний текст 3899 зн., оновлено 03.08.2026 18:36 | 18.11.2026
+https://uk.wikipedia.org/wiki/Малюк_Василь_Васильович | web_extractor find_in_page («Коростишів») | 200 ok, 3 збіги дослівно (нар. 28.02.1983, Коростишів) | 18.11.2026
+https://uk.wikipedia.org/wiki/Малин | web_extractor find_in_page («Коростишів», «Коростишівський район» — 0 збігів у text-версії) + fetch_page (static, markdown, початок статті) | 200 ok; інфобокс: Район — Коростенський район | 18.11.2026
+
+--- URL, на які є посилання в джерелах, але які НЕ відкривалися ---
+
+https://www.youtube.com/watch?v=pN0dMg8glrY (трансляція ТСК 18.11.2026) | не відкривався | посилання наводять УНН, ZN.UA, Слідство.Інфо, Радіо Свобода; первинне джерело свідчень Дуки — ПРОГАЛИНА (R-18) | 18.11.2026
+https://youtu.be/dLGhaHbWCAA (відео НАБУ з плівками «Карфаген») | не відкривався | посилання у Слідство.Інфо 06.11 і 18.11; зміст плівок не звірено (R-18) | 18.11.2026
+https://www.radiosvoboda.org/a/karfahen-meksykanets-nabu-intervyu/33900514.html («Мексиканець» і плівки НАБУ: як неперевірені звинувачення стають новинами) | не відкривався | знайдено в listing_links Радіо Свободи; потенційна steelman-опора (R-14) | 18.11.2026
+https://www.slidstvo.info/news/nemaie-takykh-liudey-v-otochenni-iaki-mohly-na-mene-tysnuty-eksministr-klymenko-zaperechyv-shcho-yoho-namahalysia-pidkupyty-fihuranty-karfahenu/ (Клименко заперечив) | не відкривався | знайдено в listing_links Слідство.Інфо; контрджерело (реакція згаданих осіб), для addendum не карткувалося | 18.11.2026
+
+--- Пошукові запити (WebSearch; URL не поверталися або не відкривалися) ---
+
+1. «Дука Осіпов "Кримінал" знайомство співпраця Малюк» — знайдено 24 канал, Facebook/breakingUAnews (не відкривалися; лише навігація)
+2. «"Дука" суд "Осіпов" знайомство листопад 2026» — навігація до Espreso/Radio Svoboda/DW
+3. «Дука "визнав" знайомство Осіпов Малюк познайомив» — навігація (X/Facebook/Instagram — не відкривалися)
+4. «Дука Осіпов суд 17 листопада 2026» — DW, Espreso, BBC (контекст)
+5. «"Дука" ТСК Осіпов Малюк "представив" АБО "познайомив"» — навігація до UNN і ZN.UA (вихідні URL знайдено тут)
+6. «Малюк Василь народився Коростишів Житомирська область біографія» — сніпети Вікіпедія/LB/Liga (LB і Liga не відкривалися)
+7. «Осіпов "коростишівський хуліган" Малюк плівки НАБУ» — навігація до ZN і МАРКЕР
+8. «Осіпов Малюк "я з ВВ" Слідство.Інфо АБО Бабель АБО Суспільне плівки» — зведення без прямих URL
+9. «"хуліганом" "високо злетів" Осіпов Малюк» — зведення без прямих URL
+10. «Слідство.Інфо Осіпов "Кримінал" Малюк земляк Коростишів розслідування» — Facenews, Politpravda, Antikor (Pol/Pra не відкривалися)
+11. «Дука ТСК Гончаренко 18 листопада свідчення Суспільне АБО Інтерфакс АБО УП» — Радіо Свобода, Інтерфакс, Суспільне (навігація)
+12. «Малюк реакція заява свідчення Дука ТСК листопад 2026 СБУ» — заяви Малюка НЕ ЗНАЙДЕНО; ukr.net-агрегати не відкривалися
+13. «"Малюк" коментував АБО заперечив АБО "прокоментував" заяви Дуки Осіпов листопада» — прямих цитат Малюка НЕ ЗНАЙДЕНО (пошук з негативним результатом, фіксація для SC-112/R-11)
+14. «sledzinform.info АБО "Слідство.Інфо" Осіпов Малюк кум Коростишів» — «кум» лише в зведеннях → НЕПІДТВЕРДЖЕНЕ (R-20)
+15. «pravda.com.ua Дука ТСК Малюк Осіпов познайомив» — знайдено slidstvo.info (вихідний URL)
+
+--- Загальні обмеження ---
+
+- chrome_* відсутні; усі URL відкривалися MCP web_extractor (render=browser або static); WebSearch — лише для навігації.
+- Жодного URL не заблоковано (без 403/429).
+- ЄДРСР у цьому проході не перевірявся (судова ухвала по Осіпову 18.11 — прогалина, R-21; ТСК — парламентська комісія, судових рішень не генерує).
