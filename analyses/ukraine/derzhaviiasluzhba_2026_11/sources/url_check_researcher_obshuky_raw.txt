@@ -1,0 +1,70 @@
+Журнал перевірки URL: Researcher (obshuky Derzhaviiasluzhby 19.11.2026)
+Дата роботи: 20.11.2026
+Інструменти: web_extractor (fetch_page / find_in_page / check_urls) — основний канал;
+browsermcp (браузер Chrome) — ЄДРСР; WebSearch — пошукові запити (не відкриття сторінок).
+Chrome/browsermcp: ДОСТУПНИЙ і використаний (reyestr.court.gov.ua — заповнення форми, асинхронні
+пошуки, читання підсумків «знайдено документів: N», контрольний запит).
+web_extractor: доступний. chrome_* інструменти в субагенті відсутні; для ЄДРСР використано
+browsermcp. Прямі URL t.me/<канал>/<id> через web_extractor таймаутяться — читання через
+прев'ю t.me/s/<канал> (зафіксовано нижче).
+
+Формат: [інструмент (режим)] URL -> результат
+
+=== Первинка і вторинні ЗМІ ===
+[web_extractor fetch_page, browser] https://epravda.com.ua/biznes/pravoohoronci-provodyat-obshuki-u-derzhaviasluzhbi-dzherela-up-827830/ -> 200 OK, повний текст прочитано (первинка УП, SC-01, SC-02), автор Андрій Муравський, published 2026-11-19T17:17+02:00
+[web_extractor fetch_page, static] https://www.pravda.com.ua/news/2026/11/19/8063658/ -> 200 OK, РЕДІРЕКТ на epravda.com.ua/biznes/...-827830/ (той самий текст, text_version d4fe5b0e збігається)
+[web_extractor fetch_page, static] https://nv.ua/ukr/ukraine/events/obshuki-v-derzhaviasluzhbi-sbu-i-prokuratura-rozsliduyut-ymovirnu-korupciynu-shemu-50660770.html -> 200 OK, повний текст (SC-05, SC-19), published 2026-11-19T18:56+02:00 (403 не спостерігалося)
+[web_extractor fetch_page, browser] https://www.radiosvoboda.org/a/news-derzhaviasluzhba-obushky/33902030.html -> 200 OK (SC-04), published 2026-11-19T16:41:45+00:00
+[web_extractor fetch_page, static] https://www.dw.com/uk/u-derzaviasluzbi-prohodat-obsuki/a-79995837 -> 200 OK (SC-06), published 2026-11-19T18:19:20+00:00
+[web_extractor fetch_page, static] https://zaxid.net/sbu_ta_prokuratura_priyshli_z_obshukami_do_derzhavnoyi_aviatsiynoyi_sluzhbi_n1650574 -> 200 OK (SC-07), published 2026-11-19T18:22:06+02:00
+[web_extractor fetch_page, static] https://suspilne.media/1455114-u-derzaviasluzbi-provodat-obsuki/ -> 200 OK (SC-08), published 2026-11-19T17:55:42+02:00
+[web_extractor fetch_page, static] https://www.ukrinform.ua/rubric-society/4186567-u-primisennah-derzaviasluzbi-provodat-obsuki.html -> 200 OK (SC-09, SC-20), published 2026-11-19T21:19+02:00
+[web_extractor fetch_page, static] https://www.slovoidilo.ua/2026/11/19/novyna/suspilstvo/pravooxoronczi-pryjshly-obshukamy-derzhaviasluzhby -> 200 OK, переказ (у картки не винесено; у R-нотатках), published 2026-11-19T19:08:40+02:00
+
+=== Офіційні джерела / позиції ===
+[web_extractor fetch_page -> TIMEOUT] https://t.me/MinInfraUA/17826 -> таймаут запиту
+[web_extractor fetch_page, static] https://t.me/s/MinInfraUA/17826 -> 200 OK, текст поста Мінінфра отримано з прев'ю каналу (SC-03); точний номер поста — за посиланнями УП і NV
+[не відкривався] https://www.facebook.com/Ministry.for.infrastructure/posts/pfbid02hjDMKUktx3gb1DfhMeUpiGdRNQg3RuNXv45LAYave1qXoCU13RoeXfBH5RLuSMbnl -> URL фейсбук-поста Мінінфра з статті Укрінформу; не відкрито (SC-09 caveat)
+[web_extractor check_urls, network] https://ssu.gov.ua/novyny -> 200 OK, 985 chars (JS-сторінка)
+[web_extractor find_in_page, cache] https://ssu.gov.ua/novyny -> пошук «Державіаслужба»: 0 збігів
+[web_extractor fetch_page, browser] https://ssu.gov.ua/novyny -> перелік новин 17-20.11.2026 прочитано (SC-10)
+[web_extractor check_urls, network] https://gp.gov.ua/ -> 200 OK (головна ОГП; новини на сайті не звірялися по темі)
+[web_extractor check_urls, network] https://kyivobl.gp.gov.ua/ -> DNS-помилка (домен не існує); реальний сайт Кобл-прокуратури — kobl.gp.gov.ua
+[web_extractor fetch_page, browser] https://kobl.gp.gov.ua/ua/news.html -> 200 OK, але перелік новин JS-підвантажений, у витягу списку немає (негатив по сайту не фіксується)
+[web_extractor fetch_page, static] https://t.me/s/press_kobl -> 200 OK, повний текст прев'ю (SC-12): «Державіаслужба» — 0 збігів, пости охоплюють 13-20.11.2026
+[web_extractor fetch_page, static] https://t.me/s/SBUkr -> 200 OK, 23892 chars прочитано (fetch_page + read_more, SC-11): «Державіаслужба»/«авіаційна служба» — 0 збігів
+[web_extractor fetch_page, browser] https://avia.gov.ua/ -> 200 OK, головна: новини до 12.11.2026, заяви про обшуки немає
+[web_extractor fetch_page, browser] https://avia.gov.ua/category/novini/ -> 200 OK (SC-13): остання новина 12.11.2026
+[web_extractor fetch_page, browser] https://avia.gov.ua/kerivnitstvo -> 200 OK (SC-15): Меньшиков Данііл Олексійович, т.в.о. Голови ДАСУ, розпорядження № 1226-р від 13.11.2025
+[web_extractor fetch_page, static] https://www.kmu.gov.ua/npas/pro-porushennia-dystsyplinarnoho-provadzhennia-stosovno-holovy-derzhavnoi-aviatsiinoi-s868200825 -> 200 OK (SC-16): розпорядження від 20.08.2025 № 868-р (у цитаті збережена оригінальна описка «Кабініт»)
+[web_extractor fetch_page, static] https://epravda.com.ua/power/golovu-derzhaviasluzhbi-bilchuka-zvilnili-814184/ -> 200 OK (SC-17, SC-18), published 2025-11-14T12:10+02:00
+[не відкривався] https://t.me/tmelnychuk/6947 -> джерело ЕП (представник уряду Тарас Мельничук) про звільнення Більчука; не відкрито (SC-17 caveat)
+[не відкривався] https://www.kmu.gov.ua/npas/... (розпорядження про відсторонення, згадка NV) -> окремого документа про відсторонення не шукалося; 868-р фіксує лише дисциплінарне провадження (SC-16 caveat)
+
+=== ЄДРСР (reyestr.court.gov.ua) — browsermcp Chrome ===
+[browsermcp Chrome] https://reyestr.court.gov.ua/ -> відкрито; банер «Доступ до Реєстру здійснюється в тестовому (обмеженому) режимі...»; «Документів у системі: 139494134»
+[browsermcp Chrome] пошук «Державіаслужби» -> «знайдено документів: 6821» (без періоду)
+[browsermcp Chrome] пошук «Державіаслужби» + період ухвалення 01.11.2026-20.11.2026 -> «знайдено документів: 8»; на 19-20.11.2026 рішень немає (SC-14)
+[browsermcp Chrome] пошук «Державної авіаційної служби» + 01.11-20.11.2026 -> «знайдено документів: 546»; сортування «за датою ухвалення | за спаданням», стор. 1: найновіші 18.11.2026; «19.11.2026» — 0 збігів (SC-14)
+[browsermcp Chrome] КОНТРОЛЬНИЙ запит «запобіжний захід» + 01.11-20.11.2026 -> «знайдено документів: 11192» (метод валідовано, SC-14)
+
+=== Пошукові запити WebSearch (не відкриття сторінок; негативи з формулою) ===
+[WebSearch] «Державіаслужба обшуки СБУ корупційна схема» -> знайдено NV, Dnipro TV
+[WebSearch] «pravda.com.ua Державіаслужба обшуки» -> знайдено EPravda 827830; Facebook УП; Радіо Свобода 33902030; стара новина УП 2017
+[WebSearch] «"Державіаслужба" обшуки СБУ "Київська обласна прокуратура"» -> підтвердження тієї ж первинки
+[WebSearch] «pravda.com.ua "обшуки" Державіаслужба Первак» -> знайдено Радіо Свобода (Ганна Первак)
+[WebSearch] «СБУ ssu.gov.ua Державіаслужба обшуки заява 19 листопада 2026» -> прямої заяви СБУ у видачі немає
+[WebSearch] «site:ssu.gov.ua Державіаслужба» -> 0 сторінок ssu.gov.ua
+[WebSearch] «"Київська обласна прокуратура" Державіаслужба СБУ сайт або телеграм заява» -> знайдено Zaxid, Слово і діло, DW; офіційної заяви не зафіксовано
+[WebSearch] «"Київська обласна прокуратура" телеграм канал офіційний» -> ідентифіковано канал @press_kobl і сайт kobl.gp.gov.ua
+[WebSearch] «Суспільне Укрінформ Інтерфакс Avianews Державіаслужба обшуки» -> знайдено Укрінформ 4186567, Суспільне 1455114
+[WebSearch] «gp.gov.ua Державіаслужба обшуки Київська обласна прокуратура заява» -> заяви ОГП щодо ДАСУ немає; знайдено ІНШУ заяву ОГП «щодо нічних обшуків» (обшуки в приміщеннях самого ОГП — інший сюжет, не мішати)
+[WebSearch] «СБУ офіційний телеграм канал "Державіаслужба" обшуки заява» -> прямої заяви СБУ не знайдено
+[WebSearch] «Avianews Державіаслужба обшуки СБУ листопад 2026» -> прямої статті Avianews немає
+[WebSearch] «Державіаслужба обшуки "Карфаген" АБО "Мідас" зв'язок» -> прямого джерела зв'язку немає; агрегат змішує з «Карфагеном-2» (SC-22 caveat)
+[WebSearch] «interfax.com.ua АБО avianews.com.ua Державіаслужба обшуки» -> статті Інтерфакс/Avianews не знайдено
+[WebSearch] «обшуки Державіаслужба реакція комітет Верховної Ради ОП 20 листопада 2026» -> реакцій не повернуто (SC-21)
+[WebSearch] «Державіаслужба обшуки "тиск" АБО "сигнал" АБО дронів закупівлі схема» -> тез «тиск/сигнал» і прив'язки до дронів не знайдено (SC-22); сніпет з «офісом на Банковій» суперечить прямим текстам — не звірено, не використовувати (R-12)
+
+=== Аномалії ===
+[web_extractor fetch_page, static] https://www.avianews.com.ua/?s=Державіаслужба -> РЕДІРЕКТ на https://parimatch.bioenergy.in.ua/ (спам-казино): домен avianews.com.ua підозра на втрату/компромітацію; сайт НЕ використовувати як джерело
