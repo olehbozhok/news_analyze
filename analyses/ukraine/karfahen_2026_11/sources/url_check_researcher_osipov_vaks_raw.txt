@@ -1,0 +1,78 @@
+Журнал перевірки URL — Researcher (osipov_vaks), 19.11.2026
+Інструменти: chrome_* НЕДОСТУПНІ в середовищі (не завантажені; пошук інструментів chrome_* не дав результату — зафіксовано). Основний — MCP web_extractor (check_urls, fetch_page; render=browser за замовчуванням, render=static при 403). ЄДРСР — browsermcp. Пошук знахідок — WebSearch (усі URL, які цитуються, відкриті окремо). WebFetch/WebSearch як переглядач не використовувались.
+
+Формат: URL | інструмент | HTTP/результат | дата (19.11.2026, Київ)
+
+--- Транскрипти (локальні) ---
+D:/news/transcripts/7wMTb5JMiT4/transcript.md | Read (локальний файл) | прочитано повністю, 706 сегм. | 19.11.2026
+D:/news/transcripts/pN0dMg8glrY/transcript.md | Bash grep/sed (локальний файл) | цільові grep-и, вибіркове читання; ASR | 19.11.2026
+
+--- Блок A: суд ВАКС 18.11 по Осіпову ---
+https://www.radiosvoboda.org/a/news-vaks-karfahen-osipov/33901122.html | web_extractor fetch_page (browser) | 200 ok, повний текст | 19.11.2026
+https://www.radiosvoboda.org/a/news-vaks-karfahen/33900973.html | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://suspilne.media/1454551-sud-vidpraviv-pid-vartu-figuranta-spravi-karfagen-osipova-bez-prava-zastavi-2/ | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://www.dw.com/uk/vaks-arestuvav-figuranta-spravi-karfagen-osipova-bez-zastavi/a-79985079 | web_extractor fetch_page (browser, з кешу) | 200 ok | 19.11.2026
+https://nv.ua/ukr/ukraine/events/sprava-karfagen-vaks-zaareshtuvav-bez-zastavi-ymovirnogo-organizatora-ugrupovannya-kriminala-50660325.html | web_extractor check_urls (200) + fetch_page (browser) | 200 ok | 19.11.2026
+https://gordonua.com/section-localnews/news-vaks-uzyav-pid-vartu-kryminala-iz-karfahenu-bez-prava-zastavy-18-11-2026.html | web_extractor check_urls | 200 ok (текст не звірено повністю — дубль) | 19.11.2026
+https://www.pravda.com.ua/news/2026/11/18/8063451 | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://www.pravda.com.ua/news/2026/11/18/8063463 | web_extractor fetch_page | browser 403 -> render=static 200 ok | 19.11.2026
+https://www.pravda.com.ua/news/2026/11/18/8063457 | web_extractor fetch_page | browser 403 -> render=static 200 ok | 19.11.2026
+https://www.pravda.com.ua/news/2026/11/18/8063440 | web_extractor fetch_page | browser 403 -> render=static 200 ok | 19.11.2026
+https://zn.ua/ukr/POLITICS/kriminal-iz-karfahenu-osipov-jizdiv-na-avto-z-nomerami-prikrittja-ta-mav-vodija-z-sbu-sap.html | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://sz.uzhgorod.ua/sud-obrav-zapobizhnyj-zahid-andriyu-osipovu-figurantu-spravy-karfagen-yakyj-zgaduyetsya-yak-kryminal | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://antikor.ua/articles/876100-700_tysjach_ministru_200__posrednikam_v_dele_karfagen_zachitali_razgovory_o_podkupe_klimenko (через m.antikor.ua) | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://antikor.info/articles/873441-kriminal_i_meksikanets_obsuhdali_podkup_klimenko_arahamii_i_ljashko_dlja_prodvihenija_biznesa_u420__nabu | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://www.slidstvo.info/news/heneral-sbu-duka-dopomahav-skasuvaty-aresht-kryptovaliuty-na-2-4-milyony-usdt-otrymanykh-u420-vid-prodazhu-narkotykiv-prokuror-sap | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://www.slidstvo.info/news/nemaie-takykh-liudey-v-otochenni-iaki-mohly-na-mene-tysnuty-eksministr-klymenko-zaperechyv-shcho-yoho-namahalysia-pidkupyty-fihuranty-karfahenu | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://www.slidstvo.info/articles/vid-1-mln-khabaria-do-karfahenu-iak-telefon-retsydyvista-osipova-na-prizvysko-kryminal-dopomih-vykryty-novyy-zlochynnyy-klan | web_extractor fetch_page (browser) | 200 ok (контекст, дубль SC-111/SC-114 — нових карток не дає) | 19.11.2026
+https://hacc-decided.ti-ukraine.org/uk/cases/52026000000000505 | web_extractor fetch_page (browser) | 200 ok, 2 чанки | 19.11.2026
+https://hacc-decided.ti-ukraine.org/uk/documents/141416038 | web_extractor fetch_page (browser) | 200 ok, повний текст ухвали 06.11 (по Дуці) | 19.11.2026
+
+--- ЄДРСР (п. 23: асинхронно з очікуванням; контрольний запит обов'язковий) ---
+https://reyestr.court.gov.ua/search?case_number=52026000000000505 | web_extractor fetch_page (browser) x2 | 200; «Зачекайте…», TotalNumber=0 | 19.11.2026 ~02:00
+https://reyestr.court.gov.ua/search?case_number=52026000000000505 | browsermcp goto + wait 8s + snapshot | «На Ваш запит не знайдено жодного документа» | 19.11.2026 ~02:00
+(форма, повний текст) «Осіпов Карфаген запобіжний» | browsermcp fill+click+wait 10s | 0 документів | 19.11.2026 ~02:00
+(контрольний запит) «Осіпов» | browsermcp fill+click+wait | 66391 документів (механізм працює; у видачі немає рішень ВАКС від 18.11.2026) | 19.11.2026 ~02:00
+https://reyestr.court.gov.ua/Search?SearchExpression=%D0%9E%D1%81%D1%96%D0%BF%D0%BE%D0%B2&CaseNumber=52026000000000505 | browsermcp goto | параметри CaseNumber/дати не прив'язуються в GET (результат = попередній запит; технічне обмеження) | 19.11.2026
+https://reyestr.court.gov.ua/Search?SearchExpression=52026000000000505 | browsermcp goto | результат не оновився (обмеження GET) | 19.11.2026
+Опендатабот/YouControl | не використано (заміщено TI HACC Decided + негативним пошуком ЄДРСР; зафіксувати як прогалину підходу за п. 23) | — | 19.11.2026
+
+--- Блок B: Кравченко ---
+https://www.bbc.com/ukrainian/articles/c750vrrp3r1o | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://nv.ua/ukr/ukraine/politics/kravchenko-vijihav-z-ukrajini-i-pidpisav-pidozru-direktoru-nabu-krivonosu-shcho-vidbuvayetsya-50641099.html | web_extractor fetch_page | browser 403 -> render=static 200 ok (19 930 chars, перший чанк) | 19.11.2026
+https://president.gov.ua/documents/9052026-61549 | НЕ відкривався (посилання з тексту NV; прогалина) | — | 19.11.2026
+https://www.bbc.com/ukrainian/articles/cgqdz4v8gnjo (Операція «Янус») | НЕ відкривався (прогалина) | — | 19.11.2026
+
+--- Блок C: реакція влади / реформа СБУ ---
+https://www.radiosvoboda.org/a/news-zelenskyy-zustyrch-poklad-ohp-zvilnennya/33900569.html | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://www.ukrinform.ua/amp/rubric-polytics/4185956-u-radi-gotuut-zakonoproekt-pro-reformu-sbu-deputat.html | web_extractor check_urls (200) + fetch_page (browser, з кешу) | 200 ok | 19.11.2026
+https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%92%D0%B0%D0%BB%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%B8%D1%87 | web_extractor fetch_page (browser) | 200 ok (перший чанк) | 19.11.2026
+https://unn.ua/amp/obhovoryly-boiovi-operatsii-posylennia-sbu-ta-kadrovi-pytannia-zelenskyi-zustrivsia-iz-pokladom | НЕ відкривався (дубль РС; знайдено через WebSearch) | — | 19.11.2026
+https://24tv.ua/kadrovi-zmini-sbu-zelenskiy-zasluhav-dopovid-poklada_n3182476 | НЕ відкривався (дубль) | — | 19.11.2026
+https://gordonua.com/ukr/section-politics/newsamp-u-radi-hotuyut-zakonoproyekt-pro-reformu-sbu-venislavskyy-18-11-2026.html | НЕ відкривався (дубль Укрінформу) | — | 19.11.2026
+
+--- Блок D: заява Кривоноса і Клименка ---
+https://zaxid.net/krivonos_zayaviv_pro_zagrozu_dlya_nabu_i_sap_pislya_operatsiyi_karfagen_2_n1650388 | web_extractor check_urls (200) + fetch_page (browser, з кешу) | 200 ok | 19.11.2026
+https://www.ukrinform.ua/rubric-polytics/4185630-sprava-karfagen-ocilnik-sap-rozpoviv-ak-jomu-rekomenduvali-zupiniti-rozsliduvanna.html | НЕ відкривався (дубль Zaxid, посилання з Укрінформу) | — | 19.11.2026
+https://gazeta.ua/articles/politics/_krivonos-zayaviv-pro-najnebezpechnishij-period-v-istoriyi-nabu-pislya-operaciyi-karfagen2/1262432 | НЕ відкривався (дубль) | — | 19.11.2026
+https://interfax.com.ua/news/general/1237816.html | НЕ відкривався (дубль; zaxid/suspilne/NV покривають) | — | 19.11.2026
+
+--- Блок E: конспірологічні тези Дуки, ОП, медіа-цикл ---
+https://www.bbc.com/ukrainian/articles/cmkgky9q6zeyo | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://www.radiosvoboda.org/a/karfahen-meksykanets-nabu-intervyu/33900514.html | web_extractor fetch_page (browser) | 200 ok (перший чанк) | 19.11.2026
+https://www.pravda.com.ua/news/2026/11/18/8063440 | див. блок A (static 200 ok) | 19.11.2026
+https://www.youtube.com/watch?v=pN0dMg8glrY | джерело SC-136/SC-137 — відкривалося не браузером; контент звірено за локальним транскриптом (yt2text/ASR) | — | 19.11.2026
+https://www.youtube.com/watch?v=7wMTb5JMiT4 | джерело SC-137 — те саме (локальний транскрипт) | — | 19.11.2026
+https://t.me/zelenskiy_official (пост 17.11) | НЕ відкривався (прогалина; переказ РС) | — | 19.11.2026
+
+--- Контрджерела ---
+https://censor.net/ua/news/4033716/sprava-karfagen-scho-vidomo-pro-kontakty-lyashka-klymenka-yi-arahamiyi | web_extractor fetch_page (browser) | 200 ok | 19.11.2026
+https://www.ukrinform.ua/rubric-polytics/4184620-zelenskij-pro-spravu-karfagen-ministri-akih-zgaduut-u-rozmovah-ne-zamisani-u-spivpraci-zi-zlocincami.html | НЕ відкривався (джерело Цензора; прогалина) | — | 19.11.2026
+https://www.instagram.com/reels/Df4VW8aoqG-/ (МЕЖА — джерело antikor 876100) | НЕ відкривався (зафіксовано в caveat SC-123) | — | 19.11.2026
+https://t.me/fuckcorruption/7606 (ЦПК — джерело ZN/sz) | НЕ відкривався (зафіксовано в caveat SC-122) | — | 19.11.2026
+
+--- Негативні пошуки (зафіксувати в картках) ---
+«офіс президента коментував Дука ТСК конспірологія Фіала» (WebSearch) | реакції ОП не знайдено; РС/Treбашна фіксують те саме | 19.11.2026
+«СБУ відсторонили співробітників 18 листопада Карфаген офіційне» (WebSearch + сторінки УП/NV/Zaxid 18–19.11) | офіційного повідомлення СБУ не знайдено (SC-137); Telegram СБУ не переглянуто | 19.11.2026
+«Осіпов ухвала 18 листопада reyestr.court.gov.ua» (WebSearch) | прямого посилання на ухвалу не знайдено; реквізит справи — через TI HACC Decided | 19.11.2026
+«Помозу» grep по pN0dMg8glrY/transcript.md | 0 збігів (дослівник «Помозу там проще» у стрімі ТСК відсутній) | 19.11.2026

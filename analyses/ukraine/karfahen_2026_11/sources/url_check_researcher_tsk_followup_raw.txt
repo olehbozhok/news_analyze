@@ -1,0 +1,178 @@
+Журнал перевірки URL — Researcher, доповнення 7.12 (післясвідчені реакції ТСК, 19–20.11.2026)
+Дата дослідження: 20.11.2026 (16:50–… за Києвом)
+Chrome/chrome_* інструменти: недоступні в середовищі (зафіксовано; за промптом використано browsermcp Chrome як запасний). Основний канал — MCP web_extractor (fetch_page/check_urls), запасні — browsermcp (браузер Chrome), WebFetch/WebSearch.
+
+# URL-журнал
+
+1. https://komersant.ua/chy-pryjdut-kryvonos-i-klymenko-na-tsk-23-lystopada-shho-vidpovily-v-nabu-ta-sap
+   - web_extractor fetch_page render=browser: 403 (blocked); render=static: 403 (blocked)
+   - web_reader (webReader MCP): 500 network error
+   - WebFetch: HTTP 403 Forbidden
+   - browsermcp (Chrome): Cloudflare-заглушка «Триває перевірка безпеки» (2 спроби, 15 с очікування) — не пройшла
+   - web.archive.org/web/2026/<URL>: 404 not_found (check_urls)
+   - РЕЗУЛЬТАТ: ЗАБЛОКОВАНЕ (Cloudflare; зміст не прочитано; факти покриваються через Antikor, UNN, hromadske; окремі цитати з пошукової видачі — позначка «за видачею»)
+
+2. https://unn.ua/news/kerivnyky-nabu-i-sap-ne-pryidut-na-tsk-kudy-yikh-zaprosyly-heneral-duka-prypustyv-chomu
+   - web_extractor fetch_page (browser): 200, повний текст, опубл. 19.11.2026 17:56 (json-ld), автор Юлія Мельник
+   - РЕЗУЛЬТАТ: відкрито; повний текст FB-поста Дуки + контекст
+
+3. https://antikor.info/articles/876375-semen_krivonos_ne_primet_uchastija_v_zasedanii_vsk_verhovnoj_rady_v_nabu_nazvali_prichinu
+   - web_extractor fetch_page (browser): 200, повний текст, 19.11.2026 16:31, Микола Сидоренко
+   - РЕЗУЛЬТАТ: відкрито; цитата пресслужби НАБУ «Не буде нас, тому що відрядження заплановане»
+
+4. https://mezha.net/ua/news/44506cda_nabu_and_sapo_chiefs
+   - web_extractor fetch_page (browser): 200, повний текст, 20.11.2026 15:20 UTC (18:20 за Києвом)
+   - РЕЗУЛЬТАТ: відкрито; переказ hromadske; наводка на hromadske 274719 і на mezha про протокол допиту
+
+5. https://hromadske.ua/personaliyi/274719-kryvonos-i-klymenko-ne-vidvidaiut-zasidannia-tsk-na-iake-yikh-zaprosyv-honcharenko-budut-u-vidriadzenni
+   - web_extractor fetch_page (browser): 200, повний текст, 20.11.2026 17:04 за Києвом (ДОПОВНЕНО о 18.24), Артем Гецко; Дарина Феденко
+   - РЕЗУЛЬТАТ: відкрито; Рим-Брюссель-Японія; доповнення: НАБУ станом на 18:00 20.11 не отримало офіційного запрошення
+
+6. https://mezha.net/ua/news/cc34569f_nabu_and_sap_show/
+   - web_extractor fetch_page (browser): 200, повний текст, 20.11.2026 14:44 UTC (16:44 за Києвом); джерело pravda.com.ua 8063815
+   - РЕЗУЛЬТАТ: відкрито; протокол 6-хвилинного допиту
+
+7. https://www.pravda.com.ua/news/2026/11/20/8063815/
+   - web_extractor fetch_page render=static: 200, повний текст, 20.11.2026 15:39, Анастасія Проц
+   - РЕЗУЛЬТАТ: відкрито; протокол допиту Дуки від 4.11 (первинка-переказ; джерело hromadske 274705)
+
+8. https://hromadske.ua/kryminal/274705-u-nabu-sprostuvaly-zaiavy-henerala-sbu-duky-shcho-yoho-nikoly-ne-dopytuvaly
+   - web_extractor fetch_page (browser): 200, повний текст, 20.11.2026 14:45 за Києвом, Ірина Сітнікова; Дарина Феденко
+   - РЕЗУЛЬТАТ: відкрито; первинний переказ протоколу допиту
+
+9. https://www.pravda.com.ua/news/2026/11/20/8063812/
+   - web_extractor fetch_page render=static: 200, повний текст, 20.11.2026 15:12, Станіслав Погорілов
+   - РЕЗУЛЬТАТ: відкрито; лист Поклада про загрозу теракту (переказ hromadske 274700)
+
+10. https://hromadske.ua/polityka/274700-hlava-sbu-poklad-pidpysav-lysta-pro-zahrozy-teraktu-proty-henerala-duky-u-den-koly-toy-otrymav-pidozru
+    - web_extractor fetch_page (browser): 200, повний текст, 20.11.2026 14:24 за Києвом (ОНОВЛЕНО), Юстина Лісова; Дарина Феденко
+    - РЕЗУЛЬТАТ: відкрито; первинка листа Поклада; відповідь СБУ від 6.11 за підписом Поклада; документ надало НАБУ
+
+11. https://www.pravda.com.ua/news/2026/11/20/8063751/
+    - web_extractor fetch_page render=static: 200, повний текст, 20.11.2026 09:47, Валентина Романенко
+    - РЕЗУЛЬТАТ: відкрито; підозра екскерівнику підрозділу ДЗНД СБУ (справа Укрнафти; НЕ «Карфаген») — контекст, не карткується в 01
+
+12. https://www.pravda.com.ua/articles/2026/11/18/8063513/
+    - web_extractor fetch_page render=static: 200, повний текст (18090 знаків), 18.11.2026 20:12, Михайло Ткач
+    - РЕЗУЛЬТАТ: відкрито; «Коаліція рішучих» — НСРД про дружину Клименка (з понеділка 16.11), Washington Examiner 8.11, Арахамія 6.11, 7 звільнених Покладом
+
+13. https://t.me/serhiyduka/6
+    - web_extractor fetch_page: таймаут 30 с
+    - browsermcp (Chrome): 200, веб-в'ю поста — «Nov 19 at 16:17», повний текст поста №6
+    - РЕЗУЛЬТАТ: відкрито (SC-147, ПЕРВИННЕ)
+
+14. https://t.me/serhiyduka/6?embed=1&mode=tme — та сама сторінка у вбудованому вигляді; 200; підтвердження часу поста
+
+15. https://t.me/s/serhiyduka
+    - browsermcp (Chrome): 200; канал «Сергій Дука (Буревісник)», 206 підписників, створений 14.11; пости №4-№7; пост №7 від 20.11 15:20, пост №6 від 19.11 16:17
+    - РЕЗУЛЬТАТ: відкрито (SC-153)
+
+16. https://t.me/serhiyduka/7?embed=1&mode=tme
+    - browsermcp (Chrome): 200; пост №7, «Nov 20 at 15:20», повний текст
+    - РЕЗУЛЬТАТ: відкрито (SC-153, ПЕРВИННЕ)
+
+17. https://www.unian.ua/incidents/teper-cherga-krivonosa-i-klimenka-pislya-svidchen-generala-sbu-duki-vid-kerivnictva-nabu-ta-sap-vimagayut-vidpovidey-shchodo-karfagenu-13565283.html
+    - web_extractor fetch_page (browser): 200; 19.11.2026 22:01, Іван Бойко
+    - РЕЗУЛЬТАТ: відкрито; переказ FB-поста Цибулька (дубль до SC-159, не картковано); наводки на УНІАН 13566156 (Власенко) і 13566357 (Загородній)
+
+18. https://www.unian.ua/incidents/odnih-rozsliduyut-inshih-ne-chipayut-vlasenko-zagovoriv-pro-podviyni-standarti-pislya-skandalu-z-otochennyam-klimenka-13566156.html
+    - web_extractor fetch_page (browser): 200; 20.11.2026 16:05, Іван Бойко
+    - РЕЗУЛЬТАТ: відкрито (SC-164)
+
+19. https://ukranews.com/ua/news/1187807-kravchenko-oprylyudnyv-zapysy-de-druzhyna-kerivnyka-sap-klymenka-ta-yiyi-podruga-zvertalysya-do
+    - web_extractor fetch_page (browser): 200; 16.11.2026 12:48, Марк Савенко
+    - РЕЗУЛЬТАТ: відкрито (SC-161)
+
+20. https://www.youtube.com/watch?v=DJzOQXFk3ZM
+    - web_extractor fetch_page (browser): 200; «"Мадам де Помпадур". Епізод №4», канал «Руслан Кравченко», мета-дата 2026-11-15T22:30:20-08:00 (16.11 ~08:30 Київ), 23 тис. переглядів
+    - РЕЗУЛЬТАТ: відкрито (SC-162, ПЕРВИННЕ — сторінка; відео не переглянуте)
+
+21. https://fakty.ua/482426-zhena-rukovoditelya-sap-klimenko-figuriruet-v-dele-o-podkupe-sudej-vaks-eks-genprokuror-kravchenko-obnarodoval-rezonansnye-materialy-sledstviya
+    - web_extractor fetch_page: 403 (browser і static)
+    - РЕЗУЛЬТАТ: ЗАБЛОКОВАНЕ; тема покрита LMN (SC-163)
+
+22. https://www.lmn.in.ua/10-tysiach-za-suprovid-spravy-shcho-vidomo-pro-jmovirnyj-epizod-iz-kolyshnim-merom-sambora-na-plivkakh-kravchenka/
+    - web_extractor fetch_page (browser): 200; 17.11.2026 16:06, Вікторія Вітер
+    - РЕЗУЛЬТАТ: відкрито (SC-163)
+
+23. https://podrobnosti.ua/2522572/
+    - web_extractor fetch_page (browser): 200, але редірект на головну (?e=t) — стаття за коротким URL не доступна
+    - РЕЗУЛЬТАТ: не стаття; знайдено повний slug через WebSearch
+
+24. https://podrobnosti.ua/2522572-general-sbu-duka-zvinuvativ-kervnitstvo-nabu-sap-u-poltichnomu-tisku-ta-rozpovv-pro-zablokovan-antikoruptsjn-rozslduvannja.html
+    - web_extractor fetch_page (browser): 200; 18.11.2026 20:15
+    - РЕЗУЛЬТАТ: відкрито (SC-171)
+
+25. https://podrobnosti.ua/2522584-karfagen-v-nteresah-rosjskih-spetssluzhb-versja-pro-mozhlive-vikoristannja-fsb-operats-nabu-dlja-udaru-po-sbu.html
+    - web_extractor fetch_page (browser): 200; 19.11.2026 12:33
+    - РЕЗУЛЬТАТ: відкрито; переказ FB-поста Чаленка (дубль до SC-160, не картковано)
+
+26. https://www.ukr.net/news/details/politics/120587129.html
+    - web_extractor fetch_page: empty_render; агgregator → komersant.ua/goncharenko-gotovyj-perenesty-zasidannya-tsk-dlya-kryvonosa-yakshho-toj-poprosyt/ (JS-only, komersant 403-препона)
+    - РЕЗУЛЬТАТ: не відкрито; теза «Гончаренко готовий перенести дату» — ЗА ВИДАЧЕЮ (SC-151-група caveat, SC-172 caveat)
+
+27. https://unn.ua/news/ne-treba-robyty-vidriadzhennia-i-khovatysia-honcharenko-zaklykav-kryvonosa-pryity-na-zasidannia-tsk-i-vidpovisty-na-pytannia
+    - web_extractor fetch_page (browser): 200; 20.11.2026 12:33, Юлія Мельник
+    - РЕЗУЛЬТАТ: відкрито (SC-172)
+
+28. https://unn.ua/news/filmy-zamist-vyrokiv-politychnyi-tysk-i-pytannia-do-dobrochesnosti-pro-shcho-nabu-i-sap-pytatymut-na-tsk
+    - web_extractor fetch_page (browser): 200 (12 000 з 12 366 знаків, обрізано; хвіст — «Нагадаємо»-блок, некритично); 19.11.2026 18:30, Євген Царенко
+    - РЕЗУЛЬТАТ: відкрито (SC-155)
+
+29. https://www.facebook.com/oleg.posternak — профіль
+    - browsermcp (Chrome): 200; стіна без логіну показує лише останні пости (19.11 15:52 — про уроки); потрібний пост не на першій сторінці
+    - РЕЗУЛЬТАТ: профіль відкрито, пост знайдено за прямим URL (п. 30)
+
+30. https://www.facebook.com/oleg.posternak/posts/28870912592581010
+    - browsermcp (Chrome): 200; пост відображено: «четвер, 19 листопад 2026 р. о 11:20», повний текст, 23 реакції / 10 коментарів / 2 поширення
+    - РЕЗУЛЬТАТ: відкрито (SC-158, ПЕРВИННЕ)
+
+31. https://focus.ua/uk/ukraine/775302-kriminalne-provadzhennya-vigrayut-u-facebook-posternak-rozkritikuvav-publichnist-sprav-nabu-i-sap
+    - web_extractor fetch_page (browser): 200; 19.11.2026 14:45, Дар'я Бережна
+    - РЕЗУЛЬТАТ: відкрито; переказ поста Постернака (дубль до SC-158, не картковано)
+
+32. https://www.facebook.com/share/p/14wF7x7uqMY/ → редірект https://www.facebook.com/story.php?story_fbid=30155116964091728&id=100000604640696
+    - browsermcp (Chrome): 200; пост Цибулька «четвер, 19 листопад 2026 р. о 12:55», повний текст, 70 реакцій / 42 коментарі / 5 поширень
+    - РЕЗУЛЬТАТ: відкрито (SC-159, ПЕРВИННЕ; у картці фіксований story.php-URL)
+
+33. https://www.facebook.com/igor.chalenko/posts/pfbid0wtaoRjNvopv8Be3o4TRZwDv9k8M7bBzcf3ka4XCE9tRNEtoWy1iTDKsTJLyu71tql
+    - browsermcp (Chrome): 200; пост «четвер, 19 листопад 2026 р. о 10:30», повний текст, 3 реакції / 1 поширення
+    - РЕЗУЛЬТАТ: відкрито (SC-160, ПЕРВИННЕ)
+
+34. https://www.slidstvo.info/news/duka-zaiavyv-shcho-sud-zasudyv-detektyva-nabu-husarova-ale-tse-ne-pravda/
+    - web_extractor fetch_page (browser): 200; 18.11.2026 16:49 за Києвом (14:49 UTC), Ліза Бикова
+    - РЕЗУЛЬТАТ: відкрито (SC-154)
+
+35. https://www.slidstvo.info/news/zhyttiu-ta-zdorov-iu-henerala-i-fihuranta-karfahenu-duky-ta-yoho-rodyny-zahrozhuiut-rosiyski-spetssluzhby-t-v-o-holovy-sbu-poklada-advokatu-duky/
+    - web_extractor fetch_page (browser): 200; 20.11.2026 13:46 за Києвом (11:46 UTC), Яніна Корнієнко
+    - РЕЗУЛЬТАТ: відкрито (SC-169)
+
+36. https://mezha.net/ua/news/eabe2af2_nabu_chief_says/ — не відкривався (дубль заяви Кривоноса 17.11, SC-138-група)
+37. https://www.washingtonexaminer.com/policy/foreign-policy/4795394/ukraine-anti-corruption-agencies-undermining-trump-peace-efforts-kravchenko/ — НЕ відкривався; URL і автор (Lukas Mikelionis, 8.11.2026) — за пошуковою видачею WebSearch (п. 37); SC-167 caveat
+38. https://t.me/oleksiihoncharenko/57971 — НЕ відкривався (первинка поста Гончаренка; переказ УНН SC-172)
+39. https://www.youtube.com/watch?v=jM2PxsCRNHs — НЕ відкривався («Врятувати мера», первинка SC-163 за LMN)
+40. https://opendatabot.ua/court/138329645-fe8f34aed8a93953e45ceb8c8910d39e — НЕ відкривався (сторінка справи Гусарова в реєстрі; опора SC-154 — за переказом СІ)
+41. https://news.novyny.live/arakhamiia-prokomentuvav-koruptsiini-zvinuvachennia-proti-sebe-353075.html — НЕ відкривався (джерело SC-168 — за УП)
+
+# Пошукові запити (WebSearch, дата 20.11.2026; усі знайдені URL перед цитуванням відкривалися, крім позначених)
+
+- «Кривонос ТСК 23 листопада відрядження НАБУ не буде засідання» → UNN 4-2, komersant (403)
+- «"Не буде нас" Кривонос відрядження ТСК НАБУ пресслужба "23 листопада"» → Antikor 876375
+- «"не можуть ігнорувати" НАБУ ТСК Кривонос Клименко виклик» → цитата komersant ЗА ВИДАЧЕЮ
+- «САП Клименко ТСК 23 листопада "немає інформації" чи планує керівник» → цитата пресслужби САП ЗА ВИДАЧЕЮ (komersant не відкрита)
+- «Кривонос Клименко "не прийдуть" ТСК 23 листопада відрядження САП відповіли» → МЕЖА 44506cda
+- «Цибулько "Карфаген" "Дука" операція виглядає не так однозначно...» → УНІАН 13565283, Podrobnosti 2522572, kherson.archymap (не відкривався)
+- «Кравченко НСРД матеріали дружина Клименка оприлюднив Слідство.Інфо» → без прямих результатів (навідка на ukranews іншим запитом)
+- «Кравченко оприлюднив записи дружина Клименка Редіч адвокатка листопад» → ukranews 1187807, News.PN FB (не відкривався), ukr.net (не відкривався)
+- «"Кравченко" "ВАКС" судді мер "Редіч" записи епізод оприлюднив ноябрь 2026» → fakty.ua (403), lmn.in.ua, Реальний Київ/УС тг (не відкривалися)
+- «Постернак Дука "не допитали" ТСК Карфаген Facebook політолог» → FB oleg.posternak (за видачею)
+- «Чаленко "Карфаген" Буркін "Мексиканець" російські спецслужби удар по СБУ "Хімпром" ФСБ Facebook 19 листопада» → Podrobnosti 2522506 (не відкривався), Politeka 481685 (не відкривався), Podrobnosti 2522584
+- «Гончаренко реакція Кривонос Клименко не прийдуть ТСК 23 листопада...» → ukr.net 120587129 (→ komersant, 403), amp.fakty.ua 482563 (не відкривався), X breakingUAnews (не відкривався)
+- «"Гончаренко" ТСК Кривонос перенести засідання примусово доставити...» → УНН 4-27, komersant (403)
+- «Постернак "Кривонос і Клименко керують" "продакшн"...» → тг «Людолови» (за видачею), Focus.ua, Podrobnosti 2522585 (не відкривався), FB-пост (відкритий)
+- «"продакшн-студією з виробництва кримінальних блокбастерів"» → Focus.ua 775302, Podrobnosti 2522585 (не відкривався), FB 28870912592581010 (відкритий)
+- «Гусаров детектив НАБУ Дука справа закрита Слідство.Інфо строк давності» → СІ (відкрита), Zmina (не відкривалася)
+- «Washington Examiner Kravchenko Ukrainian anti-corruption agencies undermine Trump peace efforts November 8» → WE 4795394 (за видачею; не відкривався)
+- «podrobnosti.ua 2522572 Дука...» → повний slug статті
+
+Підсумок станів: ПЕРВИННЕ відкрито — t.me/serhiyduka/6 і /7, YouTube DJzOQXFk3ZM, 3 FB-пости (Цибулько, Постернак, Чаленко). ЗАБЛОКОВАНЕ — komersant.ua (2 статті), fakty.ua. Не відкриті (зафіксовано вище) — п. 36-41 + kherson.archymap, Politeka, Podrobnosti 2522506/2522585, Zmina, News.PN/ukr.net/тг «Реальний Київ», «УС», «Людолови».

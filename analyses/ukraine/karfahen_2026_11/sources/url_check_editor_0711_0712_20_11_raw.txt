@@ -1,0 +1,14 @@
+Журнал URL — Editor, виправлення 711-1…712-5 за звітом sources/verification_0711_0712_osipov_vaks_tsk_20_11.md
+Дата: 20.11.2026. Chrome (browsermcp/chrome_*) у сесії Editor не використовувався; основний інструмент — MCP web_extractor.
+
+1. https://gordonua.com/ukr/section-society/news-mayachnya-dyrektory-nabu-ta-sap-vyyshly-do-zmi-pislya-zayavy-kravchenka-i-zaperechyly-otrymannya-pidozr-14-09-2026.html
+   Інструмент: web_extractor fetch_page (browser). Статус: 200 OK, повний текст (6775 знаків), дата публікації за json-ld 2026-09-14T15:06:25+00:00, автор Тетяна Краєвська.
+   Мета: знахідка 711-1 — дослівна цитата «маячня» для нової картки SC-174 (source_cards_01.md). Знайдено дослівно: «Кравченко у зверненні заявив, що антикорупційні органи пропонували йому "гарантії недоторканості" в обмін на те, що він відмовиться підписувати їм підозри. Директор НАБУ назвав цю заяву "маячнею"».
+
+2. https://hromadske.ua/personaliyi/274719-kryvonos-i-klymenko-ne-vidvidaiut-zasidannia-tsk-na-iake-yikh-zaprosyv-honcharenko-budut-u-vidriadzenni
+   Інструмент: web_extractor fetch_page (browser; відповідь з кешу ~20 хв, text_version d690b7c4). Статус: 200 OK.
+   Мета: знахідка 712-2 — звірка дослівності: у джерелі «станом на 18:00 20 листопада» (без «год.») і «Доповнено о 18:24» (через двокрапку). Виправлено в 7.12.1 документа, у картках SC-150 і SC-149.
+
+3. https://www.slidstvo.info/news/zhyttiu-ta-zdorov-iu-henerala-i-fihuranta-karfahenu-duky-ta-yoho-rodyny-zahrozhuiut-rosiyski-spetssluzhby-t-v-o-holovy-sbu-poklada-advokatu-duky/
+   Інструмент: web_extractor find_in_page («Кулініч», 2 збіги дослівно; text_version b23fe549). Статус: 200 OK (кеш ~22 хв).
+   Мета: знахідка 712-3 — дослівна опора імені для картки персони vladyslav_kulinich: «…йдеться у відповіді т.в.о. голови СБУ на запит Владислава Кулініча, захисника Сергія Дуки». Дублює звірку Verifier (журнал url_check_verifier_tsk_followup_raw.txt).
